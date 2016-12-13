@@ -1,0 +1,23 @@
+[
+   {
+      "toc_title": "Docs",
+      "href": "/",
+      "level": 1,
+      "children": [
+         {
+            "href": "/powershell/systemcenter/",
+            "homepage": "/powershell/systemcenter/",
+            "toc_title": "systemcenter",
+            "level": 2,
+            "children": [
+               {
+                  "href": "/powershell/systemcenter/sc-cmdlets/",
+                  "homepage": "/powershell/systemcenter/sc-cmdlets/",
+                  "toc_title": "systemcenter cmdlets",
+                  "level": 3
+               }
+            ]
+         }
+      ]
+   }
+]

@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: ./Add-SCNetworkService.md
 schema: 2.0.0
 ms.assetid: 85506550-7584-4080-97B5-655A5C8F99B7
-updated_at: 12/13/2016 10:42 PM
-ms.date: 12/13/2016
+updated_at: 12/14/2016 6:27 AM
+ms.date: 12/14/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/VirtualMachineManager/v1/Read-SCNetworkService.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/VirtualMachineManager/v1/Read-SCNetworkService.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/ea9507ac2178040476af5407227db8cb97701ea9/systemcenter-cmdlets/VirtualMachineManager/v1/Read-SCNetworkService.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/bf6b8bb68f9fbd68e9f50181dcb211c496d2cd47/systemcenter-cmdlets/VirtualMachineManager/v1/Read-SCNetworkService.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -137,6 +137,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-SCNetworkService](xref:VirtualMachineManager/v1/Set-SCNetworkService.md)
 
 [Test-SCNetworkService](xref:VirtualMachineManager/v1/Test-SCNetworkService.md)
-
-[]()
-

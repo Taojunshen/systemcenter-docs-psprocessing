@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xml
-online version: a3467fe7-f0e7-41fd-9453-0b01c43f122d
+online version: ./Disable-SCDWJob.md
 schema: 2.0.0
-ms.assetid: 8471C34D-0953-4082-ABD9-7BF2BB506898
-updated_at: 12/15/2016 4:04 AM
+ms.assetid: F26FC623-F052-422E-9F5D-CDAAAA5C5C45
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/New-SCDWSourceType.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/New-SCDWSourceType.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/New-SCDWSourceType.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -17,36 +17,38 @@ open_to_public_contributors: true
 ms.service: system-center
 ---
 
-# New-SCDWSourceType
+# Start-SCDWJob
 
 ## SYNOPSIS
-Creates a data source type that can be registered to the data warehouse.
+Starts a data warehouse job.
 
 ## SYNTAX
 
 ```
-New-SCDWSourceType [-SourceConfigFile] <String> [-ComputerName <String>] [-Credential <PSCredential>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Start-SCDWJob -JobName <String> [-ComputerName <String>] [-Credential <PSCredential>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **New-SCDWSourceType** cmdlet creates a new data source type that can be registered to the data warehouse.
-Each data source type is defined by the classes and the relationships in the management pack bundle that is imported when the data source type is defined.
+The **Start-SCDWJob** cmdlet starts a data warehouse job.
+When a job is started, its associated job modules run in the order that the job sets.
+To stop a job, use the **Stop-SCDWJob** cmdlet.
 
 ## EXAMPLES
 
-### Example 1: Create a data source type from a management pack bundle
+### Example 1: Start a job
 ```
-PS C:\>New-SCDWSourceType -ComputerName "serverDW72" -SourceConfigFile "C:\Program Files\Microsoft System Center\Management Packs\CustomHumanRelationsDataSource.mpb"
+PS C:\>Start-SCDWJob â€"ComputerName "serverDW72" -JobName "Extract_Contoso"
 ```
 
-This command creates a new data source type from a specified management pack bundle.
+This command starts the `Extract_Contoso` job.
 
 ## PARAMETERS
 
 ### -ComputerName
 Specifies the name of the computer on which the System Center Data Access service is running.
 The user account that is defined in the *Credential* parameter must have access rights to the specified computer.
+You can omit this parameter only if the System Center Data Access Service is running on the same computer that has Service Manager installed.
 
 ```yaml
 Type: String
@@ -76,11 +78,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SourceConfigFile
-Specifies the path to the management pack bundle (.mpb) file that contains the management packs and other resources that define the data source.
-
-Each management pack in the management pack bundle must contain a class that derives from the **Microsoft.SystemCenter.DataWarehouse.DataSource** class, and an enumeration that derives from **DW.DataSourceType**.
-The base class and the enumeration must exist in the **Microsoft.SystemCenter.DataWarehouse.Base.mp** management pack.
+### -JobName
+Specifies the job to be started.
+The **JobName** parameter is mandatory.
 
 ```yaml
 Type: String
@@ -88,9 +88,9 @@ Parameter Sets: (All)
 Aliases: 
 
 Required: True
-Position: 1
+Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -141,4 +141,12 @@ This cmdlet does not generate any output.
 ## NOTES
 
 ## RELATED LINKS
+
+[Disable-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJob.md)
+
+[Enable-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md)
+
+[Get-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md)
+
+[Stop-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Stop-SCDWJob.md)
 

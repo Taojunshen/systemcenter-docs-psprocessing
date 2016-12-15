@@ -3,11 +3,11 @@ external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xm
 online version: a3467fe7-f0e7-41fd-9453-0b01c43f122d
 schema: 2.0.0
 ms.assetid: 1C934679-7D5A-4093-B177-88BFE0D9C053
-updated_at: 12/15/2016 4:04 AM
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWWatermark.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWWatermark.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWWatermark.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWWatermark.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWWatermark.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWWatermark.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

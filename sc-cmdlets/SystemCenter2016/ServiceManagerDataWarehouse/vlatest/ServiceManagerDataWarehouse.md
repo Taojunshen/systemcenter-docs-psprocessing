@@ -5,12 +5,12 @@ Download Help Link: Please enter FwLink manually
 Help Version: Please enter version of help manually (X.X.X.X) format
 Locale: en-US
 ms.assetid: 6B987D64-C8B7-4EA2-A401-5117C8BB3CF4
-updated_at: 12/15/2016 4:04 AM
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/ServiceManagerDataWarehouse.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/ServiceManagerDataWarehouse.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/ServiceManagerDataWarehouse.md
-uid: SystemCenter2016/ServiceManagerData Warehouse/vlatest/ServiceManagerDataWarehouse.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/ServiceManagerDataWarehouse.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/ServiceManagerDataWarehouse.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/ServiceManagerDataWarehouse.md
+uid: SystemCenter2016/ServiceManagerDataWarehouse/vlatest/ServiceManagerDataWarehouse.md
 ms.topic: conceptual
 author: tarameyer
 ms.author: cfreeman

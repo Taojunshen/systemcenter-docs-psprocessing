@@ -881,63 +881,63 @@
               href: ../SystemCenter2016/ServiceManagerCore/vlatest/Update-SCSMClassInstance.md
             - name: Update-SCSMRunAsAccount
               href: ../SystemCenter2016/ServiceManagerCore/vlatest/Update-SCSMRunAsAccount.md
-    - name: ServiceManagerData Warehouse
+    - name: ServiceManagerDataWarehouse
       items:
         - name: vlatest
-          href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/ServiceManagerDataWarehouse.md
+          href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/ServiceManagerDataWarehouse.md
           items:
             - name: Disable-SCDWJob
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Disable-SCDWJob.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJob.md
             - name: Disable-SCDWJobCategory
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Disable-SCDWJobCategory.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobCategory.md
             - name: Disable-SCDWJobSchedule
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Disable-SCDWJobSchedule.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobSchedule.md
             - name: Disable-SCDWSource
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Disable-SCDWSource.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWSource.md
             - name: Enable-SCDWJob
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWJob.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md
             - name: Enable-SCDWJobCategory
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWJobCategory.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJobCategory.md
             - name: Enable-SCDWJobSchedule
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWJobSchedule.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJobSchedule.md
             - name: Enable-SCDWSource
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWSource.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWSource.md
             - name: Get-SCDWEntity
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWEntity.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWEntity.md
             - name: Get-SCDWJob
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJob.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md
             - name: Get-SCDWJobModule
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJobModule.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJobModule.md
             - name: Get-SCDWJobSchedule
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJobSchedule.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJobSchedule.md
             - name: Get-SCDWRetentionPeriod
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWRetentionPeriod.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWRetentionPeriod.md
             - name: Get-SCDWSource
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWSource.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWSource.md
             - name: Get-SCDWSourceType
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWSourceType.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWSourceType.md
             - name: Get-SCDWWatermark
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWWatermark.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWWatermark.md
             - name: New-SCDWSourceType
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/New-SCDWSourceType.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/New-SCDWSourceType.md
             - name: Register-SCDWSource
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Register-SCDWSource.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Register-SCDWSource.md
             - name: Set-SCDWJobSchedule
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWJobSchedule.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWJobSchedule.md
             - name: Set-SCDWRetentionPeriod
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWRetentionPeriod.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWRetentionPeriod.md
             - name: Set-SCDWSource
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWSource.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWSource.md
             - name: Set-SCDWWatermark
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWWatermark.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWWatermark.md
             - name: Start-SCDWJob
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Start-SCDWJob.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md
             - name: Stop-SCDWJob
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Stop-SCDWJob.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Stop-SCDWJob.md
             - name: Unregister-SCDWManagementPack
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Unregister-SCDWManagementPack.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWManagementPack.md
             - name: Unregister-SCDWSource
-              href: ../SystemCenter2016/ServiceManagerData Warehouse/vlatest/Unregister-SCDWSource.md
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWSource.md
     - name: ServiceProviderFoundation
       items:
         - name: vlatest

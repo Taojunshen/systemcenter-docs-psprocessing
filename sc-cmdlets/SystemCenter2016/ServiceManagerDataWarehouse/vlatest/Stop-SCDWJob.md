@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xml
-online version: ./Get-SCDWEntity.md
+online version: ./Disable-SCDWJob.md
 schema: 2.0.0
-ms.assetid: 10D3E852-7D26-4537-B6FE-D043C972ADF2
-updated_at: 12/15/2016 4:04 AM
+ms.assetid: 95E2A68C-A4BF-4F73-A70F-C4CDF6426348
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Set-SCDWWatermark.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Set-SCDWWatermark.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Set-SCDWWatermark.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Stop-SCDWJob.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Stop-SCDWJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Stop-SCDWJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -17,30 +17,44 @@ open_to_public_contributors: true
 ms.service: system-center
 ---
 
-# Set-SCDWWatermark
+# Stop-SCDWJob
 
 ## SYNOPSIS
-Sets the watermark from which subsequent data processing should continue.
+Stops a data warehouse job.
 
 ## SYNTAX
 
 ```
-Set-SCDWWatermark [-EntityName] <String> [-WaterMarkValue] <DateTime> [-ComputerName <String>]
- [-Credential <PSCredential>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Stop-SCDWJob [-JobName] <String> [-ComputerName <String>] [-Credential <PSCredential>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Set-SCDWWatermark** cmdlet sets the watermark from which data processing should continue.
-If you need to extract and process data again, a watermark identifies the point from which to continue the data processing so that data loss is minimal.
+The **Stop-SCDWJob** cmdlet stops a data warehouse job.
+Job modules that are currently running complete gracefully, and the rest of the job modules that have not run yet queue up.
 
 ## EXAMPLES
 
-### Example 1: Set a watermark
+### Example 1: Stop a job
 ```
-PS C:\>Set-SCDWWatermark -ComputerName "serverDW72" -EntityName "SoftwareUpdateDim"  -WaterMarkValue 1/1/2010
+PS C:\>Stop-SCDWJob â€"ComputerName "serverDW72" -JobName "Extract_Contoso"
 ```
 
-This command sets a watermark.
+This command stops the `Extract_Contoso` job.
+
+### Example 2: Stop all jobs that are not already stopped
+```
+PS C:\>$cred = Get-Credential
+PS C:\>Get-SCDWJob -ComputerName "serverDW72" â€"Credential $cred | ForEach-Object {
+>> if ($_.Status -ne "Stopped") {
+>> Stop-SCDWJob -ComputerName "IXSMTestDW" -JobName $_.Name
+>> }
+>> }
+```
+
+The first command prompts for user credentials and stores them in a variable.
+
+The second command stops all jobs that do not have the status of stopped.
 
 ## PARAMETERS
 
@@ -77,9 +91,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EntityName
-Specifies the Dimension, Fact, or Outrigger on which to set the watermark.
-You can use the **Get-SCDWEntity** cmdlet to retrieve the value for the **EntityName** parameter.
+### -JobName
+Specifies the job to be stopped.
+The **JobName** parameter is mandatory.
 
 ```yaml
 Type: String
@@ -88,22 +102,6 @@ Aliases:
 
 Required: True
 Position: 1
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WaterMarkValue
-Specifies the date that the watermark should be set to.
-The specified date must be in the past.
-
-```yaml
-Type: DateTime
-Parameter Sets: (All)
-Aliases: 
-
-Required: True
-Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -157,5 +155,11 @@ This cmdlet does not generate any output.
 
 ## RELATED LINKS
 
-[Get-SCDWEntity](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWEntity.md)
+[Disable-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJob.md)
+
+[Enable-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md)
+
+[Get-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md)
+
+[Start-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md)
 

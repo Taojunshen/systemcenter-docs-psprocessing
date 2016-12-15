@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xml
-online version: ./Get-SCDWJob.md
+online version: 
 schema: 2.0.0
-ms.assetid: AA221F6D-9511-468E-99D6-24CD46B5B495
-updated_at: 12/15/2016 4:04 AM
+ms.assetid: 82EACE45-887B-478F-8984-32ABAC7FB57D
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Enable-SCDWJobCategory.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Enable-SCDWJobCategory.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Enable-SCDWJobCategory.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobCategory.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobCategory.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobCategory.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -17,57 +17,50 @@ open_to_public_contributors: true
 ms.service: system-center
 ---
 
-# Enable-SCDWJobCategory
+# Disable-SCDWJobCategory
 
 ## SYNOPSIS
-Enables all data warehouse jobs within the specified category.
+Disables all jobs within a job category.
 
 ## SYNTAX
 
 ```
-Enable-SCDWJobCategory [-JobCategoryName] <String> [-ComputerName <String>] [-Credential <PSCredential>]
+Disable-SCDWJobCategory [-JobCategoryName] <String> [-ComputerName <String>] [-Credential <PSCredential>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Enable-SCDWJobCategory** cmdlet enables all data warehouse jobs within the specified category.
+The **Disable-SCDWJobCategory** cmdlet disables all jobs within a job category.
 
 ## EXAMPLES
 
-### Example 1: Enable jobs by category
+### Example 1: Disable jobs by category
 ```
-PS C:\>Enable-SCDWJobCategory -ComputerName "serverDW72" -JobCategoryName "CubeProcessing"
+PS C:\>Disable-SCDWJobCategory -ComputerName "serverDW72" -JobCategoryName "CubeProcessing"
 ```
 
-This command enables the jobs in the `CubeProssing` category.
+This command disables the jobs in the `CubeProssing` category.
 
-### Example 2: Display job status
+### Example 2: Disable jobs using credentials
+```
+PS C:\>$credUser = Get-Credential
+PS C:\>Disable-SCDWJobCategory -ComputerName "serverDW72" -JobCategoryName "CubeProcessing" â€"Credential $credUser
+```
+
+The first command stores user credentials for the *Credential* parameter.
+
+The second command disables the jobs in the `CubeProssing` category using the specified credentials.
+
+### Example 3: Display job enabled/disabled status
 ```
 PS C:\>Get-SCDWJob -ComputerName "serverDW72" | Select-Object -Property CategoryName, IsEnabled -Unique | Format-Table -Property CategoryName, IsEnabled -AutoSize
-
-CategoryName    IsEnabled
-
-------------    ---------
-
-Synchronization      True
-
-CubeProcessing       True
-
-Transform            True
-
-Maintenance          True
-
-Extract              True
-
-Load                 True
-
-Load                False
 ```
 
 This command provides information about enabled and disabled jobs in the job categories.
-If all the jobs in the category are enabled or disabled, the value in the **IsEnabled** column in the output reflects that value.
-If at least one job in a job category has an opposite **IsEnabled** value from the other jobs in the same category, the job category name is repeated with that job's opposite **IsEnabled** value (as is the case for the `Load` category shown in the example output).
-This is achieved by using the **Unique** parameter for the **Select-Object** command.
+If all the jobs in the category are either enabled or disabled, the value in the **IsEnabled** column in the output reflects that value.
+
+If at least one job in a job category has an opposite **IsEnabled** value from the other jobs in the same category, the job category name is repeated with that value (as is the case for the `Load` category in the example output).
+This is achieved by using the **Unique** parameter with the **Select-Object** command.
 
 ## PARAMETERS
 
@@ -90,7 +83,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies the credentials to use when you are connecting to the server on which the System Center Data Access service is running.
-The provided user account must have access to that server.
+The user account that is provided must have access to that server.
 
 ```yaml
 Type: PSCredential
@@ -105,9 +98,9 @@ Accept wildcard characters: False
 ```
 
 ### -JobCategoryName
-Specifies the job category.
-You can use the **Get-SCDWJob** cmdlet to retrieve job categories.
-Valid job categories are Maintenance, Extract, Load, and Transform.
+Specifies the name of the job category.
+You can use the **Get-SCDWJob** cmdlet to retrieve this value.
+Examples of valid job categories are Maintenance, Extract, Load, and Transform.
 
 ```yaml
 Type: String
@@ -168,6 +161,4 @@ This cmdlet does not generate any output.
 ## NOTES
 
 ## RELATED LINKS
-
-[Get-SCDWJob](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJob.md)
 

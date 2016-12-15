@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xml
-online version: ./Enable-SCDWSource.md
+online version: ./Disable-SCDWSource.md
 schema: 2.0.0
-ms.assetid: 112389DD-DE52-4A21-8B5D-439DD2AED3E2
-updated_at: 12/15/2016 4:04 AM
+ms.assetid: A3467FE7-F0E7-41FD-9453-0B01C43F122D
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Disable-SCDWSource.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Disable-SCDWSource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Disable-SCDWSource.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWSource.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWSource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWSource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -17,45 +17,38 @@ open_to_public_contributors: true
 ms.service: system-center
 ---
 
-# Disable-SCDWSource
+# Enable-SCDWSource
 
 ## SYNOPSIS
-Disables all jobs that are affiliated with the specified data source.
+Enables all jobs that are associated with the specified data source.
 
 ## SYNTAX
 
 ```
-Disable-SCDWSource [-DataSourceTypeName] <String> [-DataSourceName] <String> [-ComputerName <String>]
+Enable-SCDWSource [-DataSourceTypeName] <String> [-DataSourceName] <String> [-ComputerName <String>]
  [-Credential <PSCredential>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Disable-SCDWSource** cmdlet disables all jobs that are affiliated with the specified data source.
+The **Enable-SCDWSource** cmdlet enables all jobs that are associated with the specified data source.
 
 ## EXAMPLES
 
-### Example 1: Disable a datasource and associated jobs
+### Example 1: Enable a datasource using stored credentials
 ```
-PS C:\>Disable-SCDWSource â€"ComputerName "serverDW72" -DataSourceTypeName ServiceManager -DataSourceName "SM12"
-```
-
-This command disables the `SM12` data source and all the jobs that use it.
-
-### Example 2: Disable a datasource using credentials
-```
-PS C:\>$credUser = Get-Credential
-PS C:>Disable-SCDWSource â€"ComputerName "serverDW72" -DataSourceTypeName "ServiceManager" -DataSourceName "SM12" â€"Credential $credUser
+PS C:\>$userCred = Get-Credential
+PS C:\> Enable-SCDWSource â€"ComputerName "serverDW72" -DataSourceTypeName "ServiceManager" -DataSourceName "SM12" â€"Credential $userCred
 ```
 
-The first command stores user credentials for the *Credential* parameter.
+This first command stores user credentials in the `$userCred` variable for the *Credential* parameter.
 
-The second command disables the data source using the specified credentials.
+The second command enables the `SM12` data source, using the stored credentials.
 
 ## PARAMETERS
 
 ### -ComputerName
 Specifies the name of the computer on which the System Center Data Access service is running.
-The user account that is defined in the **Credential** parameter must have access rights to the specified computer.
+The user account that is defined in the **Credential** parameter must have access rights to the specified computer. 
 You can omit this parameter only if the System Center Data Access Service is running on the same computer that has Service Manager installed.
 
 ```yaml
@@ -103,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataSourceTypeName
-Specifies the name of the type of the data source.
+Specifies the type of the data source.
 You can use the **Get-SCDWSourceType** cmdlet to retrieve **TypeNames**.
 
 ```yaml
@@ -166,13 +159,13 @@ This cmdlet does not generate any output.
 
 ## RELATED LINKS
 
-[Enable-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWSource.md)
+[Disable-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWSource.md)
 
-[Get-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWSource.md)
+[Get-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWSource.md)
 
-[Set-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWSource.md)
+[Set-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWSource.md)
 
-[Register-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Register-SCDWSource.md)
+[Register-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Register-SCDWSource.md)
 
-[Unregister-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Unregister-SCDWSource.md)
+[Unregister-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWSource.md)
 

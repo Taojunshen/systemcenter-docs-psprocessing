@@ -3,11 +3,11 @@ external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xm
 online version: ./Set-SCDWWatermark.md
 schema: 2.0.0
 ms.assetid: 96D82E13-7C44-4002-9520-CEADB1770BCC
-updated_at: 12/15/2016 4:04 AM
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWEntity.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWEntity.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWEntity.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWEntity.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWEntity.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWEntity.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -196,9 +196,9 @@ A collection of Microsoft.EnterpriseManagement.Warehouse.Cmdlets.GetSCDWEntity o
 
 ## RELATED LINKS
 
-[Set-SCDWWatermark](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWWatermark.md)
+[Set-SCDWWatermark](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWWatermark.md)
 
-[Set-SCDWRetentionPeriod](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWRetentionPeriod.md)
+[Set-SCDWRetentionPeriod](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWRetentionPeriod.md)
 
-[Get-SCDWRetentionPeriod](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWRetentionPeriod.md)
+[Get-SCDWRetentionPeriod](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWRetentionPeriod.md)
 

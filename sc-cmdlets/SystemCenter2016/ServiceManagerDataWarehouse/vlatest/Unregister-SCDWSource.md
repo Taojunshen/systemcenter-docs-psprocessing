@@ -3,11 +3,11 @@ external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xm
 online version: ./Enable-SCDWSource.md
 schema: 2.0.0
 ms.assetid: 940C3AF4-E6E3-4873-82D9-8CEAAA6784D1
-updated_at: 12/15/2016 4:04 AM
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Unregister-SCDWSource.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Unregister-SCDWSource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Unregister-SCDWSource.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWSource.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWSource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWSource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -175,13 +175,13 @@ This cmdlet does not generate any output.
 
 ## RELATED LINKS
 
-[Enable-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWSource.md)
+[Enable-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWSource.md)
 
-[Get-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWSource.md)
+[Get-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWSource.md)
 
-[Set-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWSource.md)
+[Set-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWSource.md)
 
-[Register-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Register-SCDWSource.md)
+[Register-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Register-SCDWSource.md)
 
-[Disable-SCDWSource](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Disable-SCDWSource.md)
+[Disable-SCDWSource](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWSource.md)
 

@@ -3,11 +3,11 @@ external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xm
 online version: ./Get-SCDWEntity.md
 schema: 2.0.0
 ms.assetid: 438B6165-EC62-48A6-A9F9-EF03F04B659F
-updated_at: 12/15/2016 4:04 AM
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWRetentionPeriod.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWRetentionPeriod.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWRetentionPeriod.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWRetentionPeriod.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWRetentionPeriod.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWRetentionPeriod.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -180,5 +180,5 @@ This cmdlet does not generate any output.
 
 ## RELATED LINKS
 
-[Get-SCDWEntity](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWEntity.md)
+[Get-SCDWEntity](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWEntity.md)
 

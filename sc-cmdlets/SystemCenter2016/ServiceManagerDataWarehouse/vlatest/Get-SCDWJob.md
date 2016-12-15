@@ -3,11 +3,11 @@ external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xm
 online version: ./Enable-SCDWJob.md
 schema: 2.0.0
 ms.assetid: 4A2F8A95-DA68-4690-BAF0-4395F24E2750
-updated_at: 12/15/2016 4:04 AM
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWJob.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWJob.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Get-SCDWJob.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -169,9 +169,9 @@ You cannot pipe input to this cmdlet.
 
 ## RELATED LINKS
 
-[Enable-SCDWJob](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWJob.md)
+[Enable-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md)
 
-[Get-SCDWJobModule](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJobModule.md)
+[Get-SCDWJobModule](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJobModule.md)
 
-[Start-SCDWJob](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Start-SCDWJob.md)
+[Start-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md)
 

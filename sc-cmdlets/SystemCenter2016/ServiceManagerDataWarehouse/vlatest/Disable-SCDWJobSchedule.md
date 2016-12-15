@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xml
-online version: ./Disable-SCDWJobSchedule.md
+online version: ./Enable-SCDWJobSchedule.md
 schema: 2.0.0
-ms.assetid: FE448EAF-6CB2-44CA-8CA8-87CC80B103B1
-updated_at: 12/15/2016 4:04 AM
+ms.assetid: 9ACFA5A7-C61C-41CC-B5C6-5D9A5F13F772
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Enable-SCDWJobSchedule.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Enable-SCDWJobSchedule.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Enable-SCDWJobSchedule.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobSchedule.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobSchedule.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobSchedule.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -17,38 +17,38 @@ open_to_public_contributors: true
 ms.service: system-center
 ---
 
-# Enable-SCDWJobSchedule
+# Disable-SCDWJobSchedule
 
 ## SYNOPSIS
-Enables a job schedule so that a job runs according to its schedule.
+Disables a Data Warehouse job schedule.
 
 ## SYNTAX
 
 ```
-Enable-SCDWJobSchedule [-JobName] <String> [-ComputerName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Disable-SCDWJobSchedule [-JobName] <String> [-ComputerName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Enable-SCDWJobSchedule** cmdlet enables a job schedule so that a job runs according to its specified schedule.
-If the job schedule was previously disabled, enabling the job schedule retains the job's schedule settings.
-To disable the job schedule, use the **Disable-SCDWJobSchedule** cmdlet; to modify the job's schedule, use the **Set-SCDWJobSchedule** cmdlet.
+The **Disable-SCDWJobSchedule** cmdlet disables a data warehouse job schedule, which causes the job schedule to stop initiating jobs.
+Disabling the job schedule retains the job schedule settings.
+To modify the job schedule settings, use the **Set-SCDWJobSchedule** cmdlet.
 
 ## EXAMPLES
 
-### Example 1: Enable a job schedule
+### Example 1: Disable a job schedule
 ```
-PS C:\>Enable-SCDWJobSchedule â€"ComputerName "serverDW72" â€"JobName "Transform.Common"
+PS C:\>Disable-SCDWJobSchedule â€"ComputerName "serverDW72" â€"JobName "Transform.Common"
 ```
 
-This command enables the job schedule for the `Transform.Common` job.
+This command disables the job schedule for the `Transform.Common` job.
 
-### Example 2: Display jobs and their job schedule status
+### Example 2: List enabled/disabled status of job schedules
 ```
 PS C:\>Get-SCDWJobSchedule -ComputerName "serverDW72" | Format-Table -Property Name, ScheduleEnabled
 -AutoSize
 ```
 
-The following command shows the all the jobs and whether their schedule is enabled or disabled.
+This command shows the all the jobs and whether their schedule is enabled or disabled.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Specifies the Data Warehouse job for which you want to enable the schedule.
+Specifies the Data Warehouse job for which the schedule will be disabled.
 
 ```yaml
 Type: String
@@ -131,9 +131,9 @@ This cmdlet does not generate any output.
 
 ## RELATED LINKS
 
-[Disable-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Disable-SCDWJobSchedule.md)
+[Enable-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJobSchedule.md)
 
-[Set-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Set-SCDWJobSchedule.md)
+[Get-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJobSchedule.md)
 
-[Get-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJobSchedule.md)
+[Set-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWJobSchedule.md)
 

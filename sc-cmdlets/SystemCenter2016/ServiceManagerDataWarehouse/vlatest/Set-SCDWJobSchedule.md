@@ -3,11 +3,11 @@ external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xm
 online version: ./Disable-SCDWJobSchedule.md
 schema: 2.0.0
 ms.assetid: 318EAD8D-A317-42C6-B39D-04D5C9E7FE7C
-updated_at: 12/15/2016 4:04 AM
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Set-SCDWJobSchedule.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Set-SCDWJobSchedule.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Set-SCDWJobSchedule.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWJobSchedule.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWJobSchedule.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWJobSchedule.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -219,9 +219,9 @@ You cannot configure a job with both a weekly schedule and a daily schedule.
 
 ## RELATED LINKS
 
-[Disable-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Disable-SCDWJobSchedule.md)
+[Disable-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobSchedule.md)
 
-[Enable-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWJobSchedule.md)
+[Enable-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJobSchedule.md)
 
-[Get-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJobSchedule.md)
+[Get-SCDWJobSchedule](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJobSchedule.md)
 

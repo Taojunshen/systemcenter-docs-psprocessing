@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.Warehouse.Cmdlets.dll-Help.xml
-online version: ./Get-SCDWJob.md
+online version: ./Disable-SCDWJob.md
 schema: 2.0.0
-ms.assetid: C74DF5D2-0E3C-4C7D-80ED-65DADD918E2C
-updated_at: 12/15/2016 4:04 AM
+ms.assetid: 589E2B09-B771-4B5C-9F50-65AADD6D2B69
+updated_at: 12/15/2016 6:30 PM
 ms.date: 12/15/2016
-content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Disable-SCDWJob.md
-original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Disable-SCDWJob.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManagerData%20Warehouse/vlatest/Disable-SCDWJob.md
+content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md
+original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/59ca46449cbaf6c065d4887fdd68c8de98ef34f0/systemcenter-cmdlets/SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -17,50 +17,55 @@ open_to_public_contributors: true
 ms.service: system-center
 ---
 
-# Disable-SCDWJob
+# Enable-SCDWJob
 
 ## SYNOPSIS
-Disables a data warehouse job to prevent it from running in the future.
+Enables a data warehouse job.
 
 ## SYNTAX
 
 ```
-Disable-SCDWJob [-JobName] <String> [-ComputerName <String>] [-Credential <PSCredential>] [-WhatIf] [-Confirm]
+Enable-SCDWJob [-JobName] <String> [-ComputerName <String>] [-Credential <PSCredential>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The **Disable-SCDWJob** cmdlet disables a job, which prevents it from running in the future.
-When a job is disabled, any remaining modules that have not run yet will complete.
-After the job completes its current run, it will not run according to its specified schedule and you cannot run it manually.
-
-To re-enable a disabled job, use the **Enable-SCDWJob** cmdlet.
+The **Enable-SCDWJob** cmdlet enables a data warehouse job, which allows it to run according to its specified schedule or to be started manually by using the **Start-SCDWJob** cmdlet.
+To disable a job, use the **Disable-SCDWJob** cmdlet.
 
 ## EXAMPLES
 
-### Example 1: Disable a job
+### Example 1: Enable a job
 ```
-PS C:\>Disable-SCDWJob -JobName "Extract_Contoso" â€"ComputerName "serverDW72"
+PS C:\>Enable-SCDWJob -JobName Extract_Contoso â€"ComputerName "serverDW72"
 ```
 
-This command disables the `Extract_Contoso` job.
+This command enables the `Extract_Contoso` job.
 
-### Example 2: List jobs that are enabled
+### Example 2: List jobs and display job status
 ```
 PS C:\>Get-SCDWJob -ComputerName "serverDW72" | Sort-Object -Property IsEnabled,Name | Format-Table -Property Name,IsEnabled -AutoSize
 ```
 
-This command lists the jobs according to their **IsEnabled** state.
+This command lists the jobs sorted by their **IsEnabled** value.
 
-### Example 3: Disable all jobs
+### Example 3: List disabled jobs
 ```
-PS C:\>$creduser12 = Get-Credential
-PS C:\>Get-SCDWJob -ComputerName "serverDW72" -credential $creduser12 | ForEach-Object {$_.DisableJob()}
+PS C:\>Get-SCDWJob -ComputerName "serverDW72" | Where-Object {$_.IsEnabled -eq $FALSE} | Sort-Object
+-Property IsEnabled,Name | Format-Table -Property Name,IsEnabled -AutoSize
 ```
 
-The first command obtains user credentials to store in a variable for the *Credential* parameter.
+This command shows only the jobs that are disabled.
 
-The second command disables all the jobs using the **ForEach-Object** cmdlet and the specified credentials.
+### Example 4: Enable jobs using credentials
+```
+PS C:\>$creduser1 = Get-Credential
+PS C:\> Get-SCDWJob -ComputerName "serverDW72" -credential $creduser1 | ForEach-Object {$_.EnableJob()}
+```
+
+The first command stores user credentials in a variable for the *Credential* parameter.
+
+The second command enables all the jobs using the **ForEach-Object** cmdlet.
 
 ## PARAMETERS
 
@@ -83,7 +88,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies the credentials to use when you are connecting to the server on which the System Center Data Access service is running.
-The user account that is provided must have access to that server.
+The provided user account must have access to that server.
 
 ```yaml
 Type: PSCredential
@@ -98,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobName
-Specifies the Data Warehouse job to disable.
+Specifies the Data Warehouse job to enable.
 The **JobName** parameter is a mandatory parameter.
 
 ```yaml
@@ -161,9 +166,11 @@ This cmdlet does not generate any output.
 
 ## RELATED LINKS
 
-[Get-SCDWJob](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Get-SCDWJob.md)
+[Disable-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJob.md)
 
-[Enable-SCDWJob](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Enable-SCDWJob.md)
+[Get-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md)
 
-[Start-SCDWJob](xref:SystemCenter2016/ServiceManagerData Warehouse/vlatest/Start-SCDWJob.md)
+[Start-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md)
+
+[Stop-SCDWJob](xref:SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Stop-SCDWJob.md)
 

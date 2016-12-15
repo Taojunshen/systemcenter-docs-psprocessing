@@ -16,7 +16,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+           "breadcrumb.json"
         ],
         "exclude": [
           "**/obj/**",

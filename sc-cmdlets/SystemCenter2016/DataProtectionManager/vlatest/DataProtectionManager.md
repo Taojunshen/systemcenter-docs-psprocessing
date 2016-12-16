@@ -5,11 +5,11 @@ Download Help Link:
 Help Version: 5.0.2.0
 Locale: en-US
 ms.assetid: 7BA3FAA3-C11B-452D-90E5-028AB89E9734
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/16/2016 7:04 PM
+ms.date: 12/16/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/2c6f74b28e62db8e27906fbbbcc5b66c9910f7cb/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md
 uid: SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md
 ms.topic: conceptual
 author: tarameyer
@@ -22,7 +22,7 @@ ms.service: system-center
 
 # DataProtectionManager Module
 ## Description
-This reference provides cmdlet descriptions and syntax for the System Center 2016 – Data Protection Manager (DPM) cmdlets.
+This reference provides cmdlet descriptions and syntax for the System Center 2016 Data Protection Manager (DPM) cmdlets.
 
 ## DataProtectionManager Cmdlets
 ### [Add-DPMBackupNetworkAddress](./Add-DPMBackupNetworkAddress.md)

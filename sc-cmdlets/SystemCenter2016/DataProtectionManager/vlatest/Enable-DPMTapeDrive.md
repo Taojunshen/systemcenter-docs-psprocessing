@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Disable-DPMTapeDrive.md
 schema: 2.0.0
 ms.assetid: 22CC3BF7-DCCF-4727-9CD6-D8DFFED06A38
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -31,7 +31,7 @@ Enable-DPMTapeDrive [-TapeDrive] <Drive[]> [-PassThru] [-WhatIf] [-Confirm] [<Co
 ## DESCRIPTION
 The **Enable-DPMTapeDrive** cmdlet enables the tape drives in the System Center 2016 - Data Protection Manager (DPM) library.
 
-To determine if a tape drive is enabled, use the Get-DPMTapeDrive cmdlet.
+To determine if a tape drive is enabled, use the [Get-DPMTapeDrive](./Get-DPMTapeDrive.md) cmdlet.
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ PS C:\> $DpmTapeDrive = Get-DPMTapeDrive -DPMLibrary $DpmLibrary
 PS C:\> Enable-DPMTapeDrive -TapeDrive $DpmTapeDrive
 ```
 
-The first command uses the **Get-DPMLibrary** cmdlet to get the library for the server named Contoso-DPMServer.
+The first command uses the [Get-DPMLibrary](./Get-DPMLibrary.md) cmdlet to get the library for the server named Contoso-DPMServer.
 The command stores the library in the $DpmLibrary variable.
 
 The second command uses the **Get-DPMTapeDrive** cmdlet to get the tape drives in the library, and then stores them in the variable named $DpmTapeDrive.
@@ -129,4 +129,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMLibrary](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMLibrary.md)
 
 [Get-DPMTapeDrive](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTapeDrive.md)
-

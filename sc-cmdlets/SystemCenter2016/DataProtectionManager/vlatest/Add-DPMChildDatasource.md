@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Get-DPMChildDatasource.md
 schema: 2.0.0
 ms.assetid: 728BDAB4-7B07-4B69-A6AB-635392AED42F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMChildDatasource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMChildDatasource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMChildDatasource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMChildDatasource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ You can override a data source that the **Remove-DPMChildDatasource** cmdlet pre
 
 ### Example 1: Add a child data source to a protection group
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer07"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer07"
 PS C:\> $MPGroup = Get-DPMModifiableProtectionGroup $PGroup[0]
 PS C:\> $PObjects = Get-DPMDatasource -ProductionServer "ProductionServer22"
 PS C:\> Add-DPMChildDatasource -ProtectionGroup $MPGroup -ChildDatasource $PObjects[8]
@@ -52,7 +52,7 @@ The second command gets the first protection group in the $PGroup array in edita
 
 The third command gets an array of protected and unprotected data on the production server named ProductionServer22, and then stores the array in the $PObjects variable.
 
-The final command uses standard array notation to specify the ninth element of the $PObjects array.
+The fourth command uses standard array notation to specify the ninth element of the $PObjects array.
 The command adds that data source to the protection group stored in $MPGroup.
 
 ## PARAMETERS
@@ -172,4 +172,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
 
 [Remove-DPMChildDatasource](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMChildDatasource.md)
-

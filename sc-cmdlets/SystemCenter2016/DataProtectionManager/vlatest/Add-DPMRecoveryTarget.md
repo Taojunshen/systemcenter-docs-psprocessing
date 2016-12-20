@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Get-DPMRole.md
 schema: 2.0.0
 ms.assetid: D325BA6D-3775-4135-9DA8-807F3525C145
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryTarget.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryTarget.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryTarget.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryTarget.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -45,13 +45,13 @@ The first command gets a DPM role named OpsMgrSQL, and then stores the result in
 
 The second command gets the recovery target for the role stored in the $DpmRole variable, and then stores the result in the $RecoveryTargetInstance variable.
 
-The final command grants the DPM role stored in $DpmRole permission to recover to the target instance of SQL Server stored in $RecoveryTargetInstance.
+The third command grants the DPM role stored in $DpmRole permission to recover to the target instance of SQL Server stored in $RecoveryTargetInstance.
 
 ## PARAMETERS
 
 ### -DpmRole
 Specifies a DPM role that this cmdlet modifies.
-To obtain a DPM role object, use the Get-DPMRole cmdlet.
+To obtain a DPM role object, use the [Get-DPMRole](./Get-DPMRole.md) cmdlet.
 
 ```yaml
 Type: DpmRole
@@ -123,4 +123,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Get-DPMRole](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRole.md)
-

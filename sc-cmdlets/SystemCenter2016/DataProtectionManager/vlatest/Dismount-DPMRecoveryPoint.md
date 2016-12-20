@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Get-DPMDatasource.md
 schema: 2.0.0
 ms.assetid: 5A508EC8-952C-49FE-82FA-7B3F1982C86F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Dismount-DPMRecoveryPoint.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Dismount-DPMRecoveryPoint.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Dismount-DPMRecoveryPoint.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Dismount-DPMRecoveryPoint.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -42,9 +42,9 @@ PS C:\> $DataSource = Get-DPMDatasource -ProtectionGroup $ProtectionGroup[0]
 PS C:\> Dismount-DPMRecoveryPoint -Datasource $DataSource
 ```
 
-The first command uses the Get-DPMProtectionGroup cmdlet to get the protection groups on the Data Protection Manager (DPM) server, and then stores them in the $ProtectionGroup variable.
+The first command uses the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet to get the protection groups on the Data Protection Manager (DPM) server, and then stores them in the $ProtectionGroup variable.
 
-The second command uses the Get-DPMDatasource cmdlet to get the data sources in the first protection group of the $ProtectionGroup array.
+The second command uses the [Get-DPMDatasource](./Get-DPMDatasource.md) cmdlet to get the data sources in the first protection group of the $ProtectionGroup array.
 The command stores the data sources in the $DataSource variable.
 
 The third command dismounts the replica VHD of the first data source in the $DataSource array.
@@ -57,12 +57,12 @@ PS C:\> $RecoveryPoints = Get-DPMRecoveryPoint -Datasource $Datasource[0]
 PS C:\> Dismount-DPMRecoveryPoint -Datasource $DataSource[0] -RecoveryPoint $RecoveryPoints[0]
 ```
 
-The first command uses the Get-DPMProtectionGroup cmdlet to get the protection groups on the Data Protection Manager (DPM) server, and then stores them in the $ProtectionGroup variable.
+The first command uses the **Get-DPMProtectionGroup** cmdlet to get the protection groups on the Data Protection Manager (DPM) server, and then stores them in the $ProtectionGroup variable.
 
-The second command uses the Get-DPMDatasource cmdlet to get the data sources in the first protection group in the $ProtectionGroup array.
+The second command uses the **Get-DPMDatasource** cmdlet to get the data sources in the first protection group in the $ProtectionGroup array.
 The command stores the data sources in the $DataSource variable.
 
-The third command uses the Get-DPMRecoveryPoint cmdlet to get the recovery points of the first data source in the $DataSource array, and then stores them in the $RecoveryPoints variable.
+The third command uses the [Get-DPMRecoveryPoint](./Get-DPMRecoveryPoint.md) cmdlet to get the recovery points of the first data source in the $DataSource array, and then stores them in the $RecoveryPoints variable.
 
 The fourth command dismounts the VHD corresponding to the first recovery point in the $RecoveryPoints array.
 
@@ -152,4 +152,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-DPMRecoveryPoint](xref:SystemCenter2016/DataProtectionManager/vlatest/New-DPMRecoveryPoint.md)
 
 [Remove-DPMRecoveryPoint](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRecoveryPoint.md)
-

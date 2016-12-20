@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Get-DPMTape.md
 schema: 2.0.0
 ms.assetid: 93FCF1EA-5FA6-469D-9729-4F8848700F74
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Copy-DPMTapeData.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Copy-DPMTapeData.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Copy-DPMTapeData.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Copy-DPMTapeData.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,11 +53,6 @@ Copy-DPMTapeData [-RecoveryPoint] <RecoverySource> -SourceLibrary <Library> -Tar
 The **Copy-DPMTapeData** cmdlet copies the recovery point data from a tape in System Center 2016 - Data Protection Manager (DPM).
 
 ## EXAMPLES
-
-### 1:
-```
-
-```
 
 ## PARAMETERS
 
@@ -149,7 +144,7 @@ Accept wildcard characters: False
 
 ### -RecoveryNotification
 Specifies that the recovery operation send a notification when the recovery operation finishes.
-The **New-NotificationObject** cmdlet returns the notification object.
+The [New-NotificationObject](./New-NotificationObject.md) cmdlet returns the notification object.
 
 ```yaml
 Type: NotificationObject
@@ -165,7 +160,7 @@ Accept wildcard characters: False
 
 ### -RecoveryPoint
 Specifies a recovery point that this cmdlet copies.
-To obtain a recovery point location object, use the Get-DPMRecoveryPoint cmdlet.
+To obtain a recovery point location object, use the [Get-DPMRecoveryPoint](./Get-DPMRecoveryPoint.md) cmdlet.
 
 ```yaml
 Type: RecoverySource
@@ -181,7 +176,7 @@ Accept wildcard characters: False
 
 ### -RecoveryPointLocation
 Specifies the location of a recovery point that this cmdlet copies.
-To obtain a recovery point location object, use the Get-DPMRecoveryPointLocation cmdlet.
+To obtain a recovery point location object, use the [Get-DPMRecoveryPointLocation](./Get-DPMRecoveryPointLocation.md) cmdlet.
 A recovery item may exist in more than one location for the same time, such as on a disk and tape, or on two separate tapes.
 
 ```yaml
@@ -260,7 +255,7 @@ Accept wildcard characters: False
 
 ### -Tape
 Specifies a tape from which this cmdlet copies a recovery point.
-To obtain a **Tape** object, use the Get-DPMTape cmdlet.
+To obtain a **Tape** object, use the **Get-DPMTape** cmdlet.
 
 ```yaml
 Type: Media
@@ -404,4 +399,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMTape](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTape.md)
 
 [Test-DPMTapeData](xref:SystemCenter2016/DataProtectionManager/vlatest/Test-DPMTapeData.md)
-

@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Get-DPMDatasource.md
 schema: 2.0.0
 ms.assetid: F6F0CD99-0D08-4F97-A0FC-02A8BCA307AA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,10 +48,10 @@ PS C:\> $PObjects = Get-DPMDatasource -ProtectionGroup $PGroup
 PS C:\> Edit-DPMDiskAllocation -Datasource $PObjects[1] -ReplicaSize 5368709120 -ShadowCopySize 3221225472
 ```
 
-The first command uses the **Get-DPMProtectionGroup** cmdlet to get the protection group for the server named Contoso-DPMServer.
+The first command uses the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet to get the protection group for the server named Contoso-DPMServer.
 The command stores the group in the $PGroup variable.
 
-The second command uses the **Get-DPMDatasource** cmdlet to get all data source objects for the protection group stored in $PSGroup.
+The second command uses the [Get-DPMDatasource](./Get-DPMDatasource.md) cmdlet to get all data source objects for the protection group stored in $PSGroup.
 The command stores the objects in the $PObjects variable.
 
 The last command modifies the size of the replica volume and the shadow copy volume for the second data source object stored in the $PObjects array.
@@ -164,4 +164,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMDatasource](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasource.md)
 
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
-

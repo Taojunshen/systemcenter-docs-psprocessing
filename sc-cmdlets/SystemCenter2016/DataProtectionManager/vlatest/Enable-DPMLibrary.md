@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Disable-DPMLibrary.md
 schema: 2.0.0
 ms.assetid: 9A01EA23-0FF7-4BC8-B9F2-4109784F1B2F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMLibrary.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMLibrary.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMLibrary.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMLibrary.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -30,7 +30,7 @@ Enable-DPMLibrary [-DPMLibrary] <Library[]> [-PassThru] [-WhatIf] [-Confirm] [<C
 
 ## DESCRIPTION
 The **Enable-DPMLibrary** cmdlet enables one or more System Center 2016 - Data Protection Manager (DPM) libraries.
-You can use the Disable-DPMLibrary cmdlet to disable a tape library in order to perform maintenance or repairs, and then use this cmdlet to enable it for use.
+You can use the [Disable-DPMLibrary](./Disable-DPMLibrary.md) cmdlet to disable a tape library in order to perform maintenance or repairs, and then use this cmdlet to enable it for use.
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ PS C:\>$DpmLibrary = Get-DPMLibrary -DPMServerName "DPMServer07"
 PS C:\> Enable-DPMLibrary -DPMLibrary $DpmLibrary
 ```
 
-The first command uses the **Get-DPMLibrary** cmdlet to get the tape libraries for the specified server, and then stores those objects in the $DpmLibrary variable.
+The first command uses the [Get-DPMLibrary](./Get-DPMLibrary.md) cmdlet to get the tape libraries for the specified server, and then stores those objects in the $DpmLibrary variable.
 
 The second command enables the libraries stored in $DpmLibrary.
 
@@ -48,7 +48,7 @@ The second command enables the libraries stored in $DpmLibrary.
 
 ### -DPMLibrary
 Specifies an array of DPM library objects that this cmdlet enables.
-To obtain a DPM library object, use the Get-DPMLibrary cmdlet.
+To obtain a DPM library object, use the **Get-DPMLibrary** cmdlet.
 
 ```yaml
 Type: Library[]
@@ -127,4 +127,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMLibrary](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMLibrary.md)
 
 [Rename-DPMLibrary](xref:SystemCenter2016/DataProtectionManager/vlatest/Rename-DPMLibrary.md)
-

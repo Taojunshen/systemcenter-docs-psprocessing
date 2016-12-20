@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Enable-DPMLibrary.md
 schema: 2.0.0
 ms.assetid: E7CCF0E6-9E78-4A3E-9B2D-BEBE1C3A4349
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMLibrary.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMLibrary.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMLibrary.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMLibrary.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -30,7 +30,7 @@ Disable-DPMLibrary [-DPMLibrary] <Library[]> [-PassThru] [-WhatIf] [-Confirm] [<
 
 ## DESCRIPTION
 The **Disable-DPMLibrary** cmdlet disables one or more System Center 2016 - Data Protection Manager (DPM) libraries.
-You can use this cmdlet to disable a tape library in order to perform maintenance or repairs, and then use the Enable-DPMLibrary cmdlet to enable it for use.
+You can use this cmdlet to disable a tape library in order to perform maintenance or repairs, and then use the [Enable-DPMLibrary](./Enable-DPMLibrary.md) cmdlet to enable it for use.
 
 ## EXAMPLES
 
@@ -127,4 +127,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMLibrary](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMLibrary.md)
 
 [Rename-DPMLibrary](xref:SystemCenter2016/DataProtectionManager/vlatest/Rename-DPMLibrary.md)
-

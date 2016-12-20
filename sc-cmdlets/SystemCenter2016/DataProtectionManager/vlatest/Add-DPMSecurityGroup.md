@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Get-DPMSecurityGroup.md
 schema: 2.0.0
 ms.assetid: 0D5CD01F-43BA-4CE8-86B0-F52F610D27CF
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMSecurityGroup.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMSecurityGroup.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMSecurityGroup.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMSecurityGroup.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -31,11 +31,11 @@ Add-DPMSecurityGroup [-DpmRole] <DpmRole> [-SecurityGroups] <String[]> [-WhatIf]
 
 ## DESCRIPTION
 The **Add-DPMSecurityGroup** cmdlet adds one or more security groups to a System Center 2016 - Data Protection Manager (DPM) role.
-You can use the Get-DPMRoleto specify a DPM role.
-Use the Set-DPMRole cmdlet to save your changes.
+You can use the [Get-DPMRole](./Get-DPMRole.md) to specify a DPM role.
+Use the [Set-DPMRole](./Set-DPMRole.md) cmdlet to save your changes.
 
-You can see the security groups for a DPM role by using the Get-DPMSecurityGroup cmdlet.
-You can use the Remove-DPMSecurityGroup cmdlet to remove security groups from a DPM role.
+You can see the security groups for a DPM role by using the [Get-DPMSecurityGroup](./Get-DPMSecurityGroup.md) cmdlet.
+You can use the [Remove-DPMSecurityGroup](./Remove-DPMSecurityGroup.md) cmdlet to remove security groups from a DPM role.
 
 ## EXAMPLES
 
@@ -133,4 +133,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMRole](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRole.md)
 
 [Set-DPMRole](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMRole.md)
-

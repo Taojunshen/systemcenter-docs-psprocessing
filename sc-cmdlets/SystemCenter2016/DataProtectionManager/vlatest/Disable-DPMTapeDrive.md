@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Enable-DPMTapeDrive.md
 schema: 2.0.0
 ms.assetid: D3DFE385-039F-4FB5-A6AC-6D05C3B55292
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMTapeDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMTapeDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMTapeDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMTapeDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,9 +40,9 @@ PS C:\> $DpmTapeDrive = Get-DPMTapeDrive -DPMLibrary $DpmLibrary
 PS C:\> Disable-DPMTapeDrive -TapeDrive $DpmTapeDrive
 ```
 
-The first command uses the **Get-DPMLibrary** cmdlet to retrieve the library, and then stores it in the $DpmLibrary variable.
+The first command uses the [Get-DPMLibrary](./Get-DPMLibrary.md) cmdlet to get the library, and then stores it in the $DpmLibrary variable.
 
-The second command uses the **Get-DPMTapeDrive** cmdlet to retrieve the tapes in the library, and then stores them in the $DpmTapeDrive variable.
+The second command uses the [Get-DPMTapeDrive](./Get-DPMTapeDrive.md) cmdlet to get the tapes in the library, and then stores them in the $DpmTapeDrive variable.
 
 The third command disables the tape drives in $DpmTapeDrive.
 
@@ -126,4 +126,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMLibrary](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMLibrary.md)
 
 [Get-DPMTapeDrive](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTapeDrive.md)
-

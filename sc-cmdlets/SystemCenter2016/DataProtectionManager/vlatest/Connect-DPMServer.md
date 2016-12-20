@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Disconnect-DPMServer.md
 schema: 2.0.0
 ms.assetid: 38180443-05A7-481B-A722-91541EDDB664
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -DPMServerScope
 Specifies a DPM server scope object.
-To create a DPM scope object, use the New-DPMServerScope cmdlet.
+To create a DPM scope object, use the [New-DPMServerScope](./New-DPMServerScope.md) cmdlet.
 
 ```yaml
 Type: DpmServerScope
@@ -114,4 +114,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Disconnect-DPMServer](xref:SystemCenter2016/DataProtectionManager/vlatest/Disconnect-DPMServer.md)
 
 [New-DPMServerScope](xref:SystemCenter2016/DataProtectionManager/vlatest/New-DPMServerScope.md)
-

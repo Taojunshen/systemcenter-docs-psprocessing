@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: A4231AB4-10C8-41CD-9380-80099BA9FC93
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryItem.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryItem.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryItem.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryItem.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,6 +20,7 @@ ms.service: system-center
 # Add-DPMRecoveryItem
 
 ## SYNOPSIS
+Adds a DPM recovery item.
 
 ## SYNTAX
 
@@ -36,13 +37,9 @@ Add-DPMRecoveryItem [-DpmRole] <DpmRole> [-Type] <AmDatasourceType> [-Datasource
 ```
 
 ## DESCRIPTION
+The **Add-DPMRecoveryItem** cmdlet adds a recovery item to a System Center 2016 - Data Protection Manager (DPM) server.
 
 ## EXAMPLES
-
-### 1:
-```
-
-```
 
 ## PARAMETERS
 
@@ -62,7 +59,8 @@ Accept wildcard characters: False
 ```
 
 ### -DpmRole
-
+Specifies a DPM role that this cmdlet modifies.
+To obtain a DPM role object, use the [Get-DPMRole](./Get-DPMRole.md) cmdlet.
 
 ```yaml
 Type: DpmRole
@@ -92,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-
+Specifies an array of DPM job types.
 
 ```yaml
 Type: AmDatasourceType
@@ -152,4 +150,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMRecoveryItem](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryItem.md)
 
 [Remove-DPMRecoveryItem](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRecoveryItem.md)
-

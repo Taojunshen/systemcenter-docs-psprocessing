@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: ./Get-DPMDiskStorage.md
 schema: 2.0.0
 ms.assetid: E22743DB-600A-4AAF-AFEB-8B8D15675D56
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 10:56 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMDiskStorage.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMDiskStorage.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMDiskStorage.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Add-DPMDiskStorage.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,8 +44,8 @@ Add-DPMDiskStorage [-Volume] <Volume> [[-Subdirectory] <String>] [[-FriendlyName
 The **Add-DPMDiskStorage** cmdlet adds a disk or a volume to the storage pool on a System Center 2016 - Data Protection Manager (DPM) server.
 A storage pool on a DPM server consists of a set of disks where the server stores replicas, shadow copies, and transfer logs for protected data sources and a set of Resilient File System (ReFS) volumes in which the server stores replica virtual hard disks (VHDs).
 
-To get a list of all disks on a DPM server, use the Get-DPMDiskStorage cmdlet.
-To get a list of all volumes on a DPM server, use the Get-DPMDiskStorage cmdlet with the *-All* and *-Volumes* parameters specified.
+To get a list of all disks on a DPM server, use the [Get-DPMDiskStorage](./Get-DPMDiskStorage.md) cmdlet.
+To get a list of all volumes on a DPM server, use the **Get-DPMDiskStorage** cmdlet with the *-All* and *-Volumes* parameters specified.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ PS C:\>$disks = Get-DPMDiskStorage -DPMServerName "TestingServer"
 PS C:\> Add-DPMDiskStorage -DPMDisk $disks
 ```
 
-The first command uses Get-DPMDiskStorage to get a list of disks attached to the DPM server named TestingServer and stores the list in the $disks variable.
+The first command uses **Get-DPMDiskStorage** to get a list of disks attached to the DPM server named TestingServer and stores the list in the $disks variable.
 
 ### Example 2: Add volumes to DPM storage pool
 ```
@@ -63,7 +63,7 @@ PS C:\>$volumes = Get-DPMDiskStorage -DPMServerName "TestingServer" -Volumes -Al
 PS C:\> Add-DPMDiskStorage -Volumes $volumes
 ```
 
-The first command uses the Get-DPMDiskStorage cmdlet to get a list of volumes available in the DPM server named TestingServer.
+The first command uses the **Get-DPMDiskStorage** cmdlet to get a list of volumes available in the DPM server named TestingServer.
 It stores them in the $volumes variable.
 
 The second command adds all volumes in $volumes to the DPM storage pool.
@@ -220,4 +220,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Get-DPMDiskStorage](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDiskStorage.md)
-

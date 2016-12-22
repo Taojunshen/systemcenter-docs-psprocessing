@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 0A8395BF-CDB4-4E63-A19B-09F0D0190F88
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:45 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/69b4a56d68a4e0923028e6be0f8a829d73f2d10b/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -255,7 +255,7 @@ Specifies a virtual network adapter object for a virtual machine.
 
 Types of hosts support the following number of virtual network adapters: 
 
- -- Hyper-V. 
+- Hyper-V. 
 Up to four emulated adapters per virtual machine.
 There is no driver available for an emulated network adapter on a Windows Server 2003 x64 guest operating system.
 - Hyper-V. 

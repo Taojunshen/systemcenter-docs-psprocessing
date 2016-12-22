@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.ServiceManager.Cmdlets.dll-Help.xml
-online version: http://go.microsoft.com/fwlink/p/?LinkId=225366
+online version: 
 schema: 2.0.0
 ms.assetid: 7396795C-8809-4F64-BF27-46C2B72AE5DB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManager/vlatest/Remove-SCSMEmailTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/ServiceManager/vlatest/Remove-SCSMEmailTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/ServiceManager/vlatest/Remove-SCSMEmailTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/ServiceManager/vlatest/Remove-SCSMEmailTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

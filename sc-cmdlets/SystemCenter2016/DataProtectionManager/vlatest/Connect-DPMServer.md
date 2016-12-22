@@ -1,13 +1,13 @@
 ---
 external help file: ObjectModelCmdlet.dll-Help.xml
-online version: ./Disconnect-DPMServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 38180443-05A7-481B-A722-91541EDDB664
-updated_at: 12/20/2016 10:56 PM
-ms.date: 12/20/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

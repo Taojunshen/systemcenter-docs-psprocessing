@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: 5d1397ab-f265-4bf5-8445-77d60fb220da
+online version: 
 schema: 2.0.0
 ms.assetid: 8C5FD598-61CA-41CF-B8D4-45C162133179
-updated_at: 12/20/2016 5:21 PM
-ms.date: 12/20/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/485d58d80386539445685faae8425bdc96723376/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

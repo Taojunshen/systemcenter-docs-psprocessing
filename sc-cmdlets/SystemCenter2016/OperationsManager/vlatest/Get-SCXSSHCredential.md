@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.CrossPlatform.PowerShell.dll-Help.xml
-online version: 3ffd34f8-0d88-4740-b321-323be5fb894c
+online version: 
 schema: 2.0.0
 ms.assetid: 74CC79EC-B0B6-48DB-B51A-2D068F34B089
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCXSSHCredential.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCXSSHCredential.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCXSSHCredential.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCXSSHCredential.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

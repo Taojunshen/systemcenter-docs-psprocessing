@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: d82190a7-0e00-4d9e-a2ba-9cca543063db
+online version: 
 schema: 2.0.0
 ms.assetid: 8AD05433-760A-451D-9A48-FD9C3D313CB5
-updated_at: 12/20/2016 4:46 PM
-ms.date: 12/20/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/94a19c388d35167727d61daa8d59367c5c24c63e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

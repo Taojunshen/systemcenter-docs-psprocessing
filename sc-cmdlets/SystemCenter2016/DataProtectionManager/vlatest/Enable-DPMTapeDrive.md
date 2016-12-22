@@ -1,13 +1,13 @@
 ---
 external help file: ObjectModelCmdlet.dll-Help.xml
-online version: ./Disable-DPMTapeDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: 22CC3BF7-DCCF-4727-9CD6-D8DFFED06A38
-updated_at: 12/20/2016 10:56 PM
-ms.date: 12/20/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

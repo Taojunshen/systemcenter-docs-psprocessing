@@ -1,13 +1,13 @@
 ---
 external help file: ObjectModelCmdlet.dll-Help.xml
-online version: ./Get-DPMDatasource.md
+online version: 
 schema: 2.0.0
 ms.assetid: F6F0CD99-0D08-4F97-A0FC-02A8BCA307AA
-updated_at: 12/20/2016 10:56 PM
-ms.date: 12/20/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/39ebc8b68768998222371964f8e90b8160cbfe0a/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

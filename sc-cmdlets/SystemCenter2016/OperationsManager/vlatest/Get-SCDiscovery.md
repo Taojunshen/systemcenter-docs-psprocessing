@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.EnterpriseManagement.Core.Cmdlets.dll-Help.xml
-online version: 7123a5d8-f693-4b5f-ac54-8d118006202a
+online version: 
 schema: 2.0.0
 ms.assetid: 655A9353-5415-4A02-A6A9-9EBD69AD4951
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCDiscovery.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCDiscovery.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCDiscovery.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/OperationsManager/vlatest/Get-SCDiscovery.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

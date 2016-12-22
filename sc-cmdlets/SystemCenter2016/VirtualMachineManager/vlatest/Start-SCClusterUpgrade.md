@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: 15ae10d1-5cb5-4f03-aad8-2433553a59ae
+online version: 
 schema: 2.0.0
 ms.assetid: 25AC3475-8E83-41D0-97BE-4A951638684C
-updated_at: 12/21/2016 3:38 PM
-ms.date: 12/21/2016
+updated_at: 12/22/2016 5:54 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/a51d03bb01e0880c7a55012878712b9f03d07b9c/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman

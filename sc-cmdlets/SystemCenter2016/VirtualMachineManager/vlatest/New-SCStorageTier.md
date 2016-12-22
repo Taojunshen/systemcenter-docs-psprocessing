@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: a5703917-d9f5-4e61-a19f-46b7ac7a7e8a
 schema: 2.0.0
 ms.assetid: 2661BB9D-A135-4AAA-B1E3-140A403336AC
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageTier.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageTier.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageTier.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageTier.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,14 +46,14 @@ As part of creating the Storage Tier, you can specify the media type (HDD, SSD) 
 
 ### Example 1: Create a storage tier on non-S2D system
 ```
-PS C:\>New-SCStorageTier -MediaType "SSD" -SizeMB 1024 -NumberOfColumns 2 -PhysicalDiskRedundancy
+PS C:\> New-SCStorageTier -MediaType "SSD" -SizeMB 1024 -NumberOfColumns 2 -PhysicalDiskRedundancy
 ```
 
 This command creates a storage tier on a non-S2D system.
 
 ### Example 2: Create a storage tier on S2D system
 ```
-PS C:\>New-SCStorageTier -StorageTierFriendlyName "Performance" -StorageTierSizeInMB 1024 -RunAsynchronously -JobGroup "191de146-dbec-4955-a347-70edd4315c41"
+PS C:\> New-SCStorageTier -StorageTierFriendlyName "Performance" -StorageTierSizeInMB 1024 -RunAsynchronously -JobGroup "191de146-dbec-4955-a347-70edd4315c41"
 ```
 
 This command creates a storage tier on an S2D system.
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageTierSizeInMB
-{{Fill StorageTierSizeInMB Description}}
+
 
 ```yaml
 Type: UInt64

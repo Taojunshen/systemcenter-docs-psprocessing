@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVPNConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: 15AE10D1-5CB5-4F03-AAD8-2433553A59AE
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVPNConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVPNConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVPNConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVPNConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -67,7 +67,7 @@ The **Add-SCVPNConnection** cmdlet adds a virtual private network (VPN) connecti
 
 ### Example 1: Adds a VPN connection
 ```
-PS C:\>$VmNetworkGateway = Get-SCVMNetworkGateway -Name "VMGateway01"
+PS C:\> $VmNetworkGateway = Get-SCVMNetworkGateway -Name "VMGateway01"
 PS C:\> $RunAsAccount = Get-SCRunAsAccount -ID "972567d5-96ad-472e-9790-831bae5fd69c" 
 PS C:\> $VpnConnection = Add-SCVPNConnection -AuthenticationMethod "PSKOnly" -AuthenticationTransformConstants "SHA196" -CipherTransformConstants "AES256" -DHGroup "Group2" -EncryptionMethod "AES256" -IntegrityCheckMethod "SHA1" -PFSGroup "PFS2048" -Protocol "IKEv2" -Name "IPSec" -TargetIPv4VPNAddress "100.100.100.100" -Secret $RunAsAccount -VMNetworkGateway $VmNetworkGateway
 ```
@@ -506,7 +506,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -633,7 +633,7 @@ Accept wildcard characters: False
 ### -Secret
 Specifies a Run As account.
 
-To obtain a Run As account, use the Get-SCRunAsAccount cmdlet.
+To obtain a Run As account, use the **Get-SCRunAsAccount** cmdlet.
 
 ```yaml
 Type: RunAsAccount
@@ -695,7 +695,7 @@ Accept wildcard characters: False
 ### -VMNetworkGateway
 Specifies a virtual machine network gateway object.
 
-To obtain a **VMNetworkGateway** object, use the Get-SCVMNetworkGateway cmdlet.
+To obtain a **VMNetworkGateway** object, use the **Get-SCVMNetworkGateway** cmdlet.
 
 ```yaml
 Type: VMNetworkGateway

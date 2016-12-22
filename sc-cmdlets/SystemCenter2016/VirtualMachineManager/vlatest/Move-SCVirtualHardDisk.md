@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: 49C15197-B9C3-4897-A2A6-72769032A343
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVirtualHardDisk.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVirtualHardDisk.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVirtualHardDisk.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVirtualHardDisk.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,7 +44,7 @@ Move-SCVirtualHardDisk [-VirtualHardDisk] <StandaloneVirtualHardDisk> [-JobGroup
 
 ## DESCRIPTION
 The **Move-SCVirtualHardDisk** cmdlet moves a Windows-based virtual hard disk file (a .vhd file) or a VMware-based virtual hard disk file (a .vmdk file) from one location to another on the same host.
-You can also use **Move-SCVirtualHardDisk** with the Move-SCVirtualMachine cmdlet to move a virtual hard disk file to a location on a different host. 
+You can also use **Move-SCVirtualHardDisk** with the **Move-SCVirtualMachine** cmdlet to move a virtual hard disk file to a location on a different host. 
 
 
  
@@ -83,7 +83,7 @@ Usage examples:
 
 ### Example 1: Move a virtual hard disk file from one location to another on the same host
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $VHD = $VM.VirtualHardDisks[0]
 PS C:\> Move-SCVirtualHardDisk -VirtualHardDisk $VHD -Path "C:\VHDs"
 ```
@@ -175,11 +175,8 @@ Accept wildcard characters: False
 ### -LUN
 Specifies the logical unit number (LUN) for a virtual disk drive object or for a virtual DVD drive object on an IDE bus, or for a virtual disk drive object on a SCSI bus. 
 
-
-
-Example format: ` -IDE -Bus 1 -LUN 0`
-
-Example format: `-SCSI -Bus 0 -LUN 1`
+- Example format: `-IDE -Bus 1 -LUN 0`
+- Example format: `-SCSI -Bus 0 -LUN 1`
 
 ```yaml
 Type: Byte
@@ -212,19 +209,13 @@ Accept wildcard characters: False
 ### -Path
 Specifies the destination path for the operation. 
 
-
-
 Example formats: 
 
- Local path:       `-Path "F:\"`
-
- UNC path:         `-Path "\\\\Library\Templates"`
-
- Volume GUID path: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
-
- VMware ESX path:  `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
-
- Citrix XenServer path: `-Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
+- Local path:       `-Path "F:\"`
+- UNC path:         `-Path "\\\\Library\Templates"`
+- Volume GUID path: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
+- VMware ESX path:  `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
+- Citrix XenServer path: `-Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
 
 ```yaml
 Type: String

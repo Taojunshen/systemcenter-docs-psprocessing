@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalSwitch.md
+online version: 
 schema: 2.0.0
 ms.assetid: 87F3D3CA-8308-4B82-8305-9F6722BD4139
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -103,7 +103,7 @@ To change a network adapter profile, you must remove the network adapter profile
 
 ### Example 1: Create a generic physical host network adapter profile by using DHCP
 ```
-PS C:\>New-SCVMHostNetworkAdapterProfile -SetAsPhysicalNetworkAdapter -SetAsGenericNIC -UseDhcpForIPConfiguration -ConsistentDeviceName "Physical host network adapter profile 01"
+PS C:\> New-SCVMHostNetworkAdapterProfile -SetAsPhysicalNetworkAdapter -SetAsGenericNIC -UseDhcpForIPConfiguration -ConsistentDeviceName "Physical host network adapter profile 01"
 ```
 
 This command creates a physical host network adapter profile.
@@ -113,7 +113,7 @@ Additionally, DHCP is used to obtain an IP address for the network adapter.
 
 ### Example 2: Create a physical network adapter profile with a logical switch
 ```
-PS C:\>$LogSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
+PS C:\> $LogSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
 PS C:\> $UplinkPortProfSet = Get-SCUplinkPortProfileSet -Name "UplinkPortProfileSet01"
 PS C:\> New-SCVMHostNetworkAdapterProfile -SetAsPhysicalNetworkAdapter -LogicalSwitch $LogSwitch -UplinkPortProfileSet $UplinkPortProfSet -ConsistentDeviceName "Physical host network adapter profile 02"
 ```
@@ -126,7 +126,7 @@ The last command creates a physical host network adapter profile using LogicalSw
 
 ### Example 3: Create a management virtual host network adapter profile by using a static IP address
 ```
-PS C:\>$TransMgmtNIC = Get-SCVMHostNetworkAdapterProfile -ID "259f47c7-c5a9-429d-a421-d232f9b34991"
+PS C:\> $TransMgmtNIC = Get-SCVMHostNetworkAdapterProfile -ID "259f47c7-c5a9-429d-a421-d232f9b34991"
 PS C:\> $LogSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
 PS C:\> $VMNetwork = Get-SCVMNetwork -Name "VMNetwork01"
 PS C:\> New-SCVMHostNetworkAdapterProfile -SetAsVirtualNetworkAdapter -SetAsManagementNIC -TransientManagementNetworkAdapter $TransMgmtNIC -UseStaticIPForIPConfiguration -LogicalSwitch $LogSwitch -VMNetwork $VMNetwork
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ### -UplinkPortProfileSet
 Specifies an uplink port profile set object.
 
-To obtain an uplink port profile set object, use the Get-SCUplinkPortProfileSet cmdlet.
+To obtain an uplink port profile set object, use the **Get-SCUplinkPortProfileSet** cmdlet.
 
 ```yaml
 Type: UplinkPortProfileSet
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ### -VMNetwork
 Specifies a VM network object.
 
-To get a VM network object, use the Get-SCVMNetwork cmdlet.
+To get a VM network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork

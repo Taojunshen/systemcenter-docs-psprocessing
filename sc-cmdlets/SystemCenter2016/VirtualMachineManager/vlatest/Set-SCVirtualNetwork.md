@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualNetwork.md
+online version: 
 schema: 2.0.0
 ms.assetid: 3E836105-1385-4898-86C2-DCD4CA0142D2
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetwork.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetwork.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetwork.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetwork.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -71,7 +71,7 @@ If the host is a Hyper-V host, you can also  configure whether virtual machines 
 
 ### Example 1: Unbind a virtual network from a host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> $VirtualNetwork = Get-SCVirtualNetwork -VMHost $VMHost -Name "InternalVNet01"
 PS C:\> Set-SCVirtualNetwork -VirtualNetwork $VirtualNetwork -Name "UnboundVNet01" -BoundToVMHost $False
 ```

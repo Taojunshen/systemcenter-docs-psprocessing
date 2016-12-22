@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Find-SCJob.md
+online version: 
 schema: 2.0.0
 ms.assetid: 5CC8127C-203E-4A65-B66A-FB75A7DD5295
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCJob.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCJob.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ Restarting a job displays the object properties of the job to the user and shows
 
 ### Example 1: Restart all jobs that were cancelled on a specific virtual machine
 ```
-PS C:\>$Creds = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $Creds = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> Get-SCJob | where { $_.ResultName -eq "VM01" -and $_.Status -eq "Canceled" } | Restart-SCJob -Credential $Creds
 ```
 
@@ -50,7 +50,7 @@ The second command gets all VMM jobs from the VMM database, selects only jobs on
 
 ### Example 2: Restart a specific job
 ```
-PS C:\>$Creds = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $Creds = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> Get-SCJob -ID "cb3a0f0a-9fbc-4bd0-a999-3fae8cd77177" | Restart-SCJob -Credential $Creds
 ```
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -154,7 +154,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **Job** object.
 
 ## NOTES
-* This cmdlet requires a VMM job object, which can be retrieved by using the Get-SCJob cmdlet.
+* This cmdlet requires a VMM job object, which can be retrieved by using the **Get-SCJob** cmdlet.
 
 ## RELATED LINKS
 

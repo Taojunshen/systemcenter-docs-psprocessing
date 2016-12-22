@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMConfiguration.md
+online version: 
 schema: 2.0.0
 ms.assetid: 27B4C054-D7B6-40C7-86D2-D326E9D8FF40
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -66,7 +66,7 @@ The virtual machine configuration is used to specify instance-specific values to
 
 ### Example 1: Create a virtual machine configuration for placement of a virtual machine on a host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup -Name "Production"
+PS C:\> $HostGroup = Get-SCVMHostGroup -Name "Production"
 PS C:\> $VMTemplate = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
 PS C:\> $VMConfig = New-SCVMConfiguration -VMTemplate $VMTemplate -VMHostGroup $HostGroup -CostCenter 1234 -Name "VMConfig01"
 ```
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ### -OnBehalfOfUserRole
 Specifies a user role.
 This cmdlet sets the on behalf of user role as the user role that this parameter specifies.
-To obtain a user role object, use the Get-SCUserRole cmdlet.
+To obtain a user role object, use the **Get-SCUserRole** cmdlet.
 
 ```yaml
 Type: UserRole
@@ -337,7 +337,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VMConfiguration** object.
 
 ## NOTES
-* Requires a VMM virtual machine template object, which you can obtain by using the Get-SCVMTemplate cmdlet.
+* Requires a VMM virtual machine template object, which you can obtain by using the **Get-SCVMTemplate** cmdlet.
 
 ## RELATED LINKS
 

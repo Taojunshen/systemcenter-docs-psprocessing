@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCSQLDeployment.md
+online version: 
 schema: 2.0.0
 ms.assetid: 0917556B-6339-4A88-B898-B11D3D935FBD
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCSQLDeployment.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCSQLDeployment.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCSQLDeployment.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCSQLDeployment.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ The **Add-SCSQLDeployment** cmdlet adds a Microsoft SQL Server deployment to a S
 
 ### Example 1: Add a SQL Server deployment to a SQL Server profile
 ```
-PS C:\>$SQLProfile = Get-SCSQLProfile -Name "SQLProfile01"
+PS C:\> $SQLProfile = Get-SCSQLProfile -Name "SQLProfile01"
 PS C:\> $DeploymentRunAsProfile = Get-SCRunAsProfile -Name "NTSystemRAP"
 PS C:\> $SARunAsProfile = Get-SCRunAsProfile -Name "SQLAdminRAP"
 PS C:\> $SQLSvcsRunAsProfile = Get-SCRunAsProfile -Name "NTSystemRAP"

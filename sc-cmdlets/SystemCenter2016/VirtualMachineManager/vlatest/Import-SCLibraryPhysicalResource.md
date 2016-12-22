@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Export-SCLibraryPhysicalResource.md
+online version: 
 schema: 2.0.0
 ms.assetid: ABA52F8C-4F62-4EA6-A763-5764182EBC76
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCLibraryPhysicalResource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCLibraryPhysicalResource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCLibraryPhysicalResource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCLibraryPhysicalResource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ Self-service users can only import resources into their designated user role dat
 
 ### Example 1: Import a library resource by an administrator or delegated administrator
 ```
-PS C:\>Import-SCLibraryPhysicalResource -SourcePath "C:\AdminFolder\VHD01.vhd" -SharePath "\\VMMLibraryServer\MSSCVMMLibrary\ImportedLibraryResources" -OverwriteExistingFiles
+PS C:\> Import-SCLibraryPhysicalResource -SourcePath "C:\AdminFolder\VHD01.vhd" -SharePath "\\VMMLibraryServer\MSSCVMMLibrary\ImportedLibraryResources" -OverwriteExistingFiles
 ```
 
 This command imports the virtual hard disk named VHD01.vhd stored in the folder named C:\AdminFolder into the specified library path.
@@ -45,14 +45,14 @@ If a resource with that name already exists in that library path, this command w
 
 ### Example 2: Import a library resource by a self-service user by specifing a path under the default user role data path in the VMM library
 ```
-PS C:\>Import-SCLibraryPhysicalResource -SourcePath "C:\SSFolder\VHD01.vhd" -SharePath "\\<DefaultUserRoleDataPath>\SSUserSubfolder\Folder01"
+PS C:\> Import-SCLibraryPhysicalResource -SourcePath "C:\SSFolder\VHD01.vhd" -SharePath "\\<DefaultUserRoleDataPath>\SSUserSubfolder\Folder01"
 ```
 
 This command imports the virtual hard disk named VHD01 from the folder named C:\SSFolder to the SSUserSubFolder\Folder01 folder stored under the default user role data path for the self-service user role of which the logged on user is a member.
 
 ### Example 3: Import a library resource by a self-service user to the default user role data path in the VMM library
 ```
-PS C:\>Import-SCLibraryPhysicalResource -SourcePath "C:\SSFolder\VHD01.vhd"
+PS C:\> Import-SCLibraryPhysicalResource -SourcePath "C:\SSFolder\VHD01.vhd"
 ```
 
 This command imports the file named VHD01.vhd stored in C:\SSFolder to the default user role data path for the self-service user role of which the logged on user is a member.

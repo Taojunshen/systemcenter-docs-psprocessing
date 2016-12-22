@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageFileShare.md
+online version: 
 schema: 2.0.0
 ms.assetid: DDA91FA5-8588-4E45-AEE3-D837E4A2DB85
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageFileShare.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageFileShare.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageFileShare.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageFileShare.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -81,7 +81,7 @@ The **New-SCStorageFileShare** cmdlet creates a storage file share in Virtual Ma
 
 ### Example 1: Create a storage file share
 ```
-PS C:\>$FileServer = Get-SCStorageFileServer -Name "FileServer01.Contoso.com"
+PS C:\> $FileServer = Get-SCStorageFileServer -Name "FileServer01.Contoso.com"
 PS C:\> New-SCStorageFileShare -Name "FileShare02" -StorageFileServer $FileServer -LocalPath "C:\FileShare02"
 ```
 
@@ -91,7 +91,7 @@ The second command creates a storage file share named FileShare02 on FileServer0
 
 ### Example 2: Create a tiered storage file share on a shared SOFS
 ```
-PS C:\>$FileServer = Get-SCStorageFileServer -Name "FileServer01.Contoso.com"
+PS C:\> $FileServer = Get-SCStorageFileServer -Name "FileServer01.Contoso.com"
 PS C:\> $StoragePool = Get-SCStoragePool -Name "Pool01"
 PS C:\> New-SCStorageTier -MediaType "SSD" -SizeMB 1024  -PhysicalDiskRedundancy "2" -ResiliencySettingName "Mirror" -RunAsynchronously -JobGroup "2e42beba-fb19-4c15-94e6-64a54012dce3"
 PS C:\> New-SCStorageTier -MediaType "HDD" -SizeMB 1024  -PhysicalDiskRedundancy "2" -ResiliencySettingName "Parity" -RunAsynchronously -JobGroup "2e42beba-fb19-4c15-94e6-64a54012dce3"
@@ -112,7 +112,7 @@ The command uses values created in previous commands.
 
 ### Example 3: Create a tiered storage file share on an S2D system
 ```
-PS C:\>$FileServer = Get-SCStorageFileServer -Name "FileServer01.Contoso.com"
+PS C:\> $FileServer = Get-SCStorageFileServer -Name "FileServer01.Contoso.com"
 PS C:\> $StoragePool = Get-SCStoragePool -Name "S2DPool01"
 PS C:\> New-SCStorageTier -StorageTierFriendlyName "Performance" -StorageTierSizeInMB 1024 -RunAsynchronously -JobGroup "2e42beba-fb19-4c15-94e6-64a54012dce3"
 PS C:\> New-SCStorageTier -StorageTierFriendlyName "Capacity" -StorageTierSizeInMB 1024 -RunAsynchronously -JobGroup "2e42beba-fb19-4c15-94e6-64a54012dce3"
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobGroup
-
+Specifies an identifier for a series of commands that will run as a set just before the final command that includes the same job group identifier runs.
 
 ```yaml
 Type: Guid

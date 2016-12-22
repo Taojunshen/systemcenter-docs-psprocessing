@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 2af46671-df2a-4372-aed6-682619e368c1
 schema: 2.0.0
 ms.assetid: 3E0AA3D9-A251-4E65-8360-F9302C2F05E5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 5:21 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterExtensionPortProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterExtensionPortProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterExtensionPortProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/485d58d80386539445685faae8425bdc96723376/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterExtensionPortProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,10 +53,6 @@ The **Get-SCVirtualNetworkAdapterExtensionPortProfile** cmdlet gets one or more 
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 
@@ -108,7 +104,7 @@ Accept wildcard characters: False
 ### -VirtualSwitchExtension
 Specifies a virtual switch extension object.
 
-To get a virtual switch extension object, use the Get-SCVirtualSwitchExtension cmdlet.
+To get a virtual switch extension object, use the **Get-SCVirtualSwitchExtension** cmdlet.
 
 ```yaml
 Type: VirtualSwitchExtension
@@ -125,7 +121,7 @@ Accept wildcard characters: False
 ### -VirtualSwitchExtensionManager
 Specifies a virtual switch extension manager object.
 
-To obtain a virtual switch extension manager object, use the Get-SCVirtualSwitchExtensionManager cmdlet.
+To obtain a virtual switch extension manager object, use the **Get-SCVirtualSwitchExtensionManager** cmdlet.
 
 ```yaml
 Type: VirtualSwitchExtensionManager

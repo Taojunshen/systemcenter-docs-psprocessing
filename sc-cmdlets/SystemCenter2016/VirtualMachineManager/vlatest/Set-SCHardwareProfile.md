@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHardwareProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 28FE2E7A-2E73-4324-81BD-0C4D8C8059D5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:13 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHardwareProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHardwareProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHardwareProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHardwareProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,7 +48,7 @@ Set-SCHardwareProfile [-HardwareProfile] <HardwareProfile> [-HighlyAvailable <Bo
 The **Set-SCHardwareProfile** cmdlet changes one or more properties of a hardware profile object used in a Virtual Machine Manager (VMM) environment.
 Properties that you can change include settings for boot order, CPU settings, the amount memory on the host that is assigned to a virtual machine, and other options.
 
-To change the properties of a virtual floppy drive, virtual DVD drive, virtual COM port, virtual network adapter, or virtual SCSI adapter associated with a specific hardware profile, use the Set-SCVirtualFloppyDrive, Set-SCVirtualDVDDrive, Set-SCVirtualCOMPort, Set-SCVirtualNetworkAdapter, or Set-SCVirtualScsiAdapter cmdlets, respectively.
+To change the properties of a virtual floppy drive, virtual DVD drive, virtual COM port, virtual network adapter, or virtual SCSI adapter associated with a specific hardware profile, use the **Set-SCVirtualFloppyDrive**, **Set-SCVirtualDVDDrive**, **Set-SCVirtualCOMPort**, **Set-SCVirtualNetworkAdapter**, or **Set-SCVirtualScsiAdapter** cmdlets, respectively.
 
 Changes made to a hardware profile affect only the hardware profile itself.
 The changes do not affect any existing virtual machines that were created by using this profile.
@@ -57,7 +57,7 @@ The changes do not affect any existing virtual machines that were created by usi
 
 ### Example 1: Specify an amount of memory for an existing hardware profile
 ```
-PS C:\>$HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
+PS C:\> $HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
 PS C:\> Set-SCHardwareProfile -HardwareProfile $HWProfile -MemoryMB 1024
 ```
 
@@ -67,30 +67,30 @@ The second command changes the memory value for NewHWProfile01 to 1024 MB.
 
 ### Example 2: Specify a new owner for multiple hardware profiles
 ```
-PS C:\>$HWProfiles = Get-SCHardwareProfile | where {$_.Name -match "Profile"}
+PS C:\> $HWProfiles = Get-SCHardwareProfile | where {$_.Name -match "Profile"}
 PS C:\> ForEach ($HWProfile in $HWProfiles) {Set-SCHardwareProfile -HardwareProfile $HWProfile -Owner "Contoso\Cesar"}
 ```
 
 The first command gets the hardware profile objects that match the search criteria and stores the objects in the $HWProfiles object array.
 
-The second command uses a foreach statement to specify a new owner for each of the profiles in the array.
+The second command uses a **ForEach** statement to specify a new owner for each of the profiles in the array.
 
 For more information about the standard PowerShell **ForEach** loop statement, type `Get-Help about_ForEach`.
 
 ### Example 3: Specify a new boot order for multiple hardware profiles
 ```
-PS C:\>$HWProfiles = @(Get-SCHardwareProfile | where {$_.Name -match "HWProfile"})
+PS C:\> $HWProfiles = @(Get-SCHardwareProfile | where {$_.Name -match "HWProfile"})
 PS C:\> ForEach ($HWProfile in $HWProfiles) {Set-SCHardwareProfile -HardwareProfile $HWProfile -BootOrder PXEBoot,CD,IDEHardDrive,Floppy}
 ```
 
 The first command gets all hardware profile objects the library that match the search criteria (the profile name contains the string "HWProfile") and stores the hardware profile objects in the $HWProfiles object array.
-Using the @ symbol and parentheses ensures that the command stores the results in an array, in case the command returns a single object or a Null value.
+Using the @ symbol and parentheses ensures that the command stores the results in an array, in case the command returns a single object or a $Null value.
 
-The second command uses a foreach statement to specify a new boot order for each hardware profile object in the $HWProfiles array.
+The second command uses a **ForEach** statement to specify a new boot order for each hardware profile object in the $HWProfiles array.
 
 ### Example 4: Search for hardware profiles with a specific configuration and append text to the description field
 ```
-PS C:\>$HWProfiles = @(Get-SCHardwareProfile | where {$_.CPUCount -eq 4})
+PS C:\> $HWProfiles = @(Get-SCHardwareProfile | where {$_.CPUCount -eq 4})
 PS C:\> ForEach ($HWProfile in $HWProfiles) {$Text = $HWProfile.Description; Set-SCHardwareProfile -HardwareProfile $HWProfile -Description $Text" (Contains four Processors)"}
 ```
 
@@ -101,7 +101,7 @@ For each profile, the description text is stored to a variable ($Text), and then
 
 ### Example 5: Enable Dynamic Memory for an existing hardware profile
 ```
-PS C:\>$HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile05" }
+PS C:\> $HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile05" }
 PS C:\> Set-SCHardwareProfile -HardwareProfile $HWProfile -DynamicMemoryEnabled $True -MemoryMB 1024 -DynamicMemoryMaximumMB 2048
 ```
 
@@ -240,8 +240,6 @@ Accept wildcard characters: False
 ### -CPUMaximumPercent
 Specifies the highest percentage of the total resources of a single CPU on the host that can be used by a specific virtual machine at any given time. 
 
-
-
 Example: `-CPUMaximumPercent 80` (to specify 80 per cent)
 
 ```yaml
@@ -280,23 +278,29 @@ Types of hosts support the following relative values:
 
 - Hyper-V.
 1 to 10000.
+
 - VMware ESX.
 High.
 2000.
+
 - VMware ESX.
 Above Normal.
 1500.
+
 - VMware ESX.
-Normal (default).
-1000. 
+Normal (default). 1000. 
+
 - VMware ESX.
 Below Normal.
 750.
+
 - VMware ESX.
 Low.
 500.
+
 - VMware ESX.
 Custom 1 to 1000000. 
+
 - Citrix XenServer.
 1 to 65536, normal is 256.
 
@@ -736,8 +740,6 @@ Accept wildcard characters: False
 ### -NetworkUtilizationMbps
 Specifies, in megabits per second (Mbps), the amount of bandwidth on the host's network that can be used by a specific virtual machine. 
 
-
-
 Example format: `-NetworkUtilization 10`
 
 ```yaml
@@ -786,10 +788,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-
-Example format: `-Owner "Contoso\ReneeLoPattiFuller"PattiFuller`
-
-Example format: `-Owner "ReneeLoPattiFuller@Contoso"PattiFuller`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

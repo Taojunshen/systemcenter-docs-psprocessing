@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUserRole.md
+online version: 
 schema: 2.0.0
 ms.assetid: C943AF6F-CC24-44E5-81B8-E9453E837AAE
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCResource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCResource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCResource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCResource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -57,7 +57,7 @@ Types of resources that you can share using **Grant-SCResource** include the fol
 
 ### Example 1: Share a resource with a specific user
 ```
-PS C:\>$Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
+PS C:\> $Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
 PS C:\> Grant-SCResource -Resource $Resource -Username "Contoso\Katarina"
 ```
 
@@ -68,7 +68,7 @@ If the user is a member of multiple self-service user roles with receive permiss
 
 ### Example 2: Share a resource with a user who is a member of multiple user roles
 ```
-PS C:\>$Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
+PS C:\> $Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
 PS C:\> Grant-SCResource -Resource $Resource -Username "Contoso\Katarina" -UserRoleName @("ContosoSelfServiceUsers", "SelfServiceUserRole02")
 ```
 
@@ -78,7 +78,7 @@ The second command shares the resource stored in $Resource (Template01) with the
 
 ### Example 3: Share a resource with all members of a user role
 ```
-PS C:\>$Resource = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
+PS C:\> $Resource = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
 PS C:\> Grant-SCResource -Resource $Resource -UserRoleName "ContosoSelfServiceUsers"
 ```
 
@@ -88,7 +88,7 @@ The second command shares the resource stored in $Resource (VMTemplate01) with t
 
 ### Example 4: Share a resource with all members of a user role by using the user role ID
 ```
-PS C:\>$Resource = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
+PS C:\> $Resource = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
 PS C:\> $UserRole = Get-SCUserRole -Name "ContosoSelfServiceUsers"
 PS C:\> Grant-SCResource -Resource $Resource -UserRoleId $UserRole.Id
 ```
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

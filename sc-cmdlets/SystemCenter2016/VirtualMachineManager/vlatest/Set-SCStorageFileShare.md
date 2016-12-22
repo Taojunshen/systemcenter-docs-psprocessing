@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageFileShare.md
+online version: 
 schema: 2.0.0
 ms.assetid: 18D185E5-ABAD-401D-9E01-093327987E6D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileShare.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileShare.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileShare.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileShare.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Set-SCStorageFileShare** cmdlet modifies a storage file share.
 
 ### Example 1: Update the storage classification for a storage file share
 ```
-PS C:\>$FileShare = Get-SCStorageFileShare -Name "FileShare01"
+PS C:\> $FileShare = Get-SCStorageFileShare -Name "FileShare01"
 PS C:\> $StorageClass = Get-SCStorageClassification -Name "StorageClassification02"
 PS C:\> Set-SCStorageFileShare -StorageFileShare $FileShare -StorageClassification $StorageClass
 ```

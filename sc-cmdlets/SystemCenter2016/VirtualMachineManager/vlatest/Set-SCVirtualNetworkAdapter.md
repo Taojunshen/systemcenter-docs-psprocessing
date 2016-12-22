@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: 625431E8-2EBC-4206-8F95-653B05B9E492
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -90,7 +90,7 @@ Operations you can perform include the following:
 
 ### Example 1: Connect a virtual network adapter to a virtual network
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM | where { $_.PhysicalAddress -eq "00:16:D3:CC:00:1B" }
 PS C:\> Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter -VirtualNetwork "ExternalVirtualNetwork01"
 ```
@@ -103,7 +103,7 @@ The last command connects the virtual network adapter stored in $Adapter to the 
 
 ### Example 2: Specify a static MAC address for a virtual network adapter
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02" 
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02" 
 PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM | where { $_.ID -eq "5c0ee80a-731f-41c8-92f0-85a1619f9a1b" }
 PS C:\> Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter -PhysicalAddressType "Static" -PhysicalAddress "00:16:D3:CC:00:1C"
 ```
@@ -117,7 +117,7 @@ The last command specifies that the virtual network adapter stored in $Adapter u
 
 ### Example 3: Specify a static MAC address and assign it to an existing virtual network adapter
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM03"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM03"
 PS C:\> Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter (Get-VirtualNetworkAdapter -VM $VM | where { $_.ID -eq "95e9cfda-861c-44a3-b2ba-2f796dfe691c"}) -MACAddressType "Static" -MACAddress "00-00-00-00-00-00"
 ```
 
@@ -127,7 +127,7 @@ The second command gets the virtual network adapter object on VM03 by ID, specif
 
 ### Example 4: Disconnect the specified virtual network adapter from the virtual network
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM04"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM04"
 PS C:\> $Adapters = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapters[1] -NoConnection
 ```
@@ -141,7 +141,7 @@ The last command uses the *NoConnection* parameter to disconnect the second virt
 
 ### Example 5: Specify a VMware port group for an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM05"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM05"
 PS C:\> $Adapter = $VM.VirtualNetworkAdapters[0]
 PS C:\> Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter -VMwarePortGroup "VM Network"
 ```
@@ -563,7 +563,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -744,7 +744,7 @@ Accept wildcard characters: False
 ### -VMNetwork
 Specifies a VM network object.
 
-To get a VM network object, use the Get-SCVMNetwork cmdlet.
+To get a VM network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork
@@ -776,7 +776,7 @@ Accept wildcard characters: False
 ### -VMSubnet
 Specifies a virtual machine subnet object.
 
-To obtain a **VMSubnet** object, use the Get-SCVMSubnet cmdlet.
+To obtain a **VMSubnet** object, use the **Get-SCVMSubnet** cmdlet.
 
 ```yaml
 Type: VMSubnet
@@ -883,7 +883,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualNetworkAdapter** object.
 
 ## NOTES
-* Requires a VMM virtual network adapter object, which can be retrieved by using the Get-SCVirtualNetworkAdapter cmdlet.
+* Requires a VMM virtual network adapter object, which can be retrieved by using the **Get-SCVirtualNetworkAdapter** cmdlet.
 
 ## RELATED LINKS
 

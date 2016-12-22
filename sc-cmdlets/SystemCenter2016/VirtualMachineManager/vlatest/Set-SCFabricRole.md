@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCFabricRole.md
+online version: 
 schema: 2.0.0
 ms.assetid: 6D8900B1-D2EC-4D6F-8D7D-82F65610BD92
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCFabricRole.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCFabricRole.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCFabricRole.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCFabricRole.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,11 +38,11 @@ The **Set-SCFabricRole** cmdlet modifies a fabric role in Virtual Machine Manage
 
 ### Example 1: Modify values for a fabric role
 ```
-PS C:\>$FabricRoleConfiguration = New-SCLoadBalancerRoleConfiguration -LBManagerIPAddress "15.16.17.249"" -NatIPExemptions $NatIPExemptions -VipPools $VipPools
+PS C:\> $FabricRoleConfiguration = New-SCLoadBalancerRoleConfiguration -LBManagerIPAddress "15.16.17.249"" -NatIPExemptions $NatIPExemptions -VipPools $VipPools
 PS C:\> $FabricRole = Set-SCFabricRole -FabricRole $FabricRole -LoadBalancerConfiguration $FabricRoleConfiguration
 ```
 
-The first command creates a configuration by using the New-SCLoadBalancerRoleConfiguration cmdlet, and then stores it in the $FabricRoleConfiguration variable.
+The first command creates a configuration by using the **New-SCLoadBalancerRoleConfiguration** cmdlet, and then stores it in the $FabricRoleConfiguration variable.
 The command includes values in variables created by other commands.
 
 The second command updates the existing load balancer fabric role with the configuration in $FabricRoleConfiguration.
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCSSHKey.md
+online version: 
 schema: 2.0.0
 ms.assetid: 2E438D0B-2616-4A8C-9B6E-E287D5510A38
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSSHKey.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSSHKey.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSSHKey.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSSHKey.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,7 +46,7 @@ The **Set-SCSSHKey** cmdlet updates the properties of a Linux **SSHKey** object 
 
 ### Example 1: Change the description of an SSHKey
 ```
-PS C:\>$SSHKey = Get-SCSSHKey -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" -and $_.Name -eq "My.sshkey" }
+PS C:\> $SSHKey = Get-SCSSHKey -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" -and $_.Name -eq "My.sshkey" }
 PS C:\> Set-SCSSSHKey -SSHKey $sshkey -Description "My standard SSHKey"
 ```
 
@@ -56,7 +56,7 @@ The second command changes the description of the **SSHKey** stored in $SSHKey t
 
 ### Example 2: Change a property for an SSHKey
 ```
-PS C:\>$SSHKey = Get-SCSSHKey -Name "My.sshkey"
+PS C:\> $SSHKey = Get-SCSSHKey -Name "My.sshkey"
 PS C:\> Set-SCSSHKey -SSHKey $SSHKey -FamilyName "Family01"
 ```
 

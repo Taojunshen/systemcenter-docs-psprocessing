@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCNATConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9F50421D-FD42-499A-904E-3EBE90316C2A
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNATConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNATConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNATConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNATConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,7 +38,7 @@ The **Set-SCNATConnection** cmdlet updates a network address translation (NAT) c
 
 ### Example 1: Change the name and description for NAT connection of a virtual machine network
 ```
-PS C:\>$VmNetwork = Get-SCVMNetwork -Name "NAT_VMNetwork"
+PS C:\> $VmNetwork = Get-SCVMNetwork -Name "NAT_VMNetwork"
 PS C:\> $NatConnection = Get-SCNATConnection -VMNetwork $VmNetwork
 PS C:\> Set-SCNATConnection -NATConnection $NatConnection -Name "NatConn_VMNAT1" -Description "NAT Connection for VM Network1"
 ```
@@ -51,7 +51,7 @@ The third command changes the NAT connection name to NatConn_VMNAT1 and its desc
 
 ### Example 2: Change the status for NAT connection of a virtual machine network
 ```
-PS C:\>$VmNetwork = Get-SCVMNetwork -Name "NAT_VMNetwork"
+PS C:\> $VmNetwork = Get-SCVMNetwork -Name "NAT_VMNetwork"
 PS C:\> $NatConnection = Get-SCNATConnection -VMNetwork $VmNetwork
 PS C:\> Set-SCNATConnection -NATConnection  $NatConnection -Status Disabled"
 ```
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

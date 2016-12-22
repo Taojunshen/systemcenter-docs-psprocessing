@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCRunAsAccount.md
+online version: 
 schema: 2.0.0
 ms.assetid: 056AB857-513A-4DA2-9938-2C2552666F5C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCComputer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCComputer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCComputer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCComputer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -96,7 +96,7 @@ If you are a Domain Administrator, you can use the Active Directory Sites and Se
 
 ### Example 1: Search for computers in a specific domain that meet the specified criteria
 ```
-PS C:\>$RunAsAccount = Get-SCRunAsAccount -Name "Host Computer Account 01"
+PS C:\> $RunAsAccount = Get-SCRunAsAccount -Name "Host Computer Account 01"
 PS C:\> Find-SCComputer -ComputerNameFilter "host" -Domain "Contoso.com" -FindHyperVHosts -ExcludeVMMHost -RunAsAccount $RunAsAccount
 ```
 
@@ -109,14 +109,14 @@ Note: When you use **Find-SCComputer** with the *Domain* parameter, you must spe
 
 ### Example 2: Search for a specific computer by name and validate its properties in Active Directory
 ```
-PS C:\>Find-SCComputer -ComputerName "VMHost01.Contoso.com"
+PS C:\> Find-SCComputer -ComputerName "VMHost01.Contoso.com"
 ```
 
 This command uses the fully qualified domain name (FQDN) of the computer named VMHost01 to find this computer in Active Directory, returns the computer object, and displays the computer object properties to the user.
 
 ### Example 3: Search for all computers in the specified domain that are not a VMM library server
 ```
-PS C:\>$RunAsAccount = Get-SCRunAsAccount -Name "Host Computer Account 01"
+PS C:\> $RunAsAccount = Get-SCRunAsAccount -Name "Host Computer Account 01"
 PS C:\> Find-SCComputer -ComputerNameFilter "vmm" -Domain "Contoso.com" -ExcludeVMMLibrary -RunAsAccount $RunAsAccount
 ```
 
@@ -127,7 +127,7 @@ As this command is processed, $RunAsAccount provides credentials to **Find-SCCom
 
 ### Example 4: Find all unmanaged computers in the specified domain by using an Active Directory query
 ```
-PS C:\>$RunAsAccount = Get-SCRunAsAccount -Name "Host Computer Account 01"
+PS C:\> $RunAsAccount = Get-SCRunAsAccount -Name "Host Computer Account 01"
 PS C:\> Find-SCComputer -ADSearchFilter "(&(sAMAccountType=805306369)(name=Test0*)(objectCategory=computer)(objectClass=computer)(operatingSystem=Windows\20Server\202008\20R2*))" -Domain "Contoso.com" -ExcludeVMMLibrary -ExcludeVMMHost -RunAsAccount $RunAsAccount
 ```
 
@@ -138,7 +138,7 @@ As this command is processed, $RunAsAccount provides credentials to **Find-SCCom
 
 ### Example 5: Find bare-metal computers that have out-of-band controllers that are within a specific network range
 ```
-PS C:\>$BMCRunAsAccount = Get-SCRunAsAccount "BMC Account 01"
+PS C:\> $BMCRunAsAccount = Get-SCRunAsAccount "BMC Account 01"
 PS C:\> Find-SCComputer -BMCAddress "10.10.0.1" -BMCRunAsAccount $BMCRunAsAccount -BMCProtocol "IPMI"
 ```
 
@@ -149,7 +149,7 @@ As this command is processed, $BMCRunAsAccount provides credentials to **Find-SC
 
 ### Example 6: Perform deep discovery on a physical machine with bare-metal computer support
 ```
-PS C:\>$BMCRunAsAccount = Get-SCRunAsAccount "BMC Account 01"
+PS C:\> $BMCRunAsAccount = Get-SCRunAsAccount "BMC Account 01"
 PS C:\> $MyComputer01 = Find-SCComputer -BMCAddress "10.10.0.1" -BMCRunAsAccount $BMCRunAsAccount -BMCProtocol "IPMI" 
 PS C:\> $MyComputer01 = Find-SCComputer -DeepDiscovery -BMCAddress $MyComputer01.BMCAddress -BMCRunAsAccount $BMCRunAsAccount -BMCProtocol "IPMI" -SMBIOSGUID $MyComputer01.SMBIOSGUID
 PS C:\> $MyComputer01
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the PSCredential object, type `Get-Help Get-Credential`.
 

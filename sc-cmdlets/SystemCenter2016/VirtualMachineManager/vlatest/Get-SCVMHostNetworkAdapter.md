@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHostNetworkAdapter.md
+online version: 
 schema: 2.0.0
 ms.assetid: A2482B40-6163-41DE-8BE7-D54FD9B73F70
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,7 +46,7 @@ The **Get-SCVMHostNetworkAdapter** cmdlet gets one or more physical network adap
 
 ### Example 1: Get all physical network adapters on the specified host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> $HostAdapter = Get-SCVMHostNetworkAdapter -VMHost $VMHost
 PS C:\> $HostAdapter | select -property Name, ConnectionState
 ```
@@ -59,14 +59,14 @@ The third command displays the name and connection state for each adapter.
 
 ### Example 2: Get all physical network adapters in the VMM database
 ```
-PS C:\>Get-SCVMHostNetworkAdapter | Format-List Name, MacAddress, VMHost, MaxBandwidth
+PS C:\> Get-SCVMHostNetworkAdapter | Format-List Name, MacAddress, VMHost, MaxBandwidth
 ```
 
 This command gets all physical network adapter objects on all hosts managed by the VMM server and displays each adapter's name, its MAC address, its host name, and its maximum bandwidth.
 
 ### Example 3: Get a physical network adapter by name from a specific host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> $HostAdapter = Get-SCVMHostNetworkAdapter -VMHost $VMHost -Name "HostAdapter01"
 PS C:\> $HostAdapter | Format-List -property Name,VLANEnabled,VLANMode
 ```
@@ -79,7 +79,7 @@ The third command passes the adapter object stored in $HostAdapter to the Format
 
 ### Example 4: Get each host network adapter that includes "Broadcom" in its name
 ```
-PS C:\>Get-SCVMHostNetworkAdapter -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match "Broadcom" } | Format-List -Property Name,IPAddresses
+PS C:\> Get-SCVMHostNetworkAdapter -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match "Broadcom" } | Format-List -Property Name,IPAddresses
 ```
 
 This command gets host network adapter objects from VMMServer01 that include the string "Broadcom" in their name.
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

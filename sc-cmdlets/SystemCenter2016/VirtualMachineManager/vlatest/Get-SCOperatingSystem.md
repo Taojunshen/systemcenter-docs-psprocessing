@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCOperatingSystem.md
+online version: 
 schema: 2.0.0
 ms.assetid: EF1FE966-F8AD-4A1A-BB27-F8E5174441B8
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOperatingSystem.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOperatingSystem.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOperatingSystem.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOperatingSystem.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,14 +48,14 @@ An operating system object is used to identify the operating system that is inst
 
 ### Example 1: Get all operating system objects in your VMM environment
 ```
-PS C:\>Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all operating system objects from the VMM database on VMMServer01 and displays information about these operating system objects to the user.
 
 ### Example 2: Get all operating system objects in your VMM environment with the specified processor architecture
 ```
-PS C:\>Get-OperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Architecture -eq "amd64"} | Format-Table -Property Name,Architecture
+PS C:\> Get-OperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Architecture -eq "amd64"} | Format-Table -Property Name,Architecture
 ```
 
 This command gets all operating system objects from VMMServer01 and then selects only those operating systems that have an amd64 processor architecture.

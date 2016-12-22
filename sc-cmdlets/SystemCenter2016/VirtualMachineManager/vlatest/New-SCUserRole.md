@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUserRole.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7689EE1C-8424-459F-BC05-47CD635B5F0D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUserRole.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUserRole.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUserRole.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUserRole.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ You cannot create another Administrator role or delete the existing one.
 If you are a member of a Delegated Administrator user role, you can create a user role.
 However, the scope of the new user role must be a subset of the scope of its parent user role.
 
-After you create a user role, you can use the Set-SCUserRole cmdlet to rename the user role, to add or remove members, and to add or modify the scope of objects that members of the role can manage.
+After you create a user role, you can use the **Set-SCUserRole** cmdlet to rename the user role, to add or remove members, and to add or modify the scope of objects that members of the role can manage.
 For a Self-Service user role, you can specify which actions members of a Self-Service user role can take on their virtual machines, and you can define a quota that limits the number of virtual machines self-service users can create.
 Although you cannot create or remove the Administrator role or limit its scope, you can use **Set-SCUserRole** to add or remove members to that role.
 
@@ -50,14 +50,14 @@ For information about how to modify the properties of a user role, type `Get-Hel
 
 ### Example 1: Create a Delegated Administrator user role
 ```
-PS C:\>New-SCUserRole -Name "ContosoDelegatedAdmin" -Description "Delegated Administrators for the Contoso.com domain" -UserRoleProfile "DelegatedAdmin"
+PS C:\> New-SCUserRole -Name "ContosoDelegatedAdmin" -Description "Delegated Administrators for the Contoso.com domain" -UserRoleProfile "DelegatedAdmin"
 ```
 
 This command creates a delegated administrator user role named ContosoDelegatedAdmin, provides the description Delegated Administrators for the Contoso.com domain, and uses the *UserRoleProfile* parameter to designate the user role type as Delegated Administrator.
 
 ### Example 2: Create a Self Service user role
 ```
-PS C:\>$SelfServiceRole = New-SCUserRole -Name "ContosoSelfServiceUsers" -UserRoleProfile "SelfServiceUser"
+PS C:\> $SelfServiceRole = New-SCUserRole -Name "ContosoSelfServiceUsers" -UserRoleProfile "SelfServiceUser"
 ```
 
 This command creates a new user role named ContosoSelfServiceUsers, uses the *UserRoleProfile* parameter to designate the new user role type as Self-Service user, and stores the new user role object in the $SelfServiceRole variable.
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

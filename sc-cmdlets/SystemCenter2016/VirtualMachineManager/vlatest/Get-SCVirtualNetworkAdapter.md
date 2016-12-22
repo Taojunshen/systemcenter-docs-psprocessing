@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHardwareProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: BEDED999-E5A8-42BB-A157-260A980B2E98
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -67,7 +67,7 @@ The **Get-SCVirtualNetworkAdapter** cmdlet gets one or more virtual network adap
 
 ### Example 1: Get virtual network adapters from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Get-SCVirtualNetworkAdapter -VM $VM
 ```
 
@@ -77,7 +77,7 @@ The second command gets all virtual network adapter objects on VM01 and displays
 
 ### Example 2: Get virtual network adapters from a virtual machine template
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
+PS C:\> $VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
 PS C:\> Get-SCVirtualNetworkAdapter -Template $VMTemplate
 ```
 
@@ -87,7 +87,7 @@ The last command gets all virtual network adapter objects VMTemplate01 and displ
 
 ### Example 3: Get virtual network adapters from a hardware profile
 ```
-PS C:\>$HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
+PS C:\> $HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
 PS C:\> Get-SCVirtualNetworkAdapter -HardwareProfile $HWProfile
 ```
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host
@@ -281,7 +281,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualNetworkAdapter** object.
 
 ## NOTES
-* Requires a VMM virtual machine object, virtual machine template object, or hardware profile object, which can be retrieved by using the Get-SCVirtualMachine, Get-SCVMTemplate, or Get-SCHardwareProfile cmdlets, respectively.
+* Requires a VMM virtual machine object, virtual machine template object, or hardware profile object, which can be retrieved by using the **Get-SCVirtualMachine**, **Get-SCVMTemplate**, or **Get-SCHardwareProfile** cmdlets, respectively.
 
 ## RELATED LINKS
 

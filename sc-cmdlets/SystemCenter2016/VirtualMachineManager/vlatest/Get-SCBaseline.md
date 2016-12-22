@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./New-SCBaseline.md
+online version: 
 schema: 2.0.0
 ms.assetid: 1E6F63BC-142D-4A66-BE1E-4548EB52D53C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCBaseline.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCBaseline.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCBaseline.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCBaseline.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,7 +20,7 @@ ms.service: system-center
 # Get-SCBaseline
 
 ## SYNOPSIS
-Gets one or more baselines objects.
+Gets one or more baseline objects.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ A baseline is a list of updates which, together with scope assignments, can grad
 
 ### Example 1: Get a baseline by its name
 ```
-PS C:\>Get-SCBaseline -Name "Security Baseline"
+PS C:\> Get-SCBaseline -Name "Security Baseline"
 ```
 
 This command gets the baseline object named Security Baseline.

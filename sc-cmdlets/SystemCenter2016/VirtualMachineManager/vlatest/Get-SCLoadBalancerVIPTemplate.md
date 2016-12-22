@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./New-SCLoadBalancerVIPTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: E056030A-15A8-4EEB-9CEC-F27A075CD14E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerVIPTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerVIPTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerVIPTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerVIPTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -49,7 +49,7 @@ The **Get-SCLoadBalancerVIPTemplate** cmdlet gets one or more load balancer virt
 
 ### Example 1: Retrieve VIP templates associated with a specific load balancer manufacturer and model
 ```
-PS C:\>Get-SCLoadBalancerVIPTemplate -Manufacturer "LB Manufacturer" -Model "LB01"
+PS C:\> Get-SCLoadBalancerVIPTemplate -Manufacturer "LB Manufacturer" -Model "LB01"
 ```
 
 This command gets all virtual IP templates associated with the manufaturer LB Manufacturer and the model LB01, and then displays information about these virtual IP templates to the user.
@@ -89,7 +89,6 @@ Accept wildcard characters: False
 ### -Manufacturer
 Specifies the name of the company that manufactured a physical device.
 The acceptable values for this parameter are:
-
 
 - Letters (a-z) 
 - Numbers (0-9) 
@@ -158,7 +157,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCNATConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4D30796D-E0B4-4DD9-B8BA-56682E1CCD55
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNATConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNATConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNATConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNATConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,7 +48,7 @@ The **Add-SCNATConnection** cmdlet adds a network address translation (NAT) conn
 
 ### Example1: Add NAT connection to a virtual machine network with external IP
 ```
-PS C:\>$VmNetwork = Get-SCVMNetwork -Name "NAT_VmNetwork"
+PS C:\> $VmNetwork = Get-SCVMNetwork -Name "NAT_VmNetwork"
 PS C:\> $IpPool = Get-SCStaticIPAddressPool -Name "Private_IPPool"
 PS C:\> Add-SCNATConnection -Name "NatConnection" -VMNetwork $VmNetwork -ExternalIPPool $IpPool
 ```
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ### -VMNetworkGateway
 Specifies a virtual machine network gateway object.
 
-To obtain a **VMNetworkGateway** object, use the Get-SCVMNetworkGateway cmdlet.
+To obtain a **VMNetworkGateway** object, use the **Get-SCVMNetworkGateway** cmdlet.
 
 ```yaml
 Type: VMNetworkGateway

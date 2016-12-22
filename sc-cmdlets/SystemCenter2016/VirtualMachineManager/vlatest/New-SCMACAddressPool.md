@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCMACAddressPool.md
+online version: 
 schema: 2.0.0
 ms.assetid: 04BC3777-7FEA-461F-B4EA-AFDEB7810A5A
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCMACAddressPool.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCMACAddressPool.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCMACAddressPool.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCMACAddressPool.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,7 +38,7 @@ A MAC address pool can be associated with one or more Virtual Machine Manager (V
 
 ### Example 1: Create a MAC address pool
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
+PS C:\> $HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
 PS C:\> New-SCMACAddressPool -Name "MAC Address Pool 01" -VMHostGroup $HostGroup -MACAddressRangeStart "00-1D-D8-B7-1C-00" -MACAddressRangeEnd "00-1D-D8-F4-1F-FF"
 ```
 
@@ -193,7 +193,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM host group object, which can be retrieved by using the Get-SCVMHostGroup cmdlet.
+* Requires a VMM host group object, which can be retrieved by using the **Get-SCVMHostGroup** cmdlet.
 
 ## RELATED LINKS
 

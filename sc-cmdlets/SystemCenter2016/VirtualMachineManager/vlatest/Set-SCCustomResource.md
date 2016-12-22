@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCustomResource.md
+online version: 
 schema: 2.0.0
 ms.assetid: 151D088B-D35C-427F-BA3B-EB11E317D154
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomResource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomResource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomResource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomResource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -51,13 +51,13 @@ VMM discovers and imports the folder into the VMM library as a custom resource.
 
 ### Example 1: Change the description and release of a custom resource
 ```
-PS C:\>$CR = Get-SCCustomResource -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "Folder.CR" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> $CR = Get-SCCustomResource -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "Folder.CR" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 PS C:\> Set-SCCustomResource -CustomResource $CR -Release "v1.1" -Description "My LOB Application version 1.1 Install Package"
 ```
 
 The first command gets the custom resource object named Folder.CR on LibraryServer01 from the VMM library on VMMServer01 and then stores the object in the $CR variable.
 
-The second command changes the values for the Release and Description properties of the custom resource object stored in $CR.
+The second command changes the values for the **Release** and **Description** properties of the custom resource object stored in $CR.
 
 ## PARAMETERS
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -FamilyName
 Specifies a family name for a physical resource in the VMM library.
-This value is used in conjunction with Release, Namespace, and Type to establish equivalency among library resources.
+This value is used in conjunction with *Release*, *Namespace*, and *Type* to establish equivalency among library resources.
 
 ```yaml
 Type: String
@@ -168,8 +168,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-Example format: `-Owner "Contoso\PattiFuller"`
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

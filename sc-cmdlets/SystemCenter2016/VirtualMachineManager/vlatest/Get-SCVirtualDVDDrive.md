@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHardwareProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 86AE7E9B-4813-4178-95FE-DC075FF8E195
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDVDDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDVDDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDVDDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDVDDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -61,7 +61,7 @@ The **Get-SCVirtualDVDDrive** cmdlet gets one or more Virtual Machine Manager (V
 
 ### Example 1: Get virtual DVD drives from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Get-SCVirtualDVDDrive -VM $VM
 ```
 
@@ -71,7 +71,7 @@ The second command gets all DVD drive objects on VM01 and displays information a
 
 ### Example 2: Get virtual DVD drives from a template
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
+PS C:\> $VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
 PS C:\> Get-SCVirtualDVDDrive -Template $VMTemplate
 ```
 
@@ -81,7 +81,7 @@ The second command gets all virtual DVD drive objects on VMTemplate01 and displa
 
 ### Example 3: Get virtual DVD drives from a hardware profile
 ```
-PS C:\>$HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
+PS C:\> $HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
 PS C:\> Get-SCVirtualDVDDrive -HardwareProfile $HWProfile
 ```
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -226,7 +226,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualDVDDrive** object.
 
 ## NOTES
-* Requires a VMM virtual machine object, virtual machine template object, or hardware profile object. You can retrieve these objects by using the Get-SCVirtualMachine, Get-SCVMTemplate, or Get-SCHardwareProfile cmdlets, respectively.
+* Requires a VMM virtual machine object, virtual machine template object, or hardware profile object. You can retrieve these objects by using the **Get-SCVirtualMachine**, **Get-SCVMTemplate**, or **Get-SCHardwareProfile** cmdlets, respectively.
 
 ## RELATED LINKS
 

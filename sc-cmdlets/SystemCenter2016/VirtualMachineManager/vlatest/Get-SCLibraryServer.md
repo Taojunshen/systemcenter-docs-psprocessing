@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCLibraryServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 5F0CC68F-147F-440B-B7EC-E6206F7E90AB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLibraryServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLibraryServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLibraryServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLibraryServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,7 +38,7 @@ For more information about library servers, type `Get-Help Add-LibraryServer -De
 
 ### Example 1: Get all library servers
 ```
-PS C:\>Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all library server objects on VMMServer01 and displays information about these library servers to the user.
@@ -47,14 +47,14 @@ Note: The name of a library server is the same as its computer name.
 
 ### Example 2: Get a specific library server
 ```
-PS C:\>Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "LibraryServer01.Contoso.com"
+PS C:\> Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "LibraryServer01.Contoso.com"
 ```
 
 This command gets the library object named LibraryServer01 on VMMServer01 and displays information about this library server to the user.
 
 ### Example 3: Get all library servers that match specified criteria
 ```
-PS C:\>$LibServers = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match "LibraryServer" }
+PS C:\> $LibServers = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match "LibraryServer" }
 ```
 
 This command gets all library server objects on VMMServer01 whose name includes the string "LibraryServer" (such as LibraryServer01 and LIbraryServer02) and stores these library server objects in the $LibServers variable.

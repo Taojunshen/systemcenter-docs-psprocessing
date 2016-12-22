@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCStorageProvider.md
+online version: 
 schema: 2.0.0
 ms.assetid: AE9403AA-47CA-4078-9F83-041CA6CDEB58
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCStorageProvider.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCStorageProvider.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCStorageProvider.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Import-SCStorageProvider.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ After the provider is installed, **Import-SCStorageProvider** imports those prov
 
 ### Example 1: Import storage providers
 ```
-PS C:\>Import-SCStorageProvider
+PS C:\> Import-SCStorageProvider
 ```
 
 This command imports all storage providers that have been installed and registered on the VMM management server.

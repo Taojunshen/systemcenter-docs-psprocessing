@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: B7650664-31A1-4CEF-A5B4-05C5B243D6EE
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHost.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHost.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHost.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHost.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -55,21 +55,21 @@ For more information about virtual machine hosts in Virtual Machine Manager, typ
 
 ### Example 1: Get all hosts managed by the specified VMM server
 ```
-PS C:\>Get-SCVMHost -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCVMHost -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all host objects for all managed by VMMServer01 and displays the host properties to the user.
 
 ### Example 2: Get a host by name
 ```
-PS C:\>Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
+PS C:\> Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
 ```
 
 This command gets the host object named VMHost01 in the Contoso.com domain and displays the host properties to the user.
 
 ### Example 3: Get all hosts in a specific host group and display information about them to the user
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup -Name "HostGroup01" -VMMServer "VMMServer01.Contoso.com"
+PS C:\> $HostGroup = Get-SCVMHostGroup -Name "HostGroup01" -VMMServer "VMMServer01.Contoso.com"
 PS C:\> $HostsInHG = Get-SCVMHost -VMHostGroup $HostGroup
 PS C:\> $HostsInHG | Format-Table -Property Name, VMs
 ```
@@ -82,7 +82,7 @@ The last command uses the pipeline operator to pass all host objects stored in $
 
 ### Example 4: Get all hosts in a specific host cluster and display information about them to the user
 ```
-PS C:\>$Cluster = Get-SCVMHostCluster -Name "Cluster01.Contoso.com" -VMMServer "VMMServer01.Contoso.com"
+PS C:\> $Cluster = Get-SCVMHostCluster -Name "Cluster01.Contoso.com" -VMMServer "VMMServer01.Contoso.com"
 PS C:\> $HostsInCluster = Get-SCVMHost -VMHostCluster $Cluster
 PS C:\> $HostsInCluster | Format-Table -Property Name, VirtualizationPlatform
 ```
@@ -95,7 +95,7 @@ The last command passes all host objects stored in $HostsInCluster to the Format
 
 ### Example 5: Get a specific host located on a perimeter network by its IP address
 ```
-PS C:\>$VMHost = Get-VMHost -ComputerName 10.199.53.5 -VMMServer "VMMServer01.Contoso.com"
+PS C:\> $VMHost = Get-VMHost -ComputerName 10.199.53.5 -VMMServer "VMMServer01.Contoso.com"
 PS C:\> $VMHost | Select-Object -Property ComputerName, OperatingSystem
 ```
 

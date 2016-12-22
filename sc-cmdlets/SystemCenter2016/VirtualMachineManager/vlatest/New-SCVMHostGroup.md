@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMHostGroup.md
+online version: 
 schema: 2.0.0
 ms.assetid: F858B08E-F0A0-46C8-8470-1AA55D799022
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostGroup.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostGroup.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostGroup.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostGroup.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,18 +48,18 @@ Hosts contained in a host group have a host path property that shows the locatio
 
 Name                                        Path
 
-All Hosts                          All Hosts
-ChildHostGroup01             All Hosts\ChildHostGroup01
-ChildHostGroup02           All Hosts\ChildHostGroup02
-New Datacenter            All Hosts\New Datacenter
-nested1                           All Hosts\New Datacenter\nested01
-nested2                   All Hosts\New Datacenter\nested\nested02
+- All Hosts                          All Hosts
+- ChildHostGroup01             All Hosts\ChildHostGroup01
+- ChildHostGroup02           All Hosts\ChildHostGroup02
+- New Datacenter            All Hosts\New Datacenter
+- nested1                           All Hosts\New Datacenter\nested01
+- nested2                   All Hosts\New Datacenter\nested\nested02
 
 ## EXAMPLES
 
 ### Example 1: Create a host group under the root host group
 ```
-PS C:\>New-SCVMHostGroup -VMMServer "VMMServer01.Contoso.com" -Name "HostGroup01"
+PS C:\> New-SCVMHostGroup -VMMServer "VMMServer01.Contoso.com" -Name "HostGroup01"
 ```
 
 This command creates a host group named HostGroup01 on VMMServer01 in the Contoso.com domain.
@@ -67,7 +67,7 @@ By default, VMM places this host group under the root host group, which is calle
 
 ### Example 2: Create a host group under a specified parent host group
 ```
-PS C:\>$ParentGroup = Get-SCVMHostGroup -Name "HostGroup01" 
+PS C:\> $ParentGroup = Get-SCVMHostGroup -Name "HostGroup01" 
 PS C:\> New-SCVMHostGroup -Name "ChildGroup01" -ParentHostGroup $ParentGroup
 ```
 

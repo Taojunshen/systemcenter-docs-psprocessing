@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 1bc91730-1197-4c31-8ed1-8bb223545dbc
 schema: 2.0.0
 ms.assetid: 725554EA-0466-43A8-AC37-36C4DF8E7888
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 4:46 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageSwitch.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageSwitch.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageSwitch.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/94a19c388d35167727d61daa8d59367c5c24c63e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageSwitch.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,10 +39,6 @@ The **Get-SCStorageSwitch** cmdlet gets a Fibre Channel switch object.
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 

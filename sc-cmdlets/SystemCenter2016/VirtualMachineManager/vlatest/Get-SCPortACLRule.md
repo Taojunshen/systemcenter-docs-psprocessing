@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCPortACL.md
+online version: 
 schema: 2.0.0
 ms.assetid: 997D0535-8FD9-4ACD-8A78-2C359AC92C92
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPortACLRule.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPortACLRule.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPortACLRule.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPortACLRule.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -49,14 +49,14 @@ The **Get-SCPortACLRule** cmdlet gets a port access control list (ACL) rule in V
 
 ### Example 1: Get a port ACL rule
 ```
-PS C:\>Get-SCPortACLRule -Name "AllowRDPAccess"
+PS C:\> Get-SCPortACLRule -Name "AllowRDPAccess"
 ```
 
 The command gets the port ACL rule named AllowRDPAccess.
 
 ### Example 2: Get port ACL rules from an ACL
 ```
-PS C:\>$PortACL = Get-SCPortACL -Name "RDP ACL"
+PS C:\> $PortACL = Get-SCPortACL -Name "RDP ACL"
 PS C:\> Get-SCPortACLRule -PortACL $PortACL"
 ```
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

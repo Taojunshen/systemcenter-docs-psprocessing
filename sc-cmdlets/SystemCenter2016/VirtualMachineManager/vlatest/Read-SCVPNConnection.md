@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVPNConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: B857B917-6CC8-4F66-8967-99CF3CF39E78
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVPNConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVPNConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVPNConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVPNConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,7 +44,7 @@ The **Read-SCVPNConnection** cmdlet refreshes a virtual private network (VPN) co
 
 ### Example 1: Refresh information about a VPN connection
 ```
-PS C:\>$VmNetworkGateway = Get-SCVMNetworkGateway -Name "VMGateway01"
+PS C:\> $VmNetworkGateway = Get-SCVMNetworkGateway -Name "VMGateway01"
 PS C:\> $VPNConnection = Get-SCVPNConnection -VMNetworkGateway $VmNetworkGateway -Name "VPN01"
 PS C:\> Read-SCVPNConnection -VPNConnection $VPNConnection"
 ```
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ### -VPNConnection
 Specifies a virtual private network (VPN) connection object.
 
-To obtain a VPN connection object, use the Get-SCVPNConnection cmdlet.
+To obtain a VPN connection object, use the **Get-SCVPNConnection** cmdlet.
 
 ```yaml
 Type: VPNConnection

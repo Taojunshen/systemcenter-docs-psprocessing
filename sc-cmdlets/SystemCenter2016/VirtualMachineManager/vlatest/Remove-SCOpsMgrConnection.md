@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCOpsMgrConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9529348E-2E70-4DAA-8C4D-14E2A9656C5C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOpsMgrConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOpsMgrConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOpsMgrConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOpsMgrConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,14 +36,14 @@ The **Remove-SCOpsMgrConnection** cmdlet removes the existing Operations Manager
 
 ### Example 1: Remove the Operations Manager connection from VMM
 ```
-PS C:\>Remove-SCOpsMgrConnection
+PS C:\> Remove-SCOpsMgrConnection
 ```
 
 This command removes the Operations Manager connection from VMM.
 
 ### Example 2: Remove an Operations Manager connection that is not accessible from VMM
 ```
-PS C:\>Remove-SCOpsMgrConnection -Force
+PS C:\> Remove-SCOpsMgrConnection -Force
 ```
 
 This command removes an Operations Manager connection from VMM when the Operations Manager server is unavailable or no longer accessible from VMM.

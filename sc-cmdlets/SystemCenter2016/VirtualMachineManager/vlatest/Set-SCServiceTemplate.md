@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCServiceTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: 6FB679A4-1E1D-4754-9D63-CF53871A79DE
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ For more information about service templates, type `Get-Help New-SCServiceTempla
 
 ### Example 1: Set the priority for a service template
 ```
-PS C:\>$SvcTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
+PS C:\> $SvcTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> Set-SCServiceTemplate -ServiceTemplate $SvcTemplate -ServicePriority High
 ```
 
@@ -98,9 +98,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account.
 
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: ` -Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

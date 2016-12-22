@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCPUType.md
+online version: 
 schema: 2.0.0
 ms.assetid: 666B38CD-CACC-49BC-8A92-AE69057D570C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:13 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -68,25 +68,25 @@ Properties that you can change include the following:
 - BIOS boot order, if the virtual machine is deployed on a Hyper-V host. 
 - Amount of resources on the host used by a virtual machine.
 These include the following: 
----- Maximum amount of host CPU resources that a virtual machine can use. 
----- Expected use of host CPU by a virtual machine. 
----- Amount of host CPU resources used by one virtual machine relative to other virtual machines on the same host. 
----- Amount of host memory that a virtual machine can use. 
----- Amount of bandwidth on the host's network that a virtual machine can use. 
+ - Maximum amount of host CPU resources that a virtual machine can use. 
+ - Expected use of host CPU by a virtual machine. 
+ - Amount of host CPU resources used by one virtual machine relative to other virtual machines on the same host. 
+ - Amount of host memory that a virtual machine can use. 
+ - Amount of bandwidth on the host's network that a virtual machine can use. 
 - Hardware settings for a virtual machine unrelated to host resources.
 These include the following: 
----- Number of CPUs. 
----- Type of CPU. 
----- Number of disk input/output operations per second (IOPS). 
----- Limiting CPU functionality, for an older operating system,   such as Windows NT 4.0. 
+ - Number of CPUs. 
+ - Type of CPU. 
+ - Number of disk input/output operations per second (IOPS). 
+ - Limiting CPU functionality, for an older operating system,   such as Windows NT 4.0. 
 - Cost center, tag, and custom settings that are used to filter virtual machines by criteria. 
 - Settings that enable various optional capabilities, which include the following: 
----- Enabling or disabling a library object to make it available,  or temporarily unavailable, to users. 
----- Enabling backing up a virtual machine on a Hyper-V host with Volume Shadow Copy  service. 
----- Enabling a key/value pair for data exchange between a virtual machine and its Hyper-V host. 
----- Enabling shutdown of a virtual machine from the Hyper-V console. 
----- Enabling time synchronization between a virtual machine and its Hyper-V host. 
----- Enabling the BIOS value for NumLock for a virtual machine on a Hyper-V host. 
+ - Enabling or disabling a library object to make it available,  or temporarily unavailable, to users. 
+ - Enabling backing up a virtual machine on a Hyper-V host with Volume Shadow Copy  service. 
+ - Enabling a key/value pair for data exchange between a virtual machine and its Hyper-V host. 
+ - Enabling shutdown of a virtual machine from the Hyper-V console. 
+ - Enabling time synchronization between a virtual machine and its Hyper-V host. 
+ - Enabling the BIOS value for NumLock for a virtual machine on a Hyper-V host. 
 - Setting that identifies whether a virtual machine is highly available, that is, a virtual machine to be deployed on a node of a Hyper-V host cluster or a Citrix  XenServer host cluster. 
 - Setting that determines whether virtualization guest services are installed on a virtual machine deployed on a Hyper-V host. 
 - Number of seconds to delay before starting a virtual machine. 
@@ -96,13 +96,13 @@ These include the following:
 - Setting used to switch the role that a self-service user who belongs to multiple roles uses to manage a virtual machine. 
 - Setting that assigns a virtual machine on an ESX host to a VMware resource pool.
 
-If you want to change the properties of a virtual floppy drive, virtual DVD drive, virtual network adapter, or virtual SCSI adapter associated with a specific virtual machine, use the Set-SCVirtualFloppyDrive, Set-SCVirtualDVDDrive, Set-SCVirtualNetworkAdapter, or Set-SCVirtualScsiAdapter cmdlet.
+If you want to change the properties of a virtual floppy drive, virtual DVD drive, virtual network adapter, or virtual SCSI adapter associated with a specific virtual machine, use the **Set-SCVirtualFloppyDrive**, **Set-SCVirtualDVDDrive**, **Set-SCVirtualNetworkAdapter**, or **Set-SCVirtualScsiAdapter** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Specify an amount of memory for an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> If($VM.Status -ne "PowerOff"){Stop-SCVirtualMachine -VM $VM}
 PS C:\> Set-SCVirtualMachine -VM $VM -MemoryMB 1024
 ```
@@ -117,7 +117,7 @@ The last command changes the memory allocated to VM01 to 1024 MB.
 
 ### Example 2: Change the user role used to manage a virtual machine for a user who belongs to multiple self-service user roles
 ```
-PS C:\>$VM = Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" -Name "VM02"
 PS C:\> $SSRole = Get-SCUserRole -Name "ContosoSelfServiceUsers"
 PS C:\> Set-SCVirtualMachine -VM $VM -UserRole $SSRole
 ```
@@ -135,7 +135,7 @@ This example illustrates that scenario.
 
 ### Example 3: Disable time syncronization on a virtual machine used as a domain controller
 ```
-PS C:\>$EAP = $ErrorActionPreference
+PS C:\> $EAP = $ErrorActionPreference
 PS C:\> $ErrorActionPreference = "STOP" 
 PS C:\> $VM = Get-SCVirtualMachine -Name "VM03"
 PS C:\> trap{"Fail: Cannot disable Time Synchronization for VM: $VM";continue} Set-SCVirtualMachine -VM $VM -EnableTimeSynchronization $TRUE | Out-Null
@@ -162,7 +162,7 @@ The last command sets the value for $ErrorActionPreference to the value stored i
 
 ### Example 4: Set the device start order for all virtual machines that support this feature
 ```
-PS C:\>$EAP = $ErrorActionPreference
+PS C:\> $EAP = $ErrorActionPreference
 PS C:\> $ErrorActionPreference = "Stop" 
 PS C:\> $VMs = @(Get-SCVirtualMachine)
 PS C:\> ForEach($VM in $VMs){trap{"Fail: Cannot set BIOS for VM: $VM";continue} Set-SCVirtualMachine -VM $VM -BootOrder "PXEBoot","IDEHarddrive","CD","Floppy" | Out-Null}
@@ -195,14 +195,14 @@ For more information about the standard Windows PowerShell**ForEach** loop state
 
 ### Example 5: Specify an owner for all virtual machines without an owner
 ```
-PS C:\>Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | where {$_.Owner -eq ""} | Set-SCVirtualMachine -Owner "Contoso\ReneeLo"
+PS C:\> Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | where {$_.Owner -eq ""} | Set-SCVirtualMachine -Owner "Contoso\ReneeLo"
 ```
 
 This command gets all virtual machine objects on VMMServer01, selects only those virtual machine objects where no owner is listed, and specifies an owner for each virtual machine.
 
 ### Example 6: Enable dynamic memory for an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM06"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM06"
 PS C:\> if($VM.Status -ne "PowerOff"){Stop-SCVirtualMachine -VM $VM}
 PS C:\> Set-SCVirtualMachine -VM $VM -DynamicMemoryEnabled $True -MemoryMB 1024 -DynamicMemoryMaximumMB 2048
 ```
@@ -412,20 +412,15 @@ Types of hosts support the following relative values:
 - Hyper-V.
 1 to 10000.
 - VMware ESX.
-High.
-2000. 
+High. 2000. 
 - VMware ESX.
-Above Normal.
-1500. 
+Above Normal. 1500. 
 - VMware ESX.
-Normal (default).
-1000. 
+Normal (default). 1000. 
 - VMware ESX.
-Below Normal.
-750. 
+Below Normal. 750. 
 - VMware ESX.
-Low.
-500. 
+Low. 500. 
 - VMware ESX.
 Custom 1 to 1000000. 
 - Citrix XenServer.
@@ -461,7 +456,7 @@ Accept wildcard characters: False
 
 ### -CPUType
 Specifies the type of CPU for a virtual machine.
-To get all CPU types that are available for use in virtual machines in a VMM environment, see the Get-SCCPUType cmdlet.
+To get all CPU types that are available for use in virtual machines in a VMM environment, see the **Get-SCCPUType** cmdlet.
 
 ```yaml
 Type: ProcessorType
@@ -1273,7 +1268,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -1290,7 +1285,7 @@ Accept wildcard characters: False
 
 ### -OperatingSystem
 Specifies the type of operating system for a virtual machine.
-To list the names of all available operating systems in VMM, use the Get-SCOperatingSystem cmdlet.
+To list the names of all available operating systems in VMM, use the **Get-SCOperatingSystem** cmdlet.
 
 ```yaml
 Type: OperatingSystem
@@ -1711,7 +1706,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualMachine** object.
 
 ## NOTES
-* This cmdlet requires a VMM virtual machine object, which can be retrieved by using the Get-SCVirtualMachine cmdlet.
+* This cmdlet requires a VMM virtual machine object, which can be retrieved by using the **Get-SCVirtualMachine** cmdlet.
 
 ## RELATED LINKS
 

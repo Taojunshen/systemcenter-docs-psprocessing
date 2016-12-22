@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCRunAsAccount.md
+online version: 
 schema: 2.0.0
 ms.assetid: D82190A7-0E00-4D9E-A2BA-9CCA543063DB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHostCluster.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHostCluster.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHostCluster.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHostCluster.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,18 +40,18 @@ Add-SCVMHostCluster [-VMHostGroup <HostGroup>] [-VirtualizationManager <Virtuali
 The **Add-SCVMHostCluster** cmdlet adds an existing Windows Server failover cluster, VMware ESX host cluster, or a Citrix XenServer resource pool to the Virtual Machine Manager (VMM) database so that VMM can manage the host cluster.
 
 Before you can use the **Add-SCVMHostCluster** cmdlet to add a Windows Server cluster to VMM, you must use the Failover Cluster Management tool to create and configure the host cluster.
-To create a host cluster by using VMM, use the Install-SCVMHostCluster cmdlet.
+To create a host cluster by using VMM, use the **Install-SCVMHostCluster** cmdlet.
 
 Before you can use the **Add-SCVMHostCluster** cmdlet to add a Citrix XenServer resource pool to VMM, you must use Citrix XenCenter to create and configure the resource pool.
 
-Before using **Add-SCVMHostCluster** to add ESX host clusters, you must use the Add-SCVirtualizationManager cmdlet to add a VMware vCenter Server to your VMM environment and import its data.
+Before using **Add-SCVMHostCluster** to add ESX host clusters, you must use the **Add-SCVirtualizationManager** cmdlet to add a VMware vCenter Server to your VMM environment and import its data.
 After you add the vCenter Server to VMM, you can add and manage VMware ESX clusters using VMM.
 
 ## EXAMPLES
 
 ### Example 1: Add a failover cluster to VMM
 ```
-PS C:\>$Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> $VMHostGroup = Get-SCVMHostGroup | where {$_.Path -eq "All Hosts"}
 PS C:\> Add-SCVMHostCluster -Name "VMHostCluster01.Contoso.com" -VMHostGroup $VMHostGroup -RemoteConnectEnabled $True -RemoteConnectPort 5900 -Credential $Credential
 ```
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`. 
 For more information about Run As accounts, type `Get-Help New-SCRunAsAccount`.

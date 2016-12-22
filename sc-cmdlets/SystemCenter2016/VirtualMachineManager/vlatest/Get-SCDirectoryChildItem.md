@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLibraryServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: A85A886D-3D3E-4410-B850-912B43A1ED6A
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDirectoryChildItem.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDirectoryChildItem.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDirectoryChildItem.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDirectoryChildItem.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -45,7 +45,7 @@ For example, the share path to the default library share installed by Setup when
 
 ### Example 1: Get the files and subdirectories for the specified path on a VMM host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01"
 PS C:\> Get-SCDirectoryChildItem -VMHost $VMHost -Path "C:\"
 ```
 
@@ -55,7 +55,7 @@ The second command displays the name and other information about each file and s
 
 ### Example 2: Get the subdirectories for the specified path on a library server
 ```
-PS C:\>$LibServ = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "FileServer01.Contoso.com"
+PS C:\> $LibServ = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "FileServer01.Contoso.com"
 PS C:\> Get-SCDirectoryChildItem -LibraryServer $LibServ -Path "\\FileServer01.Contoso.com\MSSCVMMLibrary"
 ```
 
@@ -87,31 +87,19 @@ Accept wildcard characters: False
 ### -Path
 Specifies the destination path for the operation. 
 
-
-
 Example formats: 
 
-
-Local path:       `-Path "F:\"`
-
-UNC path:         `-Path "\\\\Library\Templates"`
-
-Volume GUID path: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
-
-VMware ESX path:  `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
-
-Citrix XenServer path: `- Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
-
-
+- Local path: `-Path "F:\"`
+- UNC path: `-Path "\\\\Library\Templates"`
+- Volume GUID path: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
+- VMware ESX path: `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
+- Citrix XenServer path: `-Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
 
 This parameter accepts wildcard characters for a UNC path.
 
-
-
 Example format: 
 
-
-UNC path:         `-Path "\\\\VMHostServer\MyVMs\*VM*"`
+UNC path: `-Path "\\\\VMHostServer\MyVMs\*VM*"`
 
 ```yaml
 Type: String
@@ -129,7 +117,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

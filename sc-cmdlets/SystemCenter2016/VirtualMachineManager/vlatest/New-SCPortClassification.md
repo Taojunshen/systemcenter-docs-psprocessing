@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCPortClassification.md
+online version: 
 schema: 2.0.0
 ms.assetid: BE05CDAC-B741-46D2-A4FA-B3F06571C233
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPortClassification.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPortClassification.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPortClassification.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPortClassification.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ The **New-SCPortClassification** cmdlet creates a port classification.
 
 ### Example 1: Create a port classification
 ```
-PS C:\>New-SCPortClassification -Name "PortClass01"
+PS C:\> New-SCPortClassification -Name "PortClass01"
 ```
 
 This command creates a port classification named PortClass01.

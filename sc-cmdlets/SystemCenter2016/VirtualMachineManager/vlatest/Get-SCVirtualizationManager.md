@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVirtualizationManager.md
+online version: 
 schema: 2.0.0
 ms.assetid: A189B6BE-DC66-4196-A0C6-F03D8812A273
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualizationManager.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualizationManager.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualizationManager.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualizationManager.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,21 +38,21 @@ If a vCenter Server is connected to VMM, you can use this cmdlet to view the pro
 
 ### Example 1: Display information about each VMware vCenter Server managed by VMM
 ```
-PS C:\>Get-SCVirtualizationManager -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCVirtualizationManager -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command retrieves all virtualization manager objects currently associated with VMM from VMMServer01 and displays information about the returned objects.
 
 ### Example 2: Get a specific VMware vCenter Server managed by VMM
 ```
-PS C:\>Get-SCVirtualizationManager -VMMServer "VMMServer01.Contoso.com" -ComputerName "vCenterServer02.Contoso.com"
+PS C:\> Get-SCVirtualizationManager -VMMServer "VMMServer01.Contoso.com" -ComputerName "vCenterServer02.Contoso.com"
 ```
 
 This command gets the vCenter Server object named VirtMgrServer02 and displays information about the returned object.
 
 ### Example 3: Get all VMware vCenter Servers that match specified criteria
 ```
-PS C:\>$vCenterServers = Get-SCVirtualizationManager -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -match "Server"}
+PS C:\> $vCenterServers = Get-SCVirtualizationManager -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -match "Server"}
 PS C:\> $vCenterServers
 ```
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualNetworkAdapterNativePortProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 0810DDBB-AF78-4BD7-BFDF-B7262AFADE22
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterNativePortProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterNativePortProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterNativePortProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterNativePortProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ The **New-SCVirtualNetworkAdapterNativePortProfile** cmdlet creates a network ad
 
 ### Example 1: Create a virtual network adapter native port profile
 ```
-PS C:\>New-SCVirtualNetworkAdapterNativePortProfile -Name "VirtualNetworkAdapterNativePortProf01" -AllowMacAddressSpoofing $True
+PS C:\> New-SCVirtualNetworkAdapterNativePortProfile -Name "VirtualNetworkAdapterNativePortProf01" -AllowMacAddressSpoofing $True
 ```
 
 This command creates a virtual network adapter native port profile named VirtualNetworkAdapterNativePortProf01 and allows MAC address spoofing.

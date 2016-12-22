@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUserRole.md
+online version: 
 schema: 2.0.0
 ms.assetid: BBACC3EC-0CDB-409C-ADE2-E000143C9633
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,13 +43,13 @@ If you want to force a network transfer, specify the *UseLAN* parameter.
 If the host server and library server are the same server, the command does not fail if you specify *UseLAN*, but the migration to the library occur faster if you do not use that parameter.
 
 When a virtual machine is stored in the library, it cannot be started.
-Before you can start the virtual machine, you must move it to a host by using the Move-SCVirtualMachine cmdlet.
+Before you can start the virtual machine, you must move it to a host by using the **Move-SCVirtualMachine** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Save a virtual machine to the library
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $LibServer = Get-SCLibraryServer -ComputerName "LibServer01"
 PS C:\> Save-SCVirtualMachine -LibraryServer $LibServer -VM $VM -SharePath "\\LibServer01.Contoso.com\Library01\VMs"
 ```
@@ -63,7 +63,7 @@ The command automatically uses the fastest available transfer type.
 
 ### Example 2: Store a virtual machine in the library asynchronously
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $LibServer = Get-SCLibraryServer -ComputerName "LibServer02"
 PS C:\> Save-SCVirtualMachine -LibraryServer $LibServer -VM $VM -SharePath "\\LibServer02.Contoso.com\Library02\VMs" -RunAsynchronously -JobVariable "SaveVMJob"
 PS C:\> $SaveVMJob
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -247,7 +247,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualMachine** object.
 
 ## NOTES
-* Requires a VMM virtual machine object, which can be retrieved by using the Get-SCVirtualMachine cmdlet.
+* Requires a VMM virtual machine object, which can be retrieved by using the **Get-SCVirtualMachine** cmdlet.
 
 ## RELATED LINKS
 

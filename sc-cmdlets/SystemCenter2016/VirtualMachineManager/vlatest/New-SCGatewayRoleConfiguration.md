@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 122e2d3c-ee43-4828-9ff1-4c3a2fa148f6
 schema: 2.0.0
 ms.assetid: 289B358E-F43A-486B-BC22-DFEA80F367F6
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCGatewayRoleConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCGatewayRoleConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCGatewayRoleConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCGatewayRoleConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ The **New-SCGatewayRoleConfiguration** cmdlet creates a gateway role configurati
 
 ### Example 1: Create gateway role configuration
 ```
-PS C:\>$FabricRoleConfiguration = New-SCGatewayRoleConfiguration -GatewayCapacityKbps 1024000 -PublicIPAddresses $publicIPV4Address -RedundantResourceCount 1 -GreVipSubnets $SubnetVlansGreVip
+PS C:\> $FabricRoleConfiguration = New-SCGatewayRoleConfiguration -GatewayCapacityKbps 1024000 -PublicIPAddresses $publicIPV4Address -RedundantResourceCount 1 -GreVipSubnets $SubnetVlansGreVip
 PS C:\> $FabricRole = Set-SCFabricRole -FabricRole $FabricRole -GatewayConfiguration $FabricRoleConfiguration
 ```
 

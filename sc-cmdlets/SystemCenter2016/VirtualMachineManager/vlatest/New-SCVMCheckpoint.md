@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: AD2D7E41-4D97-4341-8292-BC292B4FACF5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMCheckpoint.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMCheckpoint.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMCheckpoint.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMCheckpoint.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -34,7 +34,7 @@ New-SCVMCheckpoint [-VM] <VM> [-VMMServer <ServerConnection>] [-Description <Str
 The **New-SCVMCheckpoint** cmdlet creates a checkpoint for a virtual machine deployed on a host managed by Virtual Machine Manager (VMM).
 You can use a checkpoint to restore a virtual machine to a previous state.
 
-A typical use is to create a checkpoint before you install an update to the operating system or to an application on the virtual machine so that, if the update fails or adversely affects the virtual machine, you can use the Restore-SCVMCheckpoint cmdlet to revert the virtual machine to its previous state.
+A typical use is to create a checkpoint before you install an update to the operating system or to an application on the virtual machine so that, if the update fails or adversely affects the virtual machine, you can use the **Restore-SCVMCheckpoint** cmdlet to revert the virtual machine to its previous state.
 
 For virtual machines deployed on a Hyper-V host, VMware ESX host, or Citrix XenServer host, VMM creates the checkpoint without stopping the virtual machine, so no interruption in service occurs.
 
@@ -55,7 +55,7 @@ For more information, type `Get-Help Set-VMMUserRole -Detailed`.
 
 ### Example 1: Create a virtual machine checkpoint for virtual machines that have the same name but reside on different hosts
 ```
-PS C:\>$Checkpoints = Get-SCVirtualMachine -Name "VM01" | New-SCVMCheckpoint
+PS C:\> $Checkpoints = Get-SCVirtualMachine -Name "VM01" | New-SCVMCheckpoint
 PS C:\> $Checkpoints
 ```
 
@@ -65,7 +65,7 @@ The second command displays information about each checkpoint object stored in $
 
 ### Example 2: Create a virtual machine checkpoint for a virtual machine asynchronously
 ```
-PS C:\>Get-SCVirtualMachine -Name "VM02" | New-SCVMCheckpoint -RunAsynchronously -JobVariable "NewCheckpiontJob"
+PS C:\> Get-SCVirtualMachine -Name "VM02" | New-SCVMCheckpoint -RunAsynchronously -JobVariable "NewCheckpiontJob"
 PS C:\> Write-Host $NewCheckpointJob
 ```
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

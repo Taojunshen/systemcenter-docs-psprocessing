@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCApplicationPackage.md
+online version: 
 schema: 2.0.0
 ms.assetid: ED7210F6-CB1C-40C8-888E-B2BC9289237F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationPackage.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationPackage.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationPackage.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationPackage.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ The **Remove-SCApplicationPackage** cmdlet deletes an application pacakge from t
 
 ### Example 1: Remove a specific application profile
 ```
-PS C:\>$AppPackage = Get-SCApplicationPackage -Name "AppPackage01" -Release "Beta"
+PS C:\> $AppPackage = Get-SCApplicationPackage -Name "AppPackage01" -Release "Beta"
 PS C:\> Remove-SCApplicationPackage -ApplicationPackage $AppPackage
 ```
 

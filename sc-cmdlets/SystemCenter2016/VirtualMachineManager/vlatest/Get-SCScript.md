@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Remove-SCScript.md
+online version: 
 schema: 2.0.0
 ms.assetid: 54F8CB65-5E69-4018-8173-38C727177BA1
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCScript.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCScript.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCScript.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCScript.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -58,21 +58,21 @@ For information about enabling Windows PowerShell scripting on your server, type
 
 ### Example 1: Get all scripts stored on all VMM library servers
 ```
-PS C:\>Get-SCScript -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCScript -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all script objects stored in library shares in the VMM library on VMMServer01, and then displays information about these scripts to the user.
 
 ### Example 2: Display specified information about all scripts on a library server
 ```
-PS C:\>Get-SCScript -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" } | Format-List -Property Name, LibraryServer, SharePath
+PS C:\> Get-SCScript -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" } | Format-List -Property Name, LibraryServer, SharePath
 ```
 
 This command gets all script objects stored on LibraryServer01 and displays the name, library server, and share path for these scripts to the user.
 
 ### Example 3: Get all scripts with a specific name on any VMM library server
 ```
-PS C:\>Get-SCScript -VMMServer "VMMServer1.Contoso.com" | where { $_.Name -eq "Sysprep.inf" }
+PS C:\> Get-SCScript -VMMServer "VMMServer1.Contoso.com" | where { $_.Name -eq "Sysprep.inf" }
 ```
 
 This command gets the answer file script objects named Sysprep.inf that are stored on any library server on VMMServer01.
@@ -81,7 +81,7 @@ Note: By default, the name of a script object in the VMM library is the same nam
 
 ### Example 4: View a script that is stored in the VMM library
 ```
-PS C:\>$Script = Get-SCScript | where { $_.Name -eq "SummarizeVMMInfo.ps1"}
+PS C:\> $Script = Get-SCScript | where { $_.Name -eq "SummarizeVMMInfo.ps1"}
 PS C:\> Notepad.exe $Script.SharePath
 ```
 
@@ -93,7 +93,7 @@ Note: If you have appropriate write permissions, you can also edit the script an
 
 ### Example 5: Run a Windows PowerShell script that is stored in the VMM library
 ```
-PS C:\>$Script = Get-SCScript | where { $_.Name -eq "SummarizeVMMInfo.ps1" }
+PS C:\> $Script = Get-SCScript | where { $_.Name -eq "SummarizeVMMInfo.ps1" }
 PS C:\> &$Script.SharePath
 ```
 
@@ -114,7 +114,7 @@ Run the VMM command shell as an Administrator.
       2.
 Use the **Set-ExecutionPolicy** cmdlet to set the execution policy to the appropriate level for your environment. 
 
- For more information, type `Get-Help about_Signing`, `Get-Help Get-ExecutionPolicy -Detailed`, and `Get-Help Set-ExecutionPolicy -Detailed`
+For more information, type `Get-Help about_Signing`, `Get-Help Get-ExecutionPolicy -Detailed`, and `Get-Help Set-ExecutionPolicy -Detailed`
 
 ## PARAMETERS
 

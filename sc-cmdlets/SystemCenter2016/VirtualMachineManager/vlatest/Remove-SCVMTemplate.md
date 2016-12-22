@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: 22C6EBAF-CAB7-402C-957C-4B4A076D4673
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ This cmdlet returns the object upon success (with the property MarkedForDeletion
 
 ### Example 1: Remove a specific template from the library
 ```
-PS C:\>$Template = Get-SCVMTemplate -VMMServer "VMMServer1.Contoso.com" | where { $_.Name -eq "Template01" }
+PS C:\> $Template = Get-SCVMTemplate -VMMServer "VMMServer1.Contoso.com" | where { $_.Name -eq "Template01" }
 PS C:\> Remove-SCVMTemplate -VMTemplate $Template
 ```
 
@@ -51,7 +51,7 @@ The second command removes the template object stored in $Template from the libr
 
 ### Example 2: Remove all templates from the library
 ```
-PS C:\>$Templates = Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com"
+PS C:\> $Templates = Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com"
 PS C:\> $Templates | Remove-SCVMTemplate -Confirm
 ```
 
@@ -180,7 +180,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns an **SCVMTemplate** object.
 
 ## NOTES
-* Requires a VMM template object, which can be retrieved by using the Get-SCVMTemplate cmdlet.
+* Requires a VMM template object, which can be retrieved by using the **Get-SCVMTemplate** cmdlet.
 
 ## RELATED LINKS
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4776C225-8A45-4453-847D-E4F16A57A44E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -74,21 +74,21 @@ This cmdlet gets virtual machines that are deployed on a virtual machine host or
 
 ### Example 1: Get all virtual machines and display information about each one
 ```
-PS C:\>Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all virtual machine objects on VMMServer01, and displays information about these virtual machine objects.
 
 ### Example 2: Get all virtual machines and display information about specific properties
 ```
-PS C:\>Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | Format-List -Property Name, Owner, Description, HostName, OperatingSystem, CPUCount, Memory
+PS C:\> Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | Format-List -Property Name, Owner, Description, HostName, OperatingSystem, CPUCount, Memory
 ```
 
 This command gets all virtual machine objects on VMMServer01, and displays the values of the specified properties.
 
 ### Example 3: Get a virtual machine by name that is stored on a specified library server
 ```
-PS C:\>Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
+PS C:\> Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
 PS C:\> Get-SCVirtualMachine | Where-Object { $_.Name -Eq "VM02" -And $_.LibraryServer -Eq "LibraryServer01" } | Select-Object Name,LibraryServer,Status
 ```
 
@@ -98,7 +98,7 @@ The second command gets the virtual machine object named VM02 stored on LibraryS
 
 ### Example 4: Get all virtual machines on the specified host
 ```
-PS C:\>Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
+PS C:\> Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
 PS C:\> Get-SCVirtualMachine -VMHost "VMHost01.Contoso.com"
 ```
 
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

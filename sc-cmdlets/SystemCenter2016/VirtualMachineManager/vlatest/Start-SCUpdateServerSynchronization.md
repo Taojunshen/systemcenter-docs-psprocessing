@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUpdateServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 3C64D469-EDD4-4F0B-BE41-72D408670677
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCUpdateServerSynchronization.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCUpdateServerSynchronization.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCUpdateServerSynchronization.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCUpdateServerSynchronization.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ To force a full catalog import, specify the *ForceFullUpdateCatalogImport* param
 
 ### Example 1: Start an update server synchronization
 ```
-PS C:\>$UpdateServer = Get-SCUpdateServer -ComputerName "WSUSComputer01"
+PS C:\> $UpdateServer = Get-SCUpdateServer -ComputerName "WSUSComputer01"
 PS C:\> Start-SCUpdateServerSynchronization -UpdateServer $UpdateServer
 ```
 
@@ -51,7 +51,7 @@ The second command starts synchronization between WSUSComputer01 and Microsoft U
 
 ### Example 2: Start a full import of the Microsoft Update Catalog
 ```
-PS C:\>$UpdateServer = Get-SCUpdateServer -ComputerName "WSUSComputer01"
+PS C:\> $UpdateServer = Get-SCUpdateServer -ComputerName "WSUSComputer01"
 PS C:\> Start-SCUpdateServerSynchronization -UpdateServer $UpdateServer -ForceFullUpdateCatalogImport
 ```
 

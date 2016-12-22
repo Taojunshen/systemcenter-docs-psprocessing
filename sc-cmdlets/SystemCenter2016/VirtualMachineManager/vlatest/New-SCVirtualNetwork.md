@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualNetwork.md
+online version: 
 schema: 2.0.0
 ms.assetid: C78C1078-7AFF-4744-880D-85D2DEF2DBAB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetwork.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetwork.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetwork.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetwork.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -114,7 +114,7 @@ This configuration establishes a private virtual network that virtual machines o
 
 ### Example 1: Create an external virtual network on a host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> $HostAdapter = Get-SCVMHostNetworkAdapter -VMHost $VMHost -Name "HostLANAdapter01"
 PS C:\> New-SCVirtualNetwork -Name "ExternalVirtualNetwork01" -VMHost $VMHost -VMHostNetworkAdapter $HostAdapter
 ```
@@ -130,7 +130,7 @@ It is attached to the physical network adapter on the host and can therefore acc
 
 ### Example 2: Create an internal host-bound virtual network
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> New-SCVirtualNetwork -VMHost $VMHost -Name "InternalVNet01" -Description "Internal Host-Bound Virtual Network" -BoundToVMHost $True
 ```
 
@@ -145,7 +145,7 @@ Because the network is bound to the host, network communication from virtual mac
 
 ### Example 3: Create a private virtual network that is not bound to the host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> New-SCVirtualNetwork -Name "UnboundVirtualNetwork01" -VMHost $VMHost
 ```
 

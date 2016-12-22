@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageQoSPolicy.md
+online version: 
 schema: 2.0.0
 ms.assetid: 1BC91730-1197-4C31-8ED1-8BB223545DBC
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageQoSPolicy.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageQoSPolicy.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageQoSPolicy.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageQoSPolicy.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ The **New-SCStorageQoSPolicy** cmdlet creates a storage Quality of Service (QoS)
 
 ### Example 1: Create a multi-instance storage QoS policy with maximum IOPS settings for a single file server
 ```
-PS C:\>$FileServersToAdd = @()
+PS C:\> $FileServersToAdd = @()
 PS C:\> $FileServersToAdd += Get-SCStorageFileServer -Name "FileServer01c"
 PS C:\> New-SCStorageQoSPolicy -Name "MAXIOPSPolicy" -Description "" -PolicyType "MultiInstance" -IOPSMinimum "0" -IOPSMaximum "10000" -StorageFileServer $FileServersToAdd
 ```
@@ -48,7 +48,7 @@ This command creates a multi-instance storage QoS policy with maximum IOPS setti
 
 ### Example 2: Create a single-instance storage QoS policy with minimum IOPS settings for two file servers
 ```
-PS C:\>$FileServersToAdd = @()
+PS C:\> $FileServersToAdd = @()
 PS C:\> $FileServersToAdd += Get-SCStorageFileServer -Name "FileServer01c"
 PS C:\> $FileServersToAdd += Get-SCStorageFileServer -Name "FileServer02c"
 New-SCStorageQoSPolicy -Name "MINIOPSPolicy" -Description "" -PolicyType "SingleInstance" -IOPSMinimum "5000" -IOPSMaximum "0" -StorageFileServer $FileServersToAdd

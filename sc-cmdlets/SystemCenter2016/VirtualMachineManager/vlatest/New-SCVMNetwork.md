@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalNetwork.md
+online version: 
 schema: 2.0.0
 ms.assetid: C718267B-761E-4F83-81F2-82C8953682FD
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMNetwork.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMNetwork.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMNetwork.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMNetwork.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -81,13 +81,13 @@ Virtual Machine Manager (VMM) uses the IP address pools that are associated with
 The customer address is visible to the virtual machine and is used by customers to communicate with the virtual machine.
 
 You must provide a logical network object when you create a virtual machine network.
-To obtain a logical network object, use the Get-SCLogicalNetwork cmdlet.
+To obtain a logical network object, use the **Get-SCLogicalNetwork** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Create a virtual machine network
 ```
-PS C:\>$LogNet = Get-SCLogicalNetwork -Name "LogicalNetwork01"
+PS C:\> $LogNet = Get-SCLogicalNetwork -Name "LogicalNetwork01"
 PS C:\> New-SCVMNetwork -Name "VMNetwork01" -LogicalNetwork $LogNet
 ```
 
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -293,10 +293,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-
-Example format:  `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

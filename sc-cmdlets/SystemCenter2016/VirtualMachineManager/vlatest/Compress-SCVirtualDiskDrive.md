@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Convert-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7A0A8252-8547-4612-AF46-DC46684DE80F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Compress-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Compress-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Compress-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Compress-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -47,7 +47,7 @@ You cannot compress a fixed disk.
 
 ### Example 1: Compress a virtual hard disk on a virtual machine deployed on a host
 ```
-PS C:\>$VirtDiskDrive = Get-SCVirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM01")
+PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM01")
 PS C:\> Compress-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive
 ```
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ### -OnBehalfOfUserRole
 Specifies a user role.
 Specify this parameter and the *OnBehalfOfUser* parameter to remove permissions from a user role that belongs to an on behalf of user.
-To obtain a user role object, use the Get-SCUserRole cmdlet.
+To obtain a user role object, use the **Get-SCUserRole** cmdlet.
 
 ```yaml
 Type: UserRole
@@ -179,7 +179,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualDiskDrive** object.
 
 ## NOTES
-* This cmdlet requires a VMM virtual disk drive object that is currently associated with a virtual machine deployed on a host, which can be retrieved by using the Get-SCVirtualDiskDrive cmdlet.
+* This cmdlet requires a VMM virtual disk drive object that is currently associated with a virtual machine deployed on a host, which can be retrieved by using the **Get-SCVirtualDiskDrive** cmdlet.
 
 ## RELATED LINKS
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVPNConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: 0BD25D24-D225-46CA-A232-67390F95A79B
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVPNConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVPNConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVPNConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVPNConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -71,7 +71,7 @@ The **Set-SCVPNConnection** cmdlet updates the properties of a virtual private n
 
 ### Example 1: Modify a VPN connection
 ```
-PS C:\>$VmNetworkGateway = Get-SCVMNetworkGateway -Name "VMGateway01"
+PS C:\> $VmNetworkGateway = Get-SCVMNetworkGateway -Name "VMGateway01"
 PS C:\> $VPNConnection = Get-SCVPNConnection -VMNetworkGateway $VmNetworkGateway -Name "VPN01"
 PS C:\> $RunAsAccount = Get-SCRunAsAccount -ID "972567d5-96ad-472e-9790-831bae5fd69c" 
 PS C:\> $VpnConnection = Set-SCVPNConnection -AuthenticationMethod "PSKOnly" -AuthenticationTransformConstants "SHA196" -CipherTransformConstants "AES256" -DHGroup "Group2" -EncryptionMethod "AES256" -IntegrityCheckMethod "SHA1" -PFSGroup "PFS2048" -Name "IPSec" -TargetIPv4VPNAddress "100.100.100.200" -VPNConnection $VPNConnection -Secret $RunAsAccount
@@ -514,7 +514,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -679,7 +679,7 @@ Accept wildcard characters: False
 ### -Secret
 Specifies a Run As account.
 
-To obtain a Run As account, use the Get-SCRunAsAccount cmdlet.
+To obtain a Run As account, use the **Get-SCRunAsAccount** cmdlet.
 
 ```yaml
 Type: RunAsAccount
@@ -757,7 +757,7 @@ Accept wildcard characters: False
 ### -VPNConnection
 Specifies a virtual private network (VPN) connection object.
 
-To obtain a VPN connection object, use the Get-SCVPNConnection cmdlet.
+To obtain a VPN connection object, use the **Get-SCVPNConnection** cmdlet.
 
 ```yaml
 Type: VPNConnection

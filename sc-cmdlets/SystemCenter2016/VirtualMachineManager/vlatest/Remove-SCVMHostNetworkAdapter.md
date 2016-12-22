@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHostNetworkAdapter.md
+online version: 
 schema: 2.0.0
 ms.assetid: 6BD9E82B-72EF-4374-A6EB-01B6176BF266
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Remove-SCVMHostNetworkAdapter** cmdlet removes one or more physical host n
 
 ### Example 1: Remove the physical host network adapter from a specific virtual network
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> $HostAdapter = Get-SCVMHostNetworkAdapter -VMHost $VMHost -Name "HostAdapter01"
 PS C:\> $VirtualNetwork = Get-SCVirtualNetwork -VMHost $VMHost -Name "ExternalVirtualNetwork01"
 PS C:\> Remove-SCVMHostNetworkAdapter -VMHostNetworkAdapter $HostAdapter -VirtualNetwork $VirtualNetwork -Confirm

@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 15ae10d1-5cb5-4f03-aad8-2433553a59ae
 schema: 2.0.0
 ms.assetid: 25AC3475-8E83-41D0-97BE-4A951638684C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/21/2016 3:38 PM
+ms.date: 12/21/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/a51d03bb01e0880c7a55012878712b9f03d07b9c/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,16 +43,12 @@ The **Start-SCClusterUpgrade** cmdlet starts a cluster upgrade.
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 
@@ -103,7 +99,7 @@ Accept wildcard characters: False
 
 ### -PhysicalComputerConfig
 Specifies an array of host configuration objects.
-For information about host configuration objects, see the New-SCVMHostConfig cmdlet.
+For information about host configuration objects, see the **New-SCVMHostConfig** cmdlet.
 
 ```yaml
 Type: PhysicalComputerConfig[]

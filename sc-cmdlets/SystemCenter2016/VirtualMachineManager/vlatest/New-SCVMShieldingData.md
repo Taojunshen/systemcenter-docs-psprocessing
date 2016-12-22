@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMShieldingData.md
+online version: 
 schema: 2.0.0
 ms.assetid: D413722F-1023-4CCE-ACE6-204E5F99BCD9
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMShieldingData.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMShieldingData.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMShieldingData.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMShieldingData.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,7 +53,7 @@ VMM provides create, read, update, and delete functionality to manage them.
 
 ### Example 1: Create a virtual machine shielding data by using a .pdk file
 ```
-PS C:\>New-SCVMShieldingData -Name "ShieldingData01" -Description "Shielding data" -VMShieldingDataPath "C:\virtual\SD.pdk"
+PS C:\> New-SCVMShieldingData -Name "ShieldingData01" -Description "Shielding data" -VMShieldingDataPath "C:\virtual\SD.pdk"
 ```
 
 This command creates a virtual machine shielding data object named ShieldingData01.
@@ -61,7 +61,7 @@ The command bases the object on the SD.pdk file that the *VMShieldingDataPath* p
 
 ### Example 2: Create a virtual machine shielding data by using raw data
 ```
-PS C:\>$Bytes = [System.IO.File]::ReadAllBytes ("C:\virtual\SD.pdk")
+PS C:\> $Bytes = [System.IO.File]::ReadAllBytes ("C:\virtual\SD.pdk")
 PS C:\> New-SCVMShieldingData -Name "ShieldingData02" -Description "Shielding data" -RawData $Bytes
 ```
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

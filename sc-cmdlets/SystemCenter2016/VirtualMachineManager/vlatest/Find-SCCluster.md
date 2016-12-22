@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHostCluster.md
+online version: 
 schema: 2.0.0
 ms.assetid: CFC981FF-B975-47B0-A742-A218B7AB34E5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCCluster.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCCluster.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCCluster.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCCluster.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,8 +46,8 @@ Information returned by **Find-SCCluster** includes cluster name, nodes of the c
 
 ### Example 1: Find all nodes of a failover cluster from the cluster name
 ```
-PS C:\>$Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
-PS C:\>$Cluster = Find-SCCluster -ComputerName "VMHostCluster01.Contoso.com" -Credential $Credential
+PS C:\> $Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $Cluster = Find-SCCluster -ComputerName "VMHostCluster01.Contoso.com" -Credential $Credential
 PS C:\> $Cluster.ClusterNodes
 ```
 
@@ -60,7 +60,7 @@ The last command displays the FQDNs of the cluster nodes to the user.
 
 ### Example 2: Find all nodes of a failover cluster from one of the node names
 ```
-PS C:\>$Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> $Cluster = Find-SCCluster -ComputerName "VMHostNode02.Contoso.com" -Credential $Credential
 PS C:\> $Cluster.Name
 PS C:\> $Cluster.ClusterNodes
@@ -76,7 +76,7 @@ The last command displays the FQDN of each node in the cluster to the user.
 
 ### Example 3: Find, by using the cluster name, all highly available file servers hosted by that failover cluster
 ```
-PS C:\>$Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> $Cluster = Find-SCCluster -ComputerName "VMHostCluster03.Contoso.com" -Credential $Credential
 PS C:\> $Cluster.HAFileServers
 ```

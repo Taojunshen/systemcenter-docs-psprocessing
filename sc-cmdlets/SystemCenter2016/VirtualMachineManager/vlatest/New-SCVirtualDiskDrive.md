@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: A371F026-414C-4EA4-9337-F44D239AEE66
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -361,15 +361,15 @@ You cannot create a checkpoint of a pass-through disk because checkpoint creatio
 
 ### Example 1: Create a virtual disk drive on a template and attach an existing virtual hard disk
 ```
-PS C:\>$VHD = Get-SCVirtualHardDisk -Name "Blank Disk - Small.vhd"
+PS C:\> $VHD = Get-SCVirtualHardDisk -Name "Blank Disk - Small.vhd"
 PS C:\> $VMTemplate = Get-SCVMTemplate | Where-Object {$_.Name -Eq "VMTemplate01"}
 PS C:\> New-SCVirtualDiskDrive -VMTemplate $VMTemplate -IDE -Bus 1 -Lun 1 -VirtualHardDisk $VHD
 ```
 
-The first command gets the virtual hard disk object named Blank Disk - Small from the VMM library by using the Get-SCVirtualHardDisk cmdlet.
+The first command gets the virtual hard disk object named Blank Disk - Small from the VMM library by using the **Get-SCVirtualHardDisk** cmdlet.
 The command stores that object in the $VHD variable.
 
-The second command gets the virtual machine template object named VMTemplate01 from the library by using the Get-SCVMTemplate cmdlet.
+The second command gets the virtual machine template object named VMTemplate01 from the library by using the **Get-SCVMTemplate** cmdlet.
 The command stores stores that object in the $Template variable.
 
 The last command creates a virtual disk drive on VMTemplate01.
@@ -377,11 +377,11 @@ The commandattaches the virtual hard disk stored in $VHD to the second channel i
 
 ### Example 2: Create a virtual disk drive and add it to an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> New-SCVirtualDiskDrive -VM $VM -Dynamic -FileName "Test" -IDE -Size 20000 -Bus 0 -LUN 1
 ```
 
-The first command gets the virtual machine object named VM01 by using the Get-SCVirtualMachine cmdlet.
+The first command gets the virtual machine object named VM01 by using the **Get-SCVirtualMachine** cmdlet.
 The command stores that object in the $VM variable.
 
 The second command creates a dynamic virtual disk drive on the first IDE channel in the second slot of the virtual machine.
@@ -389,7 +389,7 @@ The command specifies its size as 19.5 GB.
 
 ### Example 3: Create a virtual disk drive from an existing VHD and attach it to a new virtual machine
 ```
-PS C:\>$JobGroupID = [Guid]::NewGuid().ToString()
+PS C:\> $JobGroupID = [Guid]::NewGuid().ToString()
 PS C:\> $VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | Where-Object {$_.Location -Eq "\\LibServer01.Contoso.com\MSSCVMMLibrary\VHDs\Blank Disk - Large.vhd"} 
 PS C:\> New-SCVirtualDiskDrive -IDE -Bus 0 -LUN 1 -JobGroup $JobGroupID -VirtualHardDisk $VHD 
 PS C:\> $HWProfile = Get-SCHardwareProfile | Where-Object {$_.Name -Match "NewHWProfile01"}
@@ -406,10 +406,10 @@ The third command creates a virtual hard disk drive object and assigns the new o
 This command also attaches the virtual hard disk stored in $VHD to the new object.
 By using the *JobGroup* parameter, this command runs just before the last command that invokes the job group and associate the new virtual hard disk drive object with the new virtual machine created in the previous command.
 
-The fourth command gets the hardware profile object that contains the string NewHWProfile01 in its name by using the Get-SCHardwareProfile cmdlet.
+The fourth command gets the hardware profile object that contains the string NewHWProfile01 in its name by using the **Get-SCHardwareProfile** cmdlet.
 The command stores that object in the $HwProfile variable.
 
-The fifth command gets the host object named VMHost03 by using the Get-SCVMHost cmdlet.
+The fifth command gets the host object named VMHost03 by using the **Get-SCVMHost** cmdlet.
 The command stores the host object in the $VMHost variable.
 
 The last command creates a virtual machine named VM10 using the hardware settings stored in $HWProfile.
@@ -420,7 +420,7 @@ In this case, the **New-SCVirtualDiskDrive** cmdlet from the third command creat
 
 ### Example 4: Create a virtual disk drive using a host disk and attach it to an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM04"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM04"
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost04.Contoso.com"
 PS C:\> $HostDisk = @(Get-SCStorageDisk -VMHost $VMHost | Where-Object {$_.IsPassThroughCapable -Eq $True})
 PS C:\> New-SCVirtualDiskDrive -VM $VM -HostDisk $HostDisk[0] -SCSI -Bus 0 -LUN 1
@@ -439,7 +439,7 @@ This example assumes the virtual machine already has a SCSI controller.
 
 ### Example 5: Create a virtual disk drive from an existing VHDX and attach it to an existing virtual machine
 ```
-PS C:\>$VHDX = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | Where-Object {$_.Location -Eq "\\LibServer01.Contoso.com\MSSCVMMLibrary\VHDs\Blank Disk - Large.vhdx"} 
+PS C:\> $VHDX = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | Where-Object {$_.Location -Eq "\\LibServer01.Contoso.com\MSSCVMMLibrary\VHDs\Blank Disk - Large.vhdx"} 
 PS C:\> $VM = Get-SCVirtualMachine -Name "VM05"
 PS C:\> New-SCVirtualDiskDrive -VM $VM -VirtualHardDisk $VHDX -IDE -Bus 0 -LUN 1
 ```
@@ -452,7 +452,7 @@ The last command creates a virtual disk drive from Blank Disk - Large.vhdx and a
 
 ### Example 6: Create a differencing disk and attach it to an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM06"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM06"
 PS C:\> New-SCVirtualDiskDrive -Bus 1 -LUN 1 -FileName "DiffDisk" -ParentVirtualHardDiskPath "C:\VirtualMachines\ParentDisk01.vhdx" -Differencing -VirtualHardDiskFormat "VHDX" -IDE -VM $VM
 ```
 
@@ -696,7 +696,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -1059,7 +1059,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualDiskDrive** object.
 
 ## NOTES
-* This cmdlet requires a VMM virtual hard disk object, which can be retrieved by using the Get-SCVirtualHardDisk cmdlet.
+* This cmdlet requires a VMM virtual hard disk object, which can be retrieved by using the **Get-SCVirtualHardDisk** cmdlet.
 
 ## RELATED LINKS
 

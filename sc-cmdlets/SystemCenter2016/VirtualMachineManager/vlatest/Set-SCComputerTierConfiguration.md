@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCComputerTierConfiguration.md
+online version: 
 schema: 2.0.0
 ms.assetid: BD906D67-7022-43DD-B430-321A2E7B4C82
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:13 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComputerTierConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComputerTierConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComputerTierConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComputerTierConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Set-SCComputerTierConfiguration** cmdlet configures the computer tier conf
 
 ### Example 1: Configure the computer tier within a service configuration
 ```
-PS C:\>$ServiceConfig = Get-SCServiceConfiguration -Name "Service01"
+PS C:\> $ServiceConfig = Get-SCServiceConfiguration -Name "Service01"
 PS C:\> $TierConfig = Get-SCComputerTierConfiguration -ServiceConfiguration $ServiceConfig
 PS C:\> $UpdatedConfig = Set-SCComputerTierConfiguration -ComputerTierConfiguration $TierConfig -TimeZone 085
 PS C:\> $UpdatedConfig
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number (an index) that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935  at http://go.microsoft.com/fwlink/?LinkId=120935.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) at `http://go.microsoft.com/fwlink/?LinkId=120935`.
 If no time zone is specified, the default time zone used for a virtual machine is the same time zone setting that is on the virtual machine host. 
 
 

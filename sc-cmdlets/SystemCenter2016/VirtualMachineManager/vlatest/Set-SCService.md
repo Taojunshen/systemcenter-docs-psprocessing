@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCService.md
+online version: 
 schema: 2.0.0
 ms.assetid: 94395B73-D98E-4B77-8C1D-4F180E0D5605
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCService.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCService.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCService.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCService.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -66,7 +66,7 @@ The **Set-SCService** cmdlet modifies a Virtual Machine Manager (VMM) service in
 
 ### Example 1: Change the description and priority of a service
 ```
-PS C:\>$Service = Get-SCService -Name "Service01"
+PS C:\> $Service = Get-SCService -Name "Service01"
 PS C:\> Set-SCService -Service $Service -Description "Contoso Custom Service" -ServicePriority Normal
 ```
 
@@ -76,7 +76,7 @@ The second command updates the description and priority for the service stored i
 
 ### Example 2: Dismiss a pending service template
 ```
-PS C:\>$Service = Get-SCService -Name "Service01"
+PS C:\> $Service = Get-SCService -Name "Service01"
 PS C:\> Set-SCService -Service $Service -DismissPendingServiceTemplate
 ```
 
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -227,8 +227,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account.
 
-Example format: `-Owner "Contoso\PattiFuller"`
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

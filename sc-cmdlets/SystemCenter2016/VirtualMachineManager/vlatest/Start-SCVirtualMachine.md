@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUserRole.md
+online version: 
 schema: 2.0.0
 ms.assetid: 8E64B92D-2329-406A-ADC1-92252BAD0BC3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -42,7 +42,7 @@ To stop a running virtual machine, use the Stop-SCVirtualMachine cmdlet.
 
 ### Example 1: Start a virtual machine that is turned off
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Start-SCVirtualMachine -VM $VM
 ```
 
@@ -52,7 +52,7 @@ The second command starts the virtual machine stored in $VM, and displays inform
 
 ### Example 2: Start all virtual machines that are turned off
 ```
-PS C:\>$VMs = Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | where { $_.Status -eq "PowerOff" }
+PS C:\> $VMs = Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | where { $_.Status -eq "PowerOff" }
 PS C:\> $VMs | Start-SCVirtualMachine
 ```
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

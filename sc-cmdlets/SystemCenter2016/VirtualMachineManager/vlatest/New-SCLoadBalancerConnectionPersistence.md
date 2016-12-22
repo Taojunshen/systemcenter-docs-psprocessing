@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 38c265f6-ffcf-4bbb-a25d-e49307f1f92e
 schema: 2.0.0
 ms.assetid: 4BD79567-1982-4ED4-AFB4-DD84B1423046
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerConnectionPersistence.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerConnectionPersistence.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerConnectionPersistence.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerConnectionPersistence.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ For information about creating a load balancer virtual IP, type `Get-Help New-SC
 
 ### Example 1: Create a load balancer connection persistence object
 ```
-PS C:\>$LBConnectionPersistence = New-SCLoadBalancerConnectionPersistence -Name "Source IP" -Value "255.255.255.0 "
+PS C:\> $LBConnectionPersistence = New-SCLoadBalancerConnectionPersistence -Name "Source IP" -Value "255.255.255.0 "
 ```
 
 This command creates a load balancer connection persistence object named Source IP and stores the object in the $LBConnectionPersistence variable.

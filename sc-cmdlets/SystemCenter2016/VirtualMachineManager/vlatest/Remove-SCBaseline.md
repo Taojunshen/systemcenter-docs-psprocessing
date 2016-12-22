@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCBaseline.md
+online version: 
 schema: 2.0.0
 ms.assetid: E95D038A-F2D2-45E5-885F-D3EEA55DD4AF
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCBaseline.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCBaseline.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCBaseline.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCBaseline.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ For more information about baselines, type `Get-Help New-SCBaseline`.
 
 ### Example 1: Remove a baseline
 ```
-PS C:\>$Baseline = Get-SCBaseline -Name "Security Baseline"
+PS C:\> $Baseline = Get-SCBaseline -Name "Security Baseline"
 PS C:\> Remove-SCBaseline -Baseline $Baseline
 ```
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCService.md
+online version: 
 schema: 2.0.0
 ms.assetid: CBC2B99C-C1B7-4DF9-A083-B9C0A50136E1
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCService.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCService.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCService.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCService.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,7 +38,7 @@ You can create a service directly from a service template if no service instance
 
 ### Example 1: Deploy a service template using a service configuration that is stored in the library
 ```
-PS C:\>$SvcConfig = Get-SCServiceConfiguration -Name "Service01"
+PS C:\> $SvcConfig = Get-SCServiceConfiguration -Name "Service01"
 PS C:\> Update-SCServiceConfiguration -ServiceConfiguration $SvcConfig
 PS C:\> $NewService = New-SCService -ServiceConfiguration $SvcConfig 
 PS C:\> $NewService
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -105,9 +105,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account.
 
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: c3fd9539-4364-4dc7-9a67-b7243decfed3
 schema: 2.0.0
 ms.assetid: 9745A271-4F85-49AF-B881-D63F9D0712A6
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCDefaultGateway.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCDefaultGateway.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCDefaultGateway.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCDefaultGateway.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -42,14 +42,14 @@ The default metric is automatic; to change this setting, use the *Metric* parame
 
 ### Example 1: Create a default gateway object with an automatically calculated metric
 ```
-PS C:\>$Gateway = New-SCDefaultGateway -IPAddress 10.0.0.1 -Automatic
+PS C:\> $Gateway = New-SCDefaultGateway -IPAddress 10.0.0.1 -Automatic
 ```
 
 This command creates a gateway object with an IP address of 10.0.0.1, automatically computes the metric for the gateway object, and then stores the object in the $Gateway variable.
 
 ### Example 2: Create a default gateway object and manually set its metric
 ```
-PS C:\>$Gateway = New-SCDefaultGateway -IPAddress 10.0.1.1 -Metric 10
+PS C:\> $Gateway = New-SCDefaultGateway -IPAddress 10.0.1.1 -Metric 10
 ```
 
 This command creates a gateway object with an IP address of 10.0.0.1, sets its metric to 10, and then stores the object in the $Gateway variable.

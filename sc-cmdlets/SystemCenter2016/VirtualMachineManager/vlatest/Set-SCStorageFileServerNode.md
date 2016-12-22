@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 3004d5a9-521b-49ad-a9fa-4c8969dab80e
 schema: 2.0.0
 ms.assetid: F1CFD7CF-A42E-4283-AA96-382A3205F01A
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 6:55 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileServerNode.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileServerNode.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileServerNode.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/76e6b42367d2464126fd5eb894bd96b70f0ae33b/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileServerNode.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,10 +36,6 @@ The **Set-SCStorageFileServerNode** cmdlet modifies a file server node.
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 
@@ -51,10 +47,10 @@ Typically, the BMC address and its connection to the network are separate from t
 Alternatively, some computers do use a standard network adapter to provide a single address for the BMC and for the network adapter.
 However, the BMC address has a unique port and is thus uniquely identifiable on the network.
 
-Example IPv4 format:       `-BMCAddress "10.0.0.21"`
-Example Ipv6 format:       `-BMCAddress "2001:4898:2a:3:657b:9c7a:e1f0:6829"`
-Example FQDN format:       `-BMCAddress "Computer01.Contoso.com"`
-Example NetBIOS format:    `-BMCAddress "Computer01"`
+- Example IPv4 format:       `-BMCAddress "10.0.0.21"`
+- Example Ipv6 format:       `-BMCAddress "2001:4898:2a:3:657b:9c7a:e1f0:6829"`
+- Example FQDN format:       `-BMCAddress "Computer01.Contoso.com"`
+- Example NetBIOS format:    `-BMCAddress "Computer01"`
 
 Note: By default, VMM uses an IP address or FQDN for the BMCAddress.
 However, it is also possible to create a Windows PowerShell module that enables you to specify other types of addresses as the BMC address.

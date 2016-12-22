@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCLibraryShare.md
+online version: 
 schema: 2.0.0
 ms.assetid: 46C95B6E-6E25-415D-B620-F528BFA29A22
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryShare.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryShare.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryShare.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryShare.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ This cmdlet returns the object upon success (with the property MarkedForDeletion
 
 ### Example 1: Remove a library share object from the VMM library
 ```
-PS C:\>$LibShare = Get-SCLibraryShare -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.name -eq "LibraryServer01.Contoso.com" -and $_.Name -eq "AllVHDs" }
+PS C:\> $LibShare = Get-SCLibraryShare -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.name -eq "LibraryServer01.Contoso.com" -and $_.Name -eq "AllVHDs" }
 PS C:\> Remove-SCLibraryShare -LibraryShare $LibShare
 ```
 
@@ -49,7 +49,7 @@ The second command removes the library share object and all library objects in t
 
 ### Example 2: Remove multiple library share objects from the VMM library
 ```
-PS C:\>$LibShares = Get-SCLibraryShare -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" -and $_.Name -match "vhd" }
+PS C:\> $LibShares = Get-SCLibraryShare -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" -and $_.Name -match "vhd" }
 PS C:\> $LibShares | Remove-SCLibraryShare
 ```
 

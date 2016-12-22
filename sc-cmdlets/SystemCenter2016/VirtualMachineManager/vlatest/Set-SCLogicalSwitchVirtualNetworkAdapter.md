@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalSwitchVirtualNetworkAdapter.md
+online version: 
 schema: 2.0.0
 ms.assetid: 6EA2834E-2CA9-40DF-B737-C8427CFA5BD2
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalSwitchVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalSwitchVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalSwitchVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalSwitchVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,11 +44,11 @@ The **Set-SCLogicalSwitchVirtualNetworkAdapter** cmdlet commits changes made to 
 
 ### Example 1: Rename a logical switch virtual network adapter
 ```
-PS C:\>$HostVNic= Get-SCLogicalSwitchVirtualNetworkAdapter -Name "LogSw01_hostMgmt"
+PS C:\> $HostVNic= Get-SCLogicalSwitchVirtualNetworkAdapter -Name "LogSw01_hostMgmt"
 PS C:\> Set-SCLogicalSwitchVirtualNetworkAdapter -LogicalSwitchVirtualNetworkAdapter $HostVNic -Name "LogSw01_cluster"
 ```
 
-The first command gets a logical switch virtual network adapter by using the Get-SCLogicalSwitchVirtualNetworkAdapter cmdlet, and then stores it in the $HostVNic variable.
+The first command gets a logical switch virtual network adapter by using the **Get-SCLogicalSwitchVirtualNetworkAdapter** cmdlet, and then stores it in the $HostVNic variable.
 
 The second command renames the adapter in $HostVNic.
 
@@ -358,11 +358,8 @@ Accept wildcard characters: False
 ### -VLanEnabled
 Indicates whether to enable a virtual LAN (VLAN) for use by virtual machines on a Hyper-V or Citrix XenServer host. 
 
-
-
-Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
-
-Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk"  -VLANTrunkID 1,2,100,200,1124`
+- Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
+- Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk"  -VLANTrunkID 1,2,100,200,1124`
 
 ```yaml
 Type: Boolean
@@ -430,7 +427,7 @@ Accept wildcard characters: False
 ### -VMSubnet
 Specifies a virtual machine subnet object.
 
-To obtain a **VMSubnet** object, use the Get-SCVMSubnet cmdlet.
+To obtain a **VMSubnet** object, use the **Get-SCVMSubnet** cmdlet.
 
 ```yaml
 Type: VMSubnet

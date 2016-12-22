@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCISO.md
+online version: 
 schema: 2.0.0
 ms.assetid: 10990465-FD8D-486A-BFEF-C8043924FE76
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCISO.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCISO.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCISO.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCISO.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -59,7 +59,7 @@ Properties that you can change include:
 
 ### Example 1: Change the owner of an ISO file
 ```
-PS C:\>$ISO = @(Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "OsISO.iso" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" } )
+PS C:\> $ISO = @(Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "OsISO.iso" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" } )
 PS C:\> Set-SCISO -ISO $ISO[0] -Owner "Contoso\PattiFuller"
 ```
 
@@ -69,14 +69,14 @@ The second command changes the owner of the first ISO object stored in the $ISO 
 
 ### Example 2: Specify an owner for all ISO objects with an unknown owner
 ```
-PS C:\>Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where {$_.Owner -eq "Unknown"} | Set-ISO -Owner "Contoso\PattiFuller"
+PS C:\> Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where {$_.Owner -eq "Unknown"} | Set-ISO -Owner "Contoso\PattiFuller"
 ```
 
 This command gets all ISO objects from the VMM library whose owner is Unknown, and then specifies an owner for each ISO object.
 
 ### Example 3: Disable an ISO object stored in the VMM library
 ```
-PS C:\>$ISO = Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "OsISO.iso" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> $ISO = Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "OsISO.iso" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 PS C:\> Set-SCISO -ISO $Iso -EnableLibraryObject $FALSE
 ```
 
@@ -208,11 +208,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-
-
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String
@@ -346,7 +343,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns an **ISO** object.
 
 ## NOTES
-* Requires a VMM **ISO** object, which can be retrieved by using the Get-SCISO cmdlet.
+* Requires a VMM **ISO** object, which can be retrieved by using the **Get-SCISO** cmdlet.
 
 ## RELATED LINKS
 

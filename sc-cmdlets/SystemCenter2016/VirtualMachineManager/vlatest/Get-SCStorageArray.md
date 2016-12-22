@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Set-SCStorageArray.md
+online version: 
 schema: 2.0.0
 ms.assetid: 03B8E9B1-D947-4CA7-AA1A-9B8A736A59F3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageArray.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageArray.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageArray.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageArray.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -68,7 +68,7 @@ For more information about configuring storage, see Configuring Storage in VMMht
 
 ### Example 1: Get a storage array by its name
 ```
-PS C:\>Get-SCStorageArray -Name "SANArray"
+PS C:\> Get-SCStorageArray -Name "SANArray"
 ```
 
 This command gets the storage array named SANArray.
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ### -VMHost
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host[]

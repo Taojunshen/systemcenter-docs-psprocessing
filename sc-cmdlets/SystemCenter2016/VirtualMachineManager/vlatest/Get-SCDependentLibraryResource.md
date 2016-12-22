@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualHardDisk.md
+online version: 
 schema: 2.0.0
 ms.assetid: D45E1272-89DB-49AB-AA0E-0D757B681304
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDependentLibraryResource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDependentLibraryResource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDependentLibraryResource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDependentLibraryResource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -59,7 +59,7 @@ You can use the **Get-SCDependentLibraryResource** cmdlet to identify objects th
 
 ### Example 1: Find all objects that depend on a particular virtual hard disk
 ```
-PS C:\>$VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHD01"  -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> $VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHD01"  -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 PS C:\> Get-SCDependentLibraryResource -LibraryResource $VHD
 ```
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

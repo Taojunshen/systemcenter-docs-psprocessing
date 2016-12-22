@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Remove-SCDriverPackage.md
+online version: 
 schema: 2.0.0
 ms.assetid: F4CEF963-8930-4B7D-8488-87D8C70C13D0
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDriverPackage.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDriverPackage.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDriverPackage.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDriverPackage.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -58,21 +58,21 @@ The **Get-SCDriverPackage** cmdlet gets one or more driver packages stored in a 
 
 ### Example 1: Get all driver packages stored in the VMM library
 ```
-PS C:\>Get-SCDriverPackage
+PS C:\> Get-SCDriverPackage
 ```
 
 This command gets all driver packages stored in the VMM library and displays information about each driver package to the user.
 
 ### Example 2: Get a driver package by its Plug and Play ID
 ```
-PS C:\>Get-SCDriverPackage -PnPID "ROOT\VMBUS"
+PS C:\> Get-SCDriverPackage -PnPID "ROOT\VMBUS"
 ```
 
 This command gets the driver package that has a Plug and Play ID (PnPID) of "ROOT\VMBUS".
 
 ### Example 3: Get all driver packages with a specified tag value
 ```
-PS C:\>Get-SCDriverPackage -Tag "Production"
+PS C:\> Get-SCDriverPackage -Tag "Production"
 ```
 
 This command gets all driver packages that have a tag value of Production.

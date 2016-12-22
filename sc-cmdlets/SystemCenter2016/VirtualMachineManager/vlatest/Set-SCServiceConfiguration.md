@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCloud.md
+online version: 
 schema: 2.0.0
 ms.assetid: 27D03751-D3D4-4342-A709-336F8C904D63
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -47,7 +47,7 @@ The **Set-SCServiceConfiguration** cmdlet modifies the properties of an undeploy
 
 ### Example 1: Set the priority for a Service Configuration object in a cloud
 ```
-PS C:\>$SvcConfig = Get-SCServiceConfiguration -Name "Service02"
+PS C:\> $SvcConfig = Get-SCServiceConfiguration -Name "Service02"
 PS C:\> $Cloud = Get-SCCloud -Name "Production"
 PS C:\> Set-SCServiceConfiguration -ServiceConfiguration $SvcConfig -Cloud $Cloud -ServicePriority "Normal"
 ```
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

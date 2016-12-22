@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: A98B7432-F2E1-44A2-894D-49319EEADDF4
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHost.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHost.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHost.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHost.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -67,12 +67,12 @@ This cmdlet returns the object upon success (with the property MarkedForDeletion
 
 ### Example 1: Remove a specific domain-joined host from VMM
 ```
-PS C:\>$Credential = Get-Credential
+PS C:\> $Credential = Get-Credential
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01"
 PS C:\> Remove-SCVMHost -VMHost $VMHost -Credential $Credential -Confirm
 ```
 
-The first command uses the Get-Credential cmdlet to prompt you to supply a user name and password and stores the provided credentials in the $Credential variable.
+The first command uses the **Get-Credential** cmdlet to prompt you to supply a user name and password and stores the provided credentials in the $Credential variable.
 The required credentials for this operation are a domain account with administrator rights to remove a Windows-based host server joined to an Active Directory domain from VMM.
 
 The second command gets the host object named VMHost01 and stores the object in the $VMHost variable.
@@ -82,7 +82,7 @@ As this command is processed, $Credential provides credentials to **Remove-VMHos
 
 ### Example 2: Remove all hosts that are not nodes in a host cluster from VMM
 ```
-PS C:\>Get-SCVMHost | where {$_.HostCluster -eq $NULL} | where {$_.VirtualizationPlatform -eq "VMwareESX" -or $_.PerimeterNetworkHost -eq 1 -or $_.NonTrustedDomainHost -eq 1} | Remove-SCVMHost -Confirm
+PS C:\> Get-SCVMHost | where {$_.HostCluster -eq $NULL} | where {$_.VirtualizationPlatform -eq "VMwareESX" -or $_.PerimeterNetworkHost -eq 1 -or $_.NonTrustedDomainHost -eq 1} | Remove-SCVMHost -Confirm
 PS C:\> $Credential = Get-Credential
 PS C:\> Get-VMHost | where {$_.HostCluster -eq $NULL -and $_.VirtualizationPlatform -ne "VMwareESX" -and $_.PerimeterNetworkHost -eq 0 -and $_.NonTrustedDomainHost -eq 0} | Remove-VMHost -Credential $Credential -Confirm
 ```
@@ -97,7 +97,7 @@ As this command is processed, $Credential provides your credentials to **Remove-
 
 ### Example 3: Remove a specific host that you can no longer access from VMM
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost03"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost03"
 PS C:\> Remove-SCVMHost -VMHost $VMHost -Force -Confirm
 ```
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

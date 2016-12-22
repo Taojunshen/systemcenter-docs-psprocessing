@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageZone.md
+online version: 
 schema: 2.0.0
 ms.assetid: DD490ED7-43EA-41E4-B24C-5FC7AE529858
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageZone.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageZone.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageZone.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageZone.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **New-SCStorageZone** cmdlet creates a zone in a zone set for a given fabric
 
 ### Example 1: Create a zone and commit it to the zone set
 ```
-PS C:\>$ZoneSet = Get-SCStorageZoneSet -Name "ZoneSet01"
+PS C:\> $ZoneSet = Get-SCStorageZoneSet -Name "ZoneSet01"
 PS C:\> $Alias = Get-SCStorageZoneAlias -Name "MyArrayPorts"
 PS C:\> $Members = @()
 PS C:\> $Members += "D113ED3B8A310220"
@@ -56,7 +56,7 @@ The final command creates a storage zone and commits the zone to the zone set st
 
 ### Example 2: Create a zone without committing it to the zone set
 ```
-PS C:\>$ZoneSet = Get-SCStorageZoneSet -Name "ZoneSet01"
+PS C:\> $ZoneSet = Get-SCStorageZoneSet -Name "ZoneSet01"
 PS C:\> $Members = @()
 PS C:\> $Members += "D113ED3B8A310220"
 PS C:\> $Members += "C003FF3B8A610000"
@@ -74,7 +74,7 @@ The last command creates a storage zone without committing it to the zone set.
 
 ### -AddZoneAlias
 Specifies an array of zone aliases that represents one or more world-wide port names.
-To obtain a **StorageZoneAlias** object, use the Get-SCStorageZoneAlias cmdlet.
+To obtain a **StorageZoneAlias** object, use the **Get-SCStorageZoneAlias** cmdlet.
 
 ```yaml
 Type: StorageZoneAlias[]
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -StorageZoneSet
 Specifies a storage zone set object.
-To obtain a **StorageZoneSet** object, use the Get-SCStorageZoneSet cmdlet.
+To obtain a **StorageZoneSet** object, use the **Get-SCStorageZoneSet** cmdlet.
 
 ```yaml
 Type: StorageZoneSet

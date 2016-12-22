@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCRunAsAccount.md
+online version: 
 schema: 2.0.0
 ms.assetid: 15520B44-C0A2-438D-988B-732C2B675FCA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCSSASConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCSSASConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCSSASConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCSSASConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ Therefore, this cmdlet also connects to the SQL Server Reporting Server Web Serv
 
 ### Example 1: Create a connection to SSAS
 ```
-PS C:\>$SSASCreds = Get-SCRunAsAccount -Name "SSASRunAsAcct"
+PS C:\> $SSASCreds = Get-SCRunAsAccount -Name "SSASRunAsAcct"
 PS C:\> $SSASSConnection = New-SCSSASConnection -ComputerName "SQLServer01" -InstanceName MSSQLServer -Port 2383 -Credential $SSASCreds
 ```
 

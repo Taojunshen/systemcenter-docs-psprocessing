@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCLoadBalancer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 686A4F37-AED6-4143-BD16-9191C837B5EC
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -73,7 +73,7 @@ The **Get-SCLoadBalancer** cmdlet gets one or more load balancer objects.
 
 ### Example 1: Get all load balancers for a host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup01" }
+PS C:\> $HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup01" }
 PS C:\> $LoadBalancers = Get-SCLoadBalancer -VMHostGroup $HostGroup
 PS C:\> $LoadBalancers
 ```
@@ -86,7 +86,7 @@ The last command displays information about each of the load balancers stored in
 
 ### Example 2: Get all load balancers of a given type for a host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
+PS C:\> $HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
 PS C:\> $LoadBalancers = Get-SCLoadBalancer -VMHostGroup $HostGroup -Manufacturer "LB Manufacturer" -Model "LB01"
 PS C:\> $LoadBalancers
 ```
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

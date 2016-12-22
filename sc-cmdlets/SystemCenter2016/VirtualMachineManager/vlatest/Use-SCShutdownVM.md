@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-help.xml
 online version: 4776c225-8a45-4453-847d-e4f16a57a44e
 schema: 2.0.0
 ms.assetid: 889464D7-9A9C-48EE-A879-577C73F7D1F2
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCShutdownVM.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCShutdownVM.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCShutdownVM.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCShutdownVM.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ This cmdlet changes a virtual machine to the stopped state only if the virtual m
 
 ### Example 1: Move a virtual machine to the Stopped state
 ```
-PS C:\>$VM01 = Get-SCVirtualmachine -Name "ContosoVM01" 
+PS C:\> $VM01 = Get-SCVirtualmachine -Name "ContosoVM01" 
 PS C:\> Use-SCShutdownVM -VM $VM01
 ```
 

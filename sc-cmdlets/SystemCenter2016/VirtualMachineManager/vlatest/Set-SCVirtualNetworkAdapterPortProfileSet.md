@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualNetworkAdapterPortProfileSet.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9E8131B9-F71B-427E-9D35-0072366948FF
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapterPortProfileSet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapterPortProfileSet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapterPortProfileSet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapterPortProfileSet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -42,7 +42,7 @@ The **Set-SCVirtualNetworkAdapterPortProfileSet** cmdlet updates the properties 
 
 ### Example 1: Remove a virtual network adapter native port profile from a virtual network adapter port profile set
 ```
-PS C:\>Get-SCVirtualNetworkAdapterPortProfileSet -Name "VirtualNetworkAdapterPortProfSet01" | Set-SCVirtualNetworkAdapterPortProfileSet -RemoveVirtualNetworkAdapterNativePortProfile
+PS C:\> Get-SCVirtualNetworkAdapterPortProfileSet -Name "VirtualNetworkAdapterPortProfSet01" | Set-SCVirtualNetworkAdapterPortProfileSet -RemoveVirtualNetworkAdapterNativePortProfile
 ```
 
 This command gets the virtual network adapter port profile set object named VirtualNetworkAdapterPortProfSet01 and uses the pipeline operator to pass the object to **Set-SCVirtualNetworkAdapterPortProfileSet**, which removes the virtual network adapter native port profile from the virtual network adapter port profile set object.
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ### -VirtualNetworkAdapterNativePortProfile
 Specifies a virtual network adapater native port profile object.
 
-To obtain a virtual network adapter native port profile object, use the Get-SCVirtualNetworkAdapterNativePortProfile cmdlet.
+To obtain a virtual network adapter native port profile object, use the **Get-SCVirtualNetworkAdapterNativePortProfile** cmdlet.
 
 ```yaml
 Type: VirtualNetworkAdapterNativePortProfile

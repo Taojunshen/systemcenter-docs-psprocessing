@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCapabilityProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 707CBB49-1813-4528-BC98-78ECA377C36E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCCapabilityProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCCapabilityProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCCapabilityProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCCapabilityProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -49,7 +49,7 @@ The **Test-SCCapabilityProfile** cmdlet validates the settings of a capability p
 
 ### Example 1: Validate a capability profile for a virtual machine in a private cloud
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "CloudVM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "CloudVM01"
 PS C:\> $ProfileTest = Test-SCCapabilityProfile -VM $VM
 PS C:\> $ProfileTest.ValidationErrors
 ```

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: 3F284231-E9CC-4EB5-9C2D-7DE8EBCE3D3E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageVolume.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageVolume.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageVolume.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageVolume.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -107,7 +107,7 @@ The ID (a GUID) for each volume.
 
 ### Example 1: Get all volumes on the specified host server
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> Get-SCStorageVolume -VMHost $VMHost
 ```
 
@@ -119,7 +119,7 @@ Note: To translate the capacity and free space from bytes into larger units of m
 
 ### Example 2: Get the specified volume on a host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com" 
 PS C:\> Get-SCStorageVolume -VMHost $VMHost -Name "C:\"
 ```
 
@@ -129,7 +129,7 @@ The second command gets the drive volume named C:\ from VMHost02 and displays in
 
 ### Example 3: Get all volumes on VMware ESX hosts that contain the string "SharedStorage" in the volume name
 ```
-PS C:\>$VMHost = Get-SCVMHost -VMMServer "VMMServer01.Contoso.com" | where { $_.VirtualizationPlatform -eq "VMwareESX" }
+PS C:\> $VMHost = Get-SCVMHost -VMMServer "VMMServer01.Contoso.com" | where { $_.VirtualizationPlatform -eq "VMwareESX" }
 PS C:\> $VMHost | Get-SCStorageVolume | select -Property Name, VMHost | where { $_.Name -match "SharedStorage" }
 ```
 
@@ -137,7 +137,7 @@ The first command gets all host objects from VMMServer01, selects only those hos
 
 Note: This example assumes that the names of all volumes on these ESX Servers include the string "storage", but that only some of those volumes' names include the string "SharedStorage."
 
-The second command passes each ESX host object in $VMHost to the Get-SCStorageVolume cmdlet, which gets the volume objects on these hosts and then, in turn, passes the volume objects to "select" (the alias for the Select-Object cmdlet).
+The second command passes each ESX host object in $VMHost to the **Get-SCStorageVolume** cmdlet, which gets the volume objects on these hosts and then, in turn, passes the volume objects to "select" (the alias for the **Select-Object** cmdlet).
 The **Select-Object** cmdlet displays the volume name and the host that volume resides on for those volumes whose name contains the string "SharedStorage".
 
 ## PARAMETERS
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

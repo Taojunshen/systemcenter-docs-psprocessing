@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 8d9923c5-8694-42e7-9500-67c20cd28bc5
 schema: 2.0.0
 ms.assetid: 41EBD541-2A84-44B3-B0EB-E33623CBFB4E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCDomainCredential.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCDomainCredential.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCDomainCredential.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCDomainCredential.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ The **Test-SCDomainCredential** cmdlet tests a credential object or user name to
 
 ### Example 1: Test the validity of a credential object
 ```
-PS C:\>$Creds = Get-Credential
+PS C:\> $Creds = Get-Credential
 PS C:\> Test-SCDomainCredential -Credential $Creds
 ```
 
@@ -51,7 +51,7 @@ The second command validates the credential object in $Creds and returns either 
 
 ### Example 2: Test the validity of a user name
 ```
-PS C:\>Test-SCDomainCredential -UserName "PattiFuller"
+PS C:\> Test-SCDomainCredential -UserName "PattiFuller"
 ```
 
 This command tests the validity of the user name PattiFuller and returns either True or False.
@@ -60,7 +60,7 @@ This command tests the validity of the user name PattiFuller and returns either 
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the PSCredential object, type `Get-Help Get-Credential`.
 

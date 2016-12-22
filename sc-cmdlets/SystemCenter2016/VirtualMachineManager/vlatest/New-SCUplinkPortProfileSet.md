@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalSwitch.md
+online version: 
 schema: 2.0.0
 ms.assetid: 36F4E3EE-0986-4961-9DE2-095DC6D594F9
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUplinkPortProfileSet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUplinkPortProfileSet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUplinkPortProfileSet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCUplinkPortProfileSet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,13 +35,13 @@ New-SCUplinkPortProfileSet -LogicalSwitch <LogicalSwitch> [-NativeUplinkPortProf
 The **New-SCUplinkPortProfileSet** cmdlet creates an uplink port profile set.
 
 You must provide a logical switch when you create an uplink port profile set.
-To obtain a logical switch object, use the Get-SCLogicalSwitch cmdlet.
+To obtain a logical switch object, use the **Get-SCLogicalSwitch** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Create an uplink port profile set
 ```
-PS C:\>$LogicalSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
+PS C:\> $LogicalSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
 PS C:\> $NativeUplinkPortProfile = Get-SCNativeUplinkPortProfile -Name "NativeUplinkPortProfile01"
 PS C:\> New-SCUplinkPortProfileSet -Name "UplinkPortProfileSet01" -LogicalSwitch $LogicalSwitch -NativeUplinkPortProfile $NativeUplinkPortProfile
 ```
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 
 ### -ExtensionUplinkPortProfiles
 Specifies an array of extension uplink port profiles.
-To obtain an extension uplink port profile, use the Get-SCExtensionUplinkPortProfile cmdlet.
+To obtain an extension uplink port profile, use the **Get-SCExtensionUplinkPortProfile** cmdlet.
 
 ```yaml
 Type: ExtensionUplinkPortProfile[]
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -LogicalSwitch
 Specifies a logical switch that this cmdlet includes in the uplink port profile set.
-To obtain a logical switch object, use the Get-SCLogicalSwitch cmdlet.
+To obtain a logical switch object, use the **Get-SCLogicalSwitch** cmdlet.
 
 ```yaml
 Type: LogicalSwitch

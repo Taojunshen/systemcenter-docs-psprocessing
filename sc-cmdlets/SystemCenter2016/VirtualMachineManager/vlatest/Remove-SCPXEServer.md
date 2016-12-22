@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCPXEServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7D988B04-342E-4D21-AE1A-7EC3D7DDC4AA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPXEServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPXEServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPXEServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPXEServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,12 +38,12 @@ This cmdlet does not remove the Windows Deployment Services role from the comput
 
 ### Example 1: Remove a VMM PXE server
 ```
-PS C:\>$Credential = Get-SCRunAsAccount "RunAsAcct01"
+PS C:\> $Credential = Get-SCRunAsAccount "RunAsAcct01"
 PS C:\> $PXEServer = Get-SCPXEServer -ComputerName "WDSServer01.Contoso.com"
 PS C:\> Remove-SCPXEServer -PXEServer $PXEServer -Credential $Credential -Confirm
 ```
 
-The first command uses the Get-Credential cmdlet to prompt you to supply a user name and password and stores the provided credentials in the $Credential variable.
+The first command uses the **Get-Credential** cmdlet to prompt you to supply a user name and password and stores the provided credentials in the $Credential variable.
 The account must have local Administrator permissions on the PXE server.
 
 The second command gbets the PXE server object named WDSServer01 and stores the object in the $PXEServer variable.
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task. 
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task. 
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`. 
 For more information about Run As accounts, type `Get-Help New-SCRunAsAccount`.

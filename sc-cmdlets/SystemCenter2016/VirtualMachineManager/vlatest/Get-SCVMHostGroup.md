@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Move-SCVMHostGroup.md
+online version: 
 schema: 2.0.0
 ms.assetid: 005B35E3-A897-4A58-A8A2-2D7606742011
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostGroup.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostGroup.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostGroup.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostGroup.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,14 +48,14 @@ For more information about host groups, type `Get-Help New-VMHostGroup -Detailed
 
 ### Example 1: Get all host groups at the specified path
 ```
-PS C:\>Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup01" }
+PS C:\> Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup01" }
 ```
 
 This command gets the host groups located at host path All Hosts\HostGroup01 and displays information about these host groups.
 
 ### Example 2: Display the name and path properties for all host groups
 ```
-PS C:\>Get-SCVMHostGroup -VMMServer "VMMServer01.Contoso.com" | select -Property Name,Path
+PS C:\> Get-SCVMHostGroup -VMMServer "VMMServer01.Contoso.com" | select -Property Name,Path
 ```
 
 This command gets all host group objects from VMMServer01, selects the name and host group path properties, and displays those properties.

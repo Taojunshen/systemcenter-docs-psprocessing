@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCLoadBalancer.md
+online version: 
 schema: 2.0.0
 ms.assetid: F331DBBB-6200-4D4D-BBBB-797C3C6A72E3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ The **Set-SCLoadBalancer** cmdlet modifies the properties of a load balancer.
 
 ### Example 1: Change the configuration provider for a load balancer
 ```
-PS C:\>$LoadBalancer = Get-SCLoadBalancer -LoadBalancerAddress "LB01.Contoso.com"
+PS C:\> $LoadBalancer = Get-SCLoadBalancer -LoadBalancerAddress "LB01.Contoso.com"
 PS C:\> $NewProvider = Get-SCConfigurationProvider | where { $_.Type -eq "LoadBalancer" -and $_.Manufacturer -eq "LB Manufacturer 2" -and $_.Model -eq "LB02"} 
 PS C:\> Set-SCLoadBalancer -LoadBalancer $LoadBalancer -ConfigurationProvider $NewProvider -Manufacturer "LB Manufacturer 2" -Model "LB02"
 ```

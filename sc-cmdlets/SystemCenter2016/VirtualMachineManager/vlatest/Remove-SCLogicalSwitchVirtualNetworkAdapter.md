@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalSwitchVirtualNetworkAdapter.md
+online version: 
 schema: 2.0.0
 ms.assetid: 03001DBD-72D7-41F2-A685-B97E80E954E8
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalSwitchVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalSwitchVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalSwitchVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalSwitchVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,11 +37,11 @@ The **Remove-SCLogicalSwitchVirtualNetworkAdapter** cmdlet removes a virtual net
 
 ### Example 1: Delete a logical switch virtual network adapter
 ```
-PS C:\>$HostVNicVarToRemove = Get-SCLogicalSwitchVirtualNetworkAdapter -ID "6615c2c2-4eaa-4f75-be3e-bbdb8cb25ca1"
+PS C:\> $HostVNicVarToRemove = Get-SCLogicalSwitchVirtualNetworkAdapter -ID "6615c2c2-4eaa-4f75-be3e-bbdb8cb25ca1"
 PS C:\> Remove-SCLogicalSwitchVirtualNetworkAdapter -LogicalSwitchVirtualNetworkAdapter $HostVNicVarToRemove
 ```
 
-The first command gets a logical switch virtual network adapter by using the Get-SCLogicalSwitchVirtualNetworkAdapter cmdlet, and then stores it in the $HostVNicVarToRemove variable.
+The first command gets a logical switch virtual network adapter by using the **Get-SCLogicalSwitchVirtualNetworkAdapter** cmdlet, and then stores it in the $HostVNicVarToRemove variable.
 
 The second command removes the virtual network adapter.
 It is no longer deployed with the logical switch.

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCServicingWindow.md
+online version: 
 schema: 2.0.0
 ms.assetid: D013B8FC-B7AE-4CC6-AB38-BB7F946B1F83
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServicingWindow.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServicingWindow.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServicingWindow.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServicingWindow.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -66,7 +66,7 @@ A servicing window is a scheduled timeframe during which maintenance work can be
 
 ### Example 1: Schedule a daily servicing window
 ```
-PS C:\>$Date = (Get-Date).AddDays(2)
+PS C:\> $Date = (Get-Date).AddDays(2)
 PS C:\> New-SCServicingWindow -Name "Backup Staging A" -Category "Non Essential" -StartDate $Date -StartTimeOfDay "13:30" -TimeZone 085 -DaysToRecur 3
 ```
 
@@ -77,7 +77,7 @@ The start date of the servicing window is set to the date stored in $Date, which
 
 ### Example 2: Schedule a servicing window that occurs one day a week
 ```
-PS C:\>$Date = (Get-Date).AddDays(7)
+PS C:\> $Date = (Get-Date).AddDays(7)
 PS C:\> New-SCServicingWindow -Name "Test Servers Group 3" -Category "Test Group" -StartDate $Date -StartTimeOfDay "11:00" -TimeZone 035 -WeeklyScheduleDayOfWeek "Saturday" -WeeksToRecur 1 -MinutesDuration 180
 ```
 
@@ -88,7 +88,7 @@ The start date of the servicing window is set to the date stored in $Date, which
 
 ### Example 3: Schedule a biweekly service window
 ```
-PS C:\>New-SCServicingWindow -Name "Staging Group C" -StartTimeOfDay "22:30" -TimeZone 035 -WeeklyScheduleDayOfWeek "Saturday, Sunday" -WeeksToRecur 2
+PS C:\> New-SCServicingWindow -Name "Staging Group C" -StartTimeOfDay "22:30" -TimeZone 035 -WeeklyScheduleDayOfWeek "Saturday, Sunday" -WeeksToRecur 2
 ```
 
 This command creates a servicing window named Staging Group C that occurs every other week (biweekly) on Saturday and Sunday starting at 10:30 PM in the Eastern time zone.
@@ -96,7 +96,7 @@ Because no start date is specified, by default the servicing window becomes effe
 
 ### Example 4: Schedule a bimonthly servicing window
 ```
-PS C:\>New-SCServicingWindow -Name "Production Servers A" -Category "Emergency" -StartTimeOfDay "23:30" -TimeZone 085 -MonthlyScheduleDayOfWeek "Tuesday" -WeekOfMonth "Second" -MonthsToRecur 2
+PS C:\> New-SCServicingWindow -Name "Production Servers A" -Category "Emergency" -StartTimeOfDay "23:30" -TimeZone 085 -MonthlyScheduleDayOfWeek "Tuesday" -WeekOfMonth "Second" -MonthsToRecur 2
 ```
 
 This command creates a servicing window named Production Servers A that occurs every other month (bimonthly) on the second Tuesday of the month, starting at 11:30 PM in the Eastern time zone.
@@ -126,9 +126,8 @@ Last indicates the last day of the month.
 
 The default value is the integer that corresponds to the same day as specified in the *StartDate* parameter.
 
-Valid integer values: 1 - 31 
-
-Valid string values:  First, Last
+- Valid integer values: 1 - 31 
+- Valid string values:  First, Last
 
 ```yaml
 Type: DayOfMonthType
@@ -316,7 +315,7 @@ Accept wildcard characters: False
 ### -StartDate
 Specifies the date to start a service window.
 The default value is the current date.
-You can type a new date in the short date format for your locale, or, you can pass a **DateTime** object from Get-Date.
+You can type a new date in the short date format for your locale, or, you can pass a **DateTime** object from **Get-Date**.
 
 ```yaml
 Type: DateTime
@@ -348,7 +347,7 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number (an index) that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935  at http://go.microsoft.com/fwlink/?LinkId=120935.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) at `http://go.microsoft.com/fwlink/?LinkId=120935`.
 If no time zone is specified, the default time zone used for a virtual machine is the same time zone setting that is on the virtual machine host.
 
 ```yaml
@@ -398,11 +397,9 @@ Accept wildcard characters: False
 Specifies one or more days of the week to run a job.
 The default value is the current day of the week.
 
-Valid values to specify an individual day by using a string: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.
-
-Valid values to specify a set of days in a week: Any set of two or more days separated by commas.
-
-Valid values to specify an individual day by using an integer: 1, 2, 3, 4, 5, 6, 7
+- Valid values to specify an individual day by using a string: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.
+- Valid values to specify a set of days in a week: Any set of two or more days separated by commas.
+- Valid values to specify an individual day by using an integer: 1, 2, 3, 4, 5, 6, 7
 
 ```yaml
 Type: String

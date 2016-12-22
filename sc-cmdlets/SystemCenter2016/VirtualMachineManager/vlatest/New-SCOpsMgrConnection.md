@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCOpsMgrConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: 546155B5-92EB-4893-9662-D9E7E72BC10D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCOpsMgrConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCOpsMgrConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCOpsMgrConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCOpsMgrConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,8 +36,6 @@ The **New-SCOpsMgrConnection** cmdlet creates a connection between the Virtual M
 
 Before creating a connection to an Operations Manager management server, you must install the Operations Manager management console on your VMM management server and install the following management packs in Operations Manager: 
 
-
-
 - SQL Server Core Library version 6.0.5000.0 or later management pack
 
 - Windows Server Internet Information Services Library version 6.0.5000.0 or later management pack
@@ -50,7 +48,7 @@ Before creating a connection to an Operations Manager management server, you mus
 
 ### Example 1: Create a connection to an Operations Manager management server
 ```
-PS C:\>$OMCreds = Get-SCRunAsAccount -Name "OpsMgrServerAccount"
+PS C:\> $OMCreds = Get-SCRunAsAccount -Name "OpsMgrServerAccount"
 PS C:\> $VMMCreds = Get-Credential
 PS C:\> New-SCOpsMgrConnection -OpsMgrServer "OpsMgrServer01.Contoso.com" -OpsMgrServerCredential $OMCreds -VMMServerCredential $VMMCreds
 ```

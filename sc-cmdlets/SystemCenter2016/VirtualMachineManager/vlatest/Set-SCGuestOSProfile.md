@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCGuestOSProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: D95E244B-4D9A-4944-8132-4056E396EAE3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCGuestOSProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCGuestOSProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCGuestOSProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCGuestOSProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -99,7 +99,7 @@ Changes do not affect any existing virtual machines that were previously created
 
 ### Example 1: Specify an organization name for an existing guest operating system profile
 ```
-PS C:\>$OSProfile = Get-SCGuestOSProfile -Name "NewOSProfile01"
+PS C:\> $OSProfile = Get-SCGuestOSProfile -Name "NewOSProfile01"
 PS C:\> Set-SCGuestOSProfile -GuestOSProfile $OSProfile -OrgName "Contoso"
 ```
 
@@ -109,7 +109,7 @@ The second command sets Contoso as the organization name for the guest operating
 
 ### Example 2: Specify an SSHKey for an existing Linux guest operating system profile
 ```
-PS C:\>$OSProfile = Get-SCGuestOSProfile -Name "My CentOS Profile"
+PS C:\> $OSProfile = Get-SCGuestOSProfile -Name "My CentOS Profile"
 PS C:\> $Sshkey = Get-SCSSHKey -Name "My.Sshkey"
 PS C:\> Set-SCGuestOSProfile -GuestOSProfile $OSProfile -LinuxAdministratorSSHKey $Sshkey
 ```
@@ -308,8 +308,7 @@ Accept wildcard characters: False
 Specifies an array of commands to add to the **\[GuiRunOnce\]** section of an unattended answer file.
 Use single quotation marks around each string enclosed in double quotation marks. 
 
-Example format: 
-`-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
+Example format: `-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
 
 For information about how Windows PowerShell uses quotation marks, type `Get-Help about_Quoting_Rules`.
 
@@ -474,11 +473,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-
-
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String
@@ -587,9 +583,8 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number (an index) that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935  at http://go.microsoft.com/fwlink/?LinkId=120935.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) at `http://go.microsoft.com/fwlink/?LinkId=120935`.
 If no time zone is specified, the default time zone used for a virtual machine is the same time zone setting that is on the virtual machine host. 
-
 
 Example format to specify the GMT Standard Time zone: `-TimeZone 085`
 
@@ -662,7 +657,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **GuestOSProfile** object.
 
 ## NOTES
-* Requires a VMM guest OS profile object, which can be retrieved by using the Get-SCGuestOSProfile cmdlet.
+* Requires a VMM guest OS profile object, which can be retrieved by using the **Get-SCGuestOSProfile** cmdlet.
 
 ## RELATED LINKS
 

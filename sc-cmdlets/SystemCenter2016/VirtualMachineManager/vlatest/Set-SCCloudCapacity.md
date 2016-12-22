@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCloud.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7FBBC23F-ABB1-4B0A-BBC9-77B6CB31460F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloudCapacity.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloudCapacity.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloudCapacity.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloudCapacity.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -58,7 +58,7 @@ Alternatively, you can set any or all of the dimensions to use the maximum capac
 
 ### Example 1: Change the cloud capacity properties of a specified cloud
 ```
-PS C:\>$Cloud = Get-SCCloud -Name "Cloud01"
+PS C:\> $Cloud = Get-SCCloud -Name "Cloud01"
 PS C:\> $CloudCapacity = Get-SCCloudCapacity -Cloud $Cloud
 PS C:\> Set-SCCloudCapacity -CloudCapacity $CloudCapacity -VirtualCPUCountLimited $True -VirtualCPUCount 20
 ```
@@ -71,7 +71,7 @@ The last command indicates that there should be a limit placed on the virtual CP
 
 ### Example 2: Change the cloud capacity properties of a specific private cloud using a job group
 ```
-PS C:\>$Guid = [System.Guid]::NewGuid()
+PS C:\> $Guid = [System.Guid]::NewGuid()
 PS C:\> $Cloud = Get-SCCloud -Name "Cloud02"
 PS C:\> $CloudCapacity = Get-SCCloudCapacity -Cloud $Cloud
 PS C:\> Set-SCCloudCapacity -JobGroup $Guid -VirtualMachinesLimited $True -VirtualMachines 50 -VirtualCPUCountLimited $True -VirtualCPUCount 100 -StorageLimited $True -StorageGB 500

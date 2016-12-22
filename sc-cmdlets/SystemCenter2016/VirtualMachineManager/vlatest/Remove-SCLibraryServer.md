@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCLibraryServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7FCCB177-A660-4E28-9B47-A28928FB571D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,23 +35,19 @@ Library objects that have a corresponding file (such as .vhd or .vmdk files) sto
 
 This cmdlet operates as follows: 
 
-
-
 - If this library server is also the VMM server, you cannot remove the library server, so the remove library server operation will fail. 
-
 
 - If this computer is both a library server and a host, this cmdlet removes only the library server feature from VMM, but the computer continues to function as a host. 
 
-
 - If this computer is only a library server (not also a host or a VMM server), the library server is removed from VMM.
 
-This cmdlet returns the object upon success (with the property MarkedForDeletion set to $True) or returns an error message upon failure.
+This cmdlet returns the object upon success (with the property **MarkedForDeletion** set to $True) or returns an error message upon failure.
 
 ## EXAMPLES
 
 ### Example 1: Remove a library server object from VMM
 ```
-PS C:\>$Creds = Get-Credential
+PS C:\> $Creds = Get-Credential
 PS C:\> $LibServ = Get-SCLibraryServer -VMMServer "VMMServer1.Contoso.com" -ComputerName "LibraryServer01.Contoso.com"
 PS C:\> Remove-SCLibraryServer -LibraryServer $LibServ -Credential $Creds
 ```
@@ -66,7 +62,7 @@ When the **Remove-SCLibraryServer** cmdlet is used with the *LibraryServer* para
 
 ### Example 2: Remove multiple library server objects that have a specific string in their name
 ```
-PS C:\>$Creds = Get-Credential
+PS C:\> $Creds = Get-Credential
 PS C:\> $LibServers = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match "LibraryServer" }
 PS C:\> $LibServers | Remove-SCLibraryServer -Credential $Creds
 ```
@@ -80,17 +76,17 @@ The third command passes each library server object in $LibServers to **Remove-S
 
 ### Example 3: Remove a highly available library server and all of its nodes
 ```
-PS C:\>$Credential = Get-Credential
+PS C:\> $Credential = Get-Credential
 PS C:\> $Cluster = Find-SCCluster -ComputerName "HAFileServer01.Contoso.com" -Credential $Credential
 PS C:\> Remove-LibraryServer -LibraryServer "HAFileServer01.Contoso.com" -Credential $Credential -RunAsynchronously
 PS C:\> ForEach ($Node in $Cluster.ClusterNodes) {Remove-LibraryServer -LibraryServer $Node -Credential $Credential -RunAsynchronously}
 ```
 
-The first command uses Get-Credential to prompt you to supply a user name and password and stores your credentials in $Credential.
+The first command uses **Get-Credential** to prompt you to supply a user name and password and stores your credentials in $Credential.
 The required credentials for this operation are either a local Administrator account or a domain account with administrator rights on the library server.
 The following commands use $Credential to pass your credentials to each cmdlet that requires credentials.
 
-The second command uses the Find-SCCluster cmdlet  to confirm that HAFileServer01 is a highly available file server and stores the cluster object in the $Cluster variable.
+The second command uses the **Find-SCCluster** cmdlet  to confirm that HAFileServer01 is a highly available file server and stores the cluster object in the $Cluster variable.
 
 The third command removes the highly available file server (by specifying its name) as a library server from VMM.
 The command uses the *RunAsynchronously* parameter to return control to the shell immediately (before this command completes) because the last command does not need to wait until after this command finishes.
@@ -119,7 +115,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 

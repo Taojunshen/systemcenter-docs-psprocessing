@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCIPAddress.md
+online version: 
 schema: 2.0.0
 ms.assetid: B761DE26-F50E-4B8B-8C10-2EEF7BC79C28
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCIPAddress.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCIPAddress.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCIPAddress.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCIPAddress.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -52,7 +52,7 @@ Otherwise, Virtual Machine Manager (VMM) chooses the IP address from the address
 
 ### Example 1: Allocate an IP address
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $vNICs = $VM.VirtualNetworkAdapters
 PS C:\> $IPPool = Get-SCStaticIPAddressPool -Name "Production IP Address Pool"
 PS C:\> Grant-SCIPAddress -StaticIPAddressPool $IPPool -GrantToObjectType VirtualNetworkAdapter -GrantToObjectID $vNICs[0].ID -Description $VM.Name
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -245,11 +245,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account.
 
-
-
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String
@@ -365,7 +362,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **CloudDRPairingInfoData** object.
 
 ## NOTES
-* This cmdlet requires a VMM static IP address pool object, which can be retrieved using the Get-SCStaticIPAddressPool cmdlet.
+* This cmdlet requires a VMM static IP address pool object, which can be retrieved using the **Get-SCStaticIPAddressPool** cmdlet.
 
 ## RELATED LINKS
 

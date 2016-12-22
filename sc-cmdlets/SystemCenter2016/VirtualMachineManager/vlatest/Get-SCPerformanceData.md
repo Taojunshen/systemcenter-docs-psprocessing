@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: DF9C47B8-5D06-4A6B-8C3F-BF32AE0633F2
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPerformanceData.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPerformanceData.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPerformanceData.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPerformanceData.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -86,7 +86,7 @@ You can request data for the following performance counters:
 
 ### Example 1: Get performance data for a host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup -Name "HostGroup01"
+PS C:\> $HostGroup = Get-SCVMHostGroup -Name "HostGroup01"
 PS C:\> Get-SCPerformanceData -VMHostGroup $HostGroup -PerformanceCounter "MemoryUsage" -Timeframe "Hour"
 ```
 
@@ -96,7 +96,7 @@ The second command gets the memory usage data over the last three hours for Host
 
 ### Example 2: Get performance data for a cluster
 ```
-PS C:\>$Cluster = Get-SCVMHostCluster -Name "Cluster01.Contoso.com"
+PS C:\> $Cluster = Get-SCVMHostCluster -Name "Cluster01.Contoso.com"
 PS C:\> Get-SCPerformanceData -VMHostCluster $Cluster -PerformanceCounter "MemoryUsage" -Timeframe "Day"
 ```
 
@@ -106,7 +106,7 @@ The second command gets the memory usage data for the last day (24 hours) for Cl
 
 ### Example 3: Get performance data for a specified host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
 PS C:\> Get-SCPerformanceData -VMHost $VMHost -PerformanceCounter "MemoryUsage" -Timeframe "Month"
 ```
 
@@ -116,7 +116,7 @@ The second command gerts the memory usage data for the last month (30 days) for 
 
 ### Example 4: Get performance data for a specified virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Get-SCPerformanceData -VM $VM -PerformanceCounter "MemoryUsage" -Timeframe "Day"
 ```
 
@@ -126,7 +126,7 @@ The second command gerts the memory usage data for the last day (24 hours) for V
 
 ### Example 5: Get performance data for all virtual machines
 ```
-PS C:\>Get-SCPerformanceData -AllVM -PerformanceCounter "CPUUsage"
+PS C:\> Get-SCPerformanceData -AllVM -PerformanceCounter "CPUUsage"
 ```
 
 This command gets the CPU usage data for all virtual machines.
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 Virtual Machine Manager (VMM) supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

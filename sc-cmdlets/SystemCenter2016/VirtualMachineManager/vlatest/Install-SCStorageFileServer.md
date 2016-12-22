@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageFileServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: ED9211A5-DA9A-43B5-BDB4-10550866EE7B
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCStorageFileServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCStorageFileServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCStorageFileServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCStorageFileServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -60,7 +60,7 @@ The computers can be provisioned by Virtual Machine Manager (VMM) by using an Op
 
 ### Example 1: Create file server with shared storage
 ```
-PS C:\>$RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> Install-SCStorageFileServer -ClusterName "Cluster01" -ScaleoutFileServerName "SOFS01" -RunAsAccount $RunAsAcct -AddExistingComputer @("node1", "node2") -RunAsynchronously
 ```
 
@@ -70,7 +70,7 @@ The second command creates file server with the cluster named Cluster01 and file
 
 ### Example 2: Create file server with storage spaces direct
 ```
-PS C:\>$RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> Install-SCStorageFileServer -ClusterName "Cluster01" -ScaleoutFileServerName "SOFS01" -RunAsAccount $RunAsAcct -AddExistingComputer @("node1", "node2") -RunAsynchronously -EnableS2D
 ```
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableS2D
-{{Fill EnableS2D Description}}
+
 
 ```yaml
 Type: SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -PhysicalComputerConfig
 Specifies an array of host configuration objects.
-For information about host configuration objects, see the New-SCVMHostConfig cmdlet.
+For information about host configuration objects, see the **New-SCVMHostConfig** cmdlet.
 
 ```yaml
 Type: PhysicalComputerConfig[]

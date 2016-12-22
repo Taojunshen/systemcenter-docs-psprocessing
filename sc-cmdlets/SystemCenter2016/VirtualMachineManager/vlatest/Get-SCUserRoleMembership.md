@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUserRole.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7139D64C-8AC1-42EA-8CBC-852A16F4BF48
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRoleMembership.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRoleMembership.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRoleMembership.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRoleMembership.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ The **Get-SCUserRoleMembership** cmdlet gets information about the user roles of
 
 ### Example 1: Get information about user roles for current user
 ```
-PS C:\>Get-SCUserRoleMembership
+PS C:\> Get-SCUserRoleMembership
 ```
 
 This command returns the name, description, and user role profile for each user role of which the current user is a member.

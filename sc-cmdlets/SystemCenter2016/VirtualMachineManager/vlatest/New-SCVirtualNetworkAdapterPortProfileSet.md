@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalSwitch.md
+online version: 
 schema: 2.0.0
 ms.assetid: 2DC20B9B-6A76-460A-8930-DA60259A577A
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterPortProfileSet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterPortProfileSet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterPortProfileSet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterPortProfileSet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,14 +37,14 @@ New-SCVirtualNetworkAdapterPortProfileSet [-IsDefaultPortProfileSet <Boolean>]
 The **New-SCVirtualNetworkAdapterPortProfileSet** cmdlet creates a virtual network adapter port profile set.
 
 To create the virtual network adapter port profile set, you must provide a port classification and logical switch.
-To obtain a port classification object, use the Get-SCPortClassification cmdlet.
-To obtain a logical switch object, use the Get-SCLogicalSwitch cmdlet.
+To obtain a port classification object, use the **Get-SCPortClassification** cmdlet.
+To obtain a logical switch object, use the **Get-SCLogicalSwitch** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Create a virtual network adapter port profile set
 ```
-PS C:\>$PortClass = Get-SCPortClassification -Name "PortClass01"
+PS C:\> $PortClass = Get-SCPortClassification -Name "PortClass01"
 PS C:\> $LogSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
 PS C:\> New-SCVirtualNetworkAdapterPortProfileSet -Name "VirtualNetworkAdapterPortProfSet01" -PortClassification $PortClass -LogicalSwitch $LogSwitch
 ```
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ### -VirtualNetworkAdapterNativePortProfile
 Specifies a virtual network adapter native port profile object.
 
-To obtain a virtual network adapter native port profile object, use the Get-SCVirtualNetworkAdapterNativePortProfile cmdlet.
+To obtain a virtual network adapter native port profile object, use the **Get-SCVirtualNetworkAdapterNativePortProfile** cmdlet.
 
 ```yaml
 Type: VirtualNetworkAdapterNativePortProfile

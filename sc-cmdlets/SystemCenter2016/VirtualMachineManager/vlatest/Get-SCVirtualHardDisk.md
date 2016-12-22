@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: 63A21708-4A3A-45CB-BAE6-3AEF47BCB71C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDisk.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDisk.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDisk.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDisk.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -70,14 +70,14 @@ A virtual hard disk might be stored as a standalone object in the VMM library, a
 
 ### Example 1: Get a virtual hard disk object from the library
 ```
-PS C:\>$VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHD01.vhd" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> $VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHD01.vhd" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 ```
 
 This command gets the virtual hard disk object named VHD01.vhd stored on LibraryServer01 and then stores the object in the $VHD variable.
 
 ### Example 2: Get a virtual hard disk object from a virtual machine
 ```
-PS C:\>Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
+PS C:\> Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
 PS C:\> $VHD = Get-SCVirtualMachine -Name "VM01" | Get-SCVirtualHardDisk | where { $_.Name -match "DataDisk" }
 ```
 
@@ -87,7 +87,7 @@ The second command gets the virtual machine object named VM01, selects all virtu
 
 ### Example 3: Get a virtual hard disk object from a specific template
 ```
-PS C:\>Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "Template01"} | Get-SCVirtualHardDisk
+PS C:\> Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "Template01"} | Get-SCVirtualHardDisk
 ```
 
 This command gets the template object named Template01 from the library and displays all virtual hard disk objects on that template.
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -262,7 +262,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualHardDisk** object.
 
 ## NOTES
-* Requires a VMM virtual machine object or a VMM template object, which can be retrieved by using the Get-SCVirtualMachine cmdlet, or the Get-SCVMTemplate cmdlet, respectively.
+* Requires a VMM virtual machine object or a VMM template object, which can be retrieved by using the **Get-SCVirtualMachine** cmdlet, or the **Get-SCVMTemplate** cmdlet, respectively.
 
 ## RELATED LINKS
 

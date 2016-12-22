@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Remove-SCISO.md
+online version: 
 schema: 2.0.0
 ms.assetid: D4D1D8F8-EB90-4E27-8939-BECA540BA8EB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCISO.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCISO.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCISO.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCISO.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -65,7 +65,7 @@ In VMM, some typical uses of an ISO file include:
 
 ### Example 1: Get all ISOs on all VMM library servers
 ```
-PS C:\>Get-SCISO -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCISO -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all ISO objects on VMMServer01 and displays information about these ISOs.
@@ -74,14 +74,14 @@ The ISO files that the retrieved objects represent are stored in library shares 
 
 ### Example 2: Get all ISOs on a specific VMM library server
 ```
-PS C:\>Get-SCISO -VMMServer "VMMServer1.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> Get-SCISO -VMMServer "VMMServer1.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 ```
 
 This command gets all objects that represent ISO files stored on LibraryServer01 and displays information about these ISOs to the user.
 
 ### Example 3: Get all ISOs with a specific string in the file name on any VMM library server
 ```
-PS C:\>Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match  "OsISO" }
+PS C:\> Get-SCISO -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match  "OsISO" }
 ```
 
 This command gets all ISO objects on any VMM library server managed by VMMServer01 that contain OsISO in the file name, and then displays information about these ISO objects.
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

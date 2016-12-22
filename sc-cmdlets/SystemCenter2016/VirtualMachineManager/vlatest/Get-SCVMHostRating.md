@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHardwareProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 22AD5906-D307-457D-8F4A-C9A34DED4E65
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostRating.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostRating.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostRating.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostRating.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -188,7 +188,7 @@ When performing the direct validation, the command might take several seconds to
 
 ### Example 1: Calculate host ratings for a specific server as a possible host for an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com" 
 PS C:\> $HostRating = Get-SCVMHostRating -VM $VM -VMHost $VMHost
 PS C:\> $HostRating
@@ -206,7 +206,7 @@ Note: Because the example supplies a single host object to **Get-SCVMHostRating*
 
 ### Example 2: Calculate host ratings for each server in a host group as a possible host for an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $VMHostGroup = Get-SCVMHostGroup -Name "HostGroup02" 
 PS C:\> $HostRatings = Get-SCVMHostRating -VM $VM -VMHostGroup $VMHostGroup
 PS C:\> $HostRatings
@@ -226,7 +226,7 @@ To ensure migration compatibility, you should perform a direct validation by run
 
 ### Example 3: Calculate host ratings for each server in a host group as a possible host for a new virtual machine
 ```
-PS C:\>$VMHostGroup = Get-SCVMHostGroup -Name "HostGroup03"
+PS C:\> $VMHostGroup = Get-SCVMHostGroup -Name "HostGroup03"
 PS C:\> $HWProfile = Get-SCHardwareProfile | where {$_.Name -eq "HWProfile01"}
 PS C:\> $HostRatings = Get-SCVMHostRating -VMHostGroup $VMHostGroup -HardwareProfile $HWProfile -DiskSpaceGB 20 -VMName "VM03" -CPUPriority 8 -MemoryPriority 5 -DiskPriority 3 -NetworkPriority 1 
 PS C:\> $HostRatings
@@ -247,7 +247,7 @@ To ensure migration compatibility, you should perform a direct validation by run
 
 ### Example 4: Calculate host ratings for each host in an array as a possible host for a new virtual machine
 ```
-PS C:\>$OS = Get-SCOperatingSystem | where {$_.Name -eq "64-bit edition of Windows Server 2008 R2 Standard"}
+PS C:\> $OS = Get-SCOperatingSystem | where {$_.Name -eq "64-bit edition of Windows Server 2008 R2 Standard"}
 PS C:\> $JobGroupID = [guid]::NewGuid()
 PS C:\> New-SCVirtualDiskDrive -SCSI -Fixed -Bus 0 -Lun 2 -Size 10 -JobGroup $JobGroupID -FileName "TestDiskDrive"
 PS C:\> $VMHosts = Get-SCVMHost 
@@ -268,7 +268,7 @@ The fourth and fifth commands retrieve an array of host objects and a specific h
 The sixth command returns the placement ratings for all hosts in the specified host list and indicates the suitability of each host in that list for the new virtual machine with the specified characteristics.
 The command stores the rating information in $HostRatings.
 
-Before the **Get-SCVMHostRating** cmdlet returns the host ratings, the command uses the JobGroup parameter to run the New-SCVirtualDiskDrive command from the third command so that the **Get-SCVMHostRating** cmdlet includes the virtual disk drive and its settings when calculating placement ratings.
+Before the **Get-SCVMHostRating** cmdlet returns the host ratings, the command uses the JobGroup parameter to run the **New-SCVirtualDiskDrive** command from the third command so that the **Get-SCVMHostRating** cmdlet includes the virtual disk drive and its settings when calculating placement ratings.
 
 The last command displays the host ratings stored in $HostRatings to the user.
 
@@ -277,7 +277,7 @@ To ensure migration compatibility, you should perform a direct validation by run
 
 ### Example 5: Calculate host ratings for a specific VMM management server as a possible host for an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM05"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM05"
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost05.Contoso.com" 
 PS C:\> $HostRating = Get-SCVMHostRating -VM $VM -VMHost $VMHost -CPUPriority 6 -DiskPriority 5 -MemoryPriority 4 -NetworkPriority 4 -PlacementGoal "Consolidate" 
 PS C:\> $HostRating
@@ -296,7 +296,7 @@ Note: Because the preceding example supplies a single host object to **Get-VMHos
 
 ### Example 6: Calculate host ratings for a new virtual machine based on a specific virtual machine template
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
+PS C:\> $VMTemplate = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> $HostRating = Get-SCVMHostRating -DiskSpaceGB 5 -VMTemplate $VMTemplate -VMHost $VMHost -VMName "VM06"
 PS C:\> $HostRating
@@ -319,7 +319,7 @@ Note: Because the preceding example supplies a single host object to Get-VMHostR
 
 ### Example 7: Calculate host ratings for a specific host as a possible host for all virtual machines
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com" 
 PS C:\> $VMs = Get-SCVirtualMachine
 PS C:\> $RatingArray = @( ForEach ($VM in $VMs) {Get-VMHostRating -VM $VM -VMHost $VMHost} )
 PS C:\> $RatingArray

@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: d82190a7-0e00-4d9e-a2ba-9cca543063db
 schema: 2.0.0
 ms.assetid: 8AD05433-760A-451D-9A48-FD9C3D313CB5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 4:46 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/94a19c388d35167727d61daa8d59367c5c24c63e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,10 +40,6 @@ The **Get-SCVMHostFibreChannelHba** cmdlet gets the Fibre Channel HBA on a host 
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 

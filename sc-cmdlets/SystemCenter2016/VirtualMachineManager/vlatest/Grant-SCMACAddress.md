@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCMACAddress.md
+online version: 
 schema: 2.0.0
 ms.assetid: FB003E86-BDC9-445F-B95A-D742FBA84EC8
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCMACAddress.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCMACAddress.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCMACAddress.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCMACAddress.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ For information about creating MAC address pools, type: `New-SCMACAddressPool -D
 
 ### Example 1: Allocate a MAC address from a MAC address Pool and assign it to a virtual network adapter
 ```
-PS C:\>$VM = Get-SCVirtualMachine -VMHost "VMHost01.Contoso.com" -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -VMHost "VMHost01.Contoso.com" -Name "VM01"
 PS C:\> $VNIC = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> $HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
 PS C:\> $MACAddressPool = Get-SCMACAddressPool -VMHostGroup $HostGroup -Name "MAC Address Pool 01"
@@ -60,7 +60,7 @@ The last command assigns a MAC address to the virtual network adapter stored in 
 
 ### Example 2: Allocate a MAC address from a MAC address Pool and assign it to a specific virtual network adapter
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $VNIC = Get-SCVirtualNetworkAdapter -VM $VM | where {$_.SlotId -eq 1}
 PS C:\> $MACAddressPool = Get-SCMACAddressPool -Name "MAC Address Pool 02"
 PS C:\> Grant-SCMACAddress -MACAddressPool $MACAddressPool -VirtualNetworkAdapter $VNIC
@@ -124,11 +124,8 @@ Accept wildcard characters: False
 ### -MACAddress
 Specifies the MAC address, or a set of MAC addresses, for a physical or virtual network adapter on a computer.
 
-Example format for a single MAC address: 
-`-MACAddress "00-15-5D-B4-DC-00"`
-
-Example format for a set of MAC addresses: 
-`-MACAddress "00-15-5D-B4-DC-00", "00-1A-A0-E3-75-29"`
+- Example format for a single MAC address: `-MACAddress "00-15-5D-B4-DC-00"`
+- Example format for a set of MAC addresses: `-MACAddress "00-15-5D-B4-DC-00", "00-1A-A0-E3-75-29"`
 
 ```yaml
 Type: String
@@ -216,7 +213,7 @@ If the host type is VMware ESX:
 - Up to four emulated adapters per virtual machine.
 
 If the host type is Citrix XenServer: 
---Up to seven emulated adapters per virtual machine.
+- Up to seven emulated adapters per virtual machine.
 
 ```yaml
 Type: VirtualNetworkAdapter
@@ -257,7 +254,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns an array of **CloudPairing** objects.
 
 ## NOTES
-* Requires a VMM MACAddressPool object, which can be retrieved using the Get-SCMACAddressPool cmdlet, and a VMM virtual network adapter object, which can be retrieved using the Get-SCVirtualNetworkAdapter cmdlet.
+* Requires a VMM MACAddressPool object, which can be retrieved using the **Get-SCMACAddressPool** cmdlet, and a VMM virtual network adapter object, which can be retrieved using the **Get-SCVirtualNetworkAdapter** cmdlet.
 
 ## RELATED LINKS
 

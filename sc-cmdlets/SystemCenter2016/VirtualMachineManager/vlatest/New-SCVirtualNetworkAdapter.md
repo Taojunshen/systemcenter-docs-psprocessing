@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHardwareProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: C39433AC-96AA-4BF0-9375-AF62A17A6CDA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -101,16 +101,13 @@ The **New-SCVirtualNetworkAdapter** cmdlet creates a virtual network adapter on 
 
 Network Location
 
-
-You can use the **New-SCVirtualNetworkAdapter** cmdlet to specify a network location and connect the virtual network adapter to a virtual network configured on the host when you create the adapter, or you can configure those and other settings later by using the Set-SCVirtualNetworkAdapter cmdlet.
+You can use the **New-SCVirtualNetworkAdapter** cmdlet to specify a network location and connect the virtual network adapter to a virtual network configured on the host when you create the adapter, or you can configure those and other settings later by using the **Set-SCVirtualNetworkAdapter** cmdlet.
 
 Static or Dynamic MAC Address
-
 
 You can specify whether the virtual network adapter uses a static or dynamic MAC address, and you can specify a static MAC address.
 
 Emulated or Synthetic Virtual Network Adapters
-
 
 You can use the **New-SCVirtualNetworkAdapter** cmdlet to create an adapter whose type is either emulated (the default) or synthetic.
 
@@ -121,18 +118,17 @@ You must explicitly specify that a virtual network adapter is synthetic by using
 
 Virtual Local Area Network
 
-
 VMM includes support for configuring one or more virtual area networks (VLANs) on a host for use by virtual machines deployed on that host.
-You can use the **New-SCVirtualNetworkAdapter** cmdlet (or the Set-SCVirtualNetworkAdapter cmdlet) with the *VLAN parameters to attach the virtual network adapter on a virtual machine to a VLAN.
-To configure corresponding VLAN settings on the host network adapter, use the Add-SCVMHostNetworkAdapter cmdlet or the Set-SCVMHostNetworkAdapter cmdlet.
+You can use the **New-SCVirtualNetworkAdapter** cmdlet (or the **Set-SCVirtualNetworkAdapter** cmdlet) with the *VLAN* parameters to attach the virtual network adapter on a virtual machine to a VLAN.
+To configure corresponding VLAN settings on the host network adapter, use the **Add-SCVMHostNetworkAdapter** cmdlet or the **Set-SCVMHostNetworkAdapter** cmdlet.
 
-For an illustration of how to configure VLANs, see the examples for this cmdlet, and see the examples for New-SCVMHostNetworkAdapterConfig and Set-SCVMHostNetworkAdapter.
+For an illustration of how to configure VLANs, see the examples for this cmdlet, and see the examples for **New-SCVMHostNetworkAdapterConfig** and **Set-SCVMHostNetworkAdapter**.
 
 ## EXAMPLES
 
 ### Example 1: Create a virtual network adapter on a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> New-SCVirtualNetworkAdapter -VM $VM
 ```
 
@@ -142,7 +138,7 @@ The second command creates a virtual network adapter on VM01.
 
 ### Example 2: Create a virtual network adapter on a virtual machine template
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
+PS C:\> $VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
 PS C:\> New-SCVirtualNetworkAdapter -VMTemplate $VMTemplate
 ```
 
@@ -152,7 +148,7 @@ The second command creates a virtual network adapter on VMTemplate01.
 
 ### Example 3: Create an emulated virtual network adapter and a synthetic virtual network adapter on a hardware profile
 ```
-PS C:\>$HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
+PS C:\> $HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
 PS C:\> New-SCVirtualNetworkAdapter -HardwareProfile $HWProfile
 PS C:\> New-SCVirtualNetworkAdapter -HardwareProfile $HWProfile -Synthetic
 ```
@@ -165,7 +161,7 @@ The last command creates a synthetic virtual network adapter on NewHWProfile01.
 
 ### Example 4: Create a virtual network adapter on a virtual machine and assign it a unique MAC address
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM04"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM04"
 PS C:\> $VNIC = New-SCVirtualNetworkAdapter -VM $VM
 PS C:\> $MACPool = Get-SCMACAddressPool -Name "MAC Address Pool 01"
 PS C:\> Grant-SCMACAddress -MACAddressPool $MACPool -VirtualNetworkAdapter $VNIC
@@ -181,7 +177,7 @@ The last command gets the next available MAC address from the address pool store
 
 ### Example 5: Create a virtual network adapter with a static MAC address and a specific VLAN ID
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM05"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM05"
 PS C:\> $LogicalNet = Get-SCLogicalNetwork -Name "LogicalNetwork01"
 PS C:\> $VirtualNet = Get-SCVirtualNetwork -Name "ExternalVirtualNetwork01"
 PS C:\> New-SCVirtualNetworkAdapter -VM $VM -LogicalNetwork $LogicalNet -VirtualNetwork $VirtualNet -MACAddress "00-16-D3-CC-00-1A" -MACAddressType "Static" -VLANEnabled $True -VLANId 3
@@ -515,11 +511,8 @@ Accept wildcard characters: False
 ### -MACAddress
 Specifies the MAC address, or a set of MAC addresses, for a physical or virtual network adapter on a computer.
 
-Example format for a single MAC address: 
-`-MACAddress "00-15-5D-B4-DC-00"`
-
-Example format for a set of MAC addresses: 
-`-MACAddress "00-15-5D-B4-DC-00", "00-1A-A0-E3-75-29"`
+- Example format for a single MAC address: `-MACAddress "00-15-5D-B4-DC-00"`
+- Example format for a set of MAC addresses: `-MACAddress "00-15-5D-B4-DC-00", "00-1A-A0-E3-75-29"`
 
 ```yaml
 Type: String
@@ -652,7 +645,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -747,11 +740,8 @@ Accept wildcard characters: False
 ### -VLanEnabled
 Indicates whether to enable a virtual LAN (VLAN) for use by virtual machines on a Hyper-V or Citrix XenServer host. 
 
-
-
-Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
-
-Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk"  -VLANTrunkID 1,2,100,200,1124`
+- Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
+- Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk"  -VLANTrunkID 1,2,100,200,1124`
 
 ```yaml
 Type: Boolean
@@ -805,7 +795,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host
@@ -849,7 +839,7 @@ Accept wildcard characters: False
 ### -VMNetwork
 Specifies a virtual machine network object.
 
-To get a virtual machine network object, use the Get-SCVMNetwork cmdlet.
+To get a virtual machine network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork
@@ -893,7 +883,7 @@ Accept wildcard characters: False
 ### -VMSubnet
 Specifies a virtual machine subnet object.
 
-To obtain a **VMSubnet** object, use the Get-SCVMSubnet cmdlet.
+To obtain a **VMSubnet** object, use the **Get-SCVMSubnet** cmdlet.
 
 ```yaml
 Type: VMSubnet
@@ -963,7 +953,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualNetworkAdapter** object.
 
 ## NOTES
-* Requires a VMM virtual machine object, virtual machine template object, or hardware profile object, which can be retrieved by using the Get-SCVirtualMachine, Get-SCVMTemplate, and Get-SCHardwareProfile cmdlets, respectively.
+* Requires a VMM virtual machine object, virtual machine template object, or hardware profile object, which can be retrieved by using the **Get-SCVirtualMachine**, **Get-SCVMTemplate**, and **Get-SCHardwareProfile** cmdlets, respectively.
 
 ## RELATED LINKS
 

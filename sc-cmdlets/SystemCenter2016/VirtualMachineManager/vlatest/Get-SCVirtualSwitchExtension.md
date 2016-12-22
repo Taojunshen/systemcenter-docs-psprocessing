@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Set-SCVirtualSwitchExtension.md
+online version: 
 schema: 2.0.0
 ms.assetid: AAD0D8F5-516E-4746-992C-6F87BC71A2E1
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualSwitchExtension.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualSwitchExtension.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualSwitchExtension.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualSwitchExtension.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -47,7 +47,7 @@ The **Get-SCVirtualSwitchExtension** cmdlet gets one or more virtual switch exte
 
 ### Example 1: Get a virtual switch extension by its name
 ```
-PS C:\>Get-SCVirtualSwitchExtension -Name "VirtualSwitchExtension01"
+PS C:\> Get-SCVirtualSwitchExtension -Name "VirtualSwitchExtension01"
 ```
 
 This command gets the virtual switch extension object named VirtualSwitchExtension01 and returns information about the object for the user.
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -VirtualSwitchExtensionManager
 Specifies a virtual switch extension manager object.
-To obtain a virtual switch extension manager object, use the Get-SCVirtualSwitchExtensionManager cmdlet.
+To obtain a virtual switch extension manager object, use the **Get-SCVirtualSwitchExtensionManager** cmdlet.
 
 ```yaml
 Type: VirtualSwitchExtensionManager

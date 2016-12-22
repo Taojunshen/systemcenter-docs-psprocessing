@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: E9185938-C626-466B-B146-2CDF9866ECEC
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Convert-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Convert-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Convert-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Convert-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -69,12 +69,12 @@ The virtual machine must be on a Hyper-V host, and must be in a stopped state.
 
 ### Example 1: Convert a pass-through disk on a virtual machine to a virtual hard disk
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM $VM
 PS C:\> Convert-VirtualDiskDrive $VirtDiskDrive -Fixed -Path "C:\VirtualDiskDrives"
 ```
 
-The first command gets the virtual machine object named VM01 by using the Get-SCVirtualMachine cmdlet.
+The first command gets the virtual machine object named VM01 by using the **Get-SCVirtualMachine** cmdlet.
 The command stores that object in the $VM variable.
 This example assumes that VM01 is currently configured to use a pass-through disk and that the virtual machine has only one pass-through disk.
 
@@ -85,7 +85,7 @@ The command moves the virtual hard disk to the destination folder C:\VirtualDisk
 
 ### Example 2: Convert one of several pass-through disks on a virtual disk drive on a virtual machine to a virtual hard disk
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM $VM
 PS C:\> $VirtDiskDrive[2] | Convert-SCVirtualDiskDrive -Dynamic -Path "D:\"
 ```
@@ -100,7 +100,7 @@ The commandmoves this new virtual hard disk to the destination folder D:\.
 
 ### Example 3: Convert a dynamic VHD attached to a virtual disk drive object on a virtual machine to a fixed format
 ```
-PS C:\>$VirtDiskDrive = Get-SCVirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM03")
+PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM03")
 PS C:\> Convert-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive -Fixed
 ```
 
@@ -111,7 +111,7 @@ The second command converts the virtual hard disk stored in $VirtDiskDrive to a 
 
 ### Example 4: Convert a dynamic VHD on a virtual machine to fixed VHDX
 ```
-PS C:\>$VirtDiskDrive = Get-SCVirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM03")
+PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM03")
 PS C:\> Convert-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive -VHDX
 ```
 
@@ -123,7 +123,7 @@ The second command converts the virtual hard disk stored in $VirtDiskDrive to a 
 
 ### Example 5: Convert a differencing VHD to a differencing VHDX
 ```
-PS C:\>$VirtDiskDrive = Get-VirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM04")
+PS C:\> $VirtDiskDrive = Get-VirtualDiskDrive -VM (Get-SCVirtualMachine -Name "VM04")
 PS C:\> Convert-VirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive -VHDX -BlockSizeBytes 1MB -DeleteSource -ValidateOnCompletion
 ```
 

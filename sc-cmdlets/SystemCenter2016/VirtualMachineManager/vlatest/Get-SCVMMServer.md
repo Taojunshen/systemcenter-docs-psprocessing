@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Backup-SCVMMServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 350A270A-A6B5-4049-BCAB-E18A7C4E56A0
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,28 +53,28 @@ For more information about connecting to the VMM management server, type `Get-He
 
 ### Example 1: Connect to a VMM server
 ```
-PS C:\>Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
+PS C:\> Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
 ```
 
 This command connects to the VMM server named VMMServer01 located in the Contoso domain and gets the server object from the VMM database.
 
 ### Example 2: Connect to a VMM server through a specific port
 ```
-PS C:\>Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com" -TCPPort 8100
+PS C:\> Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com" -TCPPort 8100
 ```
 
 This command connects over TCP port 8100 to the VMM server named VMMServer01 located in the Contoso domain.
 
 ### Example 3: Connect to a VMM server and get its .NET object type, methods, and properties
 ```
-PS C:\>$VMMServer = Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
+PS C:\> $VMMServer = Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
 PS C:\> $VMMServer | Get-Member
 PS C:\> $VMMServer | Get-Member | Format-List
 ```
 
 The first command gets the VMM server object named VMMServer01 and stores the object in the $VMMServer variable.
 
-The second command passes the VMM server object stored in $VMMServer to the Get-Member cmdlet, which retrieves and displays the following: 
+The second command passes the VMM server object stored in $VMMServer to the **Get-Member** cmdlet, which retrieves and displays the following: 
 
 
 - TypeName: The .NET type name of the VMM server object: **Microsoft.SystemCenter.VirtualMachineManager.Remoting.ServerConnection**
@@ -86,7 +86,7 @@ The third command retrieves and displays the same information as the second comm
 
 ### Example 4: Connect to a different VMM server with a different user role
 ```
-PS C:\>Get-SCVMMServer -ComputerName "VMMServer02.Contoso.com" -ConnectAs "DelegatedAdmin"
+PS C:\> Get-SCVMMServer -ComputerName "VMMServer02.Contoso.com" -ConnectAs "DelegatedAdmin"
 ```
 
 This command connects to the VMM server named VMMServer02 located in the Contoso domain using the DelegatedAdmin user role.
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 

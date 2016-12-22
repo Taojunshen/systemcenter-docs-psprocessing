@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCComplianceStatus.md
+online version: 
 schema: 2.0.0
 ms.assetid: DB572B8E-1A8E-4C15-9067-EE39FE0AB254
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCComplianceScan.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCComplianceScan.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCComplianceScan.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Start-SCComplianceScan.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -45,7 +45,7 @@ During a compliance scan, the specified managed computer or host cluster is comp
 
 ### Example 1: Scan a host against a given baseline
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01"
 PS C:\> $Compliance = Get-SCComplianceStatus -VMMManagedComputer $VMHost.ManagedComputer
 PS C:\> foreach($Bsc in $Compliance.BaselineLevelComplianceStatus)`
 PS C:\> {if ($Bsc.Baseline.Name -eq "Security Baseline")`

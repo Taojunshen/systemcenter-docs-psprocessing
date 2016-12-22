@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCComputerTierConfiguration.md
+online version: 
 schema: 2.0.0
 ms.assetid: A2CC16CA-9A21-4BF3-B96B-DDF7085C5C1D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDiskConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDiskConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDiskConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDiskConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ The **Get-SCVirtualHardDiskConfiguration** cmdlet gets the virtual hard disk con
 
 ### Example 1: Get the virtual hard disk configuration for a virtual machine configuration
 ```
-PS C:\>$ServiceConfig = Get-SCServiceConfiguration -Name "Service01" 
+PS C:\> $ServiceConfig = Get-SCServiceConfiguration -Name "Service01" 
 PS C:\> $TierConfig = Get-SCComputerTierConfiguration -ServiceConfiguration $ServiceConfig
 PS C:\> $VMConfig = Get-SCVMConfiguration -ComputerTierConfiguration $TierConfig
 PS C:\> $VHDConfig = Get-SCVirtualHardDiskConfiguration -VMConfiguration $VMConfig[0]

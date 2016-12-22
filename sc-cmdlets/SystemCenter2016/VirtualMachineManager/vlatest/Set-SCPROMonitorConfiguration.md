@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCPROMonitor.md
+online version: 
 schema: 2.0.0
 ms.assetid: E078436A-1719-4CA6-8DC1-725865E107EB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPROMonitorConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPROMonitorConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPROMonitorConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPROMonitorConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,7 +46,7 @@ Properties that can be set include whether monitoring and automatic remediation 
 
 ### Example 1: Enable monitoring and automatic remediation for a specific PRO monitor
 ```
-PS C:\>$PROMonitor = Get-SCPROMonitor -Name "System Center Virtual Machine Manager Maximum Dynamic Memory Monitor" -ManagementPackName "System Center Virtual Machine Manager PRO V2 HyperV Host Performance"
+PS C:\> $PROMonitor = Get-SCPROMonitor -Name "System Center Virtual Machine Manager Maximum Dynamic Memory Monitor" -ManagementPackName "System Center Virtual Machine Manager PRO V2 HyperV Host Performance"
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
 PS C:\> $PROMonitorConfig = Get-SCPROMonitorConfiguration -PROMonitor $PROMonitor -VMHost $VMHost
 PS C:\> Set-SCPROMOnitorConfiguration -PROMonitorConfiguration $PROMonitorConfig -MonitoringEnabled $True -AutomaticMode $True
@@ -62,7 +62,7 @@ The last command enables monitoring and automatic remediation for the PRO monito
 
 ### Example 2: Disable automatic remediation for all PRO monitors on a specified host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
 PS C:\> $PROMonitorConfigs = @(Get-SCPROMonitorConfiguration -VMHost $VMHost)
 PS C:\> ForEach ($PROMonitorConfig in $PROMonitorConfigs) {Set-SCPROMonitorConfiguration -PROMonitorConfiguration $PROMonitorConfig -MonitoringEnabled $True -AutomaticMode $False}
 ```

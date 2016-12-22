@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUplinkPortProfileSet.md
+online version: 
 schema: 2.0.0
 ms.assetid: F42E823B-F180-4F5E-99FD-A8219542BEA6
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUplinkPortProfileSet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUplinkPortProfileSet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUplinkPortProfileSet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUplinkPortProfileSet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Remove-SCUplinkPortProfileSet** cmdlet deletes an uplink port profile set.
 
 ### Example 1: Remove an uplink port profile set
 ```
-PS C:\>Get-SCUplinkPortProfileSet -Name "UplinkPortProfileSet01" | Remove-SCUplinkPortProfileSet
+PS C:\> Get-SCUplinkPortProfileSet -Name "UplinkPortProfileSet01" | Remove-SCUplinkPortProfileSet
 ```
 
 This command gets the uplink port profile set named UplinkPortProfileSet01, and then passes the object to the current cmdlet.
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -UplinkPortProfileSet
 Specifies the uplink port profile set that this cmdlet deletes.
-To obtain an uplink port profile set object, use the Get-SCUplinkPortProfileSet cmdlet.
+To obtain an uplink port profile set object, use the **Get-SCUplinkPortProfileSet** cmdlet.
 
 ```yaml
 Type: UplinkPortProfileSet

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9EBB2556-8910-4251-A419-8EEDA4BCF2B3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualScsiAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualScsiAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualScsiAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualScsiAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,7 +44,7 @@ Note: **Set-SCVirtualScsiAdapter** is not used for Citrix XenServer hosts becaus
 
 ### Example 1: Share a specific virtual SCSI adapter on a virtual machine to enable it for guest clustering
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $Adapter = Get-SCVirtualScsiAdapter -VM $VM 
 PS C:\> Set-SCVirtualSCSIAdapter -VirtualScsiAdapter $Adapter -ShareVirtualScsiAdapter $True
 ```
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ### -OnBehalfOfUserRole
 Specifies a user role.
 This cmdlet sets the on behalf of user role as the user role that this parameter specifies.
-To obtain a user role object, use the Get-SCUserRole cmdlet.
+To obtain a user role object, use the **Get-SCUserRole** cmdlet.
 
 ```yaml
 Type: UserRole
@@ -201,10 +201,10 @@ Accept wildcard characters: False
 ### -ShareVirtualScsiAdapter
 Indicates whether a virtual SCSI adapter is shared so that it can be used in guest clustering. 
 
-Type of Host                      Uses This Parameter
+Type of Host: Hyper-V host Uses This Parameter: 
 
- Hyper-V host:                      No  (for guest clustering, use iSCSI storage) 
- XenServer host:        No  (Xen VMs always have exactly one SCSI adapter)
+- Hyper-V host:                      No  (for guest clustering, use iSCSI storage) 
+- XenServer host:        No  (Xen VMs always have exactly one SCSI adapter)
 
 Note: When sharing a SCSI controller on a virtual machine on an ESX host, VMM defaults the SCSI sharing policy on VMware to "physical."
 
@@ -256,7 +256,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualScsiAdapter** object.
 
 ## NOTES
-* Requires a VMM virtual SCSI adapter object, which can be retrieved by using the Get-SCVirtualScsiAdapter cmdlet.
+* Requires a VMM virtual SCSI adapter object, which can be retrieved by using the **Get-SCVirtualScsiAdapter** cmdlet.
 
 ## RELATED LINKS
 

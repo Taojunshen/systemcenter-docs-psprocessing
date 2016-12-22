@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCPhysicalComputerProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: A9068935-7075-40A5-89A6-D001B4B2D84D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -80,21 +80,21 @@ The **New-SCPhysicalComputerProfile** cmdlet creates a profile that is used to d
 
 ### Example 1: Create a physical computer profile
 ```
-PS C:\>$Account = Get-SCRunaAsAccount -Name "CloudAdmin" 
-PS C:\>$Credential = Get-Credential "Contoso\ServiceAdmin" 
-PS C:\>$AdapterProfile = Get-SCPhysicalComputerNetworkAdapterProfile -ID "eede207d-d263-4212-ad32-fd29b5a1a6ce" 
-PS C:\>$Vhd = Get-SCVirtualHardDisk -Name "Win2012stdGen1template_disk_1.vhdx" 
-PS C:\>New-SCPhysicalComputerProfile -Name "ContosoHostProfile" -Domain "contoso.com" -DomainJoinRunAsAccount $Account -LocalAdministratorCredential $Credential -PhysicalComputerNetworkAdapterProfile $AdapterProfile -UseAsVMHost -VirtualHardDisk $Vhd
+PS C:\> $Account = Get-SCRunaAsAccount -Name "CloudAdmin" 
+PS C:\> $Credential = Get-Credential "Contoso\ServiceAdmin" 
+PS C:\> $AdapterProfile = Get-SCPhysicalComputerNetworkAdapterProfile -ID "eede207d-d263-4212-ad32-fd29b5a1a6ce" 
+PS C:\> $Vhd = Get-SCVirtualHardDisk -Name "Win2012stdGen1template_disk_1.vhdx" 
+PS C:\> New-SCPhysicalComputerProfile -Name "ContosoHostProfile" -Domain "contoso.com" -DomainJoinRunAsAccount $Account -LocalAdministratorCredential $Credential -PhysicalComputerNetworkAdapterProfile $AdapterProfile -UseAsVMHost -VirtualHardDisk $Vhd
 ```
 
 The first command gets the Run As account object and stores it in a variable named $Account.
 
 The second command creates a Windows PowerShell credentials object for the account Contoso\ServiceAdmin and stores it in the $Credential variable.
-You must supply the password for the ServiceAdmin account to the Get-Credential cmdlet.
+You must supply the password for the ServiceAdmin account to the **Get-Credential** cmdlet.
 
 The third command creates an object reference to the physical computer network adapter profile that has the specified ID and stores it in the $AdapterProfile variable.
 
-The fourth command creates an object reference by using the Get-SCVirtualHardDisk cmdlet.
+The fourth command creates an object reference by using the **Get-SCVirtualHardDisk** cmdlet.
 This object references is associated with the virtual hard disk Win2012stdGen1template_disk_1.vhdx.
 
 The final command creates a physical computer profile named ContosoHostProfile based on the values from previous commands.
@@ -413,11 +413,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-
-
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String
@@ -511,9 +508,8 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number (an index) that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935  at http://go.microsoft.com/fwlink/?LinkId=120935.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) at `http://go.microsoft.com/fwlink/?LinkId=120935`.
 If no time zone is specified, the default time zone used for a virtual machine is the same time zone setting that is on the virtual machine host. 
-
 
 Example format to specify the GMT Standard Time zone: `-TimeZone 085`
 

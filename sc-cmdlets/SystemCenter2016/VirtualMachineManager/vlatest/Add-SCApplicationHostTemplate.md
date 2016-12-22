@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCApplicationHostTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9D28D7CD-9B2A-4B73-80C9-57F8DC32746C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCApplicationHostTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCApplicationHostTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCApplicationHostTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCApplicationHostTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -49,7 +49,7 @@ An application host template is used to deploy a SQL data-tier application (DAC)
 
 ### Example 1: Add a SQL application host template to a service template
 ```
-PS C:\>$AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
+PS C:\> $AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
 PS C:\> $ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> Add-SCApplicationHostTemplate -Name "SQL Application Host" -ComputerName "SQLServer01.Contoso.com" -ApplicationProfile $AppProfile -ServiceTemplate $ServiceTemplate
 ```
@@ -62,7 +62,7 @@ The third command adds an application host template to the service template stor
 
 ### Example 2: Add a web application host template to a service template
 ```
-PS C:\>$AppProfile = Get-SCApplicationProfile -Name "WebAppProfile01"
+PS C:\> $AppProfile = Get-SCApplicationProfile -Name "WebAppProfile01"
 PS C:\> $ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> $WebRAA = Get-SCRunAsAccount -Name "IIS Site Admin"
 PS C:\> $WebAppHostTemplate = Add-SCApplicationHostTemplate -Name "Web Farm" -ServiceTemplate $ServiceTemplate -ApplicationProfile -$AppProfile -ComputerName "@Web Server@" -DeploymentOrder 2 -WebAppHost -Port 8172 -Site "Default Web Site" -AuthenticationType "NTLM" -AllowUntrustedServerCertificate -RunAsAccount $WebRAA

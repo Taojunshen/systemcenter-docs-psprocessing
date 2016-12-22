@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 5f0cc68f-147f-440b-b7ec-e6206f7e90ab
 schema: 2.0.0
 ms.assetid: 68F3EE1E-6E5A-4BE4-90C0-6586B42E17D0
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Publish-SCWindowsPE.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Publish-SCWindowsPE.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Publish-SCWindowsPE.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Publish-SCWindowsPE.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -103,14 +103,14 @@ Use **Publish-SCWindowsPE** to copy all Windows PE images in the Boot WIMs with 
 
 ### Example 1: Update the Windows PE image with a custom Windows PE image base
 ```
-PS C:\>Publish-SCWindowsPE -Path "\\LibraryServer02\VMMWinPE\ContosoIT.wim"
+PS C:\> Publish-SCWindowsPE -Path "\\LibraryServer02\VMMWinPE\ContosoIT.wim"
 ```
 
 This command uses a customized base image to create a Windows PE image and updates all VMM PXE servers.
 
 ### Example 2: Re-create the Windows PE image and update the VMM PXE servers
 ```
-PS C:\>Publish-SCWindowsPE -UseDefaultImage
+PS C:\> Publish-SCWindowsPE -UseDefaultImage
 ```
 
 This command re-creates the Windows PE image by using the Windows PE image from (or updated by) the Windows ADK.
@@ -151,19 +151,13 @@ Accept wildcard characters: False
 ### -Path
 Specifies the destination path for the operation. 
 
-
-
 Example formats: 
 
-
-Local:       `-Path "F:\"`
-
-UNC:         `-Path "\\\\Library\Templates"`
-
-Volume GUID: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
-
-VMware ESX:  `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
-Citrix XenServer: -`Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
+- Local path: `-Path "F:\"`
+- UNC path: `-Path "\\\\Library\Templates"`
+- Volume GUID path: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
+- VMware ESX path: `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
+- Citrix XenServer path: `-Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
 
 ```yaml
 Type: String

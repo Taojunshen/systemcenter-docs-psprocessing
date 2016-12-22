@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-PROTip.md
+online version: 
 schema: 2.0.0
 ms.assetid: DAFF2B65-5ACA-4B05-9C05-0B44B7A2180A
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Clear-SCPROTip.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Clear-SCPROTip.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Clear-SCPROTip.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Clear-SCPROTip.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ Virtual Machine Manager (VMM) dismisses some PRO tips automatically if the condi
 
 ### Example 1: Dismiss the first active PRO tip
 ```
-PS C:\>$PROTips = Get-SCPROTip
+PS C:\> $PROTips = Get-SCPROTip
 PS C:\> Clear-SCPROTip -PROTip $PROTips[0]
 ```
 

@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: eadbf80a-31d1-4fbb-9559-0f7f0765e48b
 schema: 2.0.0
 ms.assetid: 4A012B3A-B20C-4989-B414-F51BEF1C0372
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 4:46 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCInternetSCSIHba.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCInternetSCSIHba.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCInternetSCSIHba.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/94a19c388d35167727d61daa8d59367c5c24c63e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCInternetSCSIHba.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,10 +43,6 @@ The **Set-SCInternetSCSIHba** cmdlet configures the iSCSI initiator on a virtual
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 

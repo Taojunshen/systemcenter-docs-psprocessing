@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 205839b4-739e-42ab-a4d7-3d2d1b769564
 schema: 2.0.0
 ms.assetid: 9D6C7CC4-9383-4898-A4F5-1A1BAA87A37B
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudProtectionInfo.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudProtectionInfo.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudProtectionInfo.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudProtectionInfo.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -34,19 +34,9 @@ This cmdlet is reserved for future use.
 
 ## EXAMPLES
 
-### 1:
+### Example 1:
 ```
-
-```
-
-### 2:
-```
-
-```
-
-### 3:
-```
-PS C:\># This cmdlet is reserved for future use.
+PS C:\> # This cmdlet is reserved for future use.
 ```
 
 ## PARAMETERS
@@ -84,7 +74,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

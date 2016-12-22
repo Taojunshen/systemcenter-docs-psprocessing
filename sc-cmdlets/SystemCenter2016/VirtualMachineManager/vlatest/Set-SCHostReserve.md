@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHostReserve.md
+online version: 
 schema: 2.0.0
 ms.assetid: F9624456-2CA3-4022-950F-77497CF7E1BD
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHostReserve.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHostReserve.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHostReserve.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHostReserve.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -239,7 +239,7 @@ A host will never be forced by Power Optimization to have less than the specifie
 
 ### Example 1: Modify the CPU host reserve and placement settings for a specified host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup "HostGroup01"
+PS C:\> $HostGroup = Get-SCVMHostGroup "HostGroup01"
 PS C:\> $HostReserve = Get-SCHostReserve -VMHostGroup $HostGroup
 PS C:\> $HostReserve | Set-SCHostReserve -CPU -PlacementLevel 75 -StartOptimizationLevel 80 -VMHostReserveLevel 90
 ```

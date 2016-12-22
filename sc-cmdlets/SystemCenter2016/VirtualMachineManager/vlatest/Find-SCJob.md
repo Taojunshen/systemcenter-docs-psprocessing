@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCJob.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4F2E3AAD-5390-4021-8E8F-47D9FCCE6C8D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCJob.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCJob.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,7 +44,7 @@ You can search for the most recent jobs, jobs after a certain date, or search fo
 
 ### Example 1: Find all jobs for the last five hours
 ```
-PS C:\>$StartTime = (Get-Date) - (New-TimeSpan -Hours 5)
+PS C:\> $StartTime = (Get-Date) - (New-TimeSpan -Hours 5)
 PS C:\> Find-SCJob -MaxCount 25 -After $StartTime
 ```
 
@@ -53,14 +53,14 @@ Because the *MaxCount* parameter value is set to 25, only 25 job objects are dis
 
 ### Example 2: Find recent jobs
 ```
-PS C:\>Find-SCJob -MaxCount 50 -Recent
+PS C:\> Find-SCJob -MaxCount 50 -Recent
 ```
 
 This command searches for recent jobs and displays the 50 most recent jobs.
 
 ### Example 3: Find jobs by ObjectID
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Find-SCJob -MaxCount 10 -ObjectID $VM.Id
 ```
 
@@ -77,7 +77,7 @@ You can pass the **DateTime** object as UTC for standardized time.
 
 When you specify this parameter, jobs are filtered by the StartTime property and returned from earliest start time to latest start time.
 
-For information about how to get a **DateTime** object, see the Get-Date cmdlet.
+For information about how to get a **DateTime** object, see the **Get-Date** cmdlet.
 
 ```yaml
 Type: DateTime

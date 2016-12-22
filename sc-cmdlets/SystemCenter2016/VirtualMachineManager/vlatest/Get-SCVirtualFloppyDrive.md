@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHardwareProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 89D54069-4597-4B75-8335-DE5514DAE4E8
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -51,14 +51,14 @@ In VMM, each virtual machine, virtual machine template, or hardware profile has 
 You cannot remove this floppy drive or add any additional floppy drives.
 
 By default, the virtual floppy drive is configured as attached to no media.
-To configure the virtual floppy drive to use the physical floppy drive on the virtual machine host (typically, drive A:) use the Set-SCVirtualFloppyDrive cmdlet.
+To configure the virtual floppy drive to use the physical floppy drive on the virtual machine host (typically, drive A:) use the **Set-SCVirtualFloppyDrive** cmdlet.
 Alternatively, you can configure the virtual floppy drive to read an existing virtual floppy disk.
 
 ## EXAMPLES
 
 ### Example 1: Get the virtual floppy drive from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Get-SCVirtualFloppyDrive -VM $VM
 ```
 
@@ -68,7 +68,7 @@ The second command gets the virtual floppy drive object on VM01 and displays inf
 
 ### Example 2: Get the virtual floppy drive from a virtual machine template
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
+PS C:\> $VMTemplate = Get-SCVMTemplate | where { $_.Name -eq "VMTemplate01" }
 PS C:\> Get-SCVirtualFloppyDrive -VMTemplate $VMTemplate
 ```
 
@@ -78,7 +78,7 @@ The second command gets the virtual floppy drive object on VMTemplate01 and disp
 
 ### Example 3: Get the virtual floppy drive from a hardware profile
 ```
-PS C:\>$HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
+PS C:\> $HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
 PS C:\> Get-SCVirtualFloppyDrive -HardwareProfile $HWProfile
 ```
 
@@ -175,7 +175,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualFloppyDrive** object.
 
 ## NOTES
-* Requires a virtual machine object, virtual machine template object, or hardware profile object, which can be retrieved by using the Get-SCVirtualMachine, Get-SCVMTemplate, or Get-SCHardwareProfile cmdlets, respectively.
+* Requires a virtual machine object, virtual machine template object, or hardware profile object, which can be retrieved by using the **Get-SCVirtualMachine**, **Get-SCVMTemplate**, or **Get-SCHardwareProfile** cmdlets, respectively.
 
 ## RELATED LINKS
 

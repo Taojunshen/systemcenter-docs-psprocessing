@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLibraryServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: E9D27CEE-A713-43A2-BC88-211D22638AE3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -34,17 +34,14 @@ Add-SCLibraryServer [-VMMServer <ServerConnection>] [-ComputerName] <String> -Cr
 ## DESCRIPTION
 The **Add-SCLibraryServer** cmdlet adds one or more computers as library servers to Virtual Machine Manager (VMM).
 For a computer to be a library server, it must be in the same domain as, or in a trusted domain with, the VMM server.
-For VMM library server system requirements, see Preparing your environment for System Center 2016 - Virtual Machine Managerhttp://go.microsoft.com/fwlink/?LinkId=799436 in the TechNet Library at http://go.microsoft.com/fwlink/?LinkId=799436.
+For VMM library server system requirements, see [Preparing your environment for System Center 2016 - Virtual Machine Manager](http://go.microsoft.com/fwlink/?LinkId=799436) in the TechNet Library at `http://go.microsoft.com/fwlink/?LinkId=799436`.
 
 When you add a computer as a library server to VMM, VMM automatically installs the Virtual Machine Manager Agent software on that server.
 
 The VMM library is made up of two primary components: 
 
-
-
 - Library.
 The portion of the VMM database that stores objects that represent all library resources. 
-
 
 - Library Resource Files.
 Files that are stored in library shares on one or more physical library servers.
@@ -61,7 +58,7 @@ The other resources are files stored in the file system on library servers and o
 
 ### Example 1: Add a library server
 ```
-PS C:\>$Creds = Get-Credential
+PS C:\> $Creds = Get-Credential
 PS C:\> Add-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "LibraryServer01.Contoso.com" -Credential $Creds -RunAsynchronously
 ```
 
@@ -72,7 +69,7 @@ The second command adds the library server object named LibraryServer01 to the l
 
 ### Example 2: Add a highly available file server with two nodes as a library server
 ```
-PS C:\>$Credential = Get-Credential
+PS C:\> $Credential = Get-Credential
 PS C:\> $Cluster = Find-SCCluster -ComputerName "HAFileServer01.Contoso.com" -Credential $Credential
 PS C:\> ForEach ($Node in $Cluster.ClusterNodes) { Add-SCLibraryServer -ComputerName $Node -Credential $Credential}
 PS C:\> Add-SCLibraryServer -ComputerName "HAFileServer01.Contoso.com" -Credential $Credential
@@ -81,17 +78,17 @@ PS C:\> Add-SCLibraryShare -SharePath "\\HAFileServer01.Contoso.com\LibShare" -C
 
 This example assumes the following: you have created a cluster with at least two nodes, you have created a highly available file server, and you have created a share on the highly available file server (in this example, this is represented by \\\\HAFIleServer01.Contoso.com\LibShare).
 
-The first command uses Get-Credential to prompt you to supply a user name and password and stores your credentials in $Credential.
+The first command uses **Get-Credential** to prompt you to supply a user name and password and stores your credentials in $Credential.
 The required credentials for this operation are a domain account with administrator rights on each node of a failover cluster hosting the highly available file server that you want to add to VMM.
 
-The second command uses the Find-SCCluster cmdlet to confirm that HAFileServer01 is a highly available file server and stores the cluster object in the $Cluster variable.
+The second command uses the **Find-SCCluster** cmdlet to confirm that HAFileServer01 is a highly available file server and stores the cluster object in the $Cluster variable.
 
 The third command uses a **ForEach** loop to pass each cluster node to **Add-SCLibraryServer**, which adds the nodes as library servers.
 For more information about the Windows PowerShell **ForEach** loop statement, type `Get-Help about_ForEach`.
 
 The fourth command uses **Add-SCLibraryServer** to add the highly available file server named HAFileServer01 to VMM as a library server.
 
-The last command uses Add-SCLibraryShare to add the specified share on the highly available file server.
+The last command uses **Add-SCLibraryShare** to add the specified share on the highly available file server.
 For more information about adding library shares, type `Get-Help Add-SCLibraryShare`.
 
 ## PARAMETERS
@@ -102,7 +99,7 @@ The acceptable values for this parameter are:
 
 - FQDN
 - IPv4 or IPv6 address
--  NetBIOS name
+- NetBIOS name
 
 ```yaml
 Type: String
@@ -118,7 +115,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the PSCredential object, type `Get-Help Get-Credential`.
 
@@ -157,9 +154,7 @@ Allowing unencrypted network file transfers can improve performance if neither t
 
 Use this parameter to: 
 
-
 - Enable unencrypted file transfers into, or out of, the library. 
-
 - Enable unencrypted file transfers into, out of, or within a host group.
 
 ```yaml

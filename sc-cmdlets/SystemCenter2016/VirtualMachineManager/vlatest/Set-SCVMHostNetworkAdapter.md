@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHostNetworkAdapter.md
+online version: 
 schema: 2.0.0
 ms.assetid: A0F6131F-C2B4-43BF-B605-977BB823E668
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -58,7 +58,7 @@ For more information about VLANs and additional examples that illustrate VLAN se
 
 ### Example 1: Create a new virtual network on a host network adapter and specify a VLAN ID for the virtual network
 ```
-PS C:\>$VMHost = Get-SCVMHost -Computername "VMHost02.Contoso.com"
+PS C:\> $VMHost = Get-SCVMHost -Computername "VMHost02.Contoso.com"
 PS C:\> $HostAdapter = Get-SCVMHostNetworkAdapter -VMHost $VMHost |  where {$_.Name -like "Intel(R) PRO/1000*" }
 PS C:\> New-SCVirtualNetwork -Name "VirtualNetwork01" -VMHost $VMHost -VMHostNetworkAdapter $HostAdapter
 PS C:\> Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $HostAdapter -VLanEnabled $True -VLanMode "Access" -VLANID 35
@@ -77,7 +77,7 @@ If your host has a single network adapter, assigning the adapter to a VLAN that 
 
 ### Example 2: Add VLan tags to a host network adapter configured in Trunk mode
 ```
-PS C:\>$VMHost = Get-SCVMHost -Computername "VMHost03.Contoso.com"
+PS C:\> $VMHost = Get-SCVMHost -Computername "VMHost03.Contoso.com"
 PS C:\> $VMHostNIC = Get-SCVMHostNetworkAdapter -VMHost $VMHost -Name "Adapter #3"
 PS C:\> $NewVlanTags = $VMHostNIC.VlanTags + @(177,355,1012)
 PS C:\> Set-SCVMHostNetworkAdapter -VMHostNetworkAdapter $VMHostNIC -VLANEnabled $TRUE -VLanMode "Trunk" -VLanTrunkID $NewVLanTags
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ### -UplinkPortProfileSet
 Specifies an uplink port profile set object.
 
-To obtain an uplink port profile set object, use the Get-SCUplinkPortProfileSet cmdlet.
+To obtain an uplink port profile set object, use the **Get-SCUplinkPortProfileSet** cmdlet.
 
 ```yaml
 Type: UplinkPortProfileSet

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Set-SCFabricRoleResource.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7E376681-CC06-4BF3-B555-75711E5C81B5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPRouter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPRouter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPRouter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPRouter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,17 +39,17 @@ You can create and configure more than one BGP Router by using one System Center
 
 ### Example: Create a BGP Router and peer with BGP Peer
 ```
-PS C:\>$bgpPeer = New-SCNCBGPPeer RouterName "BGPPeer01"  -RouterIPAddress "10.10.50.45"  -RouterAsn 65 PS C:\>$bgpRouter = New-SCNCBGPRouter -LocalASN 64 -RouterPeers @($bgpPeer
+PS C:\> $bgpPeer = New-SCNCBGPPeer RouterName "BGPPeer01"  -RouterIPAddress "10.10.50.45"  -RouterAsn 65 PS C:\> $bgpRouter = New-SCNCBGPRouter -LocalASN 64 -RouterPeers @($bgpPeer
 ```
 
 This example creates a BGP Peer with router name BGPPeer01 and peers with BGP Router.
-The BGP Router object can be used in Set-SCFabricRoleResource to configure the BGP peer routers for Fabric Role Resources such as Load Balancer and Gateway.
+The BGP Router object can be used in **Set-SCFabricRoleResource** to configure the BGP peer routers for Fabric Role Resources such as Load Balancer and Gateway.
 
 Step 1: Create BGP Peer
 
-Step2: Create BGP Router
+Step 2: Create BGP Router
 
-Step3: Use the bgpRouter created in step 2 to configure the BGP peer routers for Fabric Role Resources using **Set-SCFabricRoleResource**.
+Step 3: Use the bgpRouter created in step 2 to configure the BGP peer routers for Fabric Role Resources using **Set-SCFabricRoleResource**.
 
 ## PARAMETERS
 

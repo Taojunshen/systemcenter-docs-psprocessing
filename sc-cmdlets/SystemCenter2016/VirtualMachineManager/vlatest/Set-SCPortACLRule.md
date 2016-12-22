@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCPortACLRule.md
+online version: 
 schema: 2.0.0
 ms.assetid: F938F0D8-A12B-4BB1-8EB7-3D24BE20FB71
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPortACLRule.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPortACLRule.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPortACLRule.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPortACLRule.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ The **Set-SCPortACLRule** cmdlet modifies a port access control list (ACL) rule 
 
 ### Example 1: Modify the port ACL rule priority
 ```
-PS C:\>$PortACLRule = Get-SCPortACLRule -Name "AllowRDPAccess"
+PS C:\> $PortACLRule = Get-SCPortACLRule -Name "AllowRDPAccess"
 PS: C:\> Set-SCPortACLRule -PortACLRule $PortACLRule -Priority 220"
 ```
 
@@ -50,7 +50,7 @@ The second command changes the priority of the rule in $PortACLRule to 220.
 
 ### Example 2: Modify the port acl rule remote address range and protocol
 ```
-PS C:\>$PortACLRule = Get-SCPortACLRule -Name "AllowRDPAccess"
+PS C:\> $PortACLRule = Get-SCPortACLRule -Name "AllowRDPAccess"
 PS: C:\> Set-SCPortACLRule -PortACLRule $portACLRule -RemoteAddressPrefix 172.185.21.0/24 -Protocol Udp
 ```
 
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

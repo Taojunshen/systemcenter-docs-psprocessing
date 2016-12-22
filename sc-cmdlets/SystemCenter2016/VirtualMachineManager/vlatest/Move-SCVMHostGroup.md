@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMHostGroup.md
+online version: 
 schema: 2.0.0
 ms.assetid: 0BD94D79-3577-4ECF-89B1-4AFE9A19CE74
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHostGroup.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHostGroup.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHostGroup.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHostGroup.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ Changing the structure of host groups might change which Self Service User or De
 
 ### Example 1: Move one host group to a new parent host group
 ```
-PS C:\>$OldHostGroup = Get-SCVMHostGroup -Name "OldHostGroup"
+PS C:\> $OldHostGroup = Get-SCVMHostGroup -Name "OldHostGroup"
 PS C:\> $NewHostGroup = Get-SCVMHostGroup -Name "NewHostGroup"
 PS C:\> Move-SCVMHostGroup -VMHostGroup $OldHostGroup -ParentHostGroup $NewHostGroup
 ```
@@ -53,7 +53,7 @@ The last command moves the host group stored in the $OldHostGroup variable (OldH
 
 ### Example 2: Move all host groups to a new parent host group
 ```
-PS C:\>$AllGroups = Get-SCVMHostGroup
+PS C:\> $AllGroups = Get-SCVMHostGroup
 PS C:\> $HostGroup = New-SCVMHostGroup -Name "NewHostGroup01" 
 PS C:\> $AllGroups | Move-SCVMHostGroup -ParentHostGroup $HostGroup
 ```
@@ -169,7 +169,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **HostGroup** object.
 
 ## NOTES
-* Requires a VMM host group object, which can be retrieved by using the Get-SCVMHostGroup cmdlet.
+* Requires a VMM host group object, which can be retrieved by using the **Get-SCVMHostGroup** cmdlet.
 
 ## RELATED LINKS
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLoadBalancerVIPTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9C7E6C83-F2A3-4140-89BB-41CF40D84C28
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancerVIPTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancerVIPTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancerVIPTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancerVIPTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,9 +40,9 @@ The **Set-SCLoadBalancerVIPTemplate** cmdlet modifies the properties of a load b
 
 ## EXAMPLES
 
-### Example 1: Change the load balancing method in a load balancer virtual IP (VIP) template
+### Example 1: Change the load balancing method in a load balancer virtual IP template
 ```
-PS C:\>$VIPTemplate = Get-SCLoadBalancerVIPTemplate -Manufacturer "LB Manufacturer" -Model "LB01" -Name "VIPTemplate01"
+PS C:\> $VIPTemplate = Get-SCLoadBalancerVIPTemplate -Manufacturer "LB Manufacturer" -Model "LB01" -Name "VIPTemplate01"
 PS C:\> $LBMethod = New-SCLoadBalancingMethod -Name "RoundRobin"
 PS C:\> Set-SCLoadBalancerVIPTemplate -LoadBalancerVIPTemplate $VIPTemplate -LoadBalancingMethod $LBMethod
 ```
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLoadBalancerConnectionPersistence
-Indicates that the load balancer connection persistence in a virtual IP (VIP) profile is disabled.
+Indicates that the load balancer connection persistence in a VIP profile is disabled.
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +149,6 @@ Accept wildcard characters: False
 Specifies the name of the company that manufactured a load balancer.
 The acceptable values for this parameter are:
 
-
 - Letters (a-z) 
 - Numbers (0-9) 
 - Underscore (_)
@@ -185,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerPort
-Specifies the port to use when configuring a virtual IP (VIP) in a load balancer.
+Specifies the port to use when configuring a VIP in a load balancer.
 
 ```yaml
 Type: UInt16
@@ -215,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerVIPTemplate
-Specifies a load balancer virtual IP (VIP) template.
+Specifies a load balancer VIP template.
 
 ```yaml
 Type: LoadBalancerVIPTemplate
@@ -247,7 +246,7 @@ The acceptable values for this parameter are:
 - LeastSessions 
 - None
 
-To determine the available methods for a specific load balancer, use this command: `(Get-SCLoadBalancer)\[0\].AvailableLoadBalancingMethods`
+To determine the available methods for a specific load balancer, use this command: `(Get-SCLoadBalancer)[0].AvailableLoadBalancingMethods`
 
 ```yaml
 Type: LoadBalancingMethod
@@ -262,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -MakeGeneric
-Indicates that a virtual IP (VIP) profile is able to apply generic load balancer settings.
+Indicates that a VIP profile is able to apply generic load balancer settings.
 
 ```yaml
 Type: SwitchParameter

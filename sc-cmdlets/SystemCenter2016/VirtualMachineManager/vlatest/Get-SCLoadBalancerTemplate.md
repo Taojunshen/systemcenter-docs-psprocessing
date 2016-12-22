@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCComputerTierTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: B0908063-B291-4535-B49E-A6984CA265D8
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,7 +53,7 @@ The **Get-SCLoadBalancerTemplate** cmdlet gets the load balancer template for a 
 
 ### Example 1: Get the load balancer template for a service template
 ```
-PS C:\>$ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
+PS C:\> $ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> $LoadBalancerTemplate = Get-SCLoadBalancerTemplate -ServiceTemplate $ServiceTemplate
 PS C:\> $LoadBalancerTemplate
 ```
@@ -66,7 +66,7 @@ The last command displays the properties of the load balancer template stored in
 
 ### Example 2: Get the load balancer template for a computer tier template
 ```
-PS C:\>$ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
+PS C:\> $ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> $TierTemplate = Get-SCComputerTierTemplate -ServiceTemplate $ServiceTemplate
 PS C:\> $LoadBalancerTemplate = Get-SCLoadBalancerTemplate -ComputerTierTemplate $TierTemplate
 PS C:\> $LoadBalancerTemplate

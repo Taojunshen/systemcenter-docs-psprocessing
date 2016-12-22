@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: DFAA8C94-DB50-4D9E-9FB0-60439673DEF9
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:13 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -104,7 +104,7 @@ If you want to change the properties of a virtual disk drive, virtual floppy dri
 
 ### Example 1: Specify an amount of memory for an existing virtual machine template
 ```
-PS C:\>$Template = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
+PS C:\> $Template = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
 PS C:\> Set-SCVMTemplate -Template $Template -MemoryMB 1024
 ```
 
@@ -115,7 +115,7 @@ This is the amount of memory on the host that a virtual machine created by using
 
 ### Example 2: Specify a new owner for multiple highly available virtual machine templates
 ```
-PS C:\>$VMTemplates = Get-SCVMTemplate | where {$_.IsHighlyAvailable}
+PS C:\> $VMTemplates = Get-SCVMTemplate | where {$_.IsHighlyAvailable}
 PS C:\> ForEach ($VMTemplate in $VMTemplates) {Set-SCVMTemplate $VMTemplate -Owner "Contoso\NevenSokec"}
 ```
 
@@ -127,14 +127,14 @@ For information about the standard PowerShell **ForEach** loop statement, type `
 
 ### Example 3: Specify a new owner for all virtual machine templates that have the same owner
 ```
-PS C:\>Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | where {$_.Owner -eq "Contoso\PattiFuller"} | Set-SCVMTemplate -Owner "Contoso\AllieSloan"
+PS C:\> Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | where {$_.Owner -eq "Contoso\PattiFuller"} | Set-SCVMTemplate -Owner "Contoso\AllieSloan"
 ```
 
 This command gets all virtual machine template objects from the VMM library, selects only those objects whose owner is "Contoso\PattiFuller", and then passes each object to the **Set-SCVMTemplate** cmdlet, which changes the owner to Contoso|AllieSloan.
 
 ### Example 4: Enable Dynamic Memory for an existing virtual machine template
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate04"}
+PS C:\> $VMTemplate = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate04"}
 PS C:\> Set-SCVMTemplate -VMTemplate $VMTemplate -DynamicMemoryEnabled $True -MemoryMB 1024 -DynamicMemoryMaximumMB 2048
 ```
 
@@ -145,7 +145,7 @@ A virtual machine using dynamic memory can only be deployed on a host that is ru
 
 ### Example 5: Specify the root password for an existing customizable Linux virtual machine template
 ```
-PS C:\>$Template = Get-SCVMTemplate | where {$_.Name -eq "LinuxVMTemplate01"}
+PS C:\> $Template = Get-SCVMTemplate | where {$_.Name -eq "LinuxVMTemplate01"}
 PS C:\> $Creds = Get-Credential
 PS C:\> Set-SCVMTemplate -Template $Template -LocalAdministratorCredential $Creds
 ```
@@ -407,20 +407,15 @@ Types of hosts support the following relative values:
 - Hyper-V.
 1 to 10000.
 - VMware ESX.
-High.
-2000.
+High. 2000.
 - VMware ESX.
-Above Normal.
-1500.
+Above Normal. 1500.
 - VMware ESX.
-Normal (default).
-1000. 
+Normal (default). 1000. 
 - VMware ESX.
-Below Normal.
-750.
+Below Normal. 750.
 - VMware ESX.
-Low.
-500.
+Low. 500.
 - VMware ESX.
 Custom 1 to 1000000. 
 - Citrix XenServer.
@@ -958,8 +953,7 @@ Accept wildcard characters: False
 Specifies an array of commands to add to the **\[GuiRunOnce\]** section of an unattended answer file.
 Use single quotation marks around each string enclosed in double quotation marks. 
 
-Example format: 
-`-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
+Example format: `-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
 
 For information about how Windows PowerShell uses quotation marks, type `Get-Help about_Quoting_Rules`.
 
@@ -1080,7 +1074,7 @@ Accept wildcard characters: False
 ### -LinuxDomainName
 Specifies a fully qualified domain name (FQDN) to use in conjunction with Linux operating system specialization.
 
-Example format: ` -LinuxDomainName "Domain01.Corp.Contoso.com"`
+Example format: `-LinuxDomainName "Domain01.Corp.Contoso.com"`
 
 ```yaml
 Type: String
@@ -1327,9 +1321,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account.
 
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String
@@ -1560,7 +1553,7 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number (an index) that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935 at http://go.microsoft.com/fwlink/?LinkId=120935.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) at `http://go.microsoft.com/fwlink/?LinkId=120935`.
 If no time zone is specified, the default time zone used for a virtual machine is the same time zone setting that is on the virtual machine host. 
 
 Example format to specify the GMT Standard Time zone: `-TimeZone 085`
@@ -1685,7 +1678,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **Template** object.
 
 ## NOTES
-* Requires a VMM virtual machine template object, which can be retrieved by using the Get-SCVMTemplate cmdlet.
+* Requires a VMM virtual machine template object, which can be retrieved by using the **Get-SCVMTemplate** cmdlet.
 
 ## RELATED LINKS
 

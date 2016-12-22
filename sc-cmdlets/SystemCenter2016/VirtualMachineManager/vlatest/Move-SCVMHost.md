@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4E0B6739-E7EC-489D-A3D7-BDACF07CB1D5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHost.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHost.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHost.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHost.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ If the host is a computer that is managed by members of a Self-Service User or D
 
 ### Example 1: Move a single host to a new parent host group
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01"
 PS C:\> $NewHG = Get-SCVMHostGroup -Name "NewHostGroup01" 
 PS C:\> Move-SCVMHost -VMHost $VMHost -ParentHostGroup $NewHG
 ```
@@ -52,7 +52,7 @@ The last command moves the host stored in the $VMHost variable (VMHost01) to the
 
 ### Example 2: Move all hosts to a new parent host group
 ```
-PS C:\>$AllHosts = Get-SCVMHost  
+PS C:\> $AllHosts = Get-SCVMHost  
 PS C:\> $NewHG = Get-SCVMHostGroup -Name "NewHostGroup02"
 PS C:\> $AllHosts | Move-SCVMHost -ParentHostGroup $NewHG
 ```
@@ -65,7 +65,7 @@ The last command moves each host object in the $AllHosts array to the new parent
 
 ### Example 3: Move a set of hosts from one host group to a new parent host group
 ```
-PS C:\>$SpecificHosts = Get-SCVMHost | where { $_.VMHostGroup -like "*OldGroup*" }
+PS C:\> $SpecificHosts = Get-SCVMHost | where { $_.VMHostGroup -like "*OldGroup*" }
 PS C:\> $NewHG = Get-SCVMHostGroup -Name "NewHostGroup03" 
 PS C:\> $SpecificHosts | Move-SCVMHost -ParentHostGroup $NewHG
 ```
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host
@@ -168,7 +168,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **Host** object.
 
 ## NOTES
-* Requires a VMM host object, which can be retrieved by using the Get-SCVMHost cmdlet.
+* Requires a VMM host object, which can be retrieved by using the **Get-SCVMHost** cmdlet.
 
 ## RELATED LINKS
 

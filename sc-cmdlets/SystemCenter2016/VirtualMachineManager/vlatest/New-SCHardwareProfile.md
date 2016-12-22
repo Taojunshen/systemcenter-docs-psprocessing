@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCHardwareProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: FD4329B3-6A2D-415D-B581-FAF9214E83D7
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCHardwareProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCHardwareProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCHardwareProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCHardwareProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -54,7 +54,6 @@ If you specify no parameters other than *Name*, which is required, VMM creates a
 
 Hardware profile settings that you can configure for a virtual machine include: 
 
-
 - Boot order settings in the BIOS that specify the device startup order for a virtual machine.
 The boot order setting is available only for virtual machines on a Hyper-V host or Citrix XenServer host. 
 
@@ -70,14 +69,11 @@ The boot order setting is available only for virtual machines on a Hyper-V host 
 
 - One or more virtual SCSI adapters. 
 
-
 - One or more virtual network adapters that you can attach to a logical network.
 A virtual network adapter can be emulated or synthetic. 
 
-
 - The priority assigned to a virtual machine for using the host's CPU resources relative to the use of the host's CPU by other virtual machines deployed on the same host.
 CPU priorities are determined by the virtualization software. 
-
 
 - Whether a virtual machine created from this profile will be highly available.
 A highly available virtual machine is a virtual machine that can only be placed on a host that is part of a host cluster.
@@ -86,21 +82,21 @@ A highly available virtual machine is a virtual machine that can only be placed 
 
 ### Example 1: Create a default hardware profile
 ```
-PS C:\>New-SCHardwareProfile -Name "NewHWProfile01"
+PS C:\> New-SCHardwareProfile -Name "NewHWProfile01"
 ```
 
 This command creates a default hardware profile named NewHWProfile01.
 
 ### Example 2: Create a hardware profile that sets boot order, CPU, and memory
 ```
-PS C:\>New-SCHardwareProfile -Name "NewHWProfile02" -BootOrder PXEBoot,CD,Floppy,IDEHardDrive -MemoryMB 1024 -CPUCount 4
+PS C:\> New-SCHardwareProfile -Name "NewHWProfile02" -BootOrder PXEBoot,CD,Floppy,IDEHardDrive -MemoryMB 1024 -CPUCount 4
 ```
 
 This command creates a new hardware profile, names it NewHWProfile02, sets PXEBoot as the first entry in the BIOS boot order, specifies 1024 MB of memory, and specifies that a virtual machine created by using this hardware profile will have four processors.
 
 ### Example 3: Clone and then modify an existing hardware profile
 ```
-PS C:\>$HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
+PS C:\> $HWProfile = Get-SCHardwareProfile | where { $_.Name -eq "NewHWProfile01" }
 PS C:\> New-SCHardwareProfile -Name "NewHWProfile03" -HardwareProfile $HWProfile -RelativeWeight 100
 ```
 
@@ -111,7 +107,7 @@ All other settings in NewHWProfile03 are identical to those in NewHWProfile01.
 
 ### Example 4: Create a hardware profile that contains a network adapter, a SCSI adapter, and a DVD drive
 ```
-PS C:\>$JobGroupId = [Guid]::NewGuid().ToString()
+PS C:\> $JobGroupId = [Guid]::NewGuid().ToString()
 PS C:\> New-SCVirtualNetworkAdapter -JobGroup $JobGroupID -PhysicalAddressType Dynamic -VirtualNetwork "Internal Network" 
 PS C:\> New-SCVirtualSCSIAdapter -JobGroup $JobGroupID -AdapterID 6 -Shared $False
 PS C:\> New-SCVirtualDVDDrive -JobGroup $JobGroupID -Bus 1 -LUN 0
@@ -132,11 +128,11 @@ Specifying Bus 1 and LUN 0 attaches the virtual DVD drive to Secondary Channel (
 
 The last command creates a hardware profile named NewHWProfile04, sets the owner to Contoso\Katarina, specifies a description, and specifies that the amount of memory on the host that a virtual machine created by using this hardware profile will use is 512 MB.
 Before the **New-SCHardwareProfile** cmdlet creates the hardware profile, the *JobGroup* parameter in this final command executes all of the preceding cmdlets that specify the same *JobGroup* GUID.
-When New-SCVirtualNetworkAdapter, New-SCVirtualScsiAdapter, and New-SCVirtualDVDDrive run, the resulting objects that are created are automatically associated with the new hardware profile.
+When **New-SCVirtualNetworkAdapter**, **New-SCVirtualScsiAdapter**, and **New-SCVirtualDVDDrive** run, the resulting objects that are created are automatically associated with the new hardware profile.
 
 ### Example 5: Create a hardware profile and add it to a new virtual machine template
 ```
-PS C:\>$HWProfile = New-SCHardwareProfile -Name "NewHWProfile05" -CPUCount 4 -MemoryMB 64000 -CPUMax 100 -Owner "Contoso\Katarina" -HighlyAvailable $True 
+PS C:\> $HWProfile = New-SCHardwareProfile -Name "NewHWProfile05" -CPUCount 4 -MemoryMB 64000 -CPUMax 100 -Owner "Contoso\Katarina" -HighlyAvailable $True 
 PS C:\> $VHD = Get-SCVirtualHardDisk | where { $_.Name -eq "VHD01.vhd"  -and $_.LibraryServer.Name -eq "LibServer01.Contoso.com" }
 PS C:\> $OS = Get-SCOperatingSystem | where {$_.Name -eq "64-bit edition of Windows Server 2008 R2 Datacenter"}
 PS C:\> New-SCVMTemplate -Name "LargeVMTemplate" -HardwareProfile $HWProfile -OperatingSystem $OS -VirtualHardDisk $VHD -NoCustomization
@@ -145,7 +141,7 @@ PS C:\> New-SCVMTemplate -Name "LargeVMTemplate" -HardwareProfile $HWProfile -Op
 The first command creates a new hardware profile, names it NewHWProfile05, specifies that it contains four processors, and that the highest percentage of the total resources of a single CPU on a host that can be used by a virtual machine is 100 percent, assigns 64 GB of RAM and an owner, sets the *HighlyAvailable* parameter to $True, and then stores the new hardware profile object in the $HWProfile variable.
 The *HighlyAvailable* parameter specifies that a virtual machine created by using this hardware profile, either directly or through a template, will be placed on a host that is a node of a host cluster.
 
-The second command gets the virtual hard disk object nameed VHD01 from the library and stores the object in the $VHD variable.
+The second command gets the virtual hard disk object named VHD01 from the library and stores the object in the $VHD variable.
 
 The third command gets an operating system object by name and stores the object in the $OS variable.
 
@@ -318,23 +314,29 @@ Types of hosts support the following relative values:
 
 - Hyper-V.
 1 to 10000.
+
 - VMware ESX.
 High.
 2000.
+
 - VMware ESX.
 Above Normal.
 1500.
+
 - VMware ESX.
-Normal (default).
-1000. 
+Normal (default). 1000. 
+
 - VMware ESX.
 Below Normal.
 750.
+
 - VMware ESX.
 Low.
 500.
+
 - VMware ESX.
 Custom 1 to 1000000. 
+
 - Citrix XenServer.
 1 to 65536, normal is 256.
 
@@ -534,7 +536,7 @@ The default value is 65536.
 Required: You can enable dynamic memory for a virtual machine only if that virtual machine is deployed on a host running Windows Server 2008 R2 SP1 or later or if the virtual machine is stored in a library in a stopped state (hardware changes to a stored virtual machine can only be made if the virtual machine does not have snapshots).
 Enabling dynamic memory on a virtual machine stored in a library will limit placement of that machine to hosts running Windows Server 2008 R2 SP1 or later.
 
-Example format: ` -DynamicMemoryMinimumMB 1024`
+Example format: `-DynamicMemoryMinimumMB 1024`
 
 ```yaml
 Type: Int32
@@ -791,8 +793,6 @@ Accept wildcard characters: False
 ### -NetworkUtilizationMbps
 Specifies, in megabits per second (Mbps), the amount of bandwidth on the host's network that can be used by a specific virtual machine. 
 
-
-
 Example format: `-NetworkUtilization 10`
 
 ```yaml
@@ -841,11 +841,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-
-
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

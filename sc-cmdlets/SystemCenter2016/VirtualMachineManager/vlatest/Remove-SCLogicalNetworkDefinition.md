@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalNetworkDefinition.md
+online version: 
 schema: 2.0.0
 ms.assetid: 32E56010-D54B-4ABF-B056-FB5387B5B4C5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalNetworkDefinition.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalNetworkDefinition.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalNetworkDefinition.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalNetworkDefinition.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Remove-SCLogicalNetworkDefinition** cmdlet deletes a logical network defin
 
 ### Example 1: Delete a logical network definition
 ```
-PS C:\>$Definition = Get-SCLogicalNetworkDefinition -Name "Logical Network Definition 01"
+PS C:\> $Definition = Get-SCLogicalNetworkDefinition -Name "Logical Network Definition 01"
 PS C:\> Remove-SCLogicalNetworkDefinition -LogicalNetworkDefinition $Definition
 ```
 
@@ -180,7 +180,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **LogicalNetworkDefiniton** object.
 
 ## NOTES
-* Requires a VMM logical network definition object, which can be retrieved by using the Get-SCLogicalNetworkDefinition cmdlet.
+* Requires a VMM logical network definition object, which can be retrieved by using the **Get-SCLogicalNetworkDefinition** cmdlet.
 
 ## RELATED LINKS
 

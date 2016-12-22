@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: 0A8395BF-CDB4-4E63-A19B-09F0D0190F88
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -47,7 +47,7 @@ This cmdlet returns the object upon success (with the property MarkedForDeletion
 
 ### Example 1: Remove a virtual network adapter with the specified MAC address from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM | where { $_.PhysicalAddress -eq "00:16:D3:CC:00:1B" }
 PS C:\> Remove-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter
 ```
@@ -60,7 +60,7 @@ The last command removes the virtual network adapter stored in $Adapter from VM0
 
 ### Example 2: Remove a virtual network adapter connected to a specific virtual network from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM | where { $_.VirtualNetwork -eq "ExternalVirtualNetwork01" }
 PS C:\> Remove-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter
 ```
@@ -73,7 +73,7 @@ The last command removes the virtual network adapter object stored in $Adapter f
 
 ### Example 3: Remove the only virtual network adapter from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM03"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM03"
 PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> Remove-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter
 ```
@@ -87,7 +87,7 @@ The last command removes the virtual network adapter object stored in $Adapter f
 
 ### Example 4: Remove all virtual network adapters from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM04"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM04"
 PS C:\> $Adapters = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> $Adapters | Remove-SCVirtualNetworkAdapter
 ```
@@ -100,7 +100,7 @@ The last command passes each object stored in $Adapters to **Remove-SCVirtualNet
 
 ### Example 5: Remove the second virtual network adapter from a virtual machine that has three virtual network adapters
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM05"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM05"
 PS C:\> $Adapters = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> $Adapters[1] | Remove-SCVirtualNetworkAdapter
 ```
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -301,7 +301,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM virtual network adapter object, which can be retrieved by using the Get-SCVirtualNetworkAdapter cmdlet.
+* Requires a VMM virtual network adapter object, which can be retrieved by using the **Get-SCVirtualNetworkAdapter** cmdlet.
 
 ## RELATED LINKS
 

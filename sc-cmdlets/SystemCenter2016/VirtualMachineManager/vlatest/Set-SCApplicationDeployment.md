@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCApplicationDeployment.md
+online version: 
 schema: 2.0.0
 ms.assetid: DDFF727B-56BC-4F40-AF7B-DF63467E5B12
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationDeployment.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationDeployment.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationDeployment.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationDeployment.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,7 +44,7 @@ The **Set-SCApplicationDeployment** cmdlet modifies an application deployment.
 
 ### Example 1: Update the application package for a web application deployment
 ```
-PS C:\>$AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
+PS C:\> $AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
 PS C:\> $AppDeployment = Get-SCApplicationDeployment -Name "SvcWebDeployment01" -ApplicationProfile $AppProfile 
 PS C:\> $AppPackage = Get-SCApplicationPackage -Name "WebApp02.zip"
 PS C:\> Set-SCApplicationDeployment -ApplicationDeployment $AppDeployment -ApplicationPackage $AppPackage

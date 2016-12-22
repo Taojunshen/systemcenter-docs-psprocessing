@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCApplicationProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: B9F3B33E-F456-4596-A32C-15DEB55E1DA6
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCScriptCommandSetting.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCScriptCommandSetting.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCScriptCommandSetting.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCScriptCommandSetting.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ The **Set-SCScriptCommandSetting** cmdlet configures a script command setting.
 
 ### Example 1: Update the working directory associated with script command
 ```
-PS C:\>$AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
+PS C:\> $AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
 PS C:\> $ScriptCommand = Get-SCScriptCommand -ApplicationProfile $AppProfile | where {$_.Name -eq "PreInstall"}
 PS C:\> $ScriptCmdSetting = Get-SCScriptCommandSetting -ScriptCommand $ScriptCommand
 PS C:\> Set-SCScriptCommandSetting -ScriptCommandSetting $ScriptCmdSetting -WorkingDirectory "Working_Folder_03"
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ### -MatchExitCode
 Specifies the failure policy exit code.
 
-Example format: `-MatchExitCode "\[1-9\]\[0-9\]*"`
+Example format: `-MatchExitCode "[1-9][0-9]*"`
 
 ```yaml
 Type: String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartOnRetry
-Indicates whether a script is restarted upon VMM job restart if the previous job failure was due to a script failure when used in conjunction with New-SCScriptCommandSetting or Set-SCScriptCommandSetting.
+Indicates whether a script is restarted upon VMM job restart if the previous job failure was due to a script failure when used in conjunction with **New-SCScriptCommandSetting** or **Set-SCScriptCommandSetting**.
 
 ```yaml
 Type: Boolean

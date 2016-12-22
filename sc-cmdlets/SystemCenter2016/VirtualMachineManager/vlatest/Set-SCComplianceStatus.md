@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCComplianceStatus.md
+online version: 
 schema: 2.0.0
 ms.assetid: C5D10ECB-7163-47BF-9470-77E78198F16F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComplianceStatus.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComplianceStatus.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComplianceStatus.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComplianceStatus.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -52,7 +52,7 @@ The **Set-SCComplianceStatus** cmdlet sets a compliance status object.
 
 ### Example 1: Add an exemption to a compliance status
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01"
 PS C:\> $Compliance = Get-SCComplianceStatus -VMMManagedComputer $VMHost.ManagedComputer
 PS C:\> $Baseline = Get-SCBaseline -Name "Security Baseline"
 PS C:\> $Update = Get-SCUpdate -SecurityBulletinID "MS05-055"

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalNetwork.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4CFFF8C4-1241-45F8-A2BE-FD7D9C211E0E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalNetwork.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalNetwork.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalNetwork.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalNetwork.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -50,7 +50,7 @@ Properties that you can update include the name and description of the logical n
 
 ### Example 1: Change the name of a logical network
 ```
-PS C:\>$LogicalNetwork = Get-SCLogicalNetwork -Name "LogicalNetwork01"
+PS C:\> $LogicalNetwork = Get-SCLogicalNetwork -Name "LogicalNetwork01"
 PS C:\> Set-SCLogicalNetwork -LogicalNetwork $LogicalNetwork -Name "LogicalNetwork02"
 ```
 
@@ -271,7 +271,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **LogicalNetwork** object.
 
 ## NOTES
-* Requires a VMM logical network object, which can be retrieved by using the Get-SCLogicalNetwork cmdlet.
+* Requires a VMM logical network object, which can be retrieved by using the **Get-SCLogicalNetwork** cmdlet.
 
 ## RELATED LINKS
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCRunAsAccount.md
+online version: 
 schema: 2.0.0
 ms.assetid: 1697F623-0F19-4314-9F04-5897C046E4D1
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:13 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -78,7 +78,7 @@ Before you create a host profile, ensure that the virtual hard disk drive (.vhd)
 
 ### Example 1: Create a host profile
 ```
-PS C:\>$VHD = Get-SCVirtualHardDisk -Name "VHD01.vhd"
+PS C:\> $VHD = Get-SCVirtualHardDisk -Name "VHD01.vhd"
 PS C:\> $RunAsAcct = Get-SCRunAsAccount -Name "RunAsAcct01"
 PS C:\> $Credential = Get-Credential
 PS C:\> $HostProfile = New-SCVMHostProfile -Name "HostProfile01" -Owner "Contoso\Katarina" -Description "Host Profile 01" -Domain "Contoso.com" -DomainJoinRunAsAccount $RunAsAcct -VirtualHardDisk $VHD -LocalAdministratorCredential $Credential
@@ -97,7 +97,7 @@ The last command displays information about the newly created host profile to th
 
 ### Example 2: Clone an existing host profile
 ```
-PS C:\>$OrigHostProfile = Get-SCVMHostProfile -Name "HostProfile01"
+PS C:\> $OrigHostProfile = Get-SCVMHostProfile -Name "HostProfile01"
 PS C:\> $NewHostProfile = New-SCVMHostProfile -Name "HostProfile02" -VMHostProfile $OrigHostProfile
 ```
 
@@ -432,9 +432,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String
@@ -498,9 +497,8 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number (an index) that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935  at http://go.microsoft.com/fwlink/?LinkId=120935.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) at `http://go.microsoft.com/fwlink/?LinkId=120935`.
 If no time zone is specified, the default time zone used for a virtual machine is the same time zone setting that is on the virtual machine host. 
-
 
 Example format to specify the GMT Standard Time zone: `-TimeZone 085`
 

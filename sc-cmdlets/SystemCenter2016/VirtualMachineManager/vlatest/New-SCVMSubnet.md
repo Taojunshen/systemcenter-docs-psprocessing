@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMSubnet.md
+online version: 
 schema: 2.0.0
 ms.assetid: 2B8C4DAE-F390-4215-821A-BE1F81401433
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMSubnet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMSubnet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMSubnet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMSubnet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,15 +53,15 @@ The **New-SCVMSubnet** cmdlet creates a virtual machine subnet.
 A virtual machine subnet is an IP subnet that is associated with a virtual machine network.
 
 When you create a virtual machine subnet, you must provide **SubNetVLan** and **VMNetwork** objects.
-To create the **SubnetVLan** object, use the New-SCSubnetVLan cmdlet.
-To obtain a **VMNetwork** object, use the Get-SCVMNetwork cmdlet.
+To create the **SubnetVLan** object, use the **New-SCSubnetVLan** cmdlet.
+To obtain a **VMNetwork** object, use the **Get-SCVMNetwork** cmdlet.
 The logical network used by the virtual machine network must be enabled for network virtualization.
 
 ## EXAMPLES
 
 ### Example 1: Create a virtual machine subnet that uses NVGRE as the encapsulation mechanism
 ```
-PS C:\>$SubNetVLan = New-SCSubnetVLan -Subnet "192.168.3.0/24"
+PS C:\> $SubNetVLan = New-SCSubnetVLan -Subnet "192.168.3.0/24"
 PS C:\> $VMNetwork = Get-SCVMNetwork -Name "VMNetwork01"
 PS C:\> New-SCVMSubnet -Name "VMSubnet01" -SubnetVLan $SubnetVLan -VMNetwork $VMNetwork
 ```
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ### -VMNetwork
 Specifies a virtual machine network object.
 
-To get a virtual machine network object, use the Get-SCVMNetwork cmdlet.
+To get a virtual machine network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: ECEFE03C-2E5D-403B-8C2E-2C79D271A50F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,13 +38,13 @@ To test a virtual hard disk, the virtual machine on which the virtual hard disk 
 
 ### Example 1: Test a dynamic VHD on a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM03"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM03"
 PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM $VM
 PS C:\> If ($VM.Status -Eq "Running") {Stop-SCVirtualMachine -VM $VM -Shutdown}
 PS C:\> Test-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive
 ```
 
-The first command gets the virtual machine object named VM03 by using the Get-SCVirtualMachine cmdlet.
+The first command gets the virtual machine object named VM03 by using the **Get-SCVirtualMachine** cmdlet.
 This command stores that object in the $VM variable.
 
 The second command gets the virtual disk drive object that is attached to virtual machine VM03, and then stores that object in the $VirtDiskDrive variable.

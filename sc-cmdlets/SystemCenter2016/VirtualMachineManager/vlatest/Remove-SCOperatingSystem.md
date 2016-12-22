@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCOperatingSystem.md
+online version: 
 schema: 2.0.0
 ms.assetid: CA99FFE7-2870-4DF4-87DA-741E3FDE819F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOperatingSystem.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOperatingSystem.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOperatingSystem.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOperatingSystem.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Remove-SCOperatingSystem** cmdlet deletes an operating system from an appl
 
 ### Example 1: Remove all operating systems from a specified application profile
 ```
-PS C:\>$AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
+PS C:\> $AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
 PS C:\> $OS = $AppProfile.OperatingSystems[0]
 PS C:\> Remove-SCOperatingSystem -ApplicationProfile $AppProfile -OperatingSystem $OS
 ```

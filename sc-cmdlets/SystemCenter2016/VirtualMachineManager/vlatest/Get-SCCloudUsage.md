@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCloud.md
+online version: 
 schema: 2.0.0
 ms.assetid: D806BACA-E9EB-4945-AA6C-CF5F56BA4B42
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudUsage.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudUsage.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudUsage.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudUsage.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,13 +46,13 @@ Cloud usage data includes the following:
 - Amount of storage (in GB) 
 - Number of Virtual Machines
 
- You can scope this data to usage per user role and per user.
+You can scope this data to usage per user role and per user.
 
 ## EXAMPLES
 
 ### Example 1: Get the usage information for a specified private cloud
 ```
-PS C:\>$Cloud = Get-SCCloud -Name "Cloud01"
+PS C:\> $Cloud = Get-SCCloud -Name "Cloud01"
 PS C:\> Get-SCCloudUsage -Cloud $Cloud
 ```
 
@@ -68,7 +68,7 @@ The second command gets the cloud usage information for the private cloud stored
 
 ### Example 2: Get the usage information for a specified private cloud for a specified user role
 ```
-PS C:\>$Cloud = Get-SCCloud -Name "Cloud01"
+PS C:\> $Cloud = Get-SCCloud -Name "Cloud01"
 PS C:\> $UserRole = Get-SCUserRole -Name "SelfServiceUsers"
 PS C:\> Get-SCCloudUsage -Cloud $Cloud -UserRole $UserRole
 ```
@@ -82,7 +82,7 @@ Then, the command displays the cloud usage information to the user.
 
 ### Example 3: Get the usage information for a specified private cloud for a specified user within a user role
 ```
-PS C:\>$Cloud = Get-SCCloud -Name "Cloud01"
+PS C:\> $Cloud = Get-SCCloud -Name "Cloud01"
 PS C:\> $UserRole = Get-SCUserRole -Name "SelfServiceUsers"
 PS C:\> Get-SCCloudUsage -Cloud $Cloud -UserRole $UserRole -UserName "Contoso\PattiFuller"
 ```
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

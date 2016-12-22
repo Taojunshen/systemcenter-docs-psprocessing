@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./New-SCExternalJob.md
+online version: 
 schema: 2.0.0
 ms.assetid: 122E2D3C-EE43-4828-9FF1-4C3A2FA148F6
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCExternalJob.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCExternalJob.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCExternalJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCExternalJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,13 +43,13 @@ Set-SCExternalJob [-Job] <Task> [-Failed] -InfoMessage <String> [<CommonParamete
 The **Set-SCExternalJob** cmdlet updates existing external jobs in Virtual Machine Manager (VMM).
 You can update the percent complete of the job, or set the status of the job to completed or failed.
 
-For more information about external jobs, see the New-SCExternalJob cmdlet.
+For more information about external jobs, see the **New-SCExternalJob** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Set an external job to 15% complete
 ```
-PS C:\>$ExternalJob = Get-SCJob -Name "ExternalJob01"
+PS C:\> $ExternalJob = Get-SCJob -Name "ExternalJob01"
 PS C:\> Set-SCExternalJob -Job $ExternalJob -ProgressValue 15
 ```
 
@@ -59,7 +59,7 @@ The second command sets the progress value for the job stored in $ExternalJob to
 
 ### Example 2: Set an external job to completed
 ```
-PS C:\>$ExternalJob = Get-SCJob -Name "ExternalJob02"
+PS C:\> $ExternalJob = Get-SCJob -Name "ExternalJob02"
 PS C:\> Set-SCExternalJob -Job $ExternalJob -Completed -InfoMessage "Some information about the completed job"
 ```
 
@@ -69,7 +69,7 @@ The second command sets the status of the job stored in $ExternalJob to complete
 
 ### Example 3: Set an external job to failed
 ```
-PS C:\>$ExternalJob = Get-SCJob -Name "ExternalJob03"
+PS C:\> $ExternalJob = Get-SCJob -Name "ExternalJob03"
 PS C:\> Set-SCExternalJob -Job $ExternalJob -Failed -InfoMessage "An error message for the failed job"
 ```
 

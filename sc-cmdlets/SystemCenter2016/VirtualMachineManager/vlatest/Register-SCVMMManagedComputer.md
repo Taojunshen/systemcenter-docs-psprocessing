@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMMManagedComputer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 130C3630-D5D8-4EE7-9833-DC9205E553B3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVMMManagedComputer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVMMManagedComputer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVMMManagedComputer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVMMManagedComputer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -54,7 +54,7 @@ Scenario 2: Re-Organizing Server Groupings
 
 
 In this scenario, VMMServerA and VMMServerB are two existing VMM management servers that manage different sets of hosts and library servers.
-If, for example, VMHost01 is currently managed by VMMServerA, you can add VMHost01 to VMMServerB by using the Add-SCVMHost cmdlet with the *Reassociate* parameter.
+If, for example, VMHost01 is currently managed by VMMServerA, you can add VMHost01 to VMMServerB by using the **Add-SCVMHost** cmdlet with the *Reassociate* parameter.
 If you do this, the state of VMHost01 on VMMServerA is now Access Denied and its state on VMMServerB is Responding.
 VMHost01 is now managed by VMMServerB, so you can remove it from VMMServerA.
 
@@ -64,14 +64,14 @@ You can also use **Reassociate-SCVMMManagedComputer** to reassociate Host01 with
 
 ### Example 1: Re-associate all unassociated managed computers with a specific VMM server
 ```
-PS C:\>Get-VMMServer -ComputerName "VMMServer01.Contoso.com"
+PS C:\> Get-VMMServer -ComputerName "VMMServer01.Contoso.com"
 PS C:\> $Credential = Get-Credential
 PS C:\> Get-VMMManagedComputer | where {$_.State -eq "NotResponding"} | Register-SCVMMManagedComputer -Credential $Credential
 ```
 
 The first command connects to VMMServer01 in the Contoso.com domain.
 
-The second command uses Get-Credential to prompt you to supply a user name and password and stores your credentials in the $Credential variable.
+The second command uses **Get-Credential** to prompt you to supply a user name and password and stores your credentials in the $Credential variable.
 The required credentials for this operation are a domain account with administrator rights on the host server that you want to reassociate with a specific VMM server and the password for that account.
 
 The last command gets all managed computers from VMMServer01 and selects only those objects that are in the Not Responding state.
@@ -82,7 +82,7 @@ As this command is processed, $Credential provides your credentials to **Registe
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCLibraryShare.md
+online version: 
 schema: 2.0.0
 ms.assetid: 03E44C3B-83E4-4E3C-8626-890EEF0E8380
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCLibraryShare.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCLibraryShare.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCLibraryShare.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Find-SCLibraryShare.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,17 +43,17 @@ For library servers, this command also returns shares that are already Virtual M
 
 ### Example 1: Find Windows shares on a computer that is not yet a VMM library server
 ```
-PS C:\>$Credential = Get-Credential
+PS C:\> $Credential = Get-Credential
 PS C:\> Find-SCLibraryShare -Credential $Credential -ComputerName "Server01.Contoso.com"
 ```
 
-The first command uses Get-Credential to prompt you to supply a user name and password with permissions to access Windows shares on Server01 and stores your credentials in the $Credential variable.
+The first command uses **Get-Credential** to prompt you to supply a user name and password with permissions to access Windows shares on Server01 and stores your credentials in the $Credential variable.
 
 The second command confirms that you have valid credentials for this operation and then displays all existing Windows shares capable of becoming VMM library shares.
 
 ### Example 2: Find shares on a VMM library server
 ```
-PS C:\>Find-SCLibraryShare -LibraryServer "LibraryServer01.Contoso.com"
+PS C:\> Find-SCLibraryShare -LibraryServer "LibraryServer01.Contoso.com"
 ```
 
 This command displays all Windows shares capable of becoming library shares that exist on LibraryServer01 as well as all shares that are already VMM library shares.
@@ -82,9 +82,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task. 
-
-
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task. 
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 

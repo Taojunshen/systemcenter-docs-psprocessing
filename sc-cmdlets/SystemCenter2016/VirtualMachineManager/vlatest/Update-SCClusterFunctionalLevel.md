@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMHostCluster.md
+online version: 
 schema: 2.0.0
 ms.assetid: F97ECA21-7FC4-48E9-A51B-1C75DD1D9E55
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCClusterFunctionalLevel.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCClusterFunctionalLevel.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCClusterFunctionalLevel.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCClusterFunctionalLevel.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,10 +43,10 @@ The **Update-SCClusterFunctionalLevel** cmdlet updates the cluster functional le
 
 ### Example 1: Update a host cluster
 ```
-PS C:\>Get-SCVMHostCluster -Name "VMHostCluster03.Contoso.com" | Update-SCClusterFunctionalLevel
+PS C:\> Get-SCVMHostCluster -Name "VMHostCluster03.Contoso.com" | Update-SCClusterFunctionalLevel
 ```
 
-This command gets the host cluster that has the specified name by using the Get-SCVMHostCluster cmdlet.
+This command gets the host cluster that has the specified name by using the **Get-SCVMHostCluster** cmdlet.
 The command passes that cluster to the current cmdlet by using the pipeline operator.
 The current cmdlet updates the functional level of that cluster, and returns the updated **HostCluster** object.
 

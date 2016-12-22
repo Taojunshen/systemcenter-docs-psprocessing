@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMHostGroup.md
+online version: 
 schema: 2.0.0
 ms.assetid: 815EA9F6-CE65-4968-A684-7198D8A94F72
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostGroup.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostGroup.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostGroup.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostGroup.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -40,7 +40,7 @@ This cmdlet returns the object upon success (with the MarkedForDeletion property
 
 ### Example 1: Remove the specified host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup -Name "HostGroup02"
+PS C:\> $HostGroup = Get-SCVMHostGroup -Name "HostGroup02"
 PS C:\> Remove-SCVMHostGroup -VMHostGroup $HostGroup
 ```
 
@@ -150,7 +150,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM host group object, which can be retrieved by using the Get-SCVMHostGroup cmdlet.
+* Requires a VMM host group object, which can be retrieved by using the **Get-SCVMHostGroup** cmdlet.
 
 ## RELATED LINKS
 

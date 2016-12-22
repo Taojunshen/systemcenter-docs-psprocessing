@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageZone.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9B147A56-D14D-49A4-90F7-B0D372D58844
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZone.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZone.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZone.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZone.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,7 +38,7 @@ The **Set-SCStorageZone** cmdlet modifies an existing zone in a zone set.
 
 ### Example 1: Modify an existing zone
 ```
-PS C:\>$Zone = Get-SCStorageZone -Name "Zone01"
+PS C:\> $Zone = Get-SCStorageZone -Name "Zone01"
 PS C:\> $Alias = Get-SCStorageZoneAlias -Name "MyArrayPorts"
 PS C:\> $Members = @()
 PS C:\> $Members += "D113ED3B8A310220"
@@ -60,7 +60,7 @@ The command removes the specified aliases.
 
 ### -AddZoneAlias
 Specifies an array of zone aliases that represents one or more world-wide port names.
-To obtain a **StorageZoneAlias** object, use the Get-SCStorageZoneAlias cmdlet.
+To obtain a **StorageZoneAlias** object, use the **Get-SCStorageZoneAlias** cmdlet.
 
 ```yaml
 Type: StorageZoneAlias[]

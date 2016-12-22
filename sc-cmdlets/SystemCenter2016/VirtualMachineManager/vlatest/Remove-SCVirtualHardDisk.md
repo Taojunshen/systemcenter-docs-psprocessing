@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualHardDisk.md
+online version: 
 schema: 2.0.0
 ms.assetid: 5EFCEE2D-F014-4559-B886-59A8D5D22A1F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualHardDisk.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualHardDisk.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualHardDisk.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualHardDisk.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,7 +48,7 @@ This cmdlet returns the object upon success (with the property MarkedForDeletion
 
 ### Example 1: Remove a virtual hard disk object from the library
 ```
-PS C:\>$VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHD01.vhd" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> $VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHD01.vhd" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 PS C:\> Remove-SCVirtualHardDisk -VirtualHardDisk $VHD
 ```
 
@@ -58,7 +58,7 @@ The second command removes the virtual hard disk object stored in $VHD from the 
 
 ### Example 2: Remove a virtual hard disk from a virtual machine
 ```
-PS C:\>Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
+PS C:\> Get-SCVMMServer -ComputerName "VMMServer01.Contoso.com"
 PS C:\> $VHD = Get-SCVirtualMachine -Name "VM01" | Get-SCVirtualHardDisk | where { $_.Name -match "DataDisk" }
 PS C:\> $VHD | Remove-SCVirtualHardDisk
 ```
@@ -201,7 +201,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM virtual hard disk object, which can be retrieved by using the Get-SCVirtualHardDisk cmdlet.
+* Requires a VMM virtual hard disk object, which can be retrieved by using the **Get-SCVirtualHardDisk** cmdlet.
 
 ## RELATED LINKS
 

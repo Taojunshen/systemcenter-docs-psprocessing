@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualFloppyDisk.md
+online version: 
 schema: 2.0.0
 ms.assetid: DB1D1C95-80EF-48A3-944F-1D657C21985F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,13 +41,13 @@ Set-SCVirtualFloppyDrive [-VMMServer <ServerConnection>] [[-VirtualFloppyDrive] 
 ## DESCRIPTION
 The **Set-SCVirtualFloppyDrive** cmdlet changes one or more properties of a virtual floppy drive associated with a virtual machine, virtual machine template, or hardware profile used in a Virtual Machine Manager (VMM) environment.
 
-You can use the Set-SCVirtualFloppyDrive cmdlet to configure the virtual floppy drive to use a physical floppy drive (typically, drive A:) to read physical floppy disks, to read an existing virtual floppy disk, or to disconnect the virtual floppy disk.
+You can use the **Set-SCVirtualFloppyDrive** cmdlet to configure the virtual floppy drive to use a physical floppy drive (typically, drive A:) to read physical floppy disks, to read an existing virtual floppy disk, or to disconnect the virtual floppy disk.
 
 ## EXAMPLES
 
 ### Example 1: Connect a virtual floppy drive to a virtual floppy disk
 ```
-PS C:\>$FloppyDisk = Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "BootDisk.vfd"}
+PS C:\> $FloppyDisk = Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "BootDisk.vfd"}
 PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $FloppyDrive = @(Get-SCVirtualFloppyDrive -VM $VM)
 PS C:\> Set-SCVirtualFloppyDrive -VirtualFloppyDrive $FloppyDrive[0] -VirtualFloppyDisk $FloppyDisk
@@ -63,7 +63,7 @@ The last command connects the virtual floppy disk stored in $FloppyDisk (BootDis
 
 ### Example 2: Disconnect a virtual floppy drive
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $FloppyDrive = @(Get-SCVirtualFloppyDrive -VM $VM)
 PS C:\> Set-SCVirtualFloppyDrive -VirtualFloppyDrive $FloppyDrive[0] -NoMedia
 ```
@@ -209,7 +209,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualFloppyDrive** object.
 
 ## NOTES
-* Requires a VMM virtual floppy drive object, which can be retrieved by using the Get-SCVirtualFloppyDrive cmdlet.
+* Requires a VMM virtual floppy drive object, which can be retrieved by using the **Get-SCVirtualFloppyDrive** cmdlet.
 
 ## RELATED LINKS
 

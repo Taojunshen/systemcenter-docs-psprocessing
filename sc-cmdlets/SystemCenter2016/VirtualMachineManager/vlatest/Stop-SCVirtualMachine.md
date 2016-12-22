@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUserRole.md
+online version: 
 schema: 2.0.0
 ms.assetid: C4A19367-DB20-4F11-A2C9-A6BB3960B349
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -60,7 +60,7 @@ To resume a stopped virtual machine, use the Start-SCVirtualMachine cmdlet.
 
 ### Example 1: Stop a specified virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Stop-SCVirtualMachine -VM $VM
 ```
 
@@ -70,7 +70,7 @@ The second command stops the virtual machine stored in $VM, and displays informa
 
 ### Example 2: Stop multiple virtual machines
 ```
-PS C:\>$VMs = Get-SCVirtualMachine | where { $_.Name -match "VM" -and $_.Status -eq "Running" }
+PS C:\> $VMs = Get-SCVirtualMachine | where { $_.Name -match "VM" -and $_.Status -eq "Running" }
 PS C:\> $VMs | Stop-SCVirtualMachine
 ```
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -248,7 +248,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualMachine** object.
 
 ## NOTES
-* This cmdlet requires a virtual machine object, which can be retrieved by using the Get-SCVirtualMachine cmdlet.
+* This cmdlet requires a virtual machine object, which can be retrieved by using the **Get-SCVirtualMachine** cmdlet.
 
 ## RELATED LINKS
 

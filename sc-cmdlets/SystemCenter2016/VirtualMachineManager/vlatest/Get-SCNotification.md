@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCService.md
+online version: 
 schema: 2.0.0
 ms.assetid: D11E3DC6-8B1C-418A-A0A8-A372CEEDD5A6
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNotification.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNotification.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNotification.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNotification.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -31,13 +31,13 @@ Get-SCNotification [-VMMServer <ServerConnection>] [-NotifiedObject] <ClientObje
 ## DESCRIPTION
 The **Get-SCNotification** cmdlet gets the update notifications for a service template or service instance.
 Update notifications alert you to updated resources that are available for a service template or service instance.
-Use the Set-SCNotification cmdlet to dismiss notifications.
+Use the **Set-SCNotification** cmdlet to dismiss notifications.
 
 ## EXAMPLES
 
 ### Example 1: Get update notifications for a service
 ```
-PS C:\>$Service = Get-SCService -Name "Service01"
+PS C:\> $Service = Get-SCService -Name "Service01"
 PS C:\> Get-SCNotification -NotifiedObject $Service
 ```
 

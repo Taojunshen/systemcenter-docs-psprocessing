@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Backup-SCVMMServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 03AFB822-0EE6-44DE-811A-A7E15DF4A8C0
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -47,7 +47,7 @@ Configure Federated Authentication
 
 You can use the parameters provided with **Set-SCVMMServer** to configure Federated Authentication.
 Federated authentication allows a user to connect to the console of a virtual machine without having credentials on the Hyper-V host computer.
-Use the New-SCVMConnectFedAuth cmdlet to issue Federated Authentication tokens.
+Use the **New-SCVMConnectFedAuth** cmdlet to issue Federated Authentication tokens.
 
 Microsoft Customer Experience Improvement Program (CEIP) Participation
 
@@ -79,21 +79,21 @@ You can use **Set-SCVMMServer** to select the method used to communicate with th
 
 ### Example 1: Set the frequency at which the library is refreshed
 ```
-PS C:\>Set-SCVMMServer -VMMServer "VMMServer01.Contoso.com" -LibraryRefresherEnabled $True -LibraryRefresherFrequency 24
+PS C:\> Set-SCVMMServer -VMMServer "VMMServer01.Contoso.com" -LibraryRefresherEnabled $True -LibraryRefresherFrequency 24
 ```
 
 This command enables library refreshing for VMMServer01 and sets the refreshing frequency rate to every 24 hours.
 
 ### Example 2: Opt out of the Customer Experience Improvement Program
 ```
-PS C:\>Set-SCVMMServer -VMMServer "VMMServer01.Contoso.com" -CEIPOptIn $False
+PS C:\> Set-SCVMMServer -VMMServer "VMMServer01.Contoso.com" -CEIPOptIn $False
 ```
 
 This command opts out of participation in the Microsoft Customer Experience Improvement Program (CEIP) by setting the *CEIPOptIn* parameter to $False on VMMServer01.
 
 ### Example 3: Specify a self-service contact e-mail address
 ```
-PS C:\>Set-SCVMMServer -VMMServer "VMMServer01.Contoso.com" -SelfServiceContactEmail "AdminHelp@Contoso.com"
+PS C:\> Set-SCVMMServer -VMMServer "VMMServer01.Contoso.com" -SelfServiceContactEmail "AdminHelp@Contoso.com"
 ```
 
 This command sets the self service contact e-mail address to AdminHelp@Contoso.com on VMMServer01.

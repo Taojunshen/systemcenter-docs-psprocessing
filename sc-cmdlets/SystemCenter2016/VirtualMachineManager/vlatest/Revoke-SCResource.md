@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMTemplate.md
+online version: 
 schema: 2.0.0
 ms.assetid: BB63B90C-4AB3-4D4B-8280-46E1EDDE7A58
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Revoke-SCResource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Revoke-SCResource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Revoke-SCResource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Revoke-SCResource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Revoke-SCResource** cmdlet revokes access to a resource from a user or use
 
 ### Example 1: Revoke access to a resource from a specific user
 ```
-PS C:\>$Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"} 
+PS C:\> $Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"} 
 PS C:\> Revoke-SCResource -Resource $Resource -Username "Contoso\Katarina"
 ```
 
@@ -48,7 +48,7 @@ If the user is a member of multiple user roles, access will be revoked from the 
 
 ### Example 2: Revoke access to a resource from a user who is a member of multiple user roles
 ```
-PS C:\>$Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
+PS C:\> $Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
 PS C:\> Revoke-SCResource -Resource $Resource -Username "Contoso\Katarina" -UserRoleName @("ContosoSelfServiceUsers", "SelfServiceUserRole02")
 ```
 
@@ -59,7 +59,7 @@ If Katarina uses a different user role that has access to the resource then she 
 
 ### Example 3: Revoke access to a resource from all members of a user role
 ```
-PS C:\>$Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
+PS C:\> $Resource = Get-SCVMTemplate | where {$_.Name -eq "Template01"}
 PS C:\> Revoke-SCResource -Resource $Resource -UserRoleName "ContosoSelfServiceUsers"
 ```
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

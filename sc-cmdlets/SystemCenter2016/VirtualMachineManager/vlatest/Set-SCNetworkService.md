@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCNetworkService.md
+online version: 
 schema: 2.0.0
 ms.assetid: 3388DEC9-A75C-4093-863A-CF4A30F6B7CA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:49 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkService.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkService.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkService.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/8c8c20cafa5c1354636ca569508504b8373fce2c/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkService.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,10 +41,6 @@ The **Set-SCNetworkService** cmdlet modifies a network service.
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 
@@ -204,8 +200,6 @@ Accept wildcard characters: False
 ### -Manufacturer
 Specifies the name of the company that manufactured a physical device.
 The acceptable values for this parameter are:
-
-
 
 - Letters (a-z) 
 - Numbers (0-9) 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: 12630103-E5C2-4045-8186-CACAA01FA449
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -278,7 +278,7 @@ You can create a virtual machine from an existing hard disk that contains a thir
 - A blank virtual hard disk.
 
 New in System Center 2016, you can create a virtual machine by using a differencing disk.
-For more information about differencing disks, see New-SCVirtualDiskDrive.
+For more information about differencing disks, see **New-SCVirtualDiskDrive**.
 
 When you deploy a new virtual machine to a Hyper-V host, you can specify a location for the virtual machine files, or use the default path: \<C\>:\ProgramData\Microsoft\Windows\Hyper-V.
 When you deploy a virtual machine on a VMware ESX host or Citrix XenServer host, there is no default path.
@@ -290,7 +290,7 @@ As an alternative to the current cmdlet, you can create a virtual machine by usi
 This cmdlet creates a virtual machine from an existing physical computer.
 This is called a P2V conversion.
 For more information, type: `Get-Help New-SCP2V`.
-- New-SCV2V creates a virtual machine from an existing virtual machine, such as a virtual machine created in VMWare.
+- **New-SCV2V** creates a virtual machine from an existing virtual machine, such as a virtual machine created in VMWare.
 This is called a V2V conversion).
 For more information, type: `Get-Help New-SCV2V`.
 
@@ -298,7 +298,7 @@ For more information, type: `Get-Help New-SCV2V`.
 
 ### Example 1: Create a virtual machine from a virtual hard disk and deploy it on a host
 ```
-PS C:\>$VHD = Get-SCVirtualHardDisk -Name "Blank Disk - Large" 
+PS C:\> $VHD = Get-SCVirtualHardDisk -Name "Blank Disk - Large" 
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
 PS C:\> New-SCVirtualMachine -Name "VM01" -VirtualHardDisk $VHD -VMHost $VMHost -Path "C:\VirtualMachinePath" -RunAsynchronously
 ```
@@ -314,7 +314,7 @@ The command returns control to the shell immediately, before the command finishe
 
 ### Example 2: Create a virtual machine from a virtual machine template and deploy it on a host
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "WindowsServer2008R2"}
+PS C:\> $VMTemplate = Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "WindowsServer2008R2"}
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com"
 PS C:\> New-SCVirtualMachine -VMTemplate $VMTemplate -Name "VM02" -VMHost $VMHost -Path "C:\VirtualMachinePath" -RunAsynchronously -ComputerName "Server01" -FullName "Elisa Daugherty" -OrgName "Contoso" -ProductKey "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
 ```
@@ -332,7 +332,7 @@ The command returns control to the shell immediately, before the command finishe
 
 ### Example 3: Create a virtual machine by cloning an existing virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com"
 PS C:\> if($VM.Status -eq "PowerOff"){New-SCVirtualMachine -Name "VM03" -VM $VM -VMHost $VMHost -Path "C:\VirtualMachinePath" -RunAsynchronously}
 ```
@@ -346,7 +346,7 @@ If the virtual machine is powered off, the command creates a virtual machine nam
 
 ### Example 4: Create a virtual machine from a virtual machine stored in the library
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost04"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost04"
 PS C:\> $VM = Get-SCVirtualMachine -Name "StoredVM01" | where {$_.LibraryServer.Name -eq "LibServer01.Contoso.com"} | where {$_.Location -eq "\\LibServer01.Consoso.com\MSSCVMMLibrary\StoredVM01"}
 PS C:\> New-SCVirtualMachine -VM $VM -Name "VM04" -Description "New virtual machine from virtual machine stored in Library" -Owner "Contoso\ElisaDaugherty" -VMHost $VMHost -Path "C:\VirtualMachinePath" -RunAsynchronously -StartAction NeverAutoTurnOnVM -StopAction SaveVM -MemoryMB 1024
 ```
@@ -361,7 +361,7 @@ The command also specifies a description and owner, and specifies that the start
 
 ### Example 5: Create a highly available virtual machine
 ```
-PS C:\>$JobGuid = [System.Guid]::NewGuid().ToString()
+PS C:\> $JobGuid = [System.Guid]::NewGuid().ToString()
 PS C:\> $VMName = "HAVM01"
 PS C:\> New-SCVirtualNetworkAdapter -JobGroup $JobGuid -PhysicalAddressType Dynamic -VLANEnabled $False 
 PS C:\> New-SCVirtualDVDDrive -JobGroup $JobGuid -Bus 1 -LUN 0 
@@ -408,7 +408,7 @@ Additionally, the command specifies that the virtual machine is not started auto
 
 ### Example 6: Use an existing VHD file on the destination host to create a new virtual machine from a template
 ```
-PS C:\>$JobGroupID = [Guid]::NewGuid().ToString()
+PS C:\> $JobGroupID = [Guid]::NewGuid().ToString()
 PS C:\> $VMTemplate = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost06.Contoso.com"
 PS C:\> Move-SCVirtualHardDisk -IDE -BUS 0 -LUN 0 -Path "L:\OS.VHD" -JobGroup $JobGroupID
@@ -424,7 +424,7 @@ The third command gets the host object named VMHost06, and stores that object in
 
 The fourth command connects the specified virtual hard disk to the first slot (0) of the primary channel (0) on the virtual IDE controller on the virtual machine instead of the default virtual hard disk in the template.
 The virtual hard disk stored at L:\OS.VHD contains the operating system that runs on the virtual machine.
-Additionally, this command uses the *JobGroup* parameter to specify that it will not run until the New-SCVirtualMachine cmdlet triggers the commands in the *JobGroup* parameter to run.
+Additionally, this command uses the *JobGroup* parameter to specify that it will not run until the **New-SCVirtualMachine** cmdlet triggers the commands in the *JobGroup* parameter to run.
 
 The final command triggers all commands that contain the $JobGroupID variable to run.
 The command creates the new virtual machine named VM06 from the template stored in $VMTemplate.
@@ -436,7 +436,7 @@ As a result, both the virtual machine and its operating system are stored on the
 
 ### Example 7: Use an existing VHD on the destination host to create a virtual machine from a template, and move another VHD to the new virtual machine
 ```
-PS C:\>$JobGroupID = [guid]::NewGuid()
+PS C:\> $JobGroupID = [guid]::NewGuid()
 PS C:\> $VMTemplate = Get-SCVMTemplate | where {$_.Name -eq "VMTemplate01"}
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost07.Contoso.com"
 PS C:\> $VHD = Get-SCVirtualHardDisk -All | where {$_.Name -eq "Other.Vhd"}
@@ -449,7 +449,7 @@ The first three commands are identical to the first three commands in the previo
 In this example, VMTemplate01 has a virtual disk drive on IDE Bus 0 and LUN 0 that contains a virtual hard disk.
 
 The fourth command gets the virtual hard disk object named Other.VHD.
-The Get-SCVirtualHardDisk cmdlet can retrieve virtual hard disk objects from a virtual machine, from a template, or from a stand-alone file stored in the VMM library.
+The **Get-SCVirtualHardDisk** cmdlet can retrieve virtual hard disk objects from a virtual machine, from a template, or from a stand-alone file stored in the VMM library.
 Specifying the *All* parameter retrieves a full list of all the subordinate objects independent of the parent object.
 In this case, the command retrieves all the available virtual hard disk objects, and then selects Other.VHD.
 
@@ -471,7 +471,7 @@ As a result, the path of the virtual machine is D:\VirtualMachinePath\VM07, the 
 
 ### Example 8: Create a Linux-based virtual machine from a virtual machine template and deploy it on a host
 ```
-PS C:\>$VMTemplate = Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | Where-Object {$_.Name -eq "CentOSConfigurable"}
+PS C:\> $VMTemplate = Get-SCVMTemplate -VMMServer "VMMServer01.Contoso.com" | Where-Object {$_.Name -eq "CentOSConfigurable"}
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com"
 PS C:\> $Cred = Get-Credential
 PS C:\> New-SCVirtualMachine -VMTemplate $VMTemplate -Name "MyCentOSVM" -RunAsynchronously -ComputerName "MyCentOSVM" -LinuxDomainName "Contoso.com" -LocalAdministratorCredential $Cred -VMHost $VMhost -Path "C:\VirtualMachinePath"
@@ -667,20 +667,15 @@ Types of hosts support the following relative values:
 - Hyper-V.
 1 to 10000.
 - VMware ESX.
-High.
-2000. 
+High. 2000. 
 - VMware ESX.
-Above Normal.
-1500. 
+Above Normal. 1500. 
 - VMware ESX.
-Normal (default).
-1000. 
+Normal (default). 1000. 
 - VMware ESX.
-Below Normal.
-750. 
+Below Normal. 750. 
 - VMware ESX.
-Low.
-500. 
+Low. 500. 
 - VMware ESX.
 Custom 1 to 1000000. 
 - Citrix XenServer.
@@ -700,7 +695,7 @@ Accept wildcard characters: False
 
 ### -CPUType
 Specifies the type of CPU for a virtual machine.
-To retrieve a list of all CPU types that are available for use in virtual machines in a VMM environment, see the Get-SCCPUType cmdlet.
+To retrieve a list of all CPU types that are available for use in virtual machines in a VMM environment, see the **Get-SCCPUType** cmdlet.
 
 ```yaml
 Type: ProcessorType
@@ -1028,12 +1023,7 @@ Accept wildcard characters: False
 Specifies an array of commands to add to the **\[GuiRunOnce\]** section of an unattended answer file.
 Use single quotation marks around each string enclosed in double quotation marks. 
 
-
-
-Example format: 
-`-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
-
-
+Example format: `-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
 
 For information about how Windows PowerShell uses quotation marks, type `Get-Help about_Quoting_Rules`.
 
@@ -1358,7 +1348,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -1375,7 +1365,7 @@ Accept wildcard characters: False
 
 ### -OperatingSystem
 Specifies the type of operating system for a virtual machine.
-To list the names of all available operating systems in VMM, use the Get-SCOperatingSystem cmdlet.
+To list the names of all available operating systems in VMM, use the **Get-SCOperatingSystem** cmdlet.
 
 ```yaml
 Type: OperatingSystem
@@ -1696,7 +1686,7 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see "Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935 (http://go.microsoft.com/fwlink/?LinkId=120935) on the Microsoft Developer Network.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) (`http://go.microsoft.com/fwlink/?LinkId=120935`) on the Microsoft Developer Network.
 If you do not specify a time zone, the default time zone is the same time zone setting that is on the virtual machine host.
 
 ```yaml
@@ -1804,7 +1794,7 @@ Accept wildcard characters: False
 ### -VMHost
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host
@@ -1940,7 +1930,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualMachine** object.
 
 ## NOTES
-* This cmdlet requires a VMM virtual hard disk object, virtual machine template object, or virtual machine object. To obtain such an object, use the Get-SCVirtualHardDisk, Get-SCVMTemplate, or Get-SCVirtualMachine cmdlet.
+* This cmdlet requires a VMM virtual hard disk object, virtual machine template object, or virtual machine object. To obtain such an object, use the **Get-SCVirtualHardDisk**, **Get-SCVMTemplate**, or **Get-SCVirtualMachine** cmdlet.
 
 ## RELATED LINKS
 

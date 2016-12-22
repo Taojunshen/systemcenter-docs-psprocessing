@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Disable-SCRunAsAccount.md
+online version: 
 schema: 2.0.0
 ms.assetid: C0F6D0B8-75F5-4FA6-BF54-D3DDE2D98845
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCRunAsAccount.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCRunAsAccount.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCRunAsAccount.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCRunAsAccount.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ The **Get-SCRunAsAccount** cmdlet gets Virtual Machine Manager (VMM) Run As acco
 
 ### Example 1: Get a Run As account by its name
 ```
-PS C:\>$RunAsAccount = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $RunAsAccount = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> $RunAsAccount
 ```
 
@@ -46,7 +46,7 @@ The second command displays information about the Run As account stored in $RunA
 
 ### Example 2: Get an enabled Run As account by its name
 ```
-PS C:\>$RunAsAccount = Get-SCRunAsAccount -Name "RunAsAccount01" -IsEnabled $True
+PS C:\> $RunAsAccount = Get-SCRunAsAccount -Name "RunAsAccount01" -IsEnabled $True
 PS C:\> $RunAsAccount
 ```
 
@@ -56,7 +56,7 @@ The second command displays information about the Run As account stored in $RunA
 
 ### Example 3: Get enabled Run As accounts that contain a specified string in their name
 ```
-PS C:\>$RunAsAccount = Get-SCRunAsAccount -Name *Account* -IsEnabled $True
+PS C:\> $RunAsAccount = Get-SCRunAsAccount -Name *Account* -IsEnabled $True
 PS C:\> $RunAsAccount[0]
 PS C:\> $RunAsAccount[1]
 ```
@@ -64,6 +64,7 @@ PS C:\> $RunAsAccount[1]
 The first command gets all enabled Run As account objects that contain Account in their names and stores the objects in the $RunAsAccount array.
 
 The second command displays information about the first Run As account in the $RunAsAccount array to the user.
+
 The third command displays information about the second Run As account in the $RunAsAccount array to the user.
 
 ## PARAMETERS
@@ -132,7 +133,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

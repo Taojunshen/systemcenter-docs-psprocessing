@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCLibraryServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7C5329CA-1202-45B7-81A5-BBD8448BAB32
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLibraryServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLibraryServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLibraryServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLibraryServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -58,13 +58,13 @@ Set-SCLibraryServer [-LibraryServerManagementCredential <RunAsAccount>] [-Librar
 
 ## DESCRIPTION
 The **Set-SCLibraryServer** cmdlet sets the properties of a Virtual Machine Manager (VMM) library server.
-You can also use this cmdlet as part of a job group, when used with the Add-SCLibraryShare cmdlet, to add a set of library shares.
+You can also use this cmdlet as part of a job group, when used with the **Add-SCLibraryShare** cmdlet, to add a set of library shares.
 
 ## EXAMPLES
 
 ### Example 1: Change the description of a library server
 ```
-PS C:\>$LibServer = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "LibraryServer01.Contoso.com"
+PS C:\> $LibServer = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "LibraryServer01.Contoso.com"
 PS C:\> Set-SCLibraryServer -LibraryServer $LibServer -Description "Library server for Production"
 ```
 
@@ -74,7 +74,7 @@ The second command changes the description for FileServer01 to "Library server f
 
 ### Example 2: Update the description for a library server
 ```
-PS C:\>$LibServer = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "LibraryServer01.Contoso.com"
+PS C:\> $LibServer = Get-SCLibraryServer -VMMServer "VMMServer01.Contoso.com" -ComputerName "LibraryServer01.Contoso.com"
 PS C:\> Set-SCLibraryServer -LibraryServer $LibServer -Description "The library server is used by the Seattle office."
 ```
 
@@ -84,7 +84,7 @@ The second command updates the description for the library server object stored 
 
 ### Example 3: Add a VM network to a library server
 ```
-PS C:\>$VMNetwork = Get-SCVMNetwork -Name "VMNetwork01"
+PS C:\> $VMNetwork = Get-SCVMNetwork -Name "VMNetwork01"
 PS C:\> Get-SCLibraryServer -ComputerName "LibraryServer01.Contoso.com" | Set-SCLibraryServer -AddVMNetwork $VMNetwork
 ```
 
@@ -145,9 +145,7 @@ Allowing unencrypted network file transfers can improve performance if neither t
 
 Use this parameter to: 
 
-
 - Enable unencrypted file transfers into, or out of, the library. 
-
 - Enable unencrypted file transfers into, out of, or within a host group.
 
 ```yaml
@@ -239,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoveVMNetwork
-Removes network connectivity for one or more VM networks from the specified library server when used in conjunction with Set-SCVMLibraryServer.
+Removes network connectivity for one or more VM networks from the specified library server when used in conjunction with **Set-SCVMLibraryServer**.
 
 ```yaml
 Type: VMNetwork[]
@@ -284,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMNetworks
-Specifies that one or more VM networks have network connectivity to the specified library server when used in conjunction with Set-SCVMLibraryServer.
+Specifies that one or more VM networks have network connectivity to the specified library server when used in conjunction with **Set-SCVMLibraryServer**.
 
 ```yaml
 Type: VMNetwork[]
@@ -309,7 +307,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **LibraryServer** object.
 
 ## NOTES
-* Requires a VMM library server object, which can be retrieved by using the Get-SCLibraryServer cmdlet.
+* Requires a VMM library server object, which can be retrieved by using the **Get-SCLibraryServer** cmdlet.
 
 ## RELATED LINKS
 

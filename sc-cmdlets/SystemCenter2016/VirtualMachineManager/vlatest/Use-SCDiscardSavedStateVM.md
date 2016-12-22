@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: 0660A7E3-F1EB-4F54-9BA3-2EF86A2B67AC
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCDiscardSavedStateVM.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCDiscardSavedStateVM.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCDiscardSavedStateVM.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Use-SCDiscardSavedStateVM.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,11 +37,11 @@ This cmdlet changes the virtual machine from the Saved state to the Stopped stat
 
 ### Example 1: Move a virtual machine from Saved state to Stopped state
 ```
-PS C:\>$Vm01 = Get-SCVirtualmachine -Name "VM01" 
+PS C:\> $Vm01 = Get-SCVirtualmachine -Name "VM01" 
 PS C:\> Use-SCDiscardSavedStateVM -VM $Vm01
 ```
 
-The first command gets the virtual machine named VM01 by using the Get-SCVirtualMachine cmdlet.
+The first command gets the virtual machine named VM01 by using the **Get-SCVirtualMachine** cmdlet.
 The virtual machine is in a saved state.
 The command stores the virtual machine it in the $Vm01 variable.
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMMManagedComputer.md
+online version: 
 schema: 2.0.0
 ms.assetid: FAAA0DD2-C729-4249-B65E-9D189BABA3DA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMManagedComputer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMManagedComputer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMManagedComputer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMManagedComputer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -50,7 +50,7 @@ Any physical computer that you want to clone so that you can use its hardware an
 
 ### Example 1: Get all computers managed by VMM
 ```
-PS C:\>Get-SCVMMManagedComputer
+PS C:\> Get-SCVMMManagedComputer
 ```
 
 This command gets all computer objects managed by VMM and displays information about these managed computers to the user.
@@ -58,11 +58,11 @@ When you look at the output, note that the RoleString property indicates whether
 
 ### Example 2: Update the agent software on all host servers managed by VMM
 ```
-PS C:\>$Credential = Get-Credential
+PS C:\> $Credential = Get-Credential
 PS C:\> Get-SCVMMManagedComputer | Update-SCVMMManagedcomputer -Credential $Credential -RunAsynchronously
 ```
 
-The first command uses Get-Credential to prompt you to supply a user name and password and then stores your credentials in the $Credential variable.
+The first command uses **Get-Credential** to prompt you to supply a user name and password and then stores your credentials in the $Credential variable.
 The required credential for this operation is a domain account with rights to update software on computers managed by VMM.
 
 The second command gets all computer objects managed by VMM, and then passes each managed computer object to the Update-SCVMMManagedComputer cmdlet which updates the VMM agent software on each computer.
@@ -70,7 +70,7 @@ As this command is processed, $Credential provides credentials to the **Update-S
 
 ### Example 3: Get a specific computer managed by VMM by IP address
 ```
-PS C:\>Get-SCVMMManagedComputer -ComputerName "10.20.30.40"
+PS C:\> Get-SCVMMManagedComputer -ComputerName "10.20.30.40"
 ```
 
 This command gets a computer object by its IP address.

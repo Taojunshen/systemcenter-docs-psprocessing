@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCMACAddressPool.md
+online version: 
 schema: 2.0.0
 ms.assetid: 2F4B074F-005D-4174-9FBA-E886FB15FE71
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCMACAddressPool.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCMACAddressPool.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCMACAddressPool.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCMACAddressPool.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ The **Remove-SCMACAddressPool** cmdlet deletes a Virtual Machine Manager (VMM) M
 
 ### Example 1: Delete a MAC address pool
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
+PS C:\> $HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
 PS C:\> $MACPool = Get-SCMACAddressPool -VMHostGroup $HostGroup -Name "MAC Address Pool 01"
 PS C:\> Remove-SCMACAddressPool -MACAddressPool $MACPool
 ```
@@ -167,7 +167,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **MACAddressPool** object.
 
 ## NOTES
-* This cmdlet requires a VMM MAC address pool object, which can be retrieved by using the Get-SCMACAddressPool cmdlet.
+* This cmdlet requires a VMM MAC address pool object, which can be retrieved by using the **Get-SCMACAddressPool** cmdlet.
 
 ## RELATED LINKS
 

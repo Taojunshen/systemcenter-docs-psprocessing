@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCServiceConfiguration.md
+online version: 
 schema: 2.0.0
 ms.assetid: A8FE9073-ABE6-4E75-BAD8-BC12A5E5C705
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServiceConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServiceConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServiceConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCServiceConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -48,7 +48,7 @@ The service configuration contains instance-specific values that are used when t
 
 ### Example 1: Create a service configuration for a host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
+PS C:\> $HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup02\Production" }
 PS C:\> $ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> $ServiceConfig = New-SCServiceConfiguration -ServiceTemplate $ServiceTemplate -Name "Service01" -VMHostGroup $HostGroup  -Description "Contoso Service 01" -ServicePriority High -CostCenter 1033 
 PS C:\> $ServiceConfig
@@ -65,7 +65,7 @@ The last command displays the properties of the new service configuration object
 
 ### Example 2: Create a service configuration for a private cloud
 ```
-PS C:\>$Cloud = Get-SCCloud -Name "Production"
+PS C:\> $Cloud = Get-SCCloud -Name "Production"
 PS C:\> $ServiceTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> $ServiceConfig = New-SCServiceConfiguration -ServiceTemplate $ServiceTemplate -Name "Service02" -Cloud $Cloud  -Description "Contoso Cloud Service" -ServicePriority High -CostCenter 1033 
 PS C:\> $ServiceConfig
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: C44CA1EF-CFAD-4F6F-BEC6-3EB6598D6C43
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCGuestInfo.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCGuestInfo.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCGuestInfo.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCGuestInfo.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ The **Read-SCGuestInfo** cmdlet retrieves the value associated with a key (key/v
 
 ### Example 1: Get the IntegrationServicesVersion value for a specified key for a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> Read-SCGuestInfo -VM $VM -Key "FullyQualifiedDomainName"
 ```
 
@@ -51,14 +51,14 @@ The second command returns the IntegrationServicesVersion key/value pair for vir
 
 ### Example 2: Get the IntegrationServicesVersion value for a specified key for a virtual machine by using the pipeline operator
 ```
-PS C:\>Get-SCVirtualMachine -Name "VM01" | Read-SCGuestInfo -Key IntegrationServicesVersion
+PS C:\> Get-SCVirtualMachine -Name "VM01" | Read-SCGuestInfo -Key IntegrationServicesVersion
 ```
 
 This command returns the IntegrationServicesVersion key/value pair for virtual machine VM01.
 
 ### Example 3: Get multiple KVP values based on specified keys for a virtual machine
 ```
-PS C:\>$ValuesMap = @{}
+PS C:\> $ValuesMap = @{}
 PS C:\> $ValuesMap.Add("NetworkAddressIPv4", $Null)
 PS C:\> $ValuesMap.Add("IntegrationServicesVersion", $Null)
 PS C:\> $VM = Get-SCVirtualMachine "VM02" 
@@ -75,7 +75,7 @@ The last command returns the IntegrationServicesVersion and NetworkAddressIPv4 k
 
 ### Example 4: Read multiple data types through a hashtable
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM03"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM03"
 PS C:\> $ValuesMap = @{}
 PS C:\> $ValuesMap.Add("NetworkAddressIPv4", $Null)
 PS C:\> Read-SCGuestInfo -VM $VM -KvpMap $ValuesMap
@@ -103,7 +103,7 @@ The last command returns the key/value pairs for NetworkAddressIPv4 and FullyQua
 
 ### Example 5: Read keys that do not exist
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $KeysDoNotExist = @{"o1ff1" = $Null; "o1ff2" = $Null; "o1ff3" = $Null ; "o1ff4" = $Null }
 PS C:\> Read-SCGuestInfo -VM $VM -KVPMap $KeysDoNotExist 
 PS C:\> $KeysDoNotExist = @{"off4" = $Null; "o1ff2" = $Null; "o1ff3" = $Null ; "o1ff4" = $Null }

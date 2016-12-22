@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageVolume.md
+online version: 
 schema: 2.0.0
 ms.assetid: 0B6E9A8F-41E8-4EB2-AA02-CC9D6608B62E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageVolume.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageVolume.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageVolume.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageVolume.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -68,7 +68,7 @@ The **New-SCStorageVolume** cmdlet creates a storage volume in Virtual Machine M
 
 ### Example 1: Create a tiered storage volume
 ```
-PS C:\>$StorageArray = Get-SCStorageArray -Name "HCArray" 
+PS C:\> $StorageArray = Get-SCStorageArray -Name "HCArray" 
 PS C:\> $StoragePool = Get-SCStoragePool -Name "S2DPool" 
 PS C:\> New-SCStorageTier -StorageTierFriendlyName "Performance" -StorageTierSizeInMB 1024 -RunAsynchronously -JobGroup "191de146-dbec-4955-a347-70edd4315c41" 
 PS C:\> New-SCStorageTier -StorageTierFriendlyName "Capacity" -StorageTierSizeInMB 1024 -RunAsynchronously -JobGroup "191de146-dbec-4955-a347-70edd4315c41" 

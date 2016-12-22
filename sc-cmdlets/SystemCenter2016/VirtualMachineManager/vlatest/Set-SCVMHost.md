@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: E5A78A88-8D7B-417B-B934-69AD6EA613C6
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -84,7 +84,7 @@ This setting does not apply to virtual machines on VMware ESX hosts.
 
 ### Example 1: Make a host available for placement
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01" 
 PS C:\> Set-SCVMHost -VMHost $VMHost -AvailableForPlacement $True
 ```
 
@@ -95,7 +95,7 @@ Setting the *AvailableForPlacement* parameter to True enables the VMM placement 
 
 ### Example 2: Enable remote connections on a Hyper-V host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01" 
 PS C:\> Set-SCVMHost -VMHost $VMHost -RemoteConnectEnabled $True -RemoteConnectPort 5900
 ```
 
@@ -107,7 +107,7 @@ Enabling remote connections on a Hyper-V host allows users to remotely access an
 
 ### Example 3: Update the virtual machine paths for a host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01" 
 PS C:\> Set-SCVMHost -VMHost $VMHost -VMPaths "C:\ProgramData\Microsoft\Windows\Hyper-V|D:\VirtualMachinePath"
 ```
 
@@ -117,7 +117,7 @@ The second command updates the VMPaths property for the host stored in $VMHost b
 
 ### Example 4: Update the resource reserves for a host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01" 
 PS C:\> Set-SCVMHost -VMHost $VMHost -CPUPercentageReserve 40 -DiskSpaceReserveMB 2048 -MaxDiskIOReservation 500 -MemoryReserveMB 1024 -NetworkPercentageReserve 40
 ```
 
@@ -127,7 +127,7 @@ The second command updates the specified properties for VMHost01.
 
 ### Example 5: Update the bare-metal computer username and password for a specified physical host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost02"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost02"
 PS C:\> $BMCRAA = Get-SCRunAsAccount -Name "BMCCreds"
 PS C:\> Set-SCVMHost $VMHost -BMCRunAsAccount $BMCRAA
 PS C:\> Read-SCVMHost -VMHost $VMHost -RefreshOutOfBandProperties
@@ -143,7 +143,7 @@ The last command refreshes the host stored in $VMHost using its out-of-band inte
 
 ### Example 6: Update the certificates for XenServer hosts in a cluster
 ```
-PS C:\>$VMHost = Get-VMHost -ComputerName "XenHost01" 
+PS C:\> $VMHost = Get-VMHost -ComputerName "XenHost01" 
 PS C:\> $Cert = Get-SCCertificate -Computername $VMHost.Name 
 PS C:\> Set-SCVMHost -VMHost $VMHost -Certificate $Cert -EnableSecureMode $True
 ```
@@ -215,7 +215,7 @@ Alternatively, some computers do use a standard network adapter to provide a sin
 However, the BMC address has a unique port and is thus uniquely identifiable on the network.
 
 Example IPv4 format:       `-BMCAddress "10.0.0.21"`
- Example Ipv6 format:       `-BMCAddress "2001:4898:2a:3:657b:9c7a:e1f0:6829"`
+Example Ipv6 format:       `-BMCAddress "2001:4898:2a:3:657b:9c7a:e1f0:6829"`
 Example FQDN format:       `-BMCAddress "Computer01.Contoso.com"`
 Example NetBIOS format:    `-BMCAddress "Computer01"`
 
@@ -1017,7 +1017,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

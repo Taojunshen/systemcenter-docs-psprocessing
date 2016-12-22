@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./New-SCNCBGPRouter.md
+online version: 
 schema: 2.0.0
 ms.assetid: 2D7DC118-99CA-41A6-85C5-B8A3F44081CE
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPPeer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPPeer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPPeer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPPeer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,11 +38,11 @@ You can create and configure more than one BGP Peer by using one System Center 2
 
 ### Example 1: Create a NC BGP Peer
 ```
-PS C:\>New-SCNCBGPPeer -RouterName "BGPPeer01" -RouterIPAddress "10.10.50.45" -RouterAsn 65
+PS C:\> New-SCNCBGPPeer -RouterName "BGPPeer01" -RouterIPAddress "10.10.50.45" -RouterAsn 65
 ```
 
 This command creates a BGP Peer with router name BGPPeer01.
-This object can used as a peer for BGP Router using the New-SCNCBGPRouter cmdlet.
+This object can used as a peer for BGP Router using the **New-SCNCBGPRouter** cmdlet.
 
 ## PARAMETERS
 

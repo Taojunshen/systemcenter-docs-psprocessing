@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: dd490ed7-43ea-41e4-b24c-5fc7ae529858
 schema: 2.0.0
 ms.assetid: 4AC0E651-0154-4B18-8549-A0F14CECF907
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTemplatePackage.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTemplatePackage.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTemplatePackage.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTemplatePackage.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -30,7 +30,7 @@ Get-SCTemplatePackage -Path <String> [<CommonParameters>]
 
 ## DESCRIPTION
 The **Get-SCTemplatePackage** cmdlet gets an exported service template or virtual machine template package at a specified location.
-After you get the template package object, you can read the properties of the object, or you can input the object into the Import-SCTemplate cmdlet.
+After you get the template package object, you can read the properties of the object, or you can input the object into the **Import-SCTemplate** cmdlet.
 
 For more information about importing a template package, type `Get-Help Import-SCTemplate -Detailed`.
 
@@ -38,7 +38,7 @@ For more information about importing a template package, type `Get-Help Import-S
 
 ### Example 1: Get a template package from a specified location
 ```
-PS C:\>$TemplatePackage = Get-SCTemplatePackage -Path "C:\TemplateExports"
+PS C:\> $TemplatePackage = Get-SCTemplatePackage -Path "C:\TemplateExports"
 ```
 
 This command gets the template package object in C:\TemplateExports and stores the object in the $TemplatePackage variable.
@@ -48,29 +48,17 @@ This command gets the template package object in C:\TemplateExports and stores t
 ### -Path
 Specifies the destination path for the operation. 
 
-
-
 Example formats: 
 
-
-Local path:       `-Path "F:\"`
-
-UNC path:         `-Path "\\\\Library\Templates"`
-
-Volume GUID path: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
-
-VMware ESX path:  `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
-
-Citrix XenServer path: `-Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
-
-
+- Local path: `-Path "F:\"`
+- UNC path: `-Path "\\\\Library\Templates"`
+- Volume GUID path: `-Path "\\\\?\Volume{4703c1ea-8ae7-11db-b473-00123f7603e3}\"`
+- VMware ESX path: `-Path "\[storage1\]\MyVMwareFolderForVMs\MyVM.vmx"`
+- Citrix XenServer path: `-Path "Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
 
 This parameter accepts wildcard characters for a UNC path. 
 
-
-
 Example format: 
-
 
 UNC path:         `-Path "\\\\VMHostServer\MyVMs\*VM*"`
 

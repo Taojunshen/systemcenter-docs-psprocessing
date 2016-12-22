@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageZoneAlias.md
+online version: 
 schema: 2.0.0
 ms.assetid: 7E477BC7-322B-4F8F-90DE-E05CB34959C5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZoneAlias.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZoneAlias.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZoneAlias.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZoneAlias.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ The **Set-SCStorageZoneAlias** cmdlet modifies an existing Fibre Channel zone al
 
 ### Example 1: Add and remove members from a zone alias
 ```
-PS C:\>$ZoneAlias = Get-SCStorageZoneAlias -Name "ZoneAlias01"
+PS C:\> $ZoneAlias = Get-SCStorageZoneAlias -Name "ZoneAlias01"
 PS C:\> $AddMember = "C003FF3B8A610000"
 PS C:\> $RemoveMember += "D113EF3A8F411234"
 PS C:\> Set-SCStorageZoneAlias -StorageZoneAlias $ZoneAlias -AddZoneMembership $AddMember -RemoveZoneMembership $RemoveMember
@@ -53,7 +53,7 @@ The final command adds the member in $AddMember to, and removes the member in $R
 
 ### Example 2: Modify the name and description of a zone alias
 ```
-PS C:\>$ZoneAlias = Get-SCStorageZoneAlias -Name "ZoneAlias01"
+PS C:\> $ZoneAlias = Get-SCStorageZoneAlias -Name "ZoneAlias01"
 PS C:\> Set-SCStorageZoneAlias -StorageZoneAlias $ZoneAlias -Name "New Name" -Description "New Description"
 ```
 

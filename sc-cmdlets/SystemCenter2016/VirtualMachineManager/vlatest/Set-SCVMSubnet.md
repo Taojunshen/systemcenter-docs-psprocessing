@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMSubnet.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4FDA1A53-ADFF-4BC7-9F71-8B6C54E6F214
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMSubnet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMSubnet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMSubnet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMSubnet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -34,7 +34,7 @@ Set-SCVMSubnet [-VMMServer <ServerConnection>] [-VMSubnet] <VMSubnet> [-Name <St
 ## DESCRIPTION
 The **Set-SCVMSubnet** cmdlet modifies the properties of a virtual machine subnet.
 
-To get a virtual machine subnet object to update, use the Get-SCVMSubnet cmdlet.
+To get a virtual machine subnet object to update, use the **Get-SCVMSubnet** cmdlet.
 
 For more information about virtual machine subnets, type `Get-Help New-SCVMSubnet -Detailed`.
 
@@ -42,7 +42,7 @@ For more information about virtual machine subnets, type `Get-Help New-SCVMSubne
 
 ### Example 1: Change the subnet VLan for a virtual machine subnet
 ```
-PS C:\>$SubnetVLan = New-SCSubnetVLan -Subnet "192.168.4.0/24"
+PS C:\> $SubnetVLan = New-SCSubnetVLan -Subnet "192.168.4.0/24"
 PS C:\> Get-SCVMSubnet -Name "VMSubnet01" | Set-SCVMSubnet -SubnetVLan $SubNetVLan
 ```
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ### -VMSubnet
 Specifies a virtual machine subnet object.
 
-To obtain a **VMSubnet** object, use the Get-SCVMSubnet cmdlet.
+To obtain a **VMSubnet** object, use the **Get-SCVMSubnet** cmdlet.
 
 ```yaml
 Type: VMSubnet

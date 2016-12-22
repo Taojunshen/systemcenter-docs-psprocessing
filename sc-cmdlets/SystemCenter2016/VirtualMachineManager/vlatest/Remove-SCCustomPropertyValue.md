@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCustomProperty.md
+online version: 
 schema: 2.0.0
 ms.assetid: B68D785F-D9FF-4B05-816F-1FC44E4C1381
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomPropertyValue.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomPropertyValue.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomPropertyValue.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomPropertyValue.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -45,7 +45,7 @@ The **Remove-SCCustomPropertyValue** cmdlet removes the value from a custom prop
 
 ### Example 1: Remove a custom property value from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $CustomProp = Get-SCCustomProperty -Name "Cost Center"
 PS C:\> $CustomPropValue = Get-SCCustomPropertyValue -InputObject $VM -CustomProperty $CustomProp
 PS C:\> Remove-SCCustomPropertyValue -CustomPropertyValue $CustomPropValue
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

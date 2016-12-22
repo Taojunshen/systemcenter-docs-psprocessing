@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Grant-SCResource.md
+online version: 
 schema: 2.0.0
 ms.assetid: 90D76175-B3B6-4797-B706-025E9E81965D
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRole.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRole.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRole.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRole.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ For information about setting the properties of a user role, including the scope
 
 ### Example 1: Get all user roles
 ```
-PS C:\>Get-SCUserRole -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCUserRole -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all VMM user roles on the server named VMMServer01.Contoso.com.
@@ -49,7 +49,7 @@ The command displays information about each user role.
 
 ### Example 2: Get a user role by name
 ```
-PS C:\>Get-SCUserRole -Name "Administrator"
+PS C:\> Get-SCUserRole -Name "Administrator"
 ```
 
 This command gets the user role object named Administrator.
@@ -57,7 +57,7 @@ The command displays information about that user role.
 
 ### Example 3: Get a user role by profile
 ```
-PS C:\>Get-SCUserRole -VMMServer "VMMServer01.Contoso.com" -UserRoleProfile "SelfServiceUser"
+PS C:\> Get-SCUserRole -VMMServer "VMMServer01.Contoso.com" -UserRoleProfile "SelfServiceUser"
 ```
 
 This command gets the user roles the server named VMMServer01 that have a user role profile of SelfServiceUser.
@@ -65,7 +65,7 @@ The command displays information about these user roles.
 
 ### Example 4: Display properties and other information about user role objects
 ```
-PS C:\>$UserRoles = Get-SCUserRole -VMMServer "VMMServer01.Contoso.com"
+PS C:\> $UserRoles = Get-SCUserRole -VMMServer "VMMServer01.Contoso.com"
 PS C:\> $UserRoles | Select-Object -Property Name, UserRoleProfile, ParentUserRole, Cloud
 PS C:\> $UserRoles | Get-Member
 ```
@@ -74,7 +74,7 @@ The first command gets all user role objects on the server named VMMServer01, an
 
 The second command passes each user role object in $UserRoles to the Select-Object cmdlet, which then displays the name, user role profile, parent user role, and cloud for each user role
 
-The final command passes each user role in $UserRoles to the Get-Member cmdlet, which displays the .NET type for each user role and the methods and properties associated with each user role type.
+The final command passes each user role in $UserRoles to the **Get-Member** cmdlet, which displays the .NET type for each user role and the methods and properties associated with each user role type.
 
 ## PARAMETERS
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

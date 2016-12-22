@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 4776c225-8a45-4453-847d-e4f16a57a44e
 schema: 2.0.0
 ms.assetid: 0D6240D6-4F66-4952-9061-305E6E21634B
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCAvailabilitySetName.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCAvailabilitySetName.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCAvailabilitySetName.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCAvailabilitySetName.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ You can specify availability set names in a virtual machine configuration or a c
 
 ### Example 1: Get the names of all availability sets on a specified VMM management server
 ```
-PS C:\>Get-SCAvailabilitySetName -VMMServer "VMMServer01"
+PS C:\> Get-SCAvailabilitySetName -VMMServer "VMMServer01"
 ```
 
 This command gets all the names of availability sets on VMMServer01.

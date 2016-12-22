@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 5d1397ab-f265-4bf5-8445-77d60fb220da
 schema: 2.0.0
 ms.assetid: 8C5FD598-61CA-41CF-B8D4-45C162133179
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/20/2016 5:21 PM
+ms.date: 12/20/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/485d58d80386539445685faae8425bdc96723376/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -42,10 +42,6 @@ The information includes the certificate used to sign the disk, the name, and th
 
 ## EXAMPLES
 
-### 1:
-```
-
-```
 
 ## PARAMETERS
 
@@ -67,7 +63,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

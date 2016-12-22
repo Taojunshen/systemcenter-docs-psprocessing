@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMSubnet.md
+online version: 
 schema: 2.0.0
 ms.assetid: F2293E45-8177-4736-A489-70D8740E8A98
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMSubnet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMSubnet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMSubnet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMSubnet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -33,13 +33,13 @@ Remove-SCVMSubnet [-VMMServer <ServerConnection>] [-VMSubnet] <VMSubnet> [-Force
 ## DESCRIPTION
 The **Remove-SCVMSubnet** cmdlet removes a virtual machine subnet.
 
-To get a virtual machine subnet object, use the Get-SCVMSubnet cmdlet.
+To get a virtual machine subnet object, use the **Get-SCVMSubnet** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Remove a virtual machine subnet
 ```
-PS C:\>Get-SCVMSubnet -Name "VMSubnet01" | Remove-SCVMSubnet
+PS C:\> Get-SCVMSubnet -Name "VMSubnet01" | Remove-SCVMSubnet
 ```
 
 This command gets the virtual machine subnet object named VMSubnet01 and uses the pipeline operator to pass the object to **Remove-SCVMSubnet**, which deletes VMSubnet01.
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ### -VMSubnet
 Specifies a virtual machine subnet object.
 
-To obtain a **VMSubnet** object, use the Get-SCVMSubnet cmdlet.
+To obtain a **VMSubnet** object, use the **Get-SCVMSubnet** cmdlet.
 
 ```yaml
 Type: VMSubnet

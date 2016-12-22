@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: 8CA81940-5FF7-4519-A072-24717F6E0E0A
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualScsiAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualScsiAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualScsiAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualScsiAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -44,7 +44,7 @@ This cmdlet returns the object upon success (with the property MarkedForDeletion
 
 ### Example 1: Remove the third virtual SCSI adapter from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $Adapter = Get-SCVirtualSCSIAdapter -VM $VM 
 PS C:\> $Adapter[2] | Remove-SCVirtualScsiAdapter
 ```
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ### -OnBehalfOfUserRole
 Specifies a user role.
 This cmdlet sets the on behalf of user role as the user role that this parameter specifies.
-To obtain a user role object, use the Get-SCUserRole cmdlet.
+To obtain a user role object, use the **Get-SCUserRole** cmdlet.
 
 ```yaml
 Type: UserRole
@@ -217,7 +217,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM virtual SCSI adapter object, which can be retrieved by using the Get-SCVirtualScsiAdapter cmdlet.
+* Requires a VMM virtual SCSI adapter object, which can be retrieved by using the **Get-SCVirtualScsiAdapter** cmdlet.
 
 ## RELATED LINKS
 

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./New-SCOpsMgrConnection.md
+online version: 
 schema: 2.0.0
 ms.assetid: 3001397D-08C7-49C3-829F-88EA340A9649
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOpsMgrConnection.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOpsMgrConnection.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOpsMgrConnection.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOpsMgrConnection.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,9 +36,9 @@ For information about how to create an Operations Manager connection, type `Get-
 
 ## EXAMPLES
 
-### Example 1: Get the om12short connection object
+### Example 1: Get the Operations Manager connection object
 ```
-PS C:\>$OMConn = Get-SCOpsMgrConnection
+PS C:\> $OMConn = Get-SCOpsMgrConnection
 PS C:\> $OMConn
 ```
 

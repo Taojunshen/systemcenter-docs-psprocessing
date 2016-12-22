@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: dd490ed7-43ea-41e4-b24c-5fc7ae529858
 schema: 2.0.0
 ms.assetid: 2EFB0A6F-A22A-425D-8DDB-21C48BC31367
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTag.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTag.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTag.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTag.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,7 +35,7 @@ The **Get-SCTag** cmdlet gets all existing user-defined tags.
 
 ### Example 1: Get all tags on a specified VMM management server
 ```
-PS C:\>Get-SCTag -VMMServer "VMMServer01"
+PS C:\> Get-SCTag -VMMServer "VMMServer01"
 ```
 
 This command gets all tags on VMMServer01.

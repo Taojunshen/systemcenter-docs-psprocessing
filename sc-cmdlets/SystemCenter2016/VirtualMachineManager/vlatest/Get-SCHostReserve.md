@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMHostGroup.md
+online version: 
 schema: 2.0.0
 ms.assetid: EADBF80A-31D1-4FBB-9559-0F7F0765E48B
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCHostReserve.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCHostReserve.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCHostReserve.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCHostReserve.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ In addition to host reserve calculations, placement settings are used for the dy
 
 ### Example 1: Get the Host reserve for a specified host group
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup "HostGroup01"
+PS C:\> $HostGroup = Get-SCVMHostGroup "HostGroup01"
 PS C:\> $HostReserve = Get-SCHostReserve -VMHostGroup $HostGroup
 PS C:\> $HostReserve
 ```

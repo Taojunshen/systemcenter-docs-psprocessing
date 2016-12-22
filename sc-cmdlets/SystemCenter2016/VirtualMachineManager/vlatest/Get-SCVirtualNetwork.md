@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: AC331158-7AA0-473A-8896-1A6C8B2EEDBB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetwork.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetwork.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetwork.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetwork.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,7 +53,7 @@ For information about virtual networks in VMM, type `Get-Help New-SCVirtualNetwo
 
 ### Example 1: Get all virtual networks in the VMM database
 ```
-PS C:\>$VirtualNetworks = Get-SCVirtualNetwork 
+PS C:\> $VirtualNetworks = Get-SCVirtualNetwork 
 PS C:\> $VirtualNetworks | Format-List Name,VMHost,VMHostNetworkadapters
 ```
 
@@ -63,7 +63,7 @@ The second command displays a subset of information about each virtual network o
 
 ### Example 2: Get all virtual networks on a specific host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01.Contoso.com" 
 PS C:\> Get-SCVirtualNetwork -VMHost $VMHost
 ```
 
@@ -73,7 +73,7 @@ The second command gets all virtual network objects on VMHost01 and displays inf
 
 ### Example 3: Get a virtual network by name from a specific host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com" 
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost02.Contoso.com" 
 PS C:\> $VN = Get-SCVirtualNetwork -VMHost $VMHost -Name "InternalVNet01"
 PS C:\> $VN
 ```
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

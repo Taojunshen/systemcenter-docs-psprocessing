@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCService.md
+online version: 
 schema: 2.0.0
 ms.assetid: BDE49CAB-B129-45AF-BF17-70153DAEED94
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCService.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCService.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCService.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCService.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -52,7 +52,7 @@ This type of servicing is used most often after updating the VHD for a tier, suc
 
 ### Example 1: Update a service by using conventional servicing
 ```
-PS C:\>$Service = Get-SCService -Name "Service01"
+PS C:\> $Service = Get-SCService -Name "Service01"
 PS C:\> $SvcTemplate = Get-SCServiceTemplate -Name "ServiceTemplate01"
 PS C:\> $PendingTemplate = New-SCServiceTemplate -ServiceTemplate $SvcTemplate -Name "ServiceTemplate01" -Release "RTM"
 PS C:\> Set-SCService -Service $Service -PendingServiceTemplate $PendingTemplate
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -261,7 +261,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **Service** object.
 
 ## NOTES
-* Requires a VMM service object, which can be retrieved using the Get-SCService cmdlet.
+* Requires a VMM service object, which can be retrieved using the **Get-SCService** cmdlet.
 
 ## RELATED LINKS
 

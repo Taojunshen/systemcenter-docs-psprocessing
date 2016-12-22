@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLogicalSwitch.md
+online version: 
 schema: 2.0.0
 ms.assetid: 8CCB4166-324E-48E3-ABBC-11207B911F48
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:13 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterConfig.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterConfig.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterConfig.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterConfig.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -108,7 +108,7 @@ The **New-SCVMHostNetworkAdapterConfig** cmdlet creates a host network adapter c
 
 ### Example 1: Create a management physical host network adapter configuration by using a static IP address
 ```
-PS C:\>$LogicalNetwork = Get-SCLogicalNetwork -Name "LogicalNetwork01"
+PS C:\> $LogicalNetwork = Get-SCLogicalNetwork -Name "LogicalNetwork01"
 PS C:\> New-SCVMHostNetworkAdapterConfig -SetAsPhysicalNetworkAdapter -SetAsManagementNIC -UseStaticIPForIPConfiguration -LogicalNetwork $LogicalNetwork -MacAddress "00-1D-D8-B7-1C-00" -IPv4Subnet "10.0.0.1/24"
 ```
 
@@ -119,7 +119,7 @@ The configuration includes LogicalNetwork01, the provided MAC address, and speci
 
 ### Example 2: Create a physical host network adapter configuration that uses a logical switch
 ```
-PS C:\>$LogicalSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
+PS C:\> $LogicalSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
 PS C:\> $UplinkPortProfSet = Get-SCUplinkPortProfileSet -Name "UplinkPortProfileSet01"
 PS C:\> New-SCVMHostNetworkAdapterConfig -SetAsPhysicalNetworkAdapter -LogicalSwitch $LogicalSwitch -UplinkPortProfileSet $UplinkPortProfSet
 ```
@@ -132,7 +132,7 @@ The last command creates a physical host network adapter configuration with Logi
 
 ### Example 3: Create a generic virtual host network adapter configuration by using DHCP
 ```
-PS C:\>$LogicalSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
+PS C:\> $LogicalSwitch = Get-SCLogicalSwitch -Name "LogicalSwitch01"
 PS C:\> $VMNetwork = Get-SCVMNetwork -Name "VMNetwork01"
 PS C:\> New-SCVMHostNetworkAdapterConfig -SetAsVirtualNetworkAdapter -SetAsGenericNIC -UseDhcpForIPConfiguration -LogicalSwitch $LogicalSwitch -VMNetwork $VMNetwork
 ```
@@ -311,6 +311,7 @@ Example format for a set of MAC addresses:
 Example format for a set of MAC addresses: 
 
 `$Macs = "00-15-5D-B4-DC-00", "00-1A-A0-E3-75-29"`
+
 `Set-SCPXEServer -MACAddress $Macs`
 
 ```yaml
@@ -450,7 +451,7 @@ Accept wildcard characters: False
 ### -UplinkPortProfileSet
 Specifies an uplink port profile set object.
 
-To obtain an uplink port profile set object, use the Get-SCUplinkPortProfileSet cmdlet.
+To obtain an uplink port profile set object, use the **Get-SCUplinkPortProfileSet** cmdlet.
 
 ```yaml
 Type: UplinkPortProfileSet
@@ -512,7 +513,7 @@ Accept wildcard characters: False
 ### -VMNetwork
 Specifies a VM network object.
 
-To get a VM network object, use the Get-SCVMNetwork cmdlet.
+To get a VM network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: D2BBB6FA-8330-4F56-AE41-6AAF8ECF2845
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,12 +37,12 @@ The **Remove-SCVirtualDiskDrive** cmdlet removes virtual disk drive objects from
 
 ### Example 1: Remove a virtual disk drive from a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine | Where-Object { $_.VMHost.Name -Eq "VMHost01.Contoso.com" -And $_.Name -Eq "VM01" }
+PS C:\> $VM = Get-SCVirtualMachine | Where-Object { $_.VMHost.Name -Eq "VMHost01.Contoso.com" -And $_.Name -Eq "VM01" }
 PS C:\> $VirtDiskDrive = @(Get-SCVirtualDiskDrive -VM $VM)
 PS C:\> If($VirtDiskDrive.Count -Gt 1){Remove-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive[1]}
 ```
 
-The first command gets the virtual machine object named VM01 deployed on VMHost01 by using the Get-SCVirtualMachine cmdlet.
+The first command gets the virtual machine object named VM01 deployed on VMHost01 by using the **Get-SCVirtualMachine** cmdlet.
 The command stores that object in the $VM variable.
 
 The second command gets all virtual disk drive objects on VM01, and then stores the retrieved objects in $VirtDiskDrive.
@@ -52,7 +52,7 @@ The last command returns the number of virtual disk drives associated with the v
 
 ### Example 2: Remove all pass-through disks attached to a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine | Where-Object {$_.Name -Eq "VM02"}
+PS C:\> $VM = Get-SCVirtualMachine | Where-Object {$_.Name -Eq "VM02"}
 PS C:\> $VirtDiskDrives = @(Get-SCVirtualDiskDrive -VM $VM | Where-Object {$_.IsVHD -Eq $False})
 PS C:\> If($VirtDiskDrives.Count -Gt 0){ForEach($VirtDiskDrive in $VirtDiskDrives){Remove-SCVirtualDiskDrive -Force -VirtualDiskDrive $VirtDiskDrive}}
 ```
@@ -72,7 +72,7 @@ Therefore, the command removes each virtual disk drive from its virtual machine 
 
 ### Example 3: Remove virtual disk drives by name
 ```
-PS C:\>$VM = @(Get-SCVirtualMachine | Where-Object {$_.Name -Match "WebSrvLOB"})
+PS C:\> $VM = @(Get-SCVirtualMachine | Where-Object {$_.Name -Match "WebSrvLOB"})
 PS C:\> ForEach-Object ($VM in $VMs){$VirtDiskDrives = Get-SCVirtualDiskDrive -VM $VM 
 PS C:\> ForEach-Object ($VirtDiskDrive in $VirtDiskDrives){If($VirtDiskDrive.Name -Match "LOBData"){Remove-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive}}}
 ```
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -266,7 +266,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM virtual disk drive object, which can be retrieved by using the Get-SCVirtualDiskDrive cmdlet.
+* Requires a VMM virtual disk drive object, which can be retrieved by using the **Get-SCVirtualDiskDrive** cmdlet.
 
 ## RELATED LINKS
 

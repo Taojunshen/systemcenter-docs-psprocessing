@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCloud.md
+online version: 
 schema: 2.0.0
 ms.assetid: 662BB479-9F4B-48FB-8C2A-6E65593C0FBD
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -113,7 +113,7 @@ Store virtual machines in a library.
 
 ### Example 1: Add users to the VMM Administrator user role
 ```
-PS C:\>$UserRole = Get-SCUserRole -Name "Administrator"
+PS C:\> $UserRole = Get-SCUserRole -Name "Administrator"
 PS C:\> Set-SCUserRole -UserRole $UserRole -AddMember "Contoso\User01","Contoso\User02"
 ```
 
@@ -124,14 +124,14 @@ Both users are members of the Contoso.com domain.
 
 ### Example 2: Add users to the Administrator role by using the pipeline
 ```
-PS C:\>Get-SCUserRole -VMMServer "VMMServer01.Contoso.com" | where { $_.Profile -eq "Administrator" } | Set-SCUserRole -AddMember "Contoso\User03"
+PS C:\> Get-SCUserRole -VMMServer "VMMServer01.Contoso.com" | where { $_.Profile -eq "Administrator" } | Set-SCUserRole -AddMember "Contoso\User03"
 ```
 
 This command gets all user role objects from VMMServer01, selects the user role objects whose profile is Administrator, and then adds User03 to the Administrator user role.
 
 ### Example 3: Modify an existing Self-Service user role by adding a cloud to its scope
 ```
-PS C:\>$Cloud = Get-SCCloud -Name "Cloud02"
+PS C:\> $Cloud = Get-SCCloud -Name "Cloud02"
 PS C:\> $UserRole = Get-SCUserRole -Name "ContosoSelfServiceUsers"
 PS C:\> Set-SCUserRole -UserRole $UserRole -AddScope $Cloud
 ```
@@ -144,7 +144,7 @@ The last command modifies the scope of the user role stored in $UserRole by addi
 
 ### Example 4: Remove the specified user from the Administrator user role
 ```
-PS C:\>$UserRole = Get-SCUserRole -Name "Administrator"
+PS C:\> $UserRole = Get-SCUserRole -Name "Administrator"
 PS C:\> Set-SCUserRole -UserRole $UserRole -RemoveMember "Contoso\User01"
 ```
 
@@ -155,7 +155,7 @@ User01 is a member of the Contoso.com domain.
 
 ### Example 5: Add a cloud to the scope of a Self-Service user role
 ```
-PS C:\>$Cloud = Get-SCCloud -Name "Cloud03"
+PS C:\> $Cloud = Get-SCCloud -Name "Cloud03"
 PS C:\> Get-SCUserRole -Name "ContosoSelfServiceUsers" | Set-SCUserRole -AddScope $Cloud
 ```
 
@@ -166,7 +166,7 @@ This cmdlet adds the cloud stored in $Cloud to the user role.
 
 ### Example 6: Modify what actions members of a Self-Service user role can take on their virtual machines
 ```
-PS C:\>$UserRole = Get-SCUserRole -VMMServer "VMMServer01.Contoso.com" -Name "ContosoSelfServiceUsers"
+PS C:\> $UserRole = Get-SCUserRole -VMMServer "VMMServer01.Contoso.com" -Name "ContosoSelfServiceUsers"
 PS C:\> Set-SCUserRole -UserRole $UserRole -Permission "Create,PauseAndResume,Stop,AllowLocalAdmin,Store"
 ```
 
@@ -187,7 +187,7 @@ Specify members in the following formats:
 - Domain\LabGroupAlias
 - LabGroupAlias
 
- The lab group alias is an Active Directory Domain Services security group, not an e-mail alias.
+The lab group alias is an Active Directory Domain Services security group, not an e-mail alias.
 
 ```yaml
 Type: String[]
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -418,7 +418,7 @@ Specify members in the following formats:
 - Domain\LabGroupAlias
 - LabGroupAlias
 
- The lab group alias is an Active Directory Domain Services security group, not an e-mail alias.
+The lab group alias is an Active Directory Domain Services security group, not an e-mail alias.
 
 ```yaml
 Type: String[]
@@ -600,7 +600,7 @@ Accept wildcard characters: False
 
 ### -UserRole
 Specifies a user role object that this cmdlet modifies.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 
 ```yaml
 Type: UserRole

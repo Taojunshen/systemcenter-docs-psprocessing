@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHostCluster.md
+online version: 
 schema: 2.0.0
 ms.assetid: 08580497-49A2-4CCB-AB67-EB270FF803ED
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVMHostCluster.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVMHostCluster.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVMHostCluster.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVMHostCluster.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,7 +43,7 @@ The **Test-SCVMHostCluster** cmdlet validates whether one or more hosts that are
 
 ### Example 1: Validate nodes to be clustered
 ```
-PS C:\>$HostGroup = Get-SCVMHostGroup -Name "New York"
+PS C:\> $HostGroup = Get-SCVMHostGroup -Name "New York"
 PS C:\> $Nodes = Get-SCVMHost | where {$_.Name -like "Cluster*" -and $_.VMHostGroup -eq $HostGroup} 
 PS C:\> $Result = Test-SCVMHostCluster -VMHost $Nodes
 PS C:\> Write-Output $Result.ValidationResult
@@ -62,7 +62,7 @@ The last command displays the location of the validation report file to the user
 
 ### Example 2: Validate an existing cluster
 ```
-PS C:\>$Cluster = Get-SCVMHostCluster -Name "Cluster01"
+PS C:\> $Cluster = Get-SCVMHostCluster -Name "Cluster01"
 PS C:\> $Result = Test-SCVMHostCluster -VMHostCluster $Cluster
 PS C:\> Write-Output $Result.ValidationResult 
 PS C:\> Write-Output $Result.ResultFileLocation
@@ -80,7 +80,7 @@ The last command displays the location of the validation report file for the use
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 For more information about Run As accounts, type `Get-Help New-SCRunAsAccount`.

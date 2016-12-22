@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageClassification.md
+online version: 
 schema: 2.0.0
 ms.assetid: 17BC3968-1DD0-4773-969E-46FCACBF7E7E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageClassification.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageClassification.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageClassification.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageClassification.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -34,13 +34,13 @@ The **New-SCStorageClassification** cmdlet creates a storage classification.
 A storage classification defines the capabilities of a storage pool.
 For example, a classification of Gold could be associated with storage pools that have the highest performance and availability.
 
-For information about associating a storage classification with a storage pool, see the  Set-SCStoragePool cmdlet.
+For information about associating a storage classification with a storage pool, see the  **Set-SCStoragePool** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Create a storage classification
 ```
-PS C:\>$Class = New-SCStorageClassification -Name "StorageClassification01" -Description "New storage classification"
+PS C:\> $Class = New-SCStorageClassification -Name "StorageClassification01" -Description "New storage classification"
 ```
 
 This command creates a storage classification named StorageClassification01, and then stores it in the $Class variable.

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageFabric.md
+online version: 
 schema: 2.0.0
 ms.assetid: 56A16D4D-304C-4AF1-8F06-E2CA092AFC36
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFabric.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFabric.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFabric.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFabric.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -50,7 +50,7 @@ The **Set-SCStorageFabric** cmdlet updates a storage Fibre Channel fabric object
 
 ### Example 1: Disable management of a storage fabric
 ```
-PS C:\>$Fabric = Get-SCStorageFabric -Name "Fabric01"
+PS C:\> $Fabric = Get-SCStorageFabric -Name "Fabric01"
 PS C:\> Set-SCStorageFabric -StorageFabric $Fabric -DisableManagement
 ```
 
@@ -60,21 +60,21 @@ The second command disables management of the storage fabric object stored in $F
 
 ### Example 2: Enable management of a storage fabric
 ```
-PS C:\>$Fabric = Get-SCStorageFabric -Name "Fabric01"
+PS C:\> $Fabric = Get-SCStorageFabric -Name "Fabric01"
 PS C:\> $Classification = Get-SCStorageFabricClassification -Name "PROD"
 PS C:\> Set-SCStorageFabric -StorageFabric $Fabric -StorageFabricClassification $Classification -EnableManagement
 ```
 
 The first command gets the sdtorage fabric object named Fabric01, and stores that object in the $Fabric variable.
 
-The second command gets the storage fabric classification object named PROD by using the Get-SCStorageFabricClassification cmdlet.
+The second command gets the storage fabric classification object named PROD by using the **Get-SCStorageFabricClassification** cmdlet.
 The command stores that object in the $Classification variable.
 
 The last command enables management of the storage fabric stored in $Fabric, and applies the storage classification stored in $Classification.
 
 ### Example 3: Modify name and description of a storage fabric
 ```
-PS C:\>$fabric = Get-SCStorageFabric -Name "Fabric01"
+PS C:\> $fabric = Get-SCStorageFabric -Name "Fabric01"
 PS C:\> Set-SCStorageFabric -StorageFabric $fabric -Name "newName" -Description "newDescription"
 ```
 
@@ -84,7 +84,7 @@ The second command applies a new name and a description to the storage fabric ob
 
 ### Example 4: Modify a storage fabric classification
 ```
-PS C:\>$Fabric = Get-SCStorageFabric -Name "Fabric01"
+PS C:\> $Fabric = Get-SCStorageFabric -Name "Fabric01"
 PS C:\> $Classification = Get-SCStorageFabricClassification -Name "PROD"
 PS C:\> Set-SCStorageFabric -StorageFabric $Fabric -StorageFabricClassification $Classification
 ```

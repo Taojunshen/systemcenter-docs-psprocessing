@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMMServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: 584E546A-2812-4CD9-ADDB-86714241D676
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDisk.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDisk.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDisk.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDisk.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -53,7 +53,7 @@ The virtual floppy disk file (either a Windows-based .vfd file or a VMware-based
 
 ### Example 1: Get all virtual floppy disks on all VMM library servers
 ```
-PS C:\>Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com"
+PS C:\> Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com"
 ```
 
 This command gets all virtual floppy disk objects VMM library on VMMServer01 and then displays information about these virtual floppy disk objects to the user.
@@ -61,14 +61,14 @@ The virtual floppy disk files themselves are stored in library shares on library
 
 ### Example 2: Get all virtual floppy disks on a specific VMM library server
 ```
-PS C:\>Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 ```
 
 This command gets all virtual floppy disk objects stored on LibraryServer01 and displays information about these virtual floppy disk objects to the user.
 
 ### Example 3: Get all virtual floppy disks with a specific name on any VMM library server
 ```
-PS C:\>Get-SCVirtualFloppyDisk | where { $_.Name -eq "BootFloppy.vfd" }
+PS C:\> Get-SCVirtualFloppyDisk | where { $_.Name -eq "BootFloppy.vfd" }
 ```
 
 This command gets all virtual floppy disk objects named BootFloppy.vfd that are stored on any library server managed by VMM, and then displays information about these virtual floppy disk objects to the user.

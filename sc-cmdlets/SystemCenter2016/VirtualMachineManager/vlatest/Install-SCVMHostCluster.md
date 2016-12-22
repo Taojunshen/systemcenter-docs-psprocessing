@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHostCluster.md
+online version: 
 schema: 2.0.0
 ms.assetid: DF506A78-51D6-4DC2-A10F-816B16EEE852
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCVMHostCluster.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCVMHostCluster.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCVMHostCluster.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Install-SCVMHostCluster.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -64,7 +64,7 @@ The **Install-SCVMHostCluster** cmdlet creates a failover cluster from Hyper-V h
 
 ### Example 1: Create a cluster from managed hosts
 ```
-PS C:\>$RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> $HostGroup = Get-SCVMHostGroup -Name "New York"
 PS C:\> $Nodes = Get-SCVMHost | where {$_.Name -like "HostClus*" -and $_.VMHostGroup -eq $HostGroup} 
 PS C:\> Install-SCVMHostCluster -VMHost $Nodes -ClusterName "Cluster01" -Credential $RunAsAcct
@@ -81,7 +81,7 @@ The last command creates the cluster and names it Cluster01.
 
 ### Example 2: Create a hyper converge cluster from managed hosts
 ```
-PS C:\>$RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $RunAsAcct = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> $HostGroup = Get-SCVMHostGroup -Name "New York"
 PS C:\> $Nodes = Get-SCVMHost | where {$_.Name -like "HostClus*" -and $_.VMHostGroup -eq $HostGroup} 
 PS C:\> Install-SCVMHostCluster -VMHost $Nodes -ClusterName "Cluster01" -Credential $RunAsAcct -EnableS2D
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 For more information about Run As accounts, type `Get-Help New-SCRunAsAccount`.
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableS2D
-{{Fill EnableS2D Description}}
+
 
 ```yaml
 Type: SwitchParameter
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ### -PhysicalComputerConfig
 Specifies an array of host configuration objects.
 
-For information about host configuration objects, see the New-SCVMHostConfig cmdlet.
+For information about host configuration objects, see the **New-SCVMHostConfig** cmdlet.
 
 ```yaml
 Type: PhysicalComputerConfig[]

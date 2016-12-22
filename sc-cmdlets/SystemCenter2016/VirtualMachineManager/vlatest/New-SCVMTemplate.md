@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCLibraryServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: F6728178-56D9-468F-8F6E-5C57D3384C93
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 5:13 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -192,47 +192,35 @@ If you specify no parameters, VMM creates a default template object.
 
 VMM Template Requirements
 
-
 This section describes the requirements for creating a template in VMM. 
-
-
 
 - Template from VHD.
 If you create a template from a virtual hard disk (VHD), the VHD must meet the following requirements: 
 
-
-
-     -- Operating system.
+  - Operating system.
 You must install a supported Windows operating system on the virtual hard disk before you use it to create the template.
-For information about supported operating systems, see Operating Systems Compatibility for System Center Technical Previewhttps://technet.microsoft.com/en-us/library/dn997307(v=sc.16).aspx in the TechNet library at https://technet.microsoft.com/en-us/library/dn997307(v=sc.16).aspx. 
+For information about supported operating systems, see [Operating Systems Compatibility for System Center Technical Preview](https://technet.microsoft.com/en-us/library/dn997307(v=sc.16).aspx) in the TechNet library at `https://technet.microsoft.com/en-us/library/dn997307(v=sc.16).aspx`. 
 
-
-
-     -- SysPrep.
+ - SysPrep.
 You must run the System Preparation tool (Sysprep.exe) on the VHD to ensure that every copy of the operating system is unique when you distribute it to multiple virtual machines.
 You can find Sysprep.exe installed on your Windows Server 2008 or later computer at its default location: C:\Windows\System32\sysprep\. 
 
-
-
-     -- Local Administrator Password.
+  - Local Administrator Password.
 The local Administrator password of the guest operating system on a VHD that will be used to create a new template must be blank before you run Sysprep.exe on the virtual hard disk.
 A blank local Administrator password is required to enable you to have the option to specify the local Administrator password when you customize the guest operating system on the template. 
-
 
 
 - Template from a Virtual Machine.
 If you create a template from a virtual machine, the virtual machine will be destroyed during the process of converting it to a template.
 If you want to keep the virtual machine and also use it to create a template, you can clone the virtual machine before you create the template.
-For information about how to clone a virtual machine, see New-SCVirtualMachine.
-
-
+For information about how to clone a virtual machine, see **New-SCVirtualMachine**.
 
 - Template for Self-Service Users.
 If a self-service user role includes permission to use a template, the self-service user cannot change any hardware profile settings.
 The only settings that a self-service user can change when using a template to create a virtual machine are computer name and, if the user has appropriate privileges, password and product ID number.
 
-VMM Support for Customizable or Non-Customizable Templates
 
+VMM Support for Customizable or Non-Customizable Templates
 
 If you specify the *NoCustomization* parameter with the **New-SCVMTemplate** cmdlet, you do not need to add a guest operating system profile to the template as you create the template.
 Without a guest operating system profile, VMM will not require Sysprep to run within the guest operating system when a virtual machine that is created by using this template is deployed on a host.
@@ -250,7 +238,7 @@ If you want to create a non-customizable Windows-based template from this import
 
 ### Example 1: Create a virtual machine template from a virtual hard disk
 ```
-PS C:\>$OS = Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "64-bit Edition of Windows Server 2008 R2 Datacenter"}
+PS C:\> $OS = Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "64-bit Edition of Windows Server 2008 R2 Datacenter"}
 PS C:\> $VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHD01.vhd" -and $_.LibraryServer.Name -eq "LibServer01.Contoso.com" }
 PS C:\> New-SCVMTemplate -Name "VMTemplate01" -VirtualHardDisk $VHD -OperatingSystem $OS -NoCustomization
 ```
@@ -267,7 +255,7 @@ You can install virtualization guest services on the virtual machine, or VMM wil
 
 ### Example 2: Create a virtual machine template from an existing virtual machine
 ```
-PS C:\>$LibraryServer = Get-SCLibraryServer | where {$_.Name -eq "LibServer01.Contoso.com"}
+PS C:\> $LibraryServer = Get-SCLibraryServer | where {$_.Name -eq "LibServer01.Contoso.com"}
 PS C:\> $VM = Get-SCVirtualMachine -Name "VM01" | where {$_.VMHost.Name -eq "VMHost02.Contoso.com"}
 PS C:\> $OperatingSystem = Get-SCOperatingSystem | where {$_.Name -eq "64-bit Edition of Windows Server 2008 R2 Enterprise"}
 PS C:\> New-SCVMTemplate -Name "VMTemplate02" -RunAsynchronously -VM $VM -Owner "Contoso\ReneeLo" -LibraryServer $LibraryServer -SharePath "\\LibServer01.Contoso.com\MSSCVMMLibrary" -OperatingSystem $OperatingSystem -NoCustomization
@@ -278,7 +266,7 @@ The first command gets the library server object named LibServer01 and stores th
 The second command gets the virtual machine object named VM01 deployed on VMHost02 and stores the object in the $VM variable.
 
 Note: VM01, which is the virtual machine that will be converted to a template, will be destroyed during the conversion process.
-If you want to retain the virtual machine used to create a template, you can use the New-SCVirtualMachine cmdlet to clone the virtual machine before you create the template.
+If you want to retain the virtual machine used to create a template, you can use the **New-SCVirtualMachine** cmdlet to clone the virtual machine before you create the template.
 
 The third command gets the specified operating system object (Windows Server 2008 R2 Enterprise) and stores the object in the $OS variable.
 
@@ -288,7 +276,7 @@ The *RunAsynchronously* parameter returns control to the shell immediately befor
 
 ### Example 3: Create a virtual machine template from a virtual hard disk with specified characteristics
 ```
-PS C:\>$JobGroupId01 = [Guid]::NewGuid().ToString()
+PS C:\> $JobGroupId01 = [Guid]::NewGuid().ToString()
 PS C:\> $LogNet = Get-SCLogicalNetwork -Name "LogicalNetwork01"
 PS C:\> New-SCVirtualNetworkAdapter -JobGroup $JobGroupID01 -MACAddressType Dynamic -LogicalNetwork $LogNet 
 PS C:\> New-SCVirtualSCSIAdapter -JobGroup $JobGroupID01 -AdapterID 6 -Shared $False
@@ -307,14 +295,14 @@ The job group ID functions as an identifier that groups subsequent commands that
 
 The second command gets the logical network object named LogicalNetwork01 and stores the object in the $LogNet variable.
 
-The third command creates a virtual network adapter and uses the *JobGroup* parameter to indicate that the network adapter is not created until just before the New-SCHardwareProfile cmdlet runs.
-The New-SCVirtualNetworkAdapter cmdlet sets the MAC address type to dynamic and specifies that the new virtual network adapter will connect to the logical network stored in $LogNet.
+The third command creates a virtual network adapter and uses the *JobGroup* parameter to indicate that the network adapter is not created until just before the **New-SCHardwareProfile** cmdlet runs.
+The **New-SCVirtualNetworkAdapter** cmdlet sets the MAC address type to dynamic and specifies that the new virtual network adapter will connect to the logical network stored in $LogNet.
 
 The fourth command creates a virtual SCSI adapter and uses the *JobGroup* parameter to indicate that the SCSI adapter is not created until just before the **New-SCHardwareProfile** cmdlet runs.
-The New-SCVirtualScsiAdapter cmdlet sets the adapter ID to 6 and sets the *Shared* parameter to $False so that the adapter is not shared, as would be necessary if you wanted to use it in guest clustering.
+The **New-SCVirtualScsiAdapter** cmdlet sets the adapter ID to 6 and sets the *Shared* parameter to $False so that the adapter is not shared, as would be necessary if you wanted to use it in guest clustering.
 
 The fifth command creates a virtual DVD drive and uses the *JobGroup* parameter to specify that the DVD drive is not created until just before the **New-SCHardwareProfile** cmdlet runs.
-The New-SCVirtualDVDDrive cmdlet specifies Bus 1 and LUN 0 to attach the virtual DVD drive to Secondary Channel (0) on the IDE bus.
+The **New-SCVirtualDVDDrive** cmdlet specifies Bus 1 and LUN 0 to attach the virtual DVD drive to Secondary Channel (0) on the IDE bus.
 
 The sixth command creates a hardware profile named TempHWProfile, sets the owner to Contoso\ReneeLo, specifies a description and that the amount of memory on the host that a virtual machine created by using this template will use is 512 MB.
 The **New-SCHardwareProfile** cmdlet uses the JobGroup parameter to specify that all preceding commands that include variable $JobGroupID01 will run just before **New-SCHardwareProfile** creates the new hardware profile.
@@ -323,7 +311,7 @@ After **New-SCVirtualNetworkAdapter**, **New-SCVirtualSCSIAdapter**, and **New-S
 The seventh command generates a new GUID and stores it in $JobGroupID02.
 This job group ID will be used to identify any subsequent commands that include this ID and will delay running those commands until just before the last command that specifies $JobGroupID02 runs.
 
-The eighth command uses the Get-SCVirtualHardDisk cmdlet to get the virtual hard disk object named Template.vhd, VHDs on VMHost01 and stores the object in the $VHD variable.
+The eighth command uses the **Get-SCVirtualHardDisk** cmdlet to get the virtual hard disk object named Template.vhd, VHDs on VMHost01 and stores the object in the $VHD variable.
 
 The ninth command creates a new virtual disk drive and attaches the virtual hard disk stored in $VHD (Template.vhd) to this new virtual disk drive.
 The command specifies Bus 0 and LUN 0 on the IDE Bus so that Template.vhd will be attached to the first slot (0) of the Primary Channel (0) on the IDE bus of the new virtual disk drive.
@@ -333,13 +321,13 @@ The tenth command gets the hardware profile object that represents the hardware 
 
 The eleventh command gets the specified operating system object (64-bit Edition of Windows Server 2008 R2 Enterprise) and stores the object in the $OS variable.
 
-The last command creates a virtual machine template named NewTemplate03, sets the owner to Contoso\ReneeLo, specifies that this template will use the hardware profile named TempHWProfile, sets the computer name to be randomly generated (indicated by the asterisk *), and specifies that any virtual machine created by using this template will be joined to the workgroup called WORKGROUP.
+The last command creates a virtual machine template named NewTemplate03, sets the owner to Contoso\ReneeLo, specifies that this template will use the hardware profile named TempHWProfile, sets the computer name to be randomly generated (indicated by the asterisk \*), and specifies that any virtual machine created by using this template will be joined to the workgroup called WORKGROUP.
 The **New-SCVMTemplate** cmdlet uses the *JobGroup* parameter to specify that all preceding commands that include variable $JobGroupID02 run before **New-SCVMTemplate** creates the new template.
 After **Add-SCVirtualHardDisk** runs, the resulting virtual hard disk object that is created is automatically associated with the new template.
 
 ### Example 4: Create a virtual machine template with the DRProtectionRequired parameter set to $True
 ```
-PS C:\>$OS = Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "Windows Server 2016"}
+PS C:\> $OS = Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "Windows Server 2016"}
 PS C:\> $VHDX = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "VHDX01.vhdx" -and $_.LibraryServer.Name -eq "LibServer01.Contoso.com" }
 PS C:\> New-SCVMTemplate -Name "VMTemplate04" -VirtualHardDisk $VHDX -OperatingSystem $OS -DRProtectionRequired $True
 ```
@@ -352,7 +340,7 @@ The last command creates a virtual machine template named VMTemplate04 that requ
 
 ### Example 5: Create a customizable Linux virtual machine template from a virtual hard disk
 ```
-PS C:\>$OS = Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "CentOS Linux 6 (64 bit)"}
+PS C:\> $OS = Get-SCOperatingSystem -VMMServer "VMMServer01.Contoso.com" | where {$_.Name -eq "CentOS Linux 6 (64 bit)"}
 PS C:\> $VHD = Get-SCVirtualHardDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -eq "LinuxVHD01.vhd" -and $_.LibraryServer.Name -eq "LibServer01.Contoso.com" }
 PS C:\> New-SCVMTemplate -Name "LinuxVMTemplate01" -VirtualHardDisk $VHD -OperatingSystem $OS
 ```
@@ -504,8 +492,6 @@ Accept wildcard characters: False
 ### -CPUMaximumPercent
 Specifies the highest percentage of the total resources of a single CPU on the host that can be used by a specific virtual machine at any given time. 
 
-
-
 Example:  `-CPUMaximumPercent 80` (to specify 80 per cent)
 
 ```yaml
@@ -551,8 +537,7 @@ High.
 Above Normal.
 1500.
 - VMware ESX.
-Normal (default).
-1000. 
+Normal (default). 1000. 
 - VMware ESX.
 Below Normal.
 750.
@@ -809,8 +794,6 @@ The default value is 65536.
 Required: You can enable dynamic memory for a virtual machine only if that virtual machine is deployed on a host running Windows Server 2008 R2 SP1 or later or if the virtual machine is stored in a library in a stopped state (hardware changes to a stored virtual machine can only be made if the virtual machine does not have snapshots).
 Enabling dynamic memory on a virtual machine stored in a library will limit placement of that machine to hosts running Windows Server 2008 R2 SP1 or later. 
 
-
-
 Example format: `-DynamicMemoryMaximumMB 1024`
 
 ```yaml
@@ -831,8 +814,6 @@ The default value is 65536.
 
 Required: You can enable dynamic memory for a virtual machine only if that virtual machine is deployed on a host running Windows Server 2008 R2 SP1 or later or if the virtual machine is stored in a library in a stopped state (hardware changes to a stored virtual machine can only be made if the virtual machine does not have snapshots).
 Enabling dynamic memory on a virtual machine stored in a library will limit placement of that machine to hosts running Windows Server 2008 R2 SP1 or later. 
-
-
 
 Example format: `-DynamicMemoryMinimumMB 1024`
 
@@ -897,8 +878,7 @@ Accept wildcard characters: False
 Specifies an array of commands to add to the **\[GuiRunOnce\]** section of an unattended answer file.
 Use single quotation marks around each string enclosed in double quotation marks. 
 
-Example format: 
-`-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
+Example format: `-GuiRunOnceCommands '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"', '"C:\APF\APFPostSysPrepCopy.cmd PARAMS1"'`
 
 For information about how Windows PowerShell uses quotation marks, type `Get-Help about_Quoting_Rules`.
 
@@ -1060,8 +1040,6 @@ Accept wildcard characters: False
 
 ### -LinuxDomainName
 Specifies a fully qualified domain name (FQDN) to be used in conjunction with Linux operating system specialization. 
-
-
 
 Example format: `-LinuxDomainName "Domain01.Corp.Contoso.com"`
 
@@ -1292,11 +1270,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-
-
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String
@@ -1482,8 +1457,7 @@ Accept wildcard characters: False
 ### -SharePath
 Specifies a path to a valid library share on an existing library server that uses a Universal Naming Convention (UNC) path. 
 
-
-Example format: `-SharePath "\\\\LibServer01\LibShare"`
+Example format: `-SharePath "\\LibServer01\LibShare"`
 
 ```yaml
 Type: String
@@ -1533,9 +1507,8 @@ Accept wildcard characters: False
 
 ### -TimeZone
 Specifies a number (an index) that identifies a geographical region that shares the same standard time.
-For a list of time zone indexes, see Microsoft Time Zone Index Valueshttp://go.microsoft.com/fwlink/?LinkId=120935  at http://go.microsoft.com/fwlink/?LinkId=120935.
+For a list of time zone indexes, see [Microsoft Time Zone Index Values](http://go.microsoft.com/fwlink/?LinkId=120935) at `http://go.microsoft.com/fwlink/?LinkId=120935`.
 If no time zone is specified, the default time zone used for a virtual machine is the same time zone setting that is on the virtual machine host. 
-
 
 Example format to specify the GMT Standard Time zone: `-TimeZone 085`
 

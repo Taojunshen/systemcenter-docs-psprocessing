@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./New-SCVMSubnet.md
+online version: 
 schema: 2.0.0
 ms.assetid: 36A227B2-F92D-47E9-82B6-65C4935BCDF5
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMSubnet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMSubnet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMSubnet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMSubnet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,7 +43,7 @@ The **Get-SCVMSubnet** cmdlet gets a virtual machine subnet object.
 
 ### Example 1: Get a virtual machine subnet by its name
 ```
-PS C:\>$VMSubNet = Get-SCVMSubnet -Name "VMSubnet01"
+PS C:\> $VMSubNet = Get-SCVMSubnet -Name "VMSubnet01"
 ```
 
 This command gets the virtual machine subnet object named VMSubnet01 and stores the object in the $VMSubnet variable.
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ### -VMNetwork
 Specifies a virtual machine network object.
 
-To get a virtual machine network object, use the Get-SCVMNetwork cmdlet.
+To get a virtual machine network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualMachine.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4DD66B81-D0AC-4840-96D5-068DF73538B3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMCheckpoint.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMCheckpoint.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMCheckpoint.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMCheckpoint.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,21 +39,21 @@ For information about creating VMM checkpoints, type `Get-Help New-SCVMCheckpoin
 
 ### Example 1: Set the description for all checkpoints to a specified string
 ```
-PS C:\>Get-SCVMCheckpoint | Set-SCVMCheckpoint -Description "All checkpoints created prior to upgrade"
+PS C:\> Get-SCVMCheckpoint | Set-SCVMCheckpoint -Description "All checkpoints created prior to upgrade"
 ```
 
 This command gets all existing checkpoint objects from the VMM database and updates the description for these checkpoints.
 
 ### Example 2: Modify the name and description for all checkpoints
 ```
-PS C:\>Get-SCVMCheckpoint | Set-SCVMCheckpoint -Name "Checkpoint Before Upgrade" -Description "Checkpoint was created prior to upgrade"
+PS C:\> Get-SCVMCheckpoint | Set-SCVMCheckpoint -Name "Checkpoint Before Upgrade" -Description "Checkpoint was created prior to upgrade"
 ```
 
 This command gets all existing checkpoint objects and modifies the name and description for each object.
 
 ### Example 3: Modify a specific checkpoint in an array of checkpoints
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM03"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM03"
 PS C:\> Set-SCVMCheckpoint -VMCheckpoint $VM.VMCheckpoints[0] -Description "First Checkpoint Before Upgrade"
 ```
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ### -OnBehalfOfUserRole
 Specifies a user role.
 This cmdlet sets the on behalf of user role as the user role that this parameter specifies.
-To obtain a user role object, use the Get-SCUserRole cmdlet.
+To obtain a user role object, use the **Get-SCUserRole** cmdlet.
 
 ```yaml
 Type: UserRole
@@ -198,7 +198,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VMCheckpoint** object.
 
 ## NOTES
-* Requires a VMM checkpoint object, which you can retrieve by using the Get-SCVMCheckpoint cmdlet.
+* Requires a VMM checkpoint object, which you can retrieve by using the **Get-SCVMCheckpoint** cmdlet.
 
 ## RELATED LINKS
 

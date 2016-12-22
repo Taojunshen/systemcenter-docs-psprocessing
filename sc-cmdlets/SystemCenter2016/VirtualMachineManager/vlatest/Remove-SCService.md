@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCService.md
+online version: 
 schema: 2.0.0
 ms.assetid: BEEC9151-9B35-4589-BA30-C4F81BA4B9C3
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCService.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCService.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCService.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCService.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ To stop a service, use the Stop-SCService cmdlet.
 
 ### Example 1: Remove a specific service deployed on a host
 ```
-PS C:\>$Service = Get-SCService -VMMServer "VMMServer01.Contoso.com" -Name "Service01"
+PS C:\> $Service = Get-SCService -VMMServer "VMMServer01.Contoso.com" -Name "Service01"
 PS C:\> Stop-SCService -Service $Service
 PS C:\> Remove-SCService -Service $Service -Confirm
 ```
@@ -53,7 +53,7 @@ A confirmation prompt is displayed before the service is removed.
 
 ### Example 2: Remove all services with names that include a specific string
 ```
-PS C:\>$Services = Get-SCService -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -Match "Service" }
+PS C:\> $Services = Get-SCService -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -Match "Service" }
 PS C:\> $Services | Stop-SCService
 PS C:\> $Services | Remove-SCService -Confirm
 ```
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml

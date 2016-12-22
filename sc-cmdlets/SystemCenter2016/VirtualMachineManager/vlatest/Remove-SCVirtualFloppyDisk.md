@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVirtualFloppyDisk.md
+online version: 
 schema: 2.0.0
 ms.assetid: 1A44DF74-5838-4183-B7EF-7602863D0641
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualFloppyDisk.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualFloppyDisk.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualFloppyDisk.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualFloppyDisk.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -47,7 +47,7 @@ This cmdlet returns the object upon success (with the property MarkedForDeletion
 
 ### Example 1: Remove a virtual floppy disk object from the library and delete the corresponding file
 ```
-PS C:\>$VFD = Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com"  | where { $_.Name -eq "BootFloppy.vfd" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
+PS C:\> $VFD = Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com"  | where { $_.Name -eq "BootFloppy.vfd" -and $_.LibraryServer.Name -eq "LibraryServer01.Contoso.com" }
 PS C:\> Remove-SCVirtualFloppyDisk -VirtualFloppyDisk $VFD
 ```
 
@@ -57,7 +57,7 @@ The second command removes the floppy disk object stored in $VFD from the librar
 
 ### Example 2: Remove multiple virtual floppy disks and their files
 ```
-PS C:\>$VFDs = Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match "Boot" }
+PS C:\> $VFDs = Get-SCVirtualFloppyDisk -VMMServer "VMMServer01.Contoso.com" | where { $_.Name -match "Boot" }
 PS C:\> $VFDs | Remove-SCVirtualFloppyDisk
 ```
 
@@ -183,7 +183,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM virtual floppy disk object, which can be retrieved by using the Get-SCVirtualFloppyDisk cmdlet.
+* Requires a VMM virtual floppy disk object, which can be retrieved by using the **Get-SCVirtualFloppyDisk** cmdlet.
 
 ## RELATED LINKS
 

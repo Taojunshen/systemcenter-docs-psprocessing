@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCStorageDisk.md
+online version: 
 schema: 2.0.0
 ms.assetid: 6B2BAC47-686D-4395-B9F3-50FADD0F77D2
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Mount-SCStorageDisk.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Mount-SCStorageDisk.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Mount-SCStorageDisk.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Mount-SCStorageDisk.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -109,7 +109,7 @@ The **Mount-SCStorageDisk** cmdlet mounts a storage disk.
 
 ### Example 1: Format a new disk
 ```
-PS C:\>$JobGroup = [Guid]::NewGuid().ToString()
+PS C:\> $JobGroup = [Guid]::NewGuid().ToString()
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VMHost01"
 PS C:\> $LU = Get-SCStorageLogicalUnit -Name "LUN01"
 PS C:\> Register-SCStorageLogicalUnit -StorageLogicalUnit $LU -VMHost $VMHost -JobGroup $JobGroup
@@ -120,13 +120,13 @@ PS C:\> Set-SCVMHost -VMHost $VMHost -JobGroup $JobGroup
 The first command generates a GUID, and then stores the GUID as a string in the $JobGroup variable.
 Subsequent commands that include this GUID are collected into a single job group.
 
-The second command gets the host object named VMHost01 by using the Get-SCVMHost cmdlet.
+The second command gets the host object named VMHost01 by using the **Get-SCVMHost** cmdlet.
 The command stores that object in the $VMHost variable.
 
-The third command gets the storage logical unit object named LUN01 by using the Get-SCStorageLogicalUnit cmdlet.
+The third command gets the storage logical unit object named LUN01 by using the **Get-SCStorageLogicalUnit** cmdlet.
 The command stores that object in the $LU variable.
 
-The fourth command registers LUN01 with VMHost01 by using the Register-SCStorageLogicalUnit cmdlet.
+The fourth command registers LUN01 with VMHost01 by using the **Register-SCStorageLogicalUnit** cmdlet.
 This command specifies the *JobGroup* parameter.
 Therefore, this command does not run until just before the final command that includes the job group that has the same GUID.
 
@@ -135,7 +135,7 @@ The command performs a quick format on the volume, labels the volume New Volume,
 This command specifies *JobGroup*.
 
 The last command updates VMHost01 with the mounted storage disk.
-This command specifies the *JobGroup* parameter to register and mount LUN01 prior to running the Set-SCVMHost cmdlet.
+This command specifies the *JobGroup* parameter to register and mount LUN01 prior to running the **Set-SCVMHost** cmdlet.
 
 ## PARAMETERS
 
@@ -488,7 +488,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* This cmdlet requires a VMM storage disk object, which can be retrieved using the Get-SCStorageDisk cmdlet.
+* This cmdlet requires a VMM storage disk object, which can be retrieved using the **Get-SCStorageDisk** cmdlet.
 
 ## RELATED LINKS
 

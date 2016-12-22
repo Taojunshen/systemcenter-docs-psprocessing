@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCPhysicalComputerProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 5B72BFE6-0BDF-4451-A310-F88C80FE3884
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPhysicalComputerProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPhysicalComputerProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPhysicalComputerProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPhysicalComputerProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,11 +36,11 @@ The **Remove-SCPhysicalComputerProfile** cmdlet removes a physical computer prof
 
 ### Example 1: Remove a physical computer profile from VMM
 ```
-PS C:\>$PCP = Get-SCPhysicalComputerProfile -Name "Windows Server 2012 R2" 
+PS C:\> $PCP = Get-SCPhysicalComputerProfile -Name "Windows Server 2012 R2" 
 PS C:\> Remove-SCPhysicalComputerProfile -PhysicalComputerProfile $PCP
 ```
 
-The first command gets the physical computer profile named Windows Server 2012 R2 by using the Get-SCPhysicalComputerProfile cmdlet.
+The first command gets the physical computer profile named Windows Server 2012 R2 by using the **Get-SCPhysicalComputerProfile** cmdlet.
 The command stores it in the $PCP variable.
 
 The second command deletes the physical computer profile in $PCP from VMM.

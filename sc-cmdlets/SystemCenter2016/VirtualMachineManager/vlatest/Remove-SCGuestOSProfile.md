@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCGuestOSProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: 9F64783B-5E0F-47FD-AF55-B4F784C19997
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCGuestOSProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCGuestOSProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCGuestOSProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCGuestOSProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -32,13 +32,13 @@ Remove-SCGuestOSProfile [-GuestOSProfile] <GuestOSProfile> [-Force] [-RunAsynchr
 ## DESCRIPTION
 The **Remove-SCGuestOSProfile** cmdlet removes one or more guest operating system profile objects from the VMM library.
 
-This cmdlet returns the object upon success (with the property MarkedForDeletion set to True) or returns an error message upon failure.
+This cmdlet returns the object upon success (with the property **MarkedForDeletion** set to True) or returns an error message upon failure.
 
 ## EXAMPLES
 
 ### Example 1: Remove a specific guest operating system profile from the library
 ```
-PS C:\>$OSProfile = Get-SCGuestOSProfile -Name "NewOSProfile01"
+PS C:\> $OSProfile = Get-SCGuestOSProfile -Name "NewOSProfile01"
 PS C:\> Remove-SCGuestOSProfile -GuestOSProfile $OSProfile -Confirm
 ```
 
@@ -48,13 +48,13 @@ The second command removes the guest operating system profile stored in $OSProfi
 
 ### Example 2: Remove all operating system profiles without being prompted to confirm each deletion
 ```
-PS C:\>$OSProfiles = Get-SCGuestOSProfile -VMMServer "VMMServer01.Contoso.com"
+PS C:\> $OSProfiles = Get-SCGuestOSProfile -VMMServer "VMMServer01.Contoso.com"
 PS C:\> $OSProfiles | Remove-SCGuestOSProfile
 ```
 
 The first command gets all operating system profile objects from VMMServer01 and stores the objects in the $OSProfiles object array.
 
-The second command passes each object in $OSProfiles to the Remove-OSProfile cmdlet, which removes each of the guest operating system profile objects from the VMM library.
+The second command passes each object in $OSProfiles to the **Remove-OSProfile** cmdlet, which removes each of the guest operating system profile objects from the VMM library.
 
 ## PARAMETERS
 
@@ -173,7 +173,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-* Requires a VMM guest operating system profile object, which can be retrieved by using the Get-SCGuestOSProfile cmdlet.
+* Requires a VMM guest operating system profile object, which can be retrieved by using the **Get-SCGuestOSProfile** cmdlet.
 
 ## RELATED LINKS
 

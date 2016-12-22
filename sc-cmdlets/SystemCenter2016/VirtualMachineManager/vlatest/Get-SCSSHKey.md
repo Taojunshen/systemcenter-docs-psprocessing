@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Remove-SCSSHKey.md
+online version: 
 schema: 2.0.0
 ms.assetid: 40EA8A82-7BE5-4487-BBD6-CB036EE626E7
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSSHKey.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSSHKey.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSSHKey.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSSHKey.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -51,14 +51,14 @@ The **Get-SCSSHKey** cmdlet gets Linux Administrator **SSHKey** objects from the
 
 ### Example 1: Get all SSHKey objects in the VMM library
 ```
-PS C:\>$SSHKey = Get-SCSSHKey -All
+PS C:\> $SSHKey = Get-SCSSHKey -All
 ```
 
 This command gets all **SSHKey** objects in the VMM library and displays information about each to the user.
 
 ### Example 2: Get an SSHKey by its name
 ```
-PS C:\>$SSHKey = Get-SCSSHKey -Name "My.sshkey"
+PS C:\> $SSHKey = Get-SCSSHKey -Name "My.sshkey"
 PS C:\> $SSHKey
 ```
 
@@ -68,7 +68,7 @@ The second command displays information about the **SSHKey** object stored in $S
 
 ### Example 3: Get all SSHKey objects that share a property
 ```
-PS C:\>Get-SCSSHKey -FamilyName "Family01"
+PS C:\> Get-SCSSHKey -FamilyName "Family01"
 ```
 
 This command gets all **SSHKey** objects from the VMM library with the *FamilyName* value of Family01, and displays information about each **SSHKey**.

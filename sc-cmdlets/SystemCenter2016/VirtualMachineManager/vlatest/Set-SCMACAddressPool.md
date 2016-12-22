@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCMACAddressPool.md
+online version: 
 schema: 2.0.0
 ms.assetid: CEB264CF-0D0B-4B72-86B7-3A0BB870C3F0
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCMACAddressPool.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCMACAddressPool.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCMACAddressPool.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCMACAddressPool.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ A MAC address pool can be associated with one or more host groups.
 
 ### Example 1: Change the host groups associated with a MAC address pool
 ```
-PS C:\>$MACPool = Get-SCMACAddressPool -Name "MAC Address Pool 01" 
+PS C:\> $MACPool = Get-SCMACAddressPool -Name "MAC Address Pool 01" 
 PS C:\> $HostGroup = Get-SCVMHostGroup | where { $_.Path -eq "All Hosts\HostGroup03\Production" }
 PS C:\> Set-SCMacAddressPool -MACAddressPool $MACPool -AddVMHostGroup $HostGroup
 ```

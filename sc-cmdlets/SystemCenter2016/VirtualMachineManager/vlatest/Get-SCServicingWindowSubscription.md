@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCServicingWindowSubscription.md
+online version: 
 schema: 2.0.0
 ms.assetid: 225FD757-CD85-46CF-B404-9EA4F3976C86
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServicingWindowSubscription.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServicingWindowSubscription.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServicingWindowSubscription.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServicingWindowSubscription.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -55,7 +55,7 @@ The **Get-SCServicingWindowSubscription** cmdlet gets a list of servicing window
 
 ### Example 1: Get a list of servicing window subscriptions for a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $SvcWindowSub = Get-SCServicingWindowSubscription -VM $VM
 PS C:\> $SvcWindowSub
 ```
@@ -68,7 +68,7 @@ The last command displays the servicing windows stored in $SvcWindowSub for the 
 
 ### Example 2: Get a list of subscriptions for a specified servicing window
 ```
-PS C:\>$SvcWindow = Get-SCServicingWindow -Name "Backup Staging A"
+PS C:\> $SvcWindow = Get-SCServicingWindow -Name "Backup Staging A"
 PS C:\> $SvcWindowSub = Get-SCServicingWindowSubscription -ServicingWindow $SvcWindow
 PS C:\> $SvcWindowSub
 ```
@@ -81,7 +81,7 @@ The last command displays the list of subscriptions stored in $SvcWindowSub to t
 
 ### Example 3: Get the servicing window subscription for a specified virtual machine and a specified servicing window
 ```
-PS C:\>$VM = Get-VM -Name "VM01"
+PS C:\> $VM = Get-VM -Name "VM01"
 PS C:\> $SvcWindow = Get-SCServicingWindow -Name "Backup Staging A"
 PS C:\> $SvcWindowSub = Get-SCServicingWindowSubscription -VM $VM -ServicingWindow $SvcWindow 
 PS C:\> $SvcWindowSub
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Copy-SCVirtualHardDisk.md
+online version: 
 schema: 2.0.0
 ms.assetid: E7F11623-2B91-497E-904C-BFD0B083D86E
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCV2V.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCV2V.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCV2V.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCV2V.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -130,7 +130,7 @@ For more information about how to add required files to the internal cache, type
 
 ### Example 1: Convert a VMware-based virtual machine on an ESX host
 ```
-PS C:\>$ESXHost = Get-SCVMHost -ComputerName "ESXHost01"
+PS C:\> $ESXHost = Get-SCVMHost -ComputerName "ESXHost01"
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "HyperVHost01.Contoso.com"
 PS C:\> $VM = Get-SCVirtualMachine -VMHost $ESXHost -Name "SourceVM"
 PS C:\> New-SCV2V -VM $VM -VMHost $VMHost -Name "DestinationVM" -Path "C:\VMs" -MemoryMB 512 -RunAsynchronously
@@ -154,7 +154,7 @@ The command converts all of the virtual disks on the source virtual machine and 
 
 ### Example 2: Convert a VMware-based virtual machine stored in the VMM library
 ```
-PS C:\>$LibServ = Get-SCLibraryServer -ComputerName "LibServer02.Contoso.com"
+PS C:\> $LibServ = Get-SCLibraryServer -ComputerName "LibServer02.Contoso.com"
 PS C:\> $VMHost = Get-SCVMHost -ComputerName "VirtualServerHost02.Contoso.com"
 PS C:\> New-SCV2V -LibraryServer $LibServ -VMXPath "\\LibServer02\MSSCVMMLibrary\VMware\VMSource.vmx" -VMHost $VMHost -Name "VM02" -Path "C:\VMs" -MemoryMB 512 -RunAsynchronously
 ```
@@ -213,8 +213,7 @@ High.
 Above Normal.
 1500.
 - VMware ESX.
-Normal (default).
-1000. 
+Normal (default). 1000. 
 - VMware ESX.
 Below Normal.
 750.
@@ -767,7 +766,7 @@ Accept wildcard characters: False
 ### -VMHost
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host
@@ -798,7 +797,7 @@ Accept wildcard characters: False
 
 ### -VMNetwork
 Specifies a virtual machine network object.
-To obtain a virtual machine network object, use the Get-SCVMNetwork cmdlet.
+To obtain a virtual machine network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork
@@ -862,10 +861,9 @@ Specifies a virtual network adapter object for a virtual machine.
 
 Types of hosts support the following number of virtual network adapters: 
 
- -- Hyper-V. 
+- Hyper-V. 
 Up to four emulated adapters per virtual machine.
 There is no driver available for an emulated network adapter on a Windows Server 2003 x64 guest operating system.
-
 - Hyper-V. 
 Up to eight synthetic adapters per virtual machine.
 - VMware ESX. 
@@ -896,7 +894,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualMachine** object.
 
 ## NOTES
-* This cmdlet requires a VMM VMX computer configuration object. To obtain a VMX object, use the Get-SCVMXComputerConfiguration cmdlet.
+* This cmdlet requires a VMM VMX computer configuration object. To obtain a VMX object, use the **Get-SCVMXComputerConfiguration** cmdlet.
 
 ## RELATED LINKS
 

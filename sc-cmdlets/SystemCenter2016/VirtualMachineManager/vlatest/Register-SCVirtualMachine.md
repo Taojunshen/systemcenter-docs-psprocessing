@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: 1589E3EC-6B1D-4641-B296-081D9F8BBDAB
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -51,7 +51,7 @@ Do not use this cmdlet to register virtual machines on a XenServer host.
 
 ### Example 1: Register an existing virtual machine on a Hyper-V host
 ```
-PS C:\>$VMHost = Get-SCVMHost -ComputerName "HyperVHost01"
+PS C:\> $VMHost = Get-SCVMHost -ComputerName "HyperVHost01"
 PS C:\> Register-SCVirtualMachine -VMHost $VMHost -Path "D:\HyperVFolderForVMs"
 ```
 
@@ -61,7 +61,7 @@ The second command adds the existing virtual machine on HVHost02 to VMM by speci
 
 ### Example 2: Register an existing virtual machine on a VMware ESX host
 ```
-PS C:\>$VMHost = Get-VMHost -ComputerName "ESXHost03" 
+PS C:\> $VMHost = Get-VMHost -ComputerName "ESXHost03" 
 PS C:\> Register-SCVirtualMachine -VMHost $VMHost -Path "[storage1]\VMwareFolderForVMs\MyVM.vmx"
 ```
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

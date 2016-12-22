@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMHost.md
+online version: 
 schema: 2.0.0
 ms.assetid: 4DBF08DF-B516-41A1-AE3E-F6974B347F73
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCVMHost.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCVMHost.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCVMHost.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCVMHost.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -42,14 +42,14 @@ For information about configuring the Baseboard Management Controller (BMC) sett
 
 ### Example 1: Restart a specified host
 ```
-PS C:\>Get-SCVMHost -ComputerName "NewHost01" | Restart-SCVMHost
+PS C:\> Get-SCVMHost -ComputerName "NewHost01" | Restart-SCVMHost
 ```
 
 This command restarts the host named NewHost01 using in-band management.
 
 ### Example 2: Restart a specified host using OOB management
 ```
-PS C:\>Get-SCVMHost -ComputerName "NewHost01" | Restart-SCVMHost -UseOutOfBandChannel -Confirm
+PS C:\> Get-SCVMHost -ComputerName "NewHost01" | Restart-SCVMHost -UseOutOfBandChannel -Confirm
 ```
 
 This command restarts the host named NewHost01 using OOB management.
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 Specifies a virtual machine host object.
 VMM supports Hyper-V hosts, VMware ESX hosts, and Citrix XenServer hosts.
 
-For more information about each type of host, see the Add-SCVMHost cmdlet.
+For more information about each type of host, see the **Add-SCVMHost** cmdlet.
 
 ```yaml
 Type: Host

@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCNATRule.md
+online version: 
 schema: 2.0.0
 ms.assetid: 825A1C70-F837-4362-9C50-03DC4665C04F
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNATRule.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNATRule.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNATRule.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNATRule.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -49,7 +49,7 @@ The **Get-SCNATRule** cmdlet gets a network address translation (NAT) rule.
 
 ### Example 1: Get NAT rule by name defined on a virtual machine network
 ```
-PS C:\>$VmNetwork = Get-SCVMNetwork -Name "NAT_VMNetwork"
+PS C:\> $VmNetwork = Get-SCVMNetwork -Name "NAT_VMNetwork"
 PS C:\> $NatConnection = Get-SCNATConnection -VMNetwork $VmNetwork
 PS C:\> Get-SCNATRule -NATConnection $NatConnection -Name "NatRule"
 ```
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ### -VMNetworkGateway
 Specifies a virtual machine network gateway object.
 
-To obtain a **VMNetworkGateway** object, use the Get-SCVMNetworkGateway cmdlet.
+To obtain a **VMNetworkGateway** object, use the **Get-SCVMNetworkGateway** cmdlet.
 
 ```yaml
 Type: VMNetworkGateway

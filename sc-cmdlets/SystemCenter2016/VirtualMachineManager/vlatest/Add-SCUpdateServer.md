@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCUpdateServer.md
+online version: 
 schema: 2.0.0
 ms.assetid: E6D0443D-595C-4629-BD64-DC2480262D10
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCUpdateServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCUpdateServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCUpdateServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCUpdateServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -38,7 +38,7 @@ Adding a WSUS server integrates VMM and WSUS setup and enables the update manage
 
 ### Example 1: Add an update server
 ```
-PS C:\>$Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
+PS C:\> $Credential = Get-SCRunAsAccount -Name "RunAsAccount01"
 PS C:\> Add-SCUpdateServer -ComputerName "WSUSComputer01" -TCPPort 80 -Credential $Credential
 ```
 

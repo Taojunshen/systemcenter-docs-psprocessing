@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCNativeUplinkPortProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: D3C113F4-6C0E-41EF-B8B0-178D65DF3E66
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNativeUplinkPortProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNativeUplinkPortProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNativeUplinkPortProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNativeUplinkPortProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -42,7 +42,7 @@ You can use it to add or remove a logical network definition.
 
 ### Example 1: Remove a logical network definition from a native uplink port profile
 ```
-PS C:\>$LogNetDefinition = Get-SCLogicalNetworkDefinition -Name "Logical Network Definition 01" 
+PS C:\> $LogNetDefinition = Get-SCLogicalNetworkDefinition -Name "Logical Network Definition 01" 
 PS C:\> Get-SCNativeUplinkPortProfile -Name "NativeUplinkPortProfile01" | Set-SCNativeUplinkPortProfile -RemoveLogicalNetworkDefinition $LogNetDefinition
 ```
 
@@ -56,7 +56,7 @@ This removes Logical Network Definition 01 from NativeUplinkPortProfile01.
 ### -AddLogicalNetworkDefinition
 Specifies an array of logical network definition objects that this cmdlet adds.
 
-To get a logical network definition object, use the Get-SCLogicalNetworkDefinition cmdlet.
+To get a logical network definition object, use the **Get-SCLogicalNetworkDefinition** cmdlet.
 
 ```yaml
 Type: LogicalNetworkDefinition[]
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ### -RemoveLogicalNetworkDefinition
 Specifies an array of logical network definition objects to remove.
 
-To get a logical network definition object, use the Get-SCLogicalNetworkDefinition cmdlet.
+To get a logical network definition object, use the **Get-SCLogicalNetworkDefinition** cmdlet.
 
 ```yaml
 Type: LogicalNetworkDefinition[]

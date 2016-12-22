@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCCertificate.md
+online version: 
 schema: 2.0.0
 ms.assetid: 14F7CDA4-4F58-410C-92FE-B127BCF6B9D1
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVirtualizationManager.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVirtualizationManager.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVirtualizationManager.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVirtualizationManager.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ The default port used to connect to a VMware VirtualCenter Server computer is TC
 
 ### Example 1: Add a VMware vCenter Server to VMM
 ```
-PS C:\>$RunAsAccount = Get-SCRunAsAccount -Name "RunAsAccount03"
+PS C:\> $RunAsAccount = Get-SCRunAsAccount -Name "RunAsAccount03"
 PS C:\> $Cert = Get-SCCertificate -ComputerName "vCenterServer01.Contoso.com"
 PS C:\> Add-SCVirtualizationManager -ComputerName "vCenterServer01.Contoso.com" -Certificate $Cert -TCPPort 443 -Credential $RunAsAccount
 ```
@@ -56,7 +56,7 @@ As the last command is processed, $Credential provides your Run As credentials t
 
 ### Example 2: Add multiple VMware vCenter Servers to VMM
 ```
-PS C:\>$Credential = Get-SCRunAsAccount -Name "RunAsAccount03" 
+PS C:\> $Credential = Get-SCRunAsAccount -Name "RunAsAccount03" 
 PS C:\> $Servers = "vCenterServer01.Contoso.com", "vCenterServer02.Contoso.com"
 PS C:\> ForEach ($Server in $Servers) {$Cert = Get-SCCertificate -ComputerName $Server;  Add-SCVirtualizationManager -ComputerName $Server -Certificate $Cert -TCPPort 443 -Credential $Credential}
 ```
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 
 ### -Credential
 Specifies a credential object or, for some cmdlets, a Run As account object that contains the user name and password of an account that has permission to perform this action.
-Or, in the case of Restart-SCJob, has permission to complete a restarted task.
+Or, in the case of **Restart-SCJob**, has permission to complete a restarted task.
 
 For more information about the **PSCredential** object, type `Get-Help Get-Credential`.
 

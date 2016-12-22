@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMConfiguration.md
+online version: 
 schema: 2.0.0
 ms.assetid: 29D63D92-47FB-4A87-A96E-4862983932DA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCVMConfiguration.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCVMConfiguration.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCVMConfiguration.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Update-SCVMConfiguration.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,7 +46,7 @@ The **Update-SCVMConfiguration** cmdlet updates the properties of a Virtual Mach
 
 ### Example 1: Update an existing virtual machine configuration
 ```
-PS C:\>$ServiceConfig = Get-SCServiceConfiguration -Name "Service01"
+PS C:\> $ServiceConfig = Get-SCServiceConfiguration -Name "Service01"
 PS C:\> $VMConfig = Get-SCVMConfiguration -ServiceConfiguration $ServiceConfig
 PS C:\> Update-SCVMConfiguration -VMConfiguration $VMConfig[0] -ValidateOnly $True
 ```
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ### -OnBehalfOfUserRole
 Specifies a user role.
 This cmdlet sets the on behalf of user role as the user role that this parameter specifies.
-To obtain a user role object, use the Get-SCUserRole cmdlet.
+To obtain a user role object, use the **Get-SCUserRole** cmdlet.
 
 ```yaml
 Type: UserRole
@@ -210,7 +210,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **ComputerConfig** object.
 
 ## NOTES
-* Requires a VMM virtual machine configuration object, which can be obtained by using the Get-SCVMConfiguration cmdlet.
+* Requires a VMM virtual machine configuration object, which can be obtained by using the **Get-SCVMConfiguration** cmdlet.
 
 ## RELATED LINKS
 

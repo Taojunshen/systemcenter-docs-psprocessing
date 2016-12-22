@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCApplicationProfile.md
+online version: 
 schema: 2.0.0
 ms.assetid: F88A7D94-0C8A-4BFF-8C8A-F1800188CC73
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCApplicationProfile.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCApplicationProfile.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCApplicationProfile.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCApplicationProfile.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -39,7 +39,7 @@ Application profiles define the applications that are installed during virtual m
 
 ### Example 1: Create an application profile
 ```
-PS C:\>$AppProfile = New-SCApplicationProfile -Name "SvcWebAppProfile01" -Owner "Contoso\Katarina"
+PS C:\> $AppProfile = New-SCApplicationProfile -Name "SvcWebAppProfile01" -Owner "Contoso\Katarina"
 PS C:\> $AppProfile
 ```
 
@@ -49,7 +49,7 @@ The second displays information about the application profile stored in $AppProf
 
 ### Example 2: Create an application profile by cloning an existing profile
 ```
-PS C:\>$AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
+PS C:\> $AppProfile = Get-SCApplicationProfile -Name "SvcWebAppProfile01"
 PS C:\> $AppProfile02 = New-SCApplicationProfile -Name "SvcWebAppProfile02" -ApplicationProfile $AppProfile
 ```
 
@@ -157,9 +157,8 @@ Accept wildcard characters: False
 ### -Owner
 Specifies the owner of a VMM object in the form of a valid domain user account. 
 
-Example format: `-Owner "Contoso\PattiFuller"`
-
-Example format: `-Owner "PattiFuller@Contoso"`
+- Example format: `-Owner "Contoso\PattiFuller"`
+- Example format: `-Owner "PattiFuller@Contoso"`
 
 ```yaml
 Type: String

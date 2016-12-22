@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Add-SCVMMManagedComputer.md
+online version: 
 schema: 2.0.0
 ms.assetid: AAF71082-FDB9-4D5E-8CA9-DF3B72A45B5C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMMManagedComputer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMMManagedComputer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMMManagedComputer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMMManagedComputer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ The **Read-SCVMMManagedComputer** cmdlet refreshes computers managed by Virtual 
 
 ### Example 1: Refresh a managed computer object
 ```
-PS C:\>Get-SCVMMManagedComputer -ComputerName "SPF.Contoso.com" | Read-SCVMMManagedComputer
+PS C:\> Get-SCVMMManagedComputer -ComputerName "SPF.Contoso.com" | Read-SCVMMManagedComputer
 ```
 
 This command gets the computer object named SPF.Contoso.com and then uses the pipeline operator to pass the object to **Read-SCVMMManagedComputer**, which refreshes the computer.

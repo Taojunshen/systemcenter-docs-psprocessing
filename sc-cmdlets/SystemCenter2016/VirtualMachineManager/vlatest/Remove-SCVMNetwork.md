@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Get-SCVMNetwork.md
+online version: 
 schema: 2.0.0
 ms.assetid: 3660475A-1B2F-499E-A452-6FC358C433AF
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMNetwork.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMNetwork.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMNetwork.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMNetwork.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -33,13 +33,13 @@ Remove-SCVMNetwork [-VMMServer <ServerConnection>] [-VMNetwork] <VMNetwork> [-Fo
 ## DESCRIPTION
 The **Remove-SCVMNetwork** cmdlet removes a virtual machine network from Virtual Machine Manager (VMM).
 
-To retrieve a VM network object, use the Get-SCVMNetwork cmdlet.
+To retrieve a VM network object, use the **Get-SCVMNetwork** cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Remove a virtual machine network
 ```
-PS C:\>Get-SCVMNetwork -Name "VMNetwork01" | Remove-SCVMNetwork
+PS C:\> Get-SCVMNetwork -Name "VMNetwork01" | Remove-SCVMNetwork
 ```
 
 This command gets the virtual machine network object named VMNetwork01 and uses the pipeline operator to pass the object to **Remove-SCVMNetwork**, which deletes the virtual machine network.
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ### -VMNetwork
 Specifies a VM network object.
 
-To get a VM network object, use the Get-SCVMNetwork cmdlet.
+To get a VM network object, use the **Get-SCVMNetwork** cmdlet.
 
 ```yaml
 Type: VMNetwork

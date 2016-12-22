@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: 889A17D3-5ACA-4243-91C0-0462D1E1E3BD
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -67,12 +67,12 @@ You can use this cmdlet to change the *Bus* type (IDE or SCSI), or to change the
 
 ### Example 1: Change the IDE bus and LUN settings for a virtual disk drive
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
 PS C:\> $VirtDiskDrive = @(Get-SCVirtualDiskDrive -VM $VM)
 PS C:\> If($VirtDiskDrive.Count -Eq 1 -And $VirtDiskDrive[0].Bus -Eq 0 -And $VirtDiskDrive[0].Lun -Eq 1){Set-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive[0] -Bus 0 -LUN 0}
 ```
 
-The first command gets the virtual machine object VM01 by using the Get-SCVirtualMachine cmdlet.
+The first command gets the virtual machine object VM01 by using the **Get-SCVirtualMachine** cmdlet.
 The command stores that object in the $VM variable.
 
 The second command gets the virtual disk drive object on VM01, and then stores the object in $VirtDiskDrive.
@@ -82,7 +82,7 @@ The last command sets the Bus value to 0 and sets the LUN value to 0 for the vir
 
 ### Example 2: Change the bus type for a virtual disk drive from SCSI to IDE
 ```
-PS C:\>$VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM $VM
 PS C:\> Set-SCVirtualDiskDrive -VirtualDiskDrive $VirtDiskDrive[1] -IDE -Bus 0 -LUN 1
 ```
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -390,7 +390,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualDiskDrive** object.
 
 ## NOTES
-* This cmdlet requires a VMM virtual disk drive object, which can be retrieved by using the Get-SCVirtualDiskDrive cmdlet.
+* This cmdlet requires a VMM virtual disk drive object, which can be retrieved by using the **Get-SCVirtualDiskDrive** cmdlet.
 
 ## RELATED LINKS
 

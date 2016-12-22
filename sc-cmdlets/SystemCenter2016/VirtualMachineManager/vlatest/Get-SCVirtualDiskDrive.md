@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
-online version: ./Compress-SCVirtualDiskDrive.md
+online version: 
 schema: 2.0.0
 ms.assetid: 5C4CFF68-6807-41D5-B5F9-D84D732D1DC1
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/22/2016 3:56 PM
+ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -56,7 +56,7 @@ These virtual disk drives can be configured on virtual machine templates stored 
 
 ### Example 1: Get all virtual disk drives in your VMM environment
 ```
-PS C:\>Get-SCVirtualDiskDrive -VMMServer "VMMServer01.Contoso.com" -All
+PS C:\> Get-SCVirtualDiskDrive -VMMServer "VMMServer01.Contoso.com" -All
 ```
 
 This command gets all virtual disk drives bound to all virtual machines registered to VMM on VMMServer01.
@@ -64,12 +64,12 @@ The command displays information about each virtual disk drive.
 
 ### Example 2: Get virtual disk drives for a virtual machine
 ```
-PS C:\>$VM = Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | Where-Object {$_.Name -Eq "VM02"} 
+PS C:\> $VM = Get-SCVirtualMachine -VMMServer "VMMServer01.Contoso.com" | Where-Object {$_.Name -Eq "VM02"} 
 PS C:\> $VirtDiskDrive = Get-SCVirtualDiskDrive -VM $VM
 PS C:\> $VirtDiskDrive
 ```
 
-The first command gets the virtual machine object named VM02 by using the Get-SCVirtualMachine cmdlet.
+The first command gets the virtual machine object named VM02 by using the **Get-SCVirtualMachine** cmdlet.
 The command stores that object in the $VM variable.
 
 The second command gets all virtual disk drive objects on VM02, and stores those objects in $VirtDiskDrive.
@@ -80,7 +80,7 @@ This information includes the name of any virtual hard disks and the path of the
 
 ### Example 3: Count virtual disk drives, except pass-through disks
 ```
-PS C:\>$VirtDiskDrive = @(Get-SCVirtualDiskDrive -All | Where-Object {$_.BusType -Eq "IDE" -And $_.PassThroughDisk -Eq $Null -And $_.LUN -Eq 1 -And ($_.Bus -Eq 0 -Or $_.Bus -Eq 1)})
+PS C:\> $VirtDiskDrive = @(Get-SCVirtualDiskDrive -All | Where-Object {$_.BusType -Eq "IDE" -And $_.PassThroughDisk -Eq $Null -And $_.LUN -Eq 1 -And ($_.Bus -Eq 0 -Or $_.Bus -Eq 1)})
 PS C:\> $VirtDiskDrive.Count
 ```
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -OnBehalfOfUserRole
 Specifies a user role.
-To obtain a user role, use the Get-SCUserRole cmdlet.
+To obtain a user role, use the **Get-SCUserRole** cmdlet.
 This cmdlet operates on behalf of the user role that this parameter specifies.
 
 ```yaml
@@ -222,7 +222,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 This cmdlet returns a **VirtualDiskDrive** object.
 
 ## NOTES
-* This cmdlet requires a VMM virtual machine template object or a virtual machine object, which can be retrieved by using the Get-SCVMTemplate cmdlet or the Get-SCVirtualMachine cmdlet.
+* This cmdlet requires a VMM virtual machine template object or a virtual machine object, which can be retrieved by using the **Get-SCVMTemplate** cmdlet or the **Get-SCVirtualMachine** cmdlet.
 
 ## RELATED LINKS
 

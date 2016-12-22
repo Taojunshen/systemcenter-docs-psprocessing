@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: DB1D1C95-80EF-48A3-944F-1D657C21985F
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,7 +20,7 @@ ms.service: system-center
 # Set-SCVirtualFloppyDrive
 
 ## SYNOPSIS
-Changes properties of a virtual floppy drive associated with a virtual machine, virtual nmachine template, or hardware profile used in VMM.
+Changes properties of a virtual floppy drive associated with a virtual machine, virtual machine template, or hardware profile used in VMM.
 
 ## SYNTAX
 

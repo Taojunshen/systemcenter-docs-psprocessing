@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 03AFB822-0EE6-44DE-811A-A7E15DF4A8C0
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 Specifies how the Hyper-V host is identified.
 The acceptable values for this parameter are:
 
- -- FQDN
+- FQDN
 - IPv4
 - IPv6
 - HostName

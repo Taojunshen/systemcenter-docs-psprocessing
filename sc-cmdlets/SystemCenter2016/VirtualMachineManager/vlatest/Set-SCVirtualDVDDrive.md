@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 2DDE259C-EA85-4A2A-9DD4-71660678E268
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDVDDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDVDDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDVDDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDVDDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -102,30 +102,21 @@ You can use this cmdlet to connect a virtual DVD drive to a physical DVD drive o
 Most settings that you can configure for a virtual DVD drive on a virtual machine are the same regardless of whether the virtualization platform of the host is Hyper-V, VMware, or Citrix XenServer.
 All of these virtualization platforms support the following: 
 
-
-
 - Connecting a virtual DVD drive to a primary or secondary channel on a host. 
-
 
 - Capturing information from a physical CD or DVD drive on the host without specifying a drive letter. 
 
-
 - Capturing information from an image (ISO) file stored in the VMM library. 
-
 
 - Capturing "no media" (used to disconnect a virtual DVD drive from the host drive or from an ISO file).
 
 The only setting that varies for this cmdlet by virtualization platform is whether an ISO file can be used directly from the VMM library: 
 
-
-
 - Hyper-V host.
 If you configure a connection to an ISO file in the VMM library, you can choose to use the ISO directly from the library instead of copying it to the host. 
 
-
 - VMware ESX host.
 If you configure a connection to an ISO file in the VMM library, you cannot use the ISO directly from the library but must instead accept the default, which copies the ISO file to the host. 
-
 
 - Citrix XenServer host.
 If you configure a connection to an ISO file in the VMM library, you cannot use the ISO directly from the library but must instead accept the default, which copies the ISO file to the host.
@@ -281,11 +272,8 @@ Accept wildcard characters: False
 ### -LUN
 Specifies the logical unit number (LUN) for a virtual disk drive object or for a virtual DVD drive object on an IDE bus, or for a virtual disk drive object on a SCSI bus. 
 
-
-
-Example format: `-IDE -Bus 1 -LUN 0`
-
-Example format: `-SCSI -Bus 0 -LUN 1`
+- Example format: `-IDE -Bus 1 -LUN 0`
+- Example format: `-SCSI -Bus 0 -LUN 1`
 
 ```yaml
 Type: Byte
@@ -426,22 +414,14 @@ Accept wildcard characters: False
 ### -VMHostDrive
 Specifies a drive on a virtual machine host. 
 
-
-
 Example formats: 
 
-
-Hyper-V host hard drive: `"C:"`
- 
-Hyper-V host floppy drive: `"A:"`
-
-VMware ESX host hard drive: `"/dev/tools"`
-
-VMware ESX host floppy drive: `"/dev/sda"`
-
-Citrix XenServer host hard drive: `"Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
-
-Citrix XenServer host floppy drive: Not supported
+- Hyper-V host hard drive: `"C:"`
+- Hyper-V host floppy drive: `"A:"`
+- VMware ESX host hard drive: `"/dev/tools"`
+- VMware ESX host floppy drive: `"/dev/sda"`
+- Citrix XenServer host hard drive: `"Local storage\[99b6212f-b63d-c676-25f9-d6c460992de7\]"`
+- Citrix XenServer host floppy drive: Not supported
 
 ```yaml
 Type: String

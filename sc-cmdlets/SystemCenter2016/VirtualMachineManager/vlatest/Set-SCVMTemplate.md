@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: DFAA8C94-DB50-4D9E-9FB0-60439673DEF9
-updated_at: 12/22/2016 5:13 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17600c3a31aaf782880f045fab1671fdd067cc23/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -98,7 +98,7 @@ Properties that you can change include settings for the name of the template, it
 Changes that you make to a template affect only the template.
 Changes do not affect any existing virtual machines that were previously created by using this template.
 
-If you want to change the properties of a virtual disk drive, virtual floppy drive, virtual DVD drive, virtual network adapter, virtual SCSI adapter or virtual COM port associated with a specific template, you can use Set-SCVirtualDiskDrive, Set-SCVirtualFloppyDrive, Set-SCVirtualDVDDrive, Set-SCVirtualNetworkAdapter, Set-SCVirtualScsiAdapter, or Set-SCVirtualCOMPort cmdlets, respectively.
+If you want to change the properties of a virtual disk drive, virtual floppy drive, virtual DVD drive, virtual network adapter, virtual SCSI adapter or virtual COM port associated with a specific template, you can use **Set-SCVirtualDiskDrive**, **Set-SCVirtualFloppyDrive**, **Set-SCVirtualDVDDrive**, **Set-SCVirtualNetworkAdapter**, **Set-SCVirtualScsiAdapter**, or **Set-SCVirtualCOMPort** cmdlets, respectively.
 
 ## EXAMPLES
 
@@ -121,7 +121,7 @@ PS C:\> ForEach ($VMTemplate in $VMTemplates) {Set-SCVMTemplate $VMTemplate -Own
 
 The first command gets all highly available virtual machine template objects and stores the objects in the $VMTemplates object array.
 
-The second command uses a foreach loop to specify a new owner for each of the templates in the $VMTemplates array.
+The second command uses a **ForEach** loop to specify a new owner for each of the templates in the $VMTemplates array.
 
 For information about the standard PowerShell **ForEach** loop statement, type `Get-Help about_ForEach`.
 

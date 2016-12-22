@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: DFECB9BC-1011-4128-92F2-4E7B597840B8
-updated_at: 12/22/2016 3:49 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageQoSPolicy.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageQoSPolicy.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/8c8c20cafa5c1354636ca569508504b8373fce2c/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageQoSPolicy.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageQoSPolicy.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -260,7 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### StorageQoSPolicy
 This cmdlet returns a **StorageQoSPolicy** object.
-**StorageQoSPolicy**
+
 
 ## NOTES
 

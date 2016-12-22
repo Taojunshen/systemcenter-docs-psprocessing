@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 625431E8-2EBC-4206-8F95-653B05B9E492
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -73,8 +73,6 @@ Set-SCVirtualNetworkAdapter [-VLanEnabled <Boolean>] [-VLanID <UInt16>] [-VMMSer
 The **Set-SCVirtualNetworkAdapter** cmdlet changes one or more properties of a virtual network adapter associated with a virtual machine, virtual machine template, or hardware profile used to create virtual machines in a Virtual Machine Manager (VMM) environment. 
 
 Operations you can perform include the following: 
-
-
 
 - Connect a virtual network adapter to a virtual network. 
 
@@ -426,11 +424,8 @@ Accept wildcard characters: False
 ### -MACAddress
 Specifies the MAC address, or a set of MAC addresses, for a physical or virtual network adapter on a computer.
 
-Example format for a single MAC address: 
-`-MACAddress "00-15-5D-B4-DC-00"`
-
-Example format for a set of MAC addresses: 
-`-MACAddress "00-15-5D-B4-DC-00", "00-1A-A0-E3-75-29"`
+- Example format for a single MAC address: `-MACAddress "00-15-5D-B4-DC-00"`
+- Example format for a set of MAC addresses: `-MACAddress "00-15-5D-B4-DC-00", "00-1A-A0-E3-75-29"`
 
 ```yaml
 Type: String
@@ -463,11 +458,9 @@ Accept wildcard characters: False
 ### -NetworkLocation
 Specifies the network location for a physical network adapter or for a virtual network adapter, or changes the default network location of a host's physical network adapter. 
 
-
-
 Example formats: 
-`-NetworkLocation $NetLoc` ($NetLoc might contain Corp.Contoso.com)
-`-OverrideNetworkLocation $True -NetworkLocation "HostNICNewLocation.Contoso.com"`
+- `-NetworkLocation $NetLoc` ($NetLoc might contain Corp.Contoso.com)
+- `-OverrideNetworkLocation $True -NetworkLocation "HostNICNewLocation.Contoso.com"`
 
 ```yaml
 Type: String
@@ -687,11 +680,8 @@ Accept wildcard characters: False
 ### -VLanEnabled
 Indicates whether to enable a virtual LAN (VLAN) for use by virtual machines on a Hyper-V or Citrix XenServer host. 
 
-
-
-Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
-
-Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk"  -VLANTrunkID 1,2,100,200,1124`
+- Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
+- Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk"  -VLANTrunkID 1,2,100,200,1124`
 
 ```yaml
 Type: Boolean
@@ -837,7 +827,7 @@ Specifies a virtual network adapter object for a virtual machine.
 
 Types of hosts support the following number of virtual network adapters: 
 
- -- Hyper-V. 
+- Hyper-V. 
 Up to four emulated adapters per virtual machine.
 There is no driver available for an emulated network adapter on a Windows Server 2003 x64 guest operating system.
 

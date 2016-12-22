@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 54BB0C0C-A038-4A8C-9ABB-31B83F527CA3
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostCluster.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostCluster.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostCluster.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostCluster.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -45,10 +45,10 @@ The placement process calculates whether adding a new virtual machine to the hos
 - Cluster Refresher.
 The host cluster refresher calculates, at periodic  intervals, whether a host cluster is over-committed or not based on the following events: 
 
-     -- A change in the value specified for the *ClusterReserve* parameter. 
-     -- The failure or removal of nodes from the host cluster. 
-     -- The addition of nodes to the host cluster. 
-     -- The discovery of new virtual machines on nodes in the host cluster.
+ - A change in the value specified for the *ClusterReserve* parameter. 
+ - The failure or removal of nodes from the host cluster. 
+ - The addition of nodes to the host cluster. 
+ - The discovery of new virtual machines on nodes in the host cluster.
 
 The following examples illustrate how over-commitment works.
 

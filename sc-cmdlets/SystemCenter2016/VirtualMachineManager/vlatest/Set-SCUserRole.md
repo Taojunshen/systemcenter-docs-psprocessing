@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 662BB479-9F4B-48FB-8C2A-6E65593C0FBD
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -616,7 +616,7 @@ Accept wildcard characters: False
 
 ### -UserRoleDataPath
 Specifies the path of a library share that members of a Self-Service user role can use to upload data.
-Specify the path in this format: \\\\LibraryServerName\LibraryShareName.
+Specify the path in this format: \\LibraryServerName\LibraryShareName.
 
 ```yaml
 Type: String
@@ -747,7 +747,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 * To list all available permissions that you can specify for self-service users, type the following command: 
 
-`PS C:\\\> \[enum\]::GetValues(\[Microsoft.VirtualManager.Remoting.SelfServicePermission\])`
+`PS C:\> [enum]::GetValues([Microsoft.VirtualManager.Remoting.SelfServicePermission])`
 
   
 

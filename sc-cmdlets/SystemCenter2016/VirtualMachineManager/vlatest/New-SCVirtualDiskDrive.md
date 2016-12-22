@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: A371F026-414C-4EA4-9337-F44D239AEE66
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -400,7 +400,7 @@ PS C:\> New-SCVirtualMachine -Name "VM10" -Description "New Virtual Machine VM10
 The first command generates a GUID, and the stores it as a string in the $JobGroupID variable.
 The job group ID functions as an identifier that groups subsequent commands that include $JobGroupID into a single job group.
 
-The second command gets the virtual hard disk object from the VMM library location \\\\LibraryServer01.Contoso.com\MSSCVMMLibrary\VHDs\Blank Disk - Large.vhd, and then stores that object in the $VHD variable.
+The second command gets the virtual hard disk object from the VMM library location \\LibraryServer01.Contoso.com\MSSCVMMLibrary\VHDs\Blank Disk - Large.vhd, and then stores that object in the $VHD variable.
 
 The third command creates a virtual hard disk drive object and assigns the new object to IDE Bus 0 and LUN 1.
 This command also attaches the virtual hard disk stored in $VHD to the new object.

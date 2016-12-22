@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: BBACC3EC-0CDB-409C-ADE2-E000143C9633
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -58,7 +58,7 @@ The first command gets the virtual machine object named VM01, and then stores th
 
 The second command gets the library server object named LibServer01, and then stores that object in the $Library variable.
 
-The last command migrates VM01 from its host and stores it to the location \\\\LibServer01.Contoso.com\Library01\VMs.
+The last command migrates VM01 from its host and stores it to the location \\LibServer01.Contoso.com\Library01\VMs.
 The command automatically uses the fastest available transfer type.
 
 ### Example 2: Store a virtual machine in the library asynchronously
@@ -73,7 +73,7 @@ The first command gets the virtual machine object named VM02, and then stores th
 
 The second command gets the library server object named LibServer02, and then stores that object in the $Library variable.
 
-The third command migrates VM02 to the location \\\\LibServer02.Contoso.com\Library02\VMs.
+The third command migrates VM02 to the location \\LibServer02.Contoso.com\Library02\VMs.
 The command specifies the *RunAsynchronously* parameter to return control to the command shell immediately.
 The command specifies the *JobVariable* parameter tracks job progress, and stores a record of its progress in $SaveVMJob.
 For *JobVariable*, you do not specify the dollar sign ($) to create the variable.
@@ -91,7 +91,7 @@ The first command gets the virtual machine named VM03, and then stores that obje
 
 The second command gets the library server object named LibServer01, and then stores that object in the $LibServer variable.
 
-The last command stores VM03 to the location \\\\LibServer01.Contoso.com\Library01\VMs.
+The last command stores VM03 to the location \\LibServer01.Contoso.com\Library01\VMs.
 The *UseLAN* parameter forces a network transfer over the LAN even if a faster transfer mechanism is available.
 
 ## PARAMETERS

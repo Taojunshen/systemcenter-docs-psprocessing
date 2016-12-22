@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 72562DF6-7CED-423A-8C44-6AD911A4CC9A
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualCOMPort.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualCOMPort.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualCOMPort.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualCOMPort.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -115,7 +115,7 @@ The first command gets the virtual machine named VM02, and then stores that obje
 
 The second command gets the virtual COM port named COM1 from VM02, and then stores that object in the $COM1 variable.
 
-The last command connects the virtual COM port in $COM1 to the named pipe \\\\Contoso\Pipe\PipeName.
+The last command connects the virtual COM port in $COM1 to the named pipe \\Contoso\Pipe\PipeName.
 
 ### Example 2: Disconnect a virtual COM port
 ```
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Specifies a named pipe to which a virtual COM port connects.
 Typical uses include connecting a virtual machine to a debugging program on the host.
 You can also create a virtual null modem cable between two virtual machines.
-Specify a pipe in the following format: \\\\.\ComputerName\Pipe\PipeName
+Specify a pipe in the following format: \\.\ComputerName\Pipe\PipeName
 
 ```yaml
 Type: String

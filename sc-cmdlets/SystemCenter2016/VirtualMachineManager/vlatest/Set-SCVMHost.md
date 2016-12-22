@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: E5A78A88-8D7B-417B-B934-69AD6EA613C6
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -214,10 +214,10 @@ Typically, the BMC address and its connection to the network are separate from t
 Alternatively, some computers do use a standard network adapter to provide a single address for the BMC and for the network adapter.
 However, the BMC address has a unique port and is thus uniquely identifiable on the network.
 
-Example IPv4 format:       `-BMCAddress "10.0.0.21"`
-Example Ipv6 format:       `-BMCAddress "2001:4898:2a:3:657b:9c7a:e1f0:6829"`
-Example FQDN format:       `-BMCAddress "Computer01.Contoso.com"`
-Example NetBIOS format:    `-BMCAddress "Computer01"`
+- Example IPv4 format:       `-BMCAddress "10.0.0.21"`
+- Example Ipv6 format:       `-BMCAddress "2001:4898:2a:3:657b:9c7a:e1f0:6829"`
+- Example FQDN format:       `-BMCAddress "Computer01.Contoso.com"`
+- Example NetBIOS format:    `-BMCAddress "Computer01"`
 
 Note: By default, VMM uses an IP address or FQDN for the *BMCAddress*.
 However, it is also possible to create a Windows PowerShell module that enables you to specify other types of addresses as the BMC address.

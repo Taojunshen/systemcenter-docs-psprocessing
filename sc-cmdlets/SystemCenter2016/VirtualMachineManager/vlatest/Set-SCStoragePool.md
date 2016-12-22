@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 83859642-7FC8-444C-B06B-46880F5DF408
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStoragePool.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStoragePool.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStoragePool.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStoragePool.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -113,9 +113,9 @@ Accept wildcard characters: False
 Specifies the default fault domain for new virtual disks created in this storage pool.
 The acceptable values for this parameter are:
 
-- 1,  PhysicalDisk
-- 2,  StorageEnclosure
-- 3,  Node
+- 1: PhysicalDisk
+- 2: StorageEnclosure
+- 3: Node
 
 ```yaml
 Type: FaultDomainAwarenessType

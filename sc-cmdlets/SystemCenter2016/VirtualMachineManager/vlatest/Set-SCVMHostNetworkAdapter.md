@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: A0F6131F-C2B4-43BF-B605-977BB823E668
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -320,10 +320,8 @@ Accept wildcard characters: False
 ### -VLanEnabled
 Enables a virtual LAN (VLAN) for use by virtual machines on a Hyper-V or Citrix XenServer host. 
 
-
-Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
-
-Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk" -VLANTrunkID 1,2,100,200,1124`
+- Example format for a single VLAN: `-VLANEnabled -VLANMode "Access" -VLANID 35`
+- Example format for multiple VLANs: `-VLANEnabled -VLANMode "Trunk" -VLANTrunkID 1,2,100,200,1124`
 
 ```yaml
 Type: Boolean
@@ -342,17 +340,12 @@ Assigns a numerical identifier in the range 1-4094 to a virtual network adapter 
 
 Configure a VLanID on a Hyper-V, VMware ESX, or Citrix XenServer host: 
 
-
- -- On an externally bound physical network adapter when the VLan mode is Access.
+- On an externally bound physical network adapter when the VLan mode is Access.
 
 Configure a VLanID on a virtual network adapter of a virtual machine: 
 
-
- -- Bound to a physical network adapter on the host, or
-
- -- Bound to an internal virtual network on the host. 
-
-
+- Bound to a physical network adapter on the host, or
+- Bound to an internal virtual network on the host. 
 
 Example format: `-VLanEnabled -VLanMode "Access" -VLANID 35`
 

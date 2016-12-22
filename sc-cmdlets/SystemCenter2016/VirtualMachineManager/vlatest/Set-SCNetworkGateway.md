@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 4BCB788C-DC9C-4C89-987C-227666BA390A
-updated_at: 12/22/2016 3:49 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkGateway.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkGateway.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/8c8c20cafa5c1354636ca569508504b8373fce2c/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkGateway.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkGateway.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -106,14 +106,12 @@ Accept wildcard characters: False
 Specifies the name of the company that manufactured a physical device.
 Valid characters include:
 
-- 
-
-Letters (a-z) 
+- Letters (a-z) 
 - Numbers (0-9) 
 - Underscore (_)
 - Hyphen (-)
 - Dot (.)
--  Single quote (')
+- Single quote (')
 
 ```yaml
 Type: String

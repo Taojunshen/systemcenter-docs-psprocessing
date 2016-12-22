@@ -3,11 +3,11 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: E9D27CEE-A713-43A2-BC88-211D22638AE3
-updated_at: 12/22/2016 3:56 PM
+updated_at: 12/22/2016 11:19 PM
 ms.date: 12/22/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/d74e247404a4c865a6c8da735e1b4d296bcb074e/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -76,7 +76,7 @@ PS C:\> Add-SCLibraryServer -ComputerName "HAFileServer01.Contoso.com" -Credenti
 PS C:\> Add-SCLibraryShare -SharePath "\\HAFileServer01.Contoso.com\LibShare" -Credential $Credential
 ```
 
-This example assumes the following: you have created a cluster with at least two nodes, you have created a highly available file server, and you have created a share on the highly available file server (in this example, this is represented by \\\\HAFIleServer01.Contoso.com\LibShare).
+This example assumes the following: you have created a cluster with at least two nodes, you have created a highly available file server, and you have created a share on the highly available file server (in this example, this is represented by \\HAFIleServer01.Contoso.com\LibShare).
 
 The first command uses **Get-Credential** to prompt you to supply a user name and password and stores your credentials in $Credential.
 The required credentials for this operation are a domain account with administrator rights on each node of a failover cluster hosting the highly available file server that you want to add to VMM.

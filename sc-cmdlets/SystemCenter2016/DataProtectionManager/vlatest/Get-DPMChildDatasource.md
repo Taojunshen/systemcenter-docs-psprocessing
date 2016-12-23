@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 9D5FB7D7-361B-4D09-A80F-CF6B67DFF80A
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMChildDatasource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMChildDatasource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMChildDatasource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMChildDatasource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ You can protect file systems at the child data source level, but you can protect
 
 ### Example 1: Get a child data source
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer07"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer07"
 PS C:\> $PObjects = Get-DPMDatasource -ProtectionGroup $PGroup
 PS C:\> Get-DPMChildDatasource -ChildDatasource $PObjects[1] -Inquire
 ```
@@ -152,4 +152,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
 
 [Remove-DPMChildDatasource](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMChildDatasource.md)
-

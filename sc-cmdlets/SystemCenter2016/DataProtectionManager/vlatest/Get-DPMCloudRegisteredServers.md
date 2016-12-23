@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: B21AEC12-9498-4377-A569-43572122B50D
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRegisteredServers.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRegisteredServers.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRegisteredServers.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRegisteredServers.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,7 +20,7 @@ ms.service: system-center
 # Get-DPMCloudRegisteredServers
 
 ## SYNOPSIS
-Retrieves a list of servers registered to the specified vault.
+Gets a list of servers registered to the specified vault.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-DPMCloudRegisteredServers [[-DPMServerName] <String>] [-VaultCredentialsFile
 ```
 
 ## DESCRIPTION
-The **Get-DPMCloudRegisteredServers** cmdlet retrieves a list of servers registered to a vault.
+The **Get-DPMCloudRegisteredServers** cmdlet gets a list of servers registered to a vault.
 This should be the same vault to which the local System Center 2016 - Data Protection Manager (DPM) Server, which is specified in the *DPMServerName* parameter, is registered.
 
 ## EXAMPLES
@@ -40,7 +40,7 @@ This should be the same vault to which the local System Center 2016 - Data Prote
 PS C:\>$RS = Get-DPMCloudRegisteredServers -VaultCredentialsFilePath "DPMTESTVault_Friday, September 5, 2014.VaultCredentials"
 ```
 
-This command returns the servers registered to the vault for which the vault credential file is "DPMTESTVault_Friday, September 5, 2014.VaultCredentials".
+This command returns the servers registered to the vault for which the vault credential file is DPMTESTVault_Friday, September 5, 2014.VaultCredentials.
 
 ## PARAMETERS
 
@@ -120,4 +120,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMCloudDatasource](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudDatasource.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

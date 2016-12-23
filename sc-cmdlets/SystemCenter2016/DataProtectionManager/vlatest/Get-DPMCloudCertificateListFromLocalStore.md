@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 3AA26EBB-8A85-4BB0-BD11-66D6CA6F51C1
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/23/2016 8:49 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudCertificateListFromLocalStore.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudCertificateListFromLocalStore.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudCertificateListFromLocalStore.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/9548fb95a3c4060e9bbb3fa5f39ca1ed43a4f218/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudCertificateListFromLocalStore.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,6 +20,7 @@ ms.service: system-center
 # Get-DPMCloudCertificateListFromLocalStore
 
 ## SYNOPSIS
+Gets the DPM cloud certificate list from the local store.
 
 ## SYNTAX
 
@@ -28,23 +29,14 @@ Get-DPMCloudCertificateListFromLocalStore [[-DPMServerName] <String>] [<CommonPa
 ```
 
 ## DESCRIPTION
+The **Get-DPMCloudCertificateListFromLocalStore** cmdlet gets the DPM cloud certificate list from the local store.
 
 ## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
-
-### 2:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -DPMServerName
-
+Specifies the name of a DPM server for which this cmdlet gets the certificate list.
 
 ```yaml
 Type: String
@@ -70,4 +62,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

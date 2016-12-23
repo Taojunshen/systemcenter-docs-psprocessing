@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: CCBB6876-08A8-4F5B-BB01-9A1D46856978
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMJob.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMJob.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMJob.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMJob.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -78,18 +78,18 @@ The **Get-DPMJob** cmdlet gets current and previous jobs on a System Center 2016
 
 ### Example 1: Retrieve recent jobs
 ```
-PS C:\>Get-DPMJob -DPMServerName "Contoso-DPMServer" -Newest
+PS C:\> Get-DPMJob -DPMServerName "Contoso-DPMServer" -Newest
 ```
 
 This command returns the latest jobs run on the DPM server named Contoso-DPMServer.
 
 ### Example 2: Retrieve recent jobs for a protection group
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "Contoso-DPMServer"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "Contoso-DPMServer"
 PS C:\> Get-DPMJob -ProtectionGroup $PGroup
 ```
 
-The first command uses the **Get-ProtectionGroup** cmdlet to retrieve the protection group, and then stores the group in the $PGroup variable.
+The first command uses the **Get-ProtectionGroup** cmdlet to get the protection group, and then stores the group in the $PGroup variable.
 
 The second command uses the **Get-DPMJob** cmdlet to retrieve the recent jobs for the protection group in $PGroup.
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -From
 Specifies the starting time in a range.
-The cmdlet retrieves jobs that fall into this range.
+The cmdlet gets jobs that fall into this range.
 Use the *To* parameter to specify the ending time in the range.
 
 ```yaml
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 
 ### -ProtectionGroup
 Specifies an array of protection groups for which this cmdlet gets jobs.
-To obtain a **ProtectionGroup** object, use the Get-DPMProtectionGroup cmdlet.
+To obtain a **ProtectionGroup** object, use the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet.
 
 ```yaml
 Type: ProtectionGroup[]
@@ -371,4 +371,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Restart-DPMJob](xref:SystemCenter2016/DataProtectionManager/vlatest/Restart-DPMJob.md)
 
 [Stop-DPMJob](xref:SystemCenter2016/DataProtectionManager/vlatest/Stop-DPMJob.md)
-

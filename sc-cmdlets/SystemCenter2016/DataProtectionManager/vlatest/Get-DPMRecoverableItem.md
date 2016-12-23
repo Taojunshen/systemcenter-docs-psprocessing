@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 148931AC-6D52-43F6-A49E-EAA5EA2E2991
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoverableItem.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoverableItem.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoverableItem.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoverableItem.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -57,7 +57,7 @@ The recoverable items based on source are as follows:
 
 ### Example 1: Get a recoverable item in a recovery point
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
 PS C:\> $PObjects = Get-DPMDatasource -ProtectionGroup $PGroup
 PS C:\> $RPoint = Get-DPMRecoveryPoint -Datasource $PObjects
 PS C:\> Get-DPMRecoverableItem -RecoverableItem $RPoint -BrowseType Child
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -RecoveryPointForShares
 Specifies a recovery point object.
-To obtain a recovery point object, use the Get-DPMRecoveryPoint cmdlet.
+To obtain a recovery point object, use the [Get-DPMRecoveryPoint](./Get-DPMRecoveryPoint.md) cmdlet.
 
 ```yaml
 Type: RecoverySource
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ### -SearchOption
 Specifies the search options.
-You can use the New-DPMSearchOption cmdlet to create an object that specifies search options for recoverable objects.
+You can use the [New-DPMSearchOption](./New-DPMSearchOption.md) cmdlet to create an object that specifies search options for recoverable objects.
 
 ```yaml
 Type: SearchSpecifications
@@ -215,4 +215,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Restore-DPMRecoverableItem](xref:SystemCenter2016/DataProtectionManager/vlatest/Restore-DPMRecoverableItem.md)
 
 [Get-DPMDatasource](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasource.md)
-

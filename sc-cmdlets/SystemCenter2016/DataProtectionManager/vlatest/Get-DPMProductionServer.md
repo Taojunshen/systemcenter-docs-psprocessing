@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 3FA00C73-BD40-4FEF-8C8C-CE3F50A0A7D9
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionServer.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionServer.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionServer.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionServer.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,7 +35,7 @@ The **Get-DPMProductionServer** cmdlet gets computers on which the System Center
 
 ### Example 1: Get computers protected by a DPM server
 ```
-PS C:\>Get-DPMProductionServer -DPMServerName "DpmTsqa01"
+PS C:\> Get-DPMProductionServer -DPMServerName "DpmTsqa01"
 ```
 
 This command gets the list of computers on which the protection agents is installed for the DPM server named DpmTsqa01.
@@ -77,4 +77,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Disable-DPMProductionServer](xref:SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMProductionServer.md)
 
 [Update-DPMProductionServer](xref:SystemCenter2016/DataProtectionManager/vlatest/Update-DPMProductionServer.md)
-

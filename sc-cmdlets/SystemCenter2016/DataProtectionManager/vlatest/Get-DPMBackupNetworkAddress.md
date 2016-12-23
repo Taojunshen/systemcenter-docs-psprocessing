@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: A27ABF28-89DC-4852-B628-7FB78E0294AD
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupNetworkAddress.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupNetworkAddress.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupNetworkAddress.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupNetworkAddress.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -36,7 +36,7 @@ DPM lets you configure backup network addresses so that DPM backups do not slow 
 
 ### Example 1: Get a backup network
 ```
-PS C:\>Get-DPMBackupNetworkAddress -DpmServerName "DPMServer07"
+PS C:\> Get-DPMBackupNetworkAddress -DpmServerName "DPMServer07"
 ```
 
 This command gets the backup network or networks defined for a DPM server named DPMServer07.
@@ -72,4 +72,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Add-DPMBackupNetworkAddress](xref:SystemCenter2016/DataProtectionManager/vlatest/Add-DPMBackupNetworkAddress.md)
 
 [Remove-DPMBackupNetworkAddress](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMBackupNetworkAddress.md)
-

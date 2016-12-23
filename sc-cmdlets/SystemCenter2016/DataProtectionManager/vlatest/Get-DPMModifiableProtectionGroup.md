@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 1DAD3052-FF84-4E20-B55D-494C1D643E8D
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMModifiableProtectionGroup.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMModifiableProtectionGroup.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMModifiableProtectionGroup.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMModifiableProtectionGroup.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -31,12 +31,12 @@ Get-DPMModifiableProtectionGroup [-ProtectionGroup] <ProtectionGroup> [<CommonPa
 ## DESCRIPTION
 The **Get-DPMModifiableProtectionGroup** cmdlet gets a System Center 2016 - Data Protection Manager (DPM) protection group in an editable mode.
 
-Once you have made the changes to the protection group, save the changes by using the Set-DPMProtectionGroup cmdlet.
+Once you have made the changes to the protection group, save the changes by using the [Set-DPMProtectionGroup](./Set-DPMProtectionGroup.md) cmdlet.
 
 Follow this sequence of steps when you work with a modifiable protection group:
 
 - Run the **Get-DPMProtectionGroup** cmdlet to get the unmodifiable protection group.
-- Run the Get-DPMModifiableProtectionGroup cmdlet to get the protection group from the previous step in modifiable form.
+- Run the **Get-DPMModifiableProtectionGroup** cmdlet to get the protection group from the previous step in modifiable form.
 - Perform actions on the protection group.
 - Run the **Set-DPMProtectionGroup** cmdlet to save the changed protection group.
 
@@ -44,7 +44,7 @@ Follow this sequence of steps when you work with a modifiable protection group:
 
 ### Example 1: Get a protection group in a modifiable state
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer07"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer07"
 PS C:\> Get-DPMModifiableProtectionGroup -ProtectionGroup $PGroup
 ```
 
@@ -86,4 +86,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMProtectionGroup.md)
 
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
-

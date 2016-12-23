@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 3A4199DA-6427-4EE8-B496-BB8659191627
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionCluster.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionCluster.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionCluster.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionCluster.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,7 +35,7 @@ The **Get-DPMProductionCluster** cmdlet gets all clusters on which the System Ce
 
 ### Example1: Get clusters for a server
 ```
-PS C:\>Get-DPMProductionCluster -DPMServerName "DPMServer02"
+PS C:\> Get-DPMProductionCluster -DPMServerName "DPMServer02"
 ```
 
 This command gets the clusters for the DPM server named DPMServer02.
@@ -74,4 +74,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMProductionVirtualName](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionVirtualName.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

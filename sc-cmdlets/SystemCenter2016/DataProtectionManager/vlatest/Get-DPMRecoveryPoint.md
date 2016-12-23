@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: AA3227F9-9386-4DE4-A710-2F42450CA90A
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryPoint.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryPoint.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryPoint.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryPoint.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -41,7 +41,7 @@ The **Get-DPMRecoveryPoint** cmdlet gets all available recovery points for a dat
 
 ### Example 1: Get a recovery point
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
 PS C:\> $PObjects = Get-DPMDatasource -ProtectionGroup $PGroup
 PS C:\> Get-DPMRecoveryPoint -Datasource $PObjects
 ```
@@ -159,4 +159,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-DPMRecoveryPoint](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRecoveryPoint.md)
 
 [Get-DPMRecoveryPointLocation](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryPointLocation.md)
-

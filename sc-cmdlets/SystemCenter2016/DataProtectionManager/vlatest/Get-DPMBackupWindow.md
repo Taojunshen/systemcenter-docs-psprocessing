@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 0BE79931-F79A-4E2C-BE7F-036ABB513590
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/23/2016 8:49 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupWindow.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupWindow.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupWindow.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/9548fb95a3c4060e9bbb3fa5f39ca1ed43a4f218/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupWindow.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -52,7 +52,7 @@ The second command gets settings for the backup window of the protection group s
 
 ### -ProtectionGroup
 Specifies a protection group for which this cmdlet gets settings.
-To obtain a **ProtectionGroup** object, use the Get-DPMProtectionGroup cmdlet.
+To obtain a **ProtectionGroup** object, use the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet.
 
 ```yaml
 Type: ProtectionGroup
@@ -80,4 +80,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
 
 [Set-DPMBackupWindow](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMBackupWindow.md)
-

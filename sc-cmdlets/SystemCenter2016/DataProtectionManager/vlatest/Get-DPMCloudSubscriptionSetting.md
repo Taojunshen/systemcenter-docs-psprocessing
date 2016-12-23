@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 90CB636A-2E2E-4291-9121-983BE693E0D2
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudSubscriptionSetting.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudSubscriptionSetting.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudSubscriptionSetting.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudSubscriptionSetting.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,7 +20,7 @@ ms.service: system-center
 # Get-DPMCloudSubscriptionSetting
 
 ## SYNOPSIS
-Returns configuration settings for an Azure Online Backup subscription.
+Gets configuration settings for an Azure Online Backup subscription.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ The **Get-DPMCloudSubscriptionSetting** cmdlet returns configuration settings fo
 
 ### Example 1: Get configuration settings for an Azure Online Backup subscription
 ```
-PS C:\>$Setting = Get-DPMCloudSubscriptionSetting -DPMServerName "TestingServer"
+PS C:\> $Setting = Get-DPMCloudSubscriptionSetting -DPMServerName "TestingServer"
 ```
 
 This command returns configuration settings for the Azure Online Backup subscription on the DPM server named TestingServer.
@@ -73,4 +73,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-DPMCloudSubscriptionSetting](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMCloudSubscriptionSetting.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

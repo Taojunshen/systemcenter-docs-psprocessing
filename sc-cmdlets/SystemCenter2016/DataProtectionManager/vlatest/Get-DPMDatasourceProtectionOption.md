@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 1D87C419-D4DB-4149-90C5-6DBF69F97458
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasourceProtectionOption.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasourceProtectionOption.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasourceProtectionOption.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasourceProtectionOption.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -47,7 +47,7 @@ Specify the type of data source in the protection group for which the cmdlet ret
 
 ### Example 1: Get protection options from a server
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
 PS C:\> Get-DPMDatasourceProtectionOption -ProtectionGroup $PGroup[0] -FileSystem
 ```
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -ProtectionGroup
 Specifies a protection group for which this cmdlet returns options.
-To obtain a **ProtectionGroup** object, use the Get-DPMProtectionGroup cmdlet.
+To obtain a **ProtectionGroup** object, use the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet.
 
 ```yaml
 Type: ProtectionGroup
@@ -135,4 +135,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-DPMDatasourceProtectionOption](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMDatasourceProtectionOption.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

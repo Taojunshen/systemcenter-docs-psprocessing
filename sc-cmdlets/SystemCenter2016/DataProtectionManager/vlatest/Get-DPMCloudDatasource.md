@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 869BCA9D-8652-4C19-AE09-518EF7C108CF
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudDatasource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudDatasource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudDatasource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudDatasource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,7 +20,7 @@ ms.service: system-center
 # Get-DPMCloudDatasource
 
 ## SYNOPSIS
-Retrieves a list of cloud-protected data sources, protected by a DPM Server registered to the same vault as the local DPM Server.
+Gets a list of cloud-protected data sources, protected by a DPM Server registered to the same vault as the local DPM Server.
 
 ## SYNTAX
 
@@ -30,19 +30,19 @@ Get-DPMCloudDatasource [-CloudProtectedDPMServer] <CloudBackupServer> [-Encrypti
 ```
 
 ## DESCRIPTION
-The **Get-DPMCloudDatasource** cmdlet retrieves a list of cloud-protected data sources that are protected by a System Center 2016 - Data Protection Manager (DPM) Server registered to the same vault as the local DPM Server.
+The **Get-DPMCloudDatasource** cmdlet gets a list of cloud-protected data sources that are protected by a System Center 2016 - Data Protection Manager (DPM) Server registered to the same vault as the local DPM Server.
 This cmdlet can be used to get the data sources so that data can be recovered from the cloud recovery points of the data sources.
 
 ## EXAMPLES
 
 ### Example 1: Get cloud-protected data sources from a server
 ```
-PS C:\>$RS = Get-DPMCloudRegisteredServers -VaultCredentialsFilePath "DPMTESTVault_Friday, September 5, 2014.VaultCredentials"
+PS C:\> $RS = Get-DPMCloudRegisteredServers -VaultCredentialsFilePath "DPMTESTVault_Friday, September 5, 2014.VaultCredentials"
 PS C:\> $Passphrase = ConvertTo-SecureString -string "passphrase123456789" -AsPlainText -Force
 PS C:\> $CPD = Get-DPMCloudDatasource -CloudProtectedDPMServer $RS[0] -EncryptionPassphrase $Passphrase
 ```
 
-The first command returns the servers registered to the vault for which vault credential file is "DPMTESTVault_Friday, September 5, 2014.VaultCredentials".
+The first command returns the servers registered to the vault for which vault credential file is DPMTESTVault_Friday, September 5, 2014.VaultCredentials.
 
 The second command converts the string passphrase123456789 to a secure string and assigns the secure string to the variable named $Passphrase.
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ### -CloudProtectedDPMServer
 Specifies a server from which a list of cloud-protected data sources are to be retrieved.
 This server must be registered to the same vault as the local DPM Server.
-Use Get-DPMCloudRegisteredServers cmdlet to get a list of all the servers registered to a particular vault.
+Use the [Get-DPMCloudRegisteredServers](./Get-DPMCloudRegisteredServers.md) cmdlet to get a list of all the servers registered to a particular vault.
 
 ```yaml
 Type: CloudBackupServer
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 
 ### -JobStateChangedHandler
 Specifies an event handler for **Job.StateChanged** events.
-This is not needed when running in PowerShell console and is required only with a Graphical User Interface (GUI) application that is fetching data using PowerShell.
+This is not needed when running in the Windows PowerShell console and is required only with a Graphical User Interface (GUI) application that is fetching data using Windows PowerShell.
 Use this parameter in conjunction with the *Async* parameter.
 
 ```yaml
@@ -159,4 +159,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Get-DPMCloudRegisteredServers](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRegisteredServers.md)
-

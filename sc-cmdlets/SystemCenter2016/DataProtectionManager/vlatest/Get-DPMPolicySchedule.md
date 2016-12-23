@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: C060E169-C585-411B-8F85-2E01DF5DDFDB
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPolicySchedule.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPolicySchedule.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPolicySchedule.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPolicySchedule.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -46,7 +46,7 @@ The **Get-DPMPolicySchedule** cmdlet returns the schedule for protection jobs, s
 
 ### Example 1: Get a short-term synchronization schedule for a protection group
 ```
-PS C:\>$PGroup = Get-ProtectionGroup -DPMServerName "DPMServer02"
+PS C:\> $PGroup = Get-ProtectionGroup -DPMServerName "DPMServer02"
 PS C:\> Get-DPMPolicySchedule -ProtectionGroup $PGroup -ShortTerm
 ```
 
@@ -56,7 +56,7 @@ The second command gets the short-term synchronization schedule from the protect
 
 ### Example 2: Get a long-term synchronization schedule for a protection group
 ```
-PS C:\>$PGroup = Get-ProtectionGroup -DPMServerName "DPMServer02"
+PS C:\> $PGroup = Get-ProtectionGroup -DPMServerName "DPMServer02"
 PS C:\> Get-DPMPolicySchedule -ProtectionGroup $PGroup -LongTerm
 ```
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -ProtectionGroup
 Specifies a protection group on which this cmdlet operates.
-To obtain a **ProtectionGroup** object, use the Get-DPMProtectionGroup cmdlet.
+To obtain a **ProtectionGroup** object, use the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet.
 
 ```yaml
 Type: ProtectionGroup
@@ -150,4 +150,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-DPMPolicySchedule](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMPolicySchedule.md)
 
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
-

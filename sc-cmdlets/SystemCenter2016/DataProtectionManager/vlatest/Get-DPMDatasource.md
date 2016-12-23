@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 53B00DA7-D1F3-4BB7-B0D6-93D5E22D36E6
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasource.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasource.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasource.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasource.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -59,7 +59,7 @@ Get-DPMDatasource [-ProtectionGroup] <ProtectionGroup> [<CommonParameters>]
 ## DESCRIPTION
 The **Get-DPMDatasource** cmdlet gets the protected and unprotected data on a computer in System Center 2016 - Data Protection Manager (DPM).
 The output displays only objects at levels that allow you to apply protection.
-Use the Get-DPMChildDatasource cmdlet to see files in the data source.
+Use the [Get-DPMChildDatasource](./Get-DPMDatasource.md) cmdlet to see files in the data source.
 
 This cmdlet can also return the following information about the data on the computer.
 
@@ -85,7 +85,7 @@ The second command gets the data sources on the second server in $DpmPServer.
 
 ### Example 2: Return protected data sources in a protection group
 ```
-PS C:\>$DpmPServer = Get-DPMProtectionGroup -DPMServerName "TestingServer"
+PS C:\> $DpmPServer = Get-DPMProtectionGroup -DPMServerName "TestingServer"
 PS C:\> Get-DPMDatasource -ProtectionGroup $DpmPServer
 ```
 
@@ -96,14 +96,14 @@ The second command returns the data sources from the protection group in $DpmPSe
 
 ### Example 3: Return inactive data sources on a server
 ```
-PS C:\>Get-DPMDatasource -DPMServerName "TestingServer" -Inactive
+PS C:\> Get-DPMDatasource -DPMServerName "TestingServer" -Inactive
 ```
 
 This command retrieves the inactive data sources on the DPM server named TestingServer.
 
 ### Example 4: Get a data source from a search location
 ```
-PS C:\>Get-DPMDatasource -DPMServerName "TestingServer" -SearchPath "F:\" -ProductionServer "Test.contoso.com"
+PS C:\> Get-DPMDatasource -DPMServerName "TestingServer" -SearchPath "F:\" -ProductionServer "Test.contoso.com"
 ```
 
 This command retrieves a data source from the search path F:\ on the protected server Test.contoso.com.
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 
 ### -ProtectionGroup
 Specifies the a protection group on which this cmdlet acts.
-To obtain a **ProtectionGroup** object, use the Get-DPMProtectionGroup cmdlet.
+To obtain a **ProtectionGroup** object, use the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet.
 
 ```yaml
 Type: ProtectionGroup
@@ -345,4 +345,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMProductionServer](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionServer.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

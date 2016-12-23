@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 9F12F2BD-E7D0-4244-A662-CC8C46A4C2C0
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/23/2016 8:49 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMConsistencyCheckWindow.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMConsistencyCheckWindow.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMConsistencyCheckWindow.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/9548fb95a3c4060e9bbb3fa5f39ca1ed43a4f218/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMConsistencyCheckWindow.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -30,7 +30,7 @@ Get-DPMConsistencyCheckWindow [-ProtectionGroup] <ProtectionGroup> [<CommonParam
 
 ## DESCRIPTION
 The **Get-DPMConsistencyCheckWindow** cmdlet gets the consistency check window settings for a System Center 2016 - Data Protection Manager (DPM) protection group.
-For more information about consistency check windows, see the Set-DPMConsistencyCheckWindow cmdlet.
+For more information about consistency check windows, see the [Set-DPMConsistencyCheckWindow](./Set-DPMConsistencyCheckWindow.md) cmdlet.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ The second command gets settings for the consistency check window of the protect
 
 ### -ProtectionGroup
 Specifies a protection group for which this cmdlet gets settings.
-To obtain a **ProtectionGroup** object, use the Get-DPMProtectionGroup cmdlet.
+To obtain a **ProtectionGroup** object, use the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet.
 
 ```yaml
 Type: ProtectionGroup
@@ -80,4 +80,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
 
 [Set-DPMConsistencyCheckWindow](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMConsistencyCheckWindow.md)
-

@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 4344048C-15A8-4E67-ACD7-44FF631BDBBB
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMInitialOnlineBackupCreationMethod.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMInitialOnlineBackupCreationMethod.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMInitialOnlineBackupCreationMethod.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMInitialOnlineBackupCreationMethod.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,7 +35,7 @@ The **Get-DPMInitialOnlineBackupCreationMethod** cmdlet gets the method of initi
 
 ### Example 1: Get initial online backup method for a protection group
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup | Where {$_.FriendlyName -like "MyPG"}
+PS C:\> $PGroup = Get-DPMProtectionGroup | Where {$_.FriendlyName -like "MyPG"}
 PS C:\> Get-DPMInitialOnlineBackupCreationMethod -ProtectionGroup $PGroup
 ```
 
@@ -50,7 +50,7 @@ The second command gets the method of initial online backup for the protection g
 
 ### -ProtectionGroup
 Specifies a protection group for which this cmdlet gets an online backup method.
-To obtain a **ProtectionGroup** object, use the Get-DPMProtectionGroup cmdlet.
+To obtain a **ProtectionGroup** object, use the [Get-DPMProtectionGroup](./Get-DPMProtectionGroup.md) cmdlet.
 
 ```yaml
 Type: ProtectionGroup
@@ -87,4 +87,3 @@ The offline backup properties are the following: **StagingLocation**, **AzurePub
 [Set-DPMInitialOnlineBackupCreationMethod](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMInitialOnlineBackupCreationMethod.md)
 
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
-

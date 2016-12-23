@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 5C9275E7-C29E-495E-80DE-D8EA68ED427C
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/23/2016 8:49 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryItem.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryItem.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryItem.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/9548fb95a3c4060e9bbb3fa5f39ca1ed43a4f218/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryItem.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,6 +20,7 @@ ms.service: system-center
 # Get-DPMRecoveryItem
 
 ## SYNOPSIS
+Gets a DPM Recovery item.
 
 ## SYNTAX
 
@@ -28,23 +29,15 @@ Get-DPMRecoveryItem [-DpmRole] <DpmRole> [-Type] <AmDatasourceType> [<CommonPara
 ```
 
 ## DESCRIPTION
+The **Get-DPMRecoveryItem** cmdlet gets a DPM Recovery item.
 
 ## EXAMPLES
-
-### 1:
-```
-PS C:\>
-```
-
-### 2:
-```
-PS C:\>
-```
 
 ## PARAMETERS
 
 ### -DpmRole
-
+Specifies a DPM role that this cmdlet modifies.
+To obtain a DPM role object, use the [Get-DPMRole](./Get-DPMRole.md) cmdlet.
 
 ```yaml
 Type: DpmRole
@@ -59,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-
+Specifies an array of DPM job types.
 
 ```yaml
 Type: AmDatasourceType
@@ -88,4 +81,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Add-DPMRecoveryItem](xref:SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryItem.md)
 
 [Remove-DPMRecoveryItem](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRecoveryItem.md)
-

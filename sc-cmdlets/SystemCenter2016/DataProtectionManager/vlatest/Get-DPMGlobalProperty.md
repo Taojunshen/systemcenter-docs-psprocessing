@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: A473C727-2800-4568-A1B5-0914A8E1CC34
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMGlobalProperty.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMGlobalProperty.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMGlobalProperty.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMGlobalProperty.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -20,7 +20,7 @@ ms.service: system-center
 # Get-DPMGlobalProperty
 
 ## SYNOPSIS
-Retrieves the global properties for a DPM server.
+Gets the global properties for a DPM server.
 
 ## SYNTAX
 
@@ -29,16 +29,16 @@ Get-DPMGlobalProperty [[-DPMServerName] <String>] [-PropertyName] <GlobalPropert
 ```
 
 ## DESCRIPTION
-The **Get-DPMGlobalProperty** cmdlet retrieves the global properties for a System Center 2016 - Data Protection Manager (DPM) server.
+The **Get-DPMGlobalProperty** cmdlet gets the global properties for a System Center 2016 - Data Protection Manager (DPM) server.
 
 ## EXAMPLES
 
 ### Example 1: Retrieve global properties
 ```
-PS C:\>Get-DPMGlobalProperty -PropertyName AllowLocalDataProtection
+PS C:\> Get-DPMGlobalProperty -PropertyName AllowLocalDataProtection
 ```
 
-This command uses the **Get-DPMGlobalProperty** cmdlet to retrieve the global property for local data protection on a server.
+This command uses the **Get-DPMGlobalProperty** cmdlet to get the global property for local data protection on a server.
 
 ## PARAMETERS
 
@@ -97,4 +97,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-DPMGlobalProperty](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMGlobalProperty.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

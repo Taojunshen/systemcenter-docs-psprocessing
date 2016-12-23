@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 70EAC52C-3C7D-4011-B1C0-E88AF9431749
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPGSet.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPGSet.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPGSet.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPGSet.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,7 +35,7 @@ The **Get-DPMPGSet** cmdlet gets the System Center 2016 - Data Protection Manage
 
 ### Example 1: Get protection group sets
 ```
-PS C:\>Get-DPMPGSet -DPMServerName "DPMServer07"
+PS C:\> Get-DPMPGSet -DPMServerName "DPMServer07"
 ```
 
 This command gets the protection group sets for the server named DPMServer07.
@@ -73,4 +73,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-DPMPGSet](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMPGSet.md)
 
 [Update-DPMPGSet](xref:SystemCenter2016/DataProtectionManager/vlatest/Update-DPMPGSet.md)
-

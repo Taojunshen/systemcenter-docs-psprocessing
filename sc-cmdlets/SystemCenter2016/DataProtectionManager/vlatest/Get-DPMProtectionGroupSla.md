@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: ED8CFD12-7460-4422-81E6-7CE563F3D760
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/23/2016 8:49 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroupSla.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroupSla.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroupSla.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/9548fb95a3c4060e9bbb3fa5f39ca1ed43a4f218/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroupSla.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,13 +37,13 @@ Get-DPMProtectionGroupSla [-ProtectionGroupId] <Guid> [<CommonParameters>]
 ## DESCRIPTION
 The **Get-DPMProtectionGroupSla** cmdlet gets the service level agreement (SLA) for a System Center 2016 - Data Protection Manager (DPM) protection group.
 An SLA is an integer value that defines a period, in hours.
-For more information, see the Set-DPMProtectionGroupSla cmdlet.
+For more information, see the [Set-DPMProtectionGroupSla](./Set-DPMProtectionGroupSla.md) cmdlet.
 
 ## EXAMPLES
 
 ### Example 1: Get the SLA for a protection group object
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
 PS C:\> Get-DPMProtectionGroupSLA -ProtectionGroup $PGroup
 ```
 
@@ -54,7 +54,7 @@ The second command gets the SLA for the protection group stored in $PGroup.
 
 ### Example 2: Get the SLA for a protection group specified by ID
 ```
-PS C:\>$PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
+PS C:\> $PGroup = Get-DPMProtectionGroup -DPMServerName "DPMServer02"
 PS C:\> Get-DPMProtectionGroupSLA -ProtectionGroupId $PGroup.ProtectionGroupId
 ```
 
@@ -111,4 +111,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-DPMProtectionGroupSla](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMProtectionGroupSla.md)
 
 [Get-DPMProtectionGroup](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md)
-

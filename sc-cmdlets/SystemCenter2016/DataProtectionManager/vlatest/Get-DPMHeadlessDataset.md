@@ -1,13 +1,15 @@
 ---
 external help file: ObjectModelCmdlet.dll-Help.xml
-online version: 
+
+online version:
+
 schema: 2.0.0
 ms.assetid: FA23B5DE-60C3-4102-AC4C-9A428ADD37F8
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMHeadlessDataset.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMHeadlessDataset.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMHeadlessDataset.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMHeadlessDataset.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -35,7 +37,7 @@ The **Get-DPMHeadlessDataset** cmdlet returns incomplete datasets on the archive
 
 ### Example 1: Return an incomplete dataset
 ```
-PS C:\>$DpmLibrary = Get-DPMLibrary -DPMServerName "Contoso-DPMServer"
+PS C:\> $DpmLibrary = Get-DPMLibrary -DPMServerName "Contoso-DPMServer"
 PS C:\> $DpmTape = Get-DPMTape -DPMLibrary $DpmLibrary
 PS C:\> Get-DPMHeadlessDataset -Tape $DpmTape[2]
 ```
@@ -51,7 +53,7 @@ The third command retrieves the dataset on the third tape.
 
 ### -Tape
 Specifies an array of tape objects on which this cmdlet operates.
-To obtain a **Tape** object, use the Get-DPMTape cmdlet.
+To obtain a **Tape** object, use the [Get-DPMTape](./Get-DPMTape.md) cmdlet.
 
 ```yaml
 Type: Media[]
@@ -81,4 +83,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-DPMTape](xref:SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTape.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

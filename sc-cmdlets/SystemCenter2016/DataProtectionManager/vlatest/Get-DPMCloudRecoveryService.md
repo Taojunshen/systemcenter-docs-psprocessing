@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 8B8FA797-FAAC-4969-80DE-D29FB99AAEDA
-updated_at: 12/15/2016 4:04 AM
-ms.date: 12/15/2016
+updated_at: 12/23/2016 8:49 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRecoveryService.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRecoveryService.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/7df4508c7b907a214e6a8eca76037b06065ef078/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRecoveryService.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/9548fb95a3c4060e9bbb3fa5f39ca1ed43a4f218/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRecoveryService.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -43,7 +43,7 @@ The **Get-DPMCloudRecoveryService** cmdlet gets a Windows Azure Online Backup Cl
 
 ### Example 1: Returns the cloud service resource for given vault credential file
 ```
-PS C:\>Get-DPMCloudRecoveryService -DPMServerName "TestingServer" -VaultCredentialsFilePath "DPMTESTVault_Friday, September 5, 2014.VaultCredentials"
+PS C:\> Get-DPMCloudRecoveryService -DPMServerName "TestingServer" -VaultCredentialsFilePath "DPMTESTVault_Friday, September 5, 2014.VaultCredentials"
 ```
 
 This command returns the Azure Online Backup recovery resource for the DPM server named TestingServer that has vault credential file DPMTESTVault_Friday, September 5, 2014.VaultCredentials.
@@ -141,4 +141,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

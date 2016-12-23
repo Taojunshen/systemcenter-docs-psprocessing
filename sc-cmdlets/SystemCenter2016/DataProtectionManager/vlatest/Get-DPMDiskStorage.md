@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 8359D5D4-D9A1-4907-880A-4B232DDC82BF
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDiskStorage.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDiskStorage.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDiskStorage.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDiskStorage.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -Volumes
 Indicates that the cmdlet retrieves only volumes.
-If this switch is not specified, the cmdlet will retrieve only disks.
+If this paramter is not specified, the cmdlet only gets disks.
 
 ```yaml
 Type: SwitchParameter
@@ -153,4 +153,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-DPMDiskStorage](xref:SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMDiskStorage.md)
 
 [Update-DPMDiskStorage](xref:SystemCenter2016/DataProtectionManager/vlatest/Update-DPMDiskStorage.md)
-

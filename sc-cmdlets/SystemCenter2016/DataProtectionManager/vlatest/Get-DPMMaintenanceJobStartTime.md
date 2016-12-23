@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 3BE6112C-27FC-4087-81F4-306CC52C0471
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 12/23/2016 8:51 PM
+ms.date: 12/23/2016
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMMaintenanceJobStartTime.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMMaintenanceJobStartTime.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMMaintenanceJobStartTime.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/66515d87034fb4944dd2b7035563d20b1b00d010/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Get-DPMMaintenanceJobStartTime.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -37,7 +37,7 @@ Maintenance jobs include catalog pruning and detailed inventory.
 
 ### Example 1: Get start time for catalog pruning
 ```
-PS C:\>Get-DPMMaintenanceJobStartTime -DPMServerName "TestServer" -MaintenanceJob CatalogPruning
+PS C:\> Get-DPMMaintenanceJobStartTime -DPMServerName "TestServer" -MaintenanceJob CatalogPruning
 ```
 
 This command returns the time when catalog pruning is scheduled to run on the DPM server named TestServer.
@@ -99,4 +99,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-DPMMaintenanceJobStartTime](xref:SystemCenter2016/DataProtectionManager/vlatest/Set-DPMMaintenanceJobStartTime.md)
 
 [Data Protection Manager Cmdlets](xref:SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md)
-

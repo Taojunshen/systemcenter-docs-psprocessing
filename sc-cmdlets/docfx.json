@@ -3,11 +3,11 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+         "**/*.md","**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
-          "sc-cmdlets/**",
+          "systemcenter/**",
           "**/includes/**"
         ]
       }
@@ -16,20 +16,25 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+           "breadcrumb.json"
         ],
         "exclude": [
           "**/obj/**",
-          "sc-cmdlets/**",
+          "systemcenter/**",
           "**/includes/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+        "breadcrumb_path": "/powershell/systemcenter/breadcrumb.json",
+        "ms.devlang": "",
+        "brand":"" 
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "sc-cmdlets"
+    "dest": "systemcenter"
   }
 }

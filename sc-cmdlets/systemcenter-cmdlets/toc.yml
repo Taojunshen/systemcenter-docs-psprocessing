@@ -1,0 +1,2374 @@
+- name: SystemCenter2016
+  items:
+    - name: DataProtectionManager
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/DataProtectionManager/vlatest/DataProtectionManager.md
+          items:
+            - name: Add-DPMBackupNetworkAddress
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Add-DPMBackupNetworkAddress.md
+            - name: Add-DPMChildDatasource
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Add-DPMChildDatasource.md
+            - name: Add-DPMDiskStorage
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Add-DPMDiskStorage.md
+            - name: Add-DPMRecoveryItem
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryItem.md
+            - name: Add-DPMRecoveryTarget
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Add-DPMRecoveryTarget.md
+            - name: Add-DPMSecurityGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Add-DPMSecurityGroup.md
+            - name: Add-DPMTape
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Add-DPMTape.md
+            - name: Connect-DPMServer
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Connect-DPMServer.md
+            - name: Copy-DPMTapeData
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Copy-DPMTapeData.md
+            - name: Disable-DPMLibrary
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMLibrary.md
+            - name: Disable-DPMProductionServer
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMProductionServer.md
+            - name: Disable-DPMTapeDrive
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Disable-DPMTapeDrive.md
+            - name: Disconnect-DPMServer
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Disconnect-DPMServer.md
+            - name: Dismount-DPMRecoveryPoint
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Dismount-DPMRecoveryPoint.md
+            - name: Edit-DPMDiskAllocation
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Edit-DPMDiskAllocation.md
+            - name: Enable-DPMLibrary
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMLibrary.md
+            - name: Enable-DPMProductionServer
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMProductionServer.md
+            - name: Enable-DPMTapeDrive
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Enable-DPMTapeDrive.md
+            - name: Get-DPMAccessLicense
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMAccessLicense.md
+            - name: Get-DPMAlert
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMAlert.md
+            - name: Get-DPMAutoProtectIntent
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMAutoProtectIntent.md
+            - name: Get-DPMBackupNetworkAddress
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupNetworkAddress.md
+            - name: Get-DPMBackupWindow
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMBackupWindow.md
+            - name: Get-DPMChildDatasource
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMChildDatasource.md
+            - name: Get-DPMCloudCertificateListFromLocalStore
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudCertificateListFromLocalStore.md
+            - name: Get-DPMCloudDatasource
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudDatasource.md
+            - name: Get-DPMCloudRecoveryService
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRecoveryService.md
+            - name: Get-DPMCloudRegisteredServers
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudRegisteredServers.md
+            - name: Get-DPMCloudSubscription
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudSubscription.md
+            - name: Get-DPMCloudSubscriptionSetting
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMCloudSubscriptionSetting.md
+            - name: Get-DPMConsistencyCheckWindow
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMConsistencyCheckWindow.md
+            - name: Get-DPMDatasetStatus
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasetStatus.md
+            - name: Get-DPMDatasource
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasource.md
+            - name: Get-DPMDatasourceProtectionOption
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDatasourceProtectionOption.md
+            - name: Get-DPMDiskStorage
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMDiskStorage.md
+            - name: Get-DPMGlobalProperty
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMGlobalProperty.md
+            - name: Get-DPMHeadlessDataset
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMHeadlessDataset.md
+            - name: Get-DPMInitialOnlineBackupCreationMethod
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMInitialOnlineBackupCreationMethod.md
+            - name: Get-DPMJob
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMJob.md
+            - name: Get-DPMLibrary
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMLibrary.md
+            - name: Get-DPMMaintenanceJobStartTime
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMMaintenanceJobStartTime.md
+            - name: Get-DPMModifiableProtectionGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMModifiableProtectionGroup.md
+            - name: Get-DPMPGSet
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPGSet.md
+            - name: Get-DPMPolicyObjective
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPolicyObjective.md
+            - name: Get-DPMPolicySchedule
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMPolicySchedule.md
+            - name: Get-DPMProductionCluster
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionCluster.md
+            - name: Get-DPMProductionServer
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionServer.md
+            - name: Get-DPMProductionVirtualName
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProductionVirtualName.md
+            - name: Get-DPMProtectionGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroup.md
+            - name: Get-DPMProtectionGroupSla
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionGroupSla.md
+            - name: Get-DPMProtectionJobStartTime
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMProtectionJobStartTime.md
+            - name: Get-DPMRecoverableItem
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoverableItem.md
+            - name: Get-DPMRecoveryItem
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryItem.md
+            - name: Get-DPMRecoveryPoint
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryPoint.md
+            - name: Get-DPMRecoveryPointLocation
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryPointLocation.md
+            - name: Get-DPMRecoveryTarget
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRecoveryTarget.md
+            - name: Get-DPMReplicaCreationMethod
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMReplicaCreationMethod.md
+            - name: Get-DPMRole
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMRole.md
+            - name: Get-DPMSecurityGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMSecurityGroup.md
+            - name: Get-DPMTape
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTape.md
+            - name: Get-DPMTapeBackupOption
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTapeBackupOption.md
+            - name: Get-DPMTapeDrive
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTapeDrive.md
+            - name: Get-DPMTapeSlot
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMTapeSlot.md
+            - name: Get-DPMVolume
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Get-DPMVolume.md
+            - name: Lock-DPMLibraryDoor
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Lock-DPMLibraryDoor.md
+            - name: Lock-DPMLibraryIEPort
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Lock-DPMLibraryIEPort.md
+            - name: Mount-DPMRecoveryPoint
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Mount-DPMRecoveryPoint.md
+            - name: New-DPMPGSet
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMPGSet.md
+            - name: New-DPMProtectionGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMProtectionGroup.md
+            - name: New-DPMRecoveryNotification
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMRecoveryNotification.md
+            - name: New-DPMRecoveryOption
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMRecoveryOption.md
+            - name: New-DPMRecoveryPoint
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMRecoveryPoint.md
+            - name: New-DPMRecoveryTarget
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMRecoveryTarget.md
+            - name: New-DPMRole
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMRole.md
+            - name: New-DPMSearchOption
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMSearchOption.md
+            - name: New-DPMServerScope
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/New-DPMServerScope.md
+            - name: Remove-DPMBackupNetworkAddress
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMBackupNetworkAddress.md
+            - name: Remove-DPMChildDatasource
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMChildDatasource.md
+            - name: Remove-DPMDatasourceReplica
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMDatasourceReplica.md
+            - name: Remove-DPMDiskStorage
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMDiskStorage.md
+            - name: Remove-DPMPGSet
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMPGSet.md
+            - name: Remove-DPMRecoveryItem
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRecoveryItem.md
+            - name: Remove-DPMRecoveryPoint
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRecoveryPoint.md
+            - name: Remove-DPMRecoveryTarget
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRecoveryTarget.md
+            - name: Remove-DPMRole
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMRole.md
+            - name: Remove-DPMSecurityGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMSecurityGroup.md
+            - name: Remove-DPMTape
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Remove-DPMTape.md
+            - name: Rename-DPMLibrary
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Rename-DPMLibrary.md
+            - name: Rename-DPMProtectionGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Rename-DPMProtectionGroup.md
+            - name: Rename-DPMRole
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Rename-DPMRole.md
+            - name: Restart-DPMJob
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Restart-DPMJob.md
+            - name: Restore-DPMRecoverableItem
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Restore-DPMRecoverableItem.md
+            - name: Resume-DPMBackup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Resume-DPMBackup.md
+            - name: Set-DPMAutoProtectIntent
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMAutoProtectIntent.md
+            - name: Set-DPMBackupWindow
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMBackupWindow.md
+            - name: Set-DPMCloudSubscriptionSetting
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMCloudSubscriptionSetting.md
+            - name: Set-DPMConsistencyCheckWindow
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMConsistencyCheckWindow.md
+            - name: Set-DPMCredentials
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMCredentials.md
+            - name: Set-DPMDatasourceDefaultDiskAllocation
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMDatasourceDefaultDiskAllocation.md
+            - name: Set-DPMDatasourceDiskAllocation
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMDatasourceDiskAllocation.md
+            - name: Set-DPMDatasourceProtectionOption
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMDatasourceProtectionOption.md
+            - name: Set-DPMGlobalProperty
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMGlobalProperty.md
+            - name: Set-DPMInitialOnlineBackupCreationMethod
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMInitialOnlineBackupCreationMethod.md
+            - name: Set-DPMMaintenanceJobStartTime
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMMaintenanceJobStartTime.md
+            - name: Set-DPMPerformanceOptimization
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMPerformanceOptimization.md
+            - name: Set-DPMPolicyObjective
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMPolicyObjective.md
+            - name: Set-DPMPolicySchedule
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMPolicySchedule.md
+            - name: Set-DPMProtectionGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMProtectionGroup.md
+            - name: Set-DPMProtectionGroupSla
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMProtectionGroupSla.md
+            - name: Set-DPMProtectionJobStartTime
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMProtectionJobStartTime.md
+            - name: Set-DPMProtectionType
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMProtectionType.md
+            - name: Set-DPMReplicaCreationMethod
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMReplicaCreationMethod.md
+            - name: Set-DPMRole
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMRole.md
+            - name: Set-DPMTape
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMTape.md
+            - name: Set-DPMTapeBackupOption
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Set-DPMTapeBackupOption.md
+            - name: Start-DPMAutoProtection
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMAutoProtection.md
+            - name: Start-DPMCloudRecatalog
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMCloudRecatalog.md
+            - name: Start-DPMCloudRegistration
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMCloudRegistration.md
+            - name: Start-DPMCreateCatalog
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMCreateCatalog.md
+            - name: Start-DPMDatasourceConsistencyCheck
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMDatasourceConsistencyCheck.md
+            - name: Start-DPMDiskRescan
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMDiskRescan.md
+            - name: Start-DPMLibraryInventory
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMLibraryInventory.md
+            - name: Start-DPMLibraryRescan
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMLibraryRescan.md
+            - name: Start-DPMManualReplicaCreation
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMManualReplicaCreation.md
+            - name: Start-DPMOnlineRecatalog
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMOnlineRecatalog.md
+            - name: Start-DPMProductionServerSwitchProtection
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMProductionServerSwitchProtection.md
+            - name: Start-DPMSwitchProtection
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMSwitchProtection.md
+            - name: Start-DPMTapeDriveCleaning
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMTapeDriveCleaning.md
+            - name: Start-DPMTapeErase
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMTapeErase.md
+            - name: Start-DPMTapeRecatalog
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Start-DPMTapeRecatalog.md
+            - name: Stop-DPMJob
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Stop-DPMJob.md
+            - name: Stop-DPMManualReplicaCreation
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Stop-DPMManualReplicaCreation.md
+            - name: Test-DPMTapeData
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Test-DPMTapeData.md
+            - name: Unlock-DPMLibraryDoor
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Unlock-DPMLibraryDoor.md
+            - name: Unlock-DPMLibraryIEPort
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Unlock-DPMLibraryIEPort.md
+            - name: Update-DPMDiskStorage
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Update-DPMDiskStorage.md
+            - name: Update-DPMPGSet
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Update-DPMPGSet.md
+            - name: Update-DPMProductionServer
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Update-DPMProductionServer.md
+            - name: Update-DPMProtectionGroup
+              href: ../SystemCenter2016/DataProtectionManager/vlatest/Update-DPMProtectionGroup.md
+    - name: OperationsManager
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/OperationsManager/vlatest/OperationsManager.md
+          items:
+            - name: Add-SCAdvisorAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCAdvisorAgent.md
+            - name: Add-SCOMADAgentAssignment
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMADAgentAssignment.md
+            - name: Add-SCOMAgentlessManagedComputer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMAgentlessManagedComputer.md
+            - name: Add-SCOMAlertResolutionState
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMAlertResolutionState.md
+            - name: Add-SCOMConnector
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMConnector.md
+            - name: Add-SCOMNotificationChannel
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMNotificationChannel.md
+            - name: Add-SCOMNotificationSubscriber
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMNotificationSubscriber.md
+            - name: Add-SCOMNotificationSubscription
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMNotificationSubscription.md
+            - name: Add-SCOMRunAsAccount
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMRunAsAccount.md
+            - name: Add-SCOMRunAsProfile
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMRunAsProfile.md
+            - name: Add-SCOMSubscriberSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMSubscriberSchedule.md
+            - name: Add-SCOMTierConnector
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMTierConnector.md
+            - name: Add-SCOMTieredManagementGroup
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMTieredManagementGroup.md
+            - name: Add-SCOMUserRole
+              href: ../SystemCenter2016/OperationsManager/vlatest/Add-SCOMUserRole.md
+            - name: Approve-SCOMPendingManagement
+              href: ../SystemCenter2016/OperationsManager/vlatest/Approve-SCOMPendingManagement.md
+            - name: Clear-SCOMSubscriberSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Clear-SCOMSubscriberSchedule.md
+            - name: Deny-SCOMPendingManagement
+              href: ../SystemCenter2016/OperationsManager/vlatest/Deny-SCOMPendingManagement.md
+            - name: Disable-SCOMAgentProxy
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMAgentProxy.md
+            - name: Disable-SCOMDiscovery
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMDiscovery.md
+            - name: Disable-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMMaintenanceSchedule.md
+            - name: Disable-SCOMMonitor
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMMonitor.md
+            - name: Disable-SCOMNotificationSubscription
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMNotificationSubscription.md
+            - name: Disable-SCOMOperationalDataReporting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMOperationalDataReporting.md
+            - name: Disable-SCOMRule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMRule.md
+            - name: Disable-SCOMTelemetry
+              href: ../SystemCenter2016/OperationsManager/vlatest/Disable-SCOMTelemetry.md
+            - name: Edit-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Edit-SCOMMaintenanceSchedule.md
+            - name: Enable-SCOMAgentProxy
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMAgentProxy.md
+            - name: Enable-SCOMDiscovery
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMDiscovery.md
+            - name: Enable-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMMaintenanceSchedule.md
+            - name: Enable-SCOMMonitor
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMMonitor.md
+            - name: Enable-SCOMNotificationSubscription
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMNotificationSubscription.md
+            - name: Enable-SCOMOperationalDataReporting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMOperationalDataReporting.md
+            - name: Enable-SCOMRule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMRule.md
+            - name: Enable-SCOMTelemetry
+              href: ../SystemCenter2016/OperationsManager/vlatest/Enable-SCOMTelemetry.md
+            - name: Export-SCManagementPack
+              href: ../SystemCenter2016/OperationsManager/vlatest/Export-SCManagementPack.md
+            - name: Export-SCOMEffectiveMonitoringConfiguration
+              href: ../SystemCenter2016/OperationsManager/vlatest/Export-SCOMEffectiveMonitoringConfiguration.md
+            - name: Get-ErrorInfo
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-ErrorInfo.md
+            - name: Get-SCAdvisorAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCAdvisorAgent.md
+            - name: Get-SCAdvisorProxy
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCAdvisorProxy.md
+            - name: Get-SCClass
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCClass.md
+            - name: Get-SCDiscovery
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCDiscovery.md
+            - name: Get-SCManagementGroupConnection
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCManagementGroupConnection.md
+            - name: Get-SCManagementPack
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCManagementPack.md
+            - name: Get-SCOMAccessLicense
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAccessLicense.md
+            - name: Get-SCOMADAgentAssignment
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMADAgentAssignment.md
+            - name: Get-SCOMAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAgent.md
+            - name: Get-SCOMAgentApprovalSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAgentApprovalSetting.md
+            - name: Get-SCOMAgentlessManagedComputer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAgentlessManagedComputer.md
+            - name: Get-SCOMAlert
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAlert.md
+            - name: Get-SCOMAlertHistory
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAlertHistory.md
+            - name: Get-SCOMAlertResolutionSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAlertResolutionSetting.md
+            - name: Get-SCOMAlertResolutionState
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMAlertResolutionState.md
+            - name: Get-SCOMClassInstance
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMClassInstance.md
+            - name: Get-SCOMCommand
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMCommand.md
+            - name: Get-SCOMConnector
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMConnector.md
+            - name: Get-SCOMDatabaseGroomingSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMDatabaseGroomingSetting.md
+            - name: Get-SCOMDataWarehouseSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMDataWarehouseSetting.md
+            - name: Get-SCOMDiagnostic
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMDiagnostic.md
+            - name: Get-SCOMErrorReportingSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMErrorReportingSetting.md
+            - name: Get-SCOMEvent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMEvent.md
+            - name: Get-SCOMGatewayManagementServer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMGatewayManagementServer.md
+            - name: Get-SCOMGroup
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMGroup.md
+            - name: Get-SCOMHeartbeatSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMHeartbeatSetting.md
+            - name: Get-SCOMLicense
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMLicense.md
+            - name: Get-SCOMLocation
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMLocation.md
+            - name: Get-SCOMMaintenanceMode
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMMaintenanceMode.md
+            - name: Get-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMMaintenanceSchedule.md
+            - name: Get-SCOMMaintenanceScheduleList
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMMaintenanceScheduleList.md
+            - name: Get-SCOMManagementGroup
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMManagementGroup.md
+            - name: Get-SCOMManagementServer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMManagementServer.md
+            - name: Get-SCOMMonitor
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMMonitor.md
+            - name: Get-SCOMNotificationChannel
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMNotificationChannel.md
+            - name: Get-SCOMNotificationSubscriber
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMNotificationSubscriber.md
+            - name: Get-SCOMNotificationSubscription
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMNotificationSubscription.md
+            - name: Get-SCOMOverride
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMOverride.md
+            - name: Get-SCOMOverrideResult
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMOverrideResult.md
+            - name: Get-SCOMParentManagementServer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMParentManagementServer.md
+            - name: Get-SCOMPendingManagement
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMPendingManagement.md
+            - name: Get-SCOMRecovery
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMRecovery.md
+            - name: Get-SCOMReportingSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMReportingSetting.md
+            - name: Get-SCOMResourcePool
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMResourcePool.md
+            - name: Get-SCOMRMSEmulator
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMRMSEmulator.md
+            - name: Get-SCOMRule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMRule.md
+            - name: Get-SCOMRunAsAccount
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMRunAsAccount.md
+            - name: Get-SCOMRunAsDistribution
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMRunAsDistribution.md
+            - name: Get-SCOMRunAsProfile
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMRunAsProfile.md
+            - name: Get-SCOMTask
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMTask.md
+            - name: Get-SCOMTaskResult
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMTaskResult.md
+            - name: Get-SCOMTelemetry
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMTelemetry.md
+            - name: Get-SCOMTierConnector
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMTierConnector.md
+            - name: Get-SCOMTieredManagementGroup
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMTieredManagementGroup.md
+            - name: Get-SCOMUserRole
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMUserRole.md
+            - name: Get-SCOMWebAddressSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCOMWebAddressSetting.md
+            - name: Get-SCRelationship
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCRelationship.md
+            - name: Get-SCRelationshipInstance
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCRelationshipInstance.md
+            - name: Get-SCXAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCXAgent.md
+            - name: Get-SCXSSHCredential
+              href: ../SystemCenter2016/OperationsManager/vlatest/Get-SCXSSHCredential.md
+            - name: Import-SCManagementPack
+              href: ../SystemCenter2016/OperationsManager/vlatest/Import-SCManagementPack.md
+            - name: Install-SCOMAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Install-SCOMAgent.md
+            - name: Install-SCXAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Install-SCXAgent.md
+            - name: Invoke-SCXDiscovery
+              href: ../SystemCenter2016/OperationsManager/vlatest/Invoke-SCXDiscovery.md
+            - name: New-DefaultManagementGroupConnection
+              href: ../SystemCenter2016/OperationsManager/vlatest/New-DefaultManagementGroupConnection.md
+            - name: New-SCManagementGroupConnection
+              href: ../SystemCenter2016/OperationsManager/vlatest/New-SCManagementGroupConnection.md
+            - name: New-SCOMLocation
+              href: ../SystemCenter2016/OperationsManager/vlatest/New-SCOMLocation.md
+            - name: New-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/New-SCOMMaintenanceSchedule.md
+            - name: New-SCOMResourcePool
+              href: ../SystemCenter2016/OperationsManager/vlatest/New-SCOMResourcePool.md
+            - name: Out-StringNoWrap
+              href: ../SystemCenter2016/OperationsManager/vlatest/Out-StringNoWrap.md
+            - name: Register-SCAdvisor
+              href: ../SystemCenter2016/OperationsManager/vlatest/Register-SCAdvisor.md
+            - name: Remove-SCAdvisorAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCAdvisorAgent.md
+            - name: Remove-SCManagementGroupConnection
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCManagementGroupConnection.md
+            - name: Remove-SCManagementPack
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCManagementPack.md
+            - name: Remove-SCOMADAgentAssignment
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMADAgentAssignment.md
+            - name: Remove-SCOMAgentlessManagedComputer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMAgentlessManagedComputer.md
+            - name: Remove-SCOMAlertResolutionState
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMAlertResolutionState.md
+            - name: Remove-SCOMConnector
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMConnector.md
+            - name: Remove-SCOMDisabledClassInstance
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMDisabledClassInstance.md
+            - name: Remove-SCOMLocation
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMLocation.md
+            - name: Remove-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMMaintenanceSchedule.md
+            - name: Remove-SCOMNotificationChannel
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMNotificationChannel.md
+            - name: Remove-SCOMNotificationSubscriber
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMNotificationSubscriber.md
+            - name: Remove-SCOMNotificationSubscription
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMNotificationSubscription.md
+            - name: Remove-SCOMResourcePool
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMResourcePool.md
+            - name: Remove-SCOMRMSEmulator
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMRMSEmulator.md
+            - name: Remove-SCOMRunAsAccount
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMRunAsAccount.md
+            - name: Remove-SCOMRunAsProfile
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMRunAsProfile.md
+            - name: Remove-SCOMSubscriberSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMSubscriberSchedule.md
+            - name: Remove-SCOMTierConnector
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMTierConnector.md
+            - name: Remove-SCOMTieredManagementGroup
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMTieredManagementGroup.md
+            - name: Remove-SCOMUserRole
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCOMUserRole.md
+            - name: Remove-SCXAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Remove-SCXAgent.md
+            - name: Repair-SCOMAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Repair-SCOMAgent.md
+            - name: Resolve-SCOMAlert
+              href: ../SystemCenter2016/OperationsManager/vlatest/Resolve-SCOMAlert.md
+            - name: Set-SCAdvisorProxy
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCAdvisorProxy.md
+            - name: Set-SCManagementGroupConnection
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCManagementGroupConnection.md
+            - name: Set-SCOMAgentApprovalSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMAgentApprovalSetting.md
+            - name: Set-SCOMAgentlessManagedComputer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMAgentlessManagedComputer.md
+            - name: Set-SCOMAlert
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMAlert.md
+            - name: Set-SCOMAlertResolutionSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMAlertResolutionSetting.md
+            - name: Set-SCOMDatabaseGroomingSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMDatabaseGroomingSetting.md
+            - name: Set-SCOMDataWarehouseSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMDataWarehouseSetting.md
+            - name: Set-SCOMErrorReportingSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMErrorReportingSetting.md
+            - name: Set-SCOMHeartbeatSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMHeartbeatSetting.md
+            - name: Set-SCOMLicense
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMLicense.md
+            - name: Set-SCOMLocation
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMLocation.md
+            - name: Set-SCOMMaintenanceMode
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMMaintenanceMode.md
+            - name: Set-SCOMParentManagementServer
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMParentManagementServer.md
+            - name: Set-SCOMReportingSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMReportingSetting.md
+            - name: Set-SCOMResourcePool
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMResourcePool.md
+            - name: Set-SCOMRMSEmulator
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMRMSEmulator.md
+            - name: Set-SCOMRunAsDistribution
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMRunAsDistribution.md
+            - name: Set-SCOMRunAsProfile
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMRunAsProfile.md
+            - name: Set-SCOMUserRole
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMUserRole.md
+            - name: Set-SCOMWebAddressSetting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCOMWebAddressSetting.md
+            - name: Set-SCXResourcePool
+              href: ../SystemCenter2016/OperationsManager/vlatest/Set-SCXResourcePool.md
+            - name: Start-OperationsManagerClientShell
+              href: ../SystemCenter2016/OperationsManager/vlatest/Start-OperationsManagerClientShell.md
+            - name: Start-SCOMMaintenanceMode
+              href: ../SystemCenter2016/OperationsManager/vlatest/Start-SCOMMaintenanceMode.md
+            - name: Start-SCOMTask
+              href: ../SystemCenter2016/OperationsManager/vlatest/Start-SCOMTask.md
+            - name: Stop-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Stop-SCOMMaintenanceSchedule.md
+            - name: Test-SCOMOperationalDataReporting
+              href: ../SystemCenter2016/OperationsManager/vlatest/Test-SCOMOperationalDataReporting.md
+            - name: Uninstall-SCOMAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Uninstall-SCOMAgent.md
+            - name: Uninstall-SCXAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Uninstall-SCXAgent.md
+            - name: Update-SCOMADAgentAssignment
+              href: ../SystemCenter2016/OperationsManager/vlatest/Update-SCOMADAgentAssignment.md
+            - name: Update-SCOMLocation
+              href: ../SystemCenter2016/OperationsManager/vlatest/Update-SCOMLocation.md
+            - name: Update-SCOMMaintenanceSchedule
+              href: ../SystemCenter2016/OperationsManager/vlatest/Update-SCOMMaintenanceSchedule.md
+            - name: Update-SCOMRunAsAccount
+              href: ../SystemCenter2016/OperationsManager/vlatest/Update-SCOMRunAsAccount.md
+            - name: Update-SCXAgent
+              href: ../SystemCenter2016/OperationsManager/vlatest/Update-SCXAgent.md
+            - name: Write-OperationsManagerClientShellBanner
+              href: ../SystemCenter2016/OperationsManager/vlatest/Write-OperationsManagerClientShellBanner.md
+            - name: Write-SCOMCommand
+              href: ../SystemCenter2016/OperationsManager/vlatest/Write-SCOMCommand.md
+            - name: Write-WarningMessage
+              href: ../SystemCenter2016/OperationsManager/vlatest/Write-WarningMessage.md
+    - name: ServiceManagementAutomation
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Microsoft.SystemCenter.ServiceManagementAutomation.md
+          items:
+            - name: Edit-SmaRunbook
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Edit-SmaRunbook.md
+            - name: Get-SmaAdminConfiguration
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaAdminConfiguration.md
+            - name: Get-SmaCertificate
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaCertificate.md
+            - name: Get-SmaConnection
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaConnection.md
+            - name: Get-SmaConnectionField
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaConnectionField.md
+            - name: Get-SmaConnectionType
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaConnectionType.md
+            - name: Get-SmaCredential
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaCredential.md
+            - name: Get-SmaJob
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaJob.md
+            - name: Get-SmaJobOutput
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaJobOutput.md
+            - name: Get-SmaLicense
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaLicense.md
+            - name: Get-SmaModule
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaModule.md
+            - name: Get-SmaRunbook
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaRunbook.md
+            - name: Get-SmaRunbookDefinition
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaRunbookDefinition.md
+            - name: Get-SmaRunbookWorkerDeployment
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaRunbookWorkerDeployment.md
+            - name: Get-SmaSchedule
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaSchedule.md
+            - name: Get-SmaVariable
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Get-SmaVariable.md
+            - name: Import-SmaModule
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Import-SmaModule.md
+            - name: Import-SmaRunbook
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Import-SmaRunbook.md
+            - name: New-SmaConnection
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/New-SmaConnection.md
+            - name: New-SmaRunbookWorkerDeployment
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/New-SmaRunbookWorkerDeployment.md
+            - name: Publish-SmaRunbook
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Publish-SmaRunbook.md
+            - name: Remove-SmaCertificate
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Remove-SmaCertificate.md
+            - name: Remove-SmaConnection
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Remove-SmaConnection.md
+            - name: Remove-SmaCredential
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Remove-SmaCredential.md
+            - name: Remove-SmaModule
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Remove-SmaModule.md
+            - name: Remove-SmaRunbook
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Remove-SmaRunbook.md
+            - name: Remove-SmaSchedule
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Remove-SmaSchedule.md
+            - name: Remove-SmaVariable
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Remove-SmaVariable.md
+            - name: Resume-SmaJob
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Resume-SmaJob.md
+            - name: Set-SmaAdminConfiguration
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaAdminConfiguration.md
+            - name: Set-SmaCertificate
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaCertificate.md
+            - name: Set-SmaConnectionFieldValue
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaConnectionFieldValue.md
+            - name: Set-SmaCredential
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaCredential.md
+            - name: Set-SmaLicense
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaLicense.md
+            - name: Set-SmaRunbookConfiguration
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaRunbookConfiguration.md
+            - name: Set-SmaSchedule
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaSchedule.md
+            - name: Set-SmaVariable
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Set-SmaVariable.md
+            - name: Start-SmaRunbook
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Start-SmaRunbook.md
+            - name: Stop-SmaJob
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Stop-SmaJob.md
+            - name: Suspend-SmaJob
+              href: ../SystemCenter2016/ServiceManagementAutomation/vlatest/Suspend-SmaJob.md
+    - name: ServiceManager
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/ServiceManager/vlatest/ServiceManager.md
+          items:
+            - name: Add-SCSMAllowListClass
+              href: ../SystemCenter2016/ServiceManager/vlatest/Add-SCSMAllowListClass.md
+            - name: Get-SCSMAllowList
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMAllowList.md
+            - name: Get-SCSMAnnouncement
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMAnnouncement.md
+            - name: Get-SCSMChannel
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMChannel.md
+            - name: Get-SCSMConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMConnector.md
+            - name: Get-SCSMDCMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMDCMWorkflow.md
+            - name: Get-SCSMDeletedItem
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMDeletedItem.md
+            - name: Get-SCSMEmailTemplate
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMEmailTemplate.md
+            - name: Get-SCSMEmailTemplateContent
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMEmailTemplateContent.md
+            - name: Get-SCSMQueue
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMQueue.md
+            - name: Get-SCSMSetting
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMSetting.md
+            - name: Get-SCSMSubscription
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMSubscription.md
+            - name: Get-SCSMTask
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMTask.md
+            - name: Get-SCSMUser
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMUser.md
+            - name: Get-SCSMUserRole
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMUserRole.md
+            - name: Get-SCSMView
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMView.md
+            - name: Get-SCSMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMWorkflow.md
+            - name: Get-SCSMWorkflowStatus
+              href: ../SystemCenter2016/ServiceManager/vlatest/Get-SCSMWorkflowStatus.md
+            - name: Import-SCSMInstance
+              href: ../SystemCenter2016/ServiceManager/vlatest/Import-SCSMInstance.md
+            - name: New-SCADConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCADConnector.md
+            - name: New-SCCMConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCCMConnector.md
+            - name: New-SCOMAlertConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCOMAlertConnector.md
+            - name: New-SCOMConfigurationItemConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCOMConfigurationItemConnector.md
+            - name: New-SCOrchestratorConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCOrchestratorConnector.md
+            - name: New-SCSMAlertRule
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCSMAlertRule.md
+            - name: New-SCSMAnnouncement
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCSMAnnouncement.md
+            - name: New-SCSMDCMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCSMDCMWorkflow.md
+            - name: New-SCSMEmailTemplate
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCSMEmailTemplate.md
+            - name: New-SCSMSubscription
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCSMSubscription.md
+            - name: New-SCSMUserRole
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCSMUserRole.md
+            - name: New-SCSMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCSMWorkflow.md
+            - name: New-SCVMMConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/New-SCVMMConnector.md
+            - name: Remove-SCSMAllowListClass
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMAllowListClass.md
+            - name: Remove-SCSMAnnouncement
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMAnnouncement.md
+            - name: Remove-SCSMConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMConnector.md
+            - name: Remove-SCSMDCMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMDCMWorkflow.md
+            - name: Remove-SCSMEmailTemplate
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMEmailTemplate.md
+            - name: Remove-SCSMSubscription
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMSubscription.md
+            - name: Remove-SCSMUserRole
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMUserRole.md
+            - name: Remove-SCSMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/Remove-SCSMWorkflow.md
+            - name: Reset-SCSMAllowList
+              href: ../SystemCenter2016/ServiceManager/vlatest/Reset-SCSMAllowList.md
+            - name: Restore-SCSMDeletedItem
+              href: ../SystemCenter2016/ServiceManager/vlatest/Restore-SCSMDeletedItem.md
+            - name: Set-SCSMChannel
+              href: ../SystemCenter2016/ServiceManager/vlatest/Set-SCSMChannel.md
+            - name: Start-SCSMConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/Start-SCSMConnector.md
+            - name: Update-SCSMAnnouncement
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMAnnouncement.md
+            - name: Update-SCSMConnector
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMConnector.md
+            - name: Update-SCSMDCMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMDCMWorkflow.md
+            - name: Update-SCSMEmailTemplate
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMEmailTemplate.md
+            - name: Update-SCSMSetting
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMSetting.md
+            - name: Update-SCSMSubscription
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMSubscription.md
+            - name: Update-SCSMUserRole
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMUserRole.md
+            - name: Update-SCSMWorkflow
+              href: ../SystemCenter2016/ServiceManager/vlatest/Update-SCSMWorkflow.md
+    - name: ServiceManagerCore
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/ServiceManagerCore/vlatest/ServiceManagerCore.md
+          items:
+            - name: Export-SCSMManagementPack
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Export-SCSMManagementPack.md
+            - name: Get-SCSMClass
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMClass.md
+            - name: Get-SCSMClassInstance
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMClassInstance.md
+            - name: Get-SCSMDiscovery
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMDiscovery.md
+            - name: Get-SCSMGroup
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMGroup.md
+            - name: Get-SCSMManagementGroupConnection
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMManagementGroupConnection.md
+            - name: Get-SCSMManagementPack
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMManagementPack.md
+            - name: Get-SCSMObjectTemplate
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMObjectTemplate.md
+            - name: Get-SCSMRelationship
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMRelationship.md
+            - name: Get-SCSMRelationshipInstance
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMRelationshipInstance.md
+            - name: Get-SCSMRunAsAccount
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Get-SCSMRunAsAccount.md
+            - name: Import-SCSMManagementPack
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Import-SCSMManagementPack.md
+            - name: New-SCSMClassInstance
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/New-SCSMClassInstance.md
+            - name: New-SCSMManagementGroupConnection
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/New-SCSMManagementGroupConnection.md
+            - name: New-SCSMManagementPack
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/New-SCSMManagementPack.md
+            - name: New-SCSMManagementPackBundle
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/New-SCSMManagementPackBundle.md
+            - name: New-SCSMRelationshipInstance
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/New-SCSMRelationshipInstance.md
+            - name: New-SCSMRunAsAccount
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/New-SCSMRunAsAccount.md
+            - name: Protect-SCSMManagementPack
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Protect-SCSMManagementPack.md
+            - name: Remove-SCSMClassInstance
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Remove-SCSMClassInstance.md
+            - name: Remove-SCSMManagementGroupConnection
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Remove-SCSMManagementGroupConnection.md
+            - name: Remove-SCSMManagementPack
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Remove-SCSMManagementPack.md
+            - name: Remove-SCSMRelationshipInstance
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Remove-SCSMRelationshipInstance.md
+            - name: Remove-SCSMRunAsAccount
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Remove-SCSMRunAsAccount.md
+            - name: Set-SCSMManagementGroupConnection
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Set-SCSMManagementGroupConnection.md
+            - name: Test-SCSMManagementPack
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Test-SCSMManagementPack.md
+            - name: Update-SCSMClassInstance
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Update-SCSMClassInstance.md
+            - name: Update-SCSMRunAsAccount
+              href: ../SystemCenter2016/ServiceManagerCore/vlatest/Update-SCSMRunAsAccount.md
+    - name: ServiceManagerDataWarehouse
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/ServiceManagerDataWarehouse.md
+          items:
+            - name: Disable-SCDWJob
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJob.md
+            - name: Disable-SCDWJobCategory
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobCategory.md
+            - name: Disable-SCDWJobSchedule
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWJobSchedule.md
+            - name: Disable-SCDWSource
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Disable-SCDWSource.md
+            - name: Enable-SCDWJob
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJob.md
+            - name: Enable-SCDWJobCategory
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJobCategory.md
+            - name: Enable-SCDWJobSchedule
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWJobSchedule.md
+            - name: Enable-SCDWSource
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Enable-SCDWSource.md
+            - name: Get-SCDWEntity
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWEntity.md
+            - name: Get-SCDWJob
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJob.md
+            - name: Get-SCDWJobModule
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJobModule.md
+            - name: Get-SCDWJobSchedule
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWJobSchedule.md
+            - name: Get-SCDWRetentionPeriod
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWRetentionPeriod.md
+            - name: Get-SCDWSource
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWSource.md
+            - name: Get-SCDWSourceType
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWSourceType.md
+            - name: Get-SCDWWatermark
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Get-SCDWWatermark.md
+            - name: New-SCDWSourceType
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/New-SCDWSourceType.md
+            - name: Register-SCDWSource
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Register-SCDWSource.md
+            - name: Set-SCDWJobSchedule
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWJobSchedule.md
+            - name: Set-SCDWRetentionPeriod
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWRetentionPeriod.md
+            - name: Set-SCDWSource
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWSource.md
+            - name: Set-SCDWWatermark
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Set-SCDWWatermark.md
+            - name: Start-SCDWJob
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Start-SCDWJob.md
+            - name: Stop-SCDWJob
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Stop-SCDWJob.md
+            - name: Unregister-SCDWManagementPack
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWManagementPack.md
+            - name: Unregister-SCDWSource
+              href: ../SystemCenter2016/ServiceManagerDataWarehouse/vlatest/Unregister-SCDWSource.md
+    - name: ServiceProviderFoundation
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/spfadmin.md
+          items:
+            - name: Get-SCSPFConnectionString
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFConnectionString.md
+            - name: Get-SCSPFEventRegistration
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFEventRegistration.md
+            - name: Get-SCSPFExtensibleEventHandler
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFExtensibleEventHandler.md
+            - name: Get-SCSPFServer
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFServer.md
+            - name: Get-SCSPFSetting
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFSetting.md
+            - name: Get-SCSPFStamp
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFStamp.md
+            - name: Get-SCSPFTenant
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFTenant.md
+            - name: Get-SCSPFTenantUserRole
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFTenantUserRole.md
+            - name: Get-SCSPFTrustedIssuer
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFTrustedIssuer.md
+            - name: Get-SCSPFVMRoleGalleryItem
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFVMRoleGalleryItem.md
+            - name: Get-SCSPFVMRoleGalleryItemIcon
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFVMRoleGalleryItemIcon.md
+            - name: Get-SCSPFVMRoleGalleryItemPackage
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Get-SCSPFVMRoleGalleryItemPackage.md
+            - name: Import-SCSpfVMRoleGalleryItem
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Import-SCSpfVMRoleGalleryItem.md
+            - name: New-SCSPFETWEvent
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/New-SCSPFETWEvent.md
+            - name: New-SCSPFServer
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/New-SCSPFServer.md
+            - name: New-SCSPFSetting
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/New-SCSPFSetting.md
+            - name: New-SCSPFStamp
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/New-SCSPFStamp.md
+            - name: New-SCSPFTenant
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/New-SCSPFTenant.md
+            - name: New-SCSPFTenantUserRole
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/New-SCSPFTenantUserRole.md
+            - name: New-SCSPFTrustedIssuer
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/New-SCSPFTrustedIssuer.md
+            - name: Remove-SCSPFServer
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Remove-SCSPFServer.md
+            - name: Remove-SCSPFSetting
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Remove-SCSPFSetting.md
+            - name: Remove-SCSPFStamp
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Remove-SCSPFStamp.md
+            - name: Remove-SCSPFTenant
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Remove-SCSPFTenant.md
+            - name: Remove-SCSPFTenantUserRole
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Remove-SCSPFTenantUserRole.md
+            - name: Remove-SCSPFTrustedIssuer
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Remove-SCSPFTrustedIssuer.md
+            - name: Remove-SCSPFVMRoleGalleryItem
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Remove-SCSPFVMRoleGalleryItem.md
+            - name: Set-SCSPFConnectionString
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSPFConnectionString.md
+            - name: Set-SCSPFEventRegistration
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSPFEventRegistration.md
+            - name: Set-SCSPFExtensibleEventHandler
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSPFExtensibleEventHandler.md
+            - name: Set-SCSPFServer
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSPFServer.md
+            - name: Set-SCSPFStamp
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSPFStamp.md
+            - name: Set-SCSpfTelemetry
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSpfTelemetry.md
+            - name: Set-SCSPFTenant
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSPFTenant.md
+            - name: Set-SCSPFVMRoleGalleryItem
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Set-SCSPFVMRoleGalleryItem.md
+            - name: Start-SCOrchestratorRunbook
+              href: ../SystemCenter2016/ServiceProviderFoundation/vlatest/Start-SCOrchestratorRunbook.md
+    - name: VirtualMachineManager
+      items:
+        - name: vlatest
+          href: ../SystemCenter2016/VirtualMachineManager/vlatest/VirtualMachineManager.md
+          items:
+            - name: Add-CloudResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-CloudResource.md
+            - name: Add-PROTip
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-PROTip.md
+            - name: Add-SCApplicationDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCApplicationDeployment.md
+            - name: Add-SCApplicationHostTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCApplicationHostTemplate.md
+            - name: Add-SCBGPPeer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCBGPPeer.md
+            - name: Add-SCComputerTierTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCComputerTierTemplate.md
+            - name: Add-SCCustomPlacementRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCCustomPlacementRule.md
+            - name: Add-SCFabricRoleResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCFabricRoleResource.md
+            - name: Add-SCLibraryServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryServer.md
+            - name: Add-SCLibraryShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLibraryShare.md
+            - name: Add-SCLoadBalancer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCLoadBalancer.md
+            - name: Add-SCNATConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNATConnection.md
+            - name: Add-SCNATRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNATRule.md
+            - name: Add-SCNetworkConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNetworkConnection.md
+            - name: Add-SCNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNetworkGateway.md
+            - name: Add-SCNetworkRoute
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNetworkRoute.md
+            - name: Add-SCNetworkService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCNetworkService.md
+            - name: Add-SCOperatingSystem
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCOperatingSystem.md
+            - name: Add-SCPowerOptimizationRange
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCPowerOptimizationRange.md
+            - name: Add-SCPXEServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCPXEServer.md
+            - name: Add-SCScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCScriptCommand.md
+            - name: Add-SCServerFeature
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCServerFeature.md
+            - name: Add-SCServicingWindowSubscription
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCServicingWindowSubscription.md
+            - name: Add-SCSQLDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCSQLDeployment.md
+            - name: Add-SCSQLScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCSQLScriptCommand.md
+            - name: Add-SCStorageProvider
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCStorageProvider.md
+            - name: Add-SCUpdateServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCUpdateServer.md
+            - name: Add-SCUserRolePermission
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCUserRolePermission.md
+            - name: Add-SCVirtualizationManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVirtualizationManager.md
+            - name: Add-SCVirtualSwitchExtensionManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVirtualSwitchExtensionManager.md
+            - name: Add-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHost.md
+            - name: Add-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHostCluster.md
+            - name: Add-SCVMHostNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHostNetworkAdapter.md
+            - name: Add-SCVMHostToNetworkController
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMHostToNetworkController.md
+            - name: Add-SCVMMManagedComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMMManagedComputer.md
+            - name: Add-SCVMNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVMNetworkGateway.md
+            - name: Add-SCVPNConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Add-SCVPNConnection.md
+            - name: Backup-SCVMMServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Backup-SCVMMServer.md
+            - name: Clear-SCPowerOptimizationSchedule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Clear-SCPowerOptimizationSchedule.md
+            - name: Clear-SCPROTip
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Clear-SCPROTip.md
+            - name: Compress-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Compress-SCVirtualDiskDrive.md
+            - name: Convert-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Convert-SCVirtualDiskDrive.md
+            - name: Copy-SCVirtualHardDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Copy-SCVirtualHardDisk.md
+            - name: Disable-SCLoadBalancerVIPMember
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Disable-SCLoadBalancerVIPMember.md
+            - name: Disable-SCRunAsAccount
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Disable-SCRunAsAccount.md
+            - name: Disable-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Disable-SCVMHost.md
+            - name: Enable-SCLoadBalancerVIPMember
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Enable-SCLoadBalancerVIPMember.md
+            - name: Enable-SCRunAsAccount
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Enable-SCRunAsAccount.md
+            - name: Enable-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Enable-SCVMHost.md
+            - name: Expand-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Expand-SCVirtualDiskDrive.md
+            - name: Export-SCLibraryPhysicalResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Export-SCLibraryPhysicalResource.md
+            - name: Export-SCTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Export-SCTemplate.md
+            - name: Find-SCCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Find-SCCluster.md
+            - name: Find-SCComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Find-SCComputer.md
+            - name: Find-SCJob
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Find-SCJob.md
+            - name: Find-SCLibraryShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Find-SCLibraryShare.md
+            - name: Get-CloudResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-CloudResource.md
+            - name: Get-CloudResourceExtension
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-CloudResourceExtension.md
+            - name: Get-CloudService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-CloudService.md
+            - name: Get-CloudVMRoleSizeProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-CloudVMRoleSizeProfile.md
+            - name: Get-SCApplicableVMHostGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplicableVMHostGroup.md
+            - name: Get-SCApplication
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplication.md
+            - name: Get-SCApplicationDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplicationDeployment.md
+            - name: Get-SCApplicationHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplicationHost.md
+            - name: Get-SCApplicationHostTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplicationHostTemplate.md
+            - name: Get-SCApplicationPackage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplicationPackage.md
+            - name: Get-SCApplicationProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplicationProfile.md
+            - name: Get-SCApplicationSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCApplicationSetting.md
+            - name: Get-SCAvailabilitySetName
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCAvailabilitySetName.md
+            - name: Get-SCBaseline
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCBaseline.md
+            - name: Get-SCBGPPeer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCBGPPeer.md
+            - name: Get-SCCapabilityProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCapabilityProfile.md
+            - name: Get-SCCertificate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCertificate.md
+            - name: Get-SCCloud
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloud.md
+            - name: Get-SCCloudCapacity
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudCapacity.md
+            - name: Get-SCCloudProtectionInfo
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudProtectionInfo.md
+            - name: Get-SCCloudUsage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCloudUsage.md
+            - name: Get-SCClusterVirtualNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCClusterVirtualNetwork.md
+            - name: Get-SCCodeIntegrityPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCodeIntegrityPolicy.md
+            - name: Get-SCComplianceStatus
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCComplianceStatus.md
+            - name: Get-SCComputerTier
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCComputerTier.md
+            - name: Get-SCComputerTierConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCComputerTierConfiguration.md
+            - name: Get-SCComputerTierTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCComputerTierTemplate.md
+            - name: Get-SCConfigurationProvider
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCConfigurationProvider.md
+            - name: Get-SCCPUType
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCPUType.md
+            - name: Get-SCCustomPlacementRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCustomPlacementRule.md
+            - name: Get-SCCustomProperty
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCustomProperty.md
+            - name: Get-SCCustomPropertyValue
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCustomPropertyValue.md
+            - name: Get-SCCustomResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCCustomResource.md
+            - name: Get-SCDependentLibraryResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDependentLibraryResource.md
+            - name: Get-SCDirectoryChildItem
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDirectoryChildItem.md
+            - name: Get-SCDriverPackage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDriverPackage.md
+            - name: Get-SCDynamicOptimizationConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCDynamicOptimizationConfiguration.md
+            - name: Get-SCExtensionUplinkPortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCExtensionUplinkPortProfile.md
+            - name: Get-SCFabricRole
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCFabricRole.md
+            - name: Get-SCGuardianConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCGuardianConfiguration.md
+            - name: Get-SCGuestOSProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCGuestOSProfile.md
+            - name: Get-SCHardwareProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCHardwareProfile.md
+            - name: Get-SCHostReserve
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCHostReserve.md
+            - name: Get-SCIPAddress
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCIPAddress.md
+            - name: Get-SCISO
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCISO.md
+            - name: Get-SCISOConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCISOConfiguration.md
+            - name: Get-SCJob
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCJob.md
+            - name: Get-SCKMSNetworkSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCKMSNetworkSetting.md
+            - name: Get-SCLibraryRating
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLibraryRating.md
+            - name: Get-SCLibraryServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLibraryServer.md
+            - name: Get-SCLibraryShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLibraryShare.md
+            - name: Get-SCLoadBalancer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancer.md
+            - name: Get-SCLoadBalancerConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerConfiguration.md
+            - name: Get-SCLoadBalancerTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerTemplate.md
+            - name: Get-SCLoadBalancerVIP
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerVIP.md
+            - name: Get-SCLoadBalancerVIPMember
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerVIPMember.md
+            - name: Get-SCLoadBalancerVIPTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLoadBalancerVIPTemplate.md
+            - name: Get-SCLogicalNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLogicalNetwork.md
+            - name: Get-SCLogicalNetworkDefinition
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLogicalNetworkDefinition.md
+            - name: Get-SCLogicalSwitch
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLogicalSwitch.md
+            - name: Get-SCLogicalSwitchVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCLogicalSwitchVirtualNetworkAdapter.md
+            - name: Get-SCMACAddress
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCMACAddress.md
+            - name: Get-SCMACAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCMACAddressPool.md
+            - name: Get-SCNATConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNATConnection.md
+            - name: Get-SCNativeUplinkPortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNativeUplinkPortProfile.md
+            - name: Get-SCNATRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNATRule.md
+            - name: Get-SCNetworkConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNetworkConnection.md
+            - name: Get-SCNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNetworkGateway.md
+            - name: Get-SCNetworkRoute
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNetworkRoute.md
+            - name: Get-SCNetworkService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNetworkService.md
+            - name: Get-SCNetworkServiceCapabilities
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNetworkServiceCapabilities.md
+            - name: Get-SCNetworkServiceCertificateUrl
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNetworkServiceCertificateUrl.md
+            - name: Get-SCNotification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCNotification.md
+            - name: Get-SCOperatingSystem
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOperatingSystem.md
+            - name: Get-SCOpsMgrConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCOpsMgrConnection.md
+            - name: Get-SCPendingServiceSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPendingServiceSetting.md
+            - name: Get-SCPerformanceData
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPerformanceData.md
+            - name: Get-SCPhysicalComputerNetworkAdapterProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPhysicalComputerNetworkAdapterProfile.md
+            - name: Get-SCPhysicalComputerProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPhysicalComputerProfile.md
+            - name: Get-SCPlacementConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPlacementConfiguration.md
+            - name: Get-SCPortACL
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPortACL.md
+            - name: Get-SCPortACLRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPortACLRule.md
+            - name: Get-SCPortClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPortClassification.md
+            - name: Get-SCPowerOptimizationRange
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPowerOptimizationRange.md
+            - name: Get-SCPROMonitor
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPROMonitor.md
+            - name: Get-SCPROMonitorConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPROMonitorConfiguration.md
+            - name: Get-SCPROMonitorState
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPROMonitorState.md
+            - name: Get-SCPROTip
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPROTip.md
+            - name: Get-SCPXEServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCPXEServer.md
+            - name: Get-SCReplicationGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCReplicationGroup.md
+            - name: Get-SCRunAsAccount
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCRunAsAccount.md
+            - name: Get-SCRunAsAccountConsumer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCRunAsAccountConsumer.md
+            - name: Get-SCScript
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCScript.md
+            - name: Get-SCScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCScriptCommand.md
+            - name: Get-SCScriptCommandSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCScriptCommandSetting.md
+            - name: Get-SCServerFeature
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServerFeature.md
+            - name: Get-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCService.md
+            - name: Get-SCServiceConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServiceConfiguration.md
+            - name: Get-SCServiceSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServiceSetting.md
+            - name: Get-SCServiceTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServiceTemplate.md
+            - name: Get-SCServicingWindow
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServicingWindow.md
+            - name: Get-SCServicingWindowSubscription
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCServicingWindowSubscription.md
+            - name: Get-SCSharedResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSharedResource.md
+            - name: Get-SCSQLDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSQLDeployment.md
+            - name: Get-SCSQLProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSQLProfile.md
+            - name: Get-SCSQLScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSQLScriptCommand.md
+            - name: Get-SCSSASConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSSASConnection.md
+            - name: Get-SCSSHKey
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSSHKey.md
+            - name: Get-SCStaticIPAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStaticIPAddressPool.md
+            - name: Get-SCStep
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStep.md
+            - name: Get-SCStorageArray
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageArray.md
+            - name: Get-SCStorageClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageClassification.md
+            - name: Get-SCStorageClusterDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageClusterDisk.md
+            - name: Get-SCStorageDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageDisk.md
+            - name: Get-SCStorageFabric
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageFabric.md
+            - name: Get-SCStorageFabricClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageFabricClassification.md
+            - name: Get-SCStorageFileServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageFileServer.md
+            - name: Get-SCStorageFileShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageFileShare.md
+            - name: Get-SCStorageLogicalUnit
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageLogicalUnit.md
+            - name: Get-SCStoragePhysicalDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStoragePhysicalDisk.md
+            - name: Get-SCStoragePool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStoragePool.md
+            - name: Get-SCStorageProvider
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageProvider.md
+            - name: Get-SCStorageQoSPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageQoSPolicy.md
+            - name: Get-SCStorageSwitch
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageSwitch.md
+            - name: Get-SCStorageTier
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageTier.md
+            - name: Get-SCStorageVolume
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageVolume.md
+            - name: Get-SCStorageZone
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageZone.md
+            - name: Get-SCStorageZoneAlias
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageZoneAlias.md
+            - name: Get-SCStorageZoneSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCStorageZoneSet.md
+            - name: Get-SCSupportedRecoveryPointObjective
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCSupportedRecoveryPointObjective.md
+            - name: Get-SCTag
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTag.md
+            - name: Get-SCTemplatePackage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCTemplatePackage.md
+            - name: Get-SCUpdate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUpdate.md
+            - name: Get-SCUpdateServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUpdateServer.md
+            - name: Get-SCUplinkPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUplinkPortProfileSet.md
+            - name: Get-SCUserRole
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRole.md
+            - name: Get-SCUserRoleMembership
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRoleMembership.md
+            - name: Get-SCUserRolePermission
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRolePermission.md
+            - name: Get-SCUserRoleQuota
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCUserRoleQuota.md
+            - name: Get-SCVirtualCOMPort
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualCOMPort.md
+            - name: Get-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDiskDrive.md
+            - name: Get-SCVirtualDVDDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualDVDDrive.md
+            - name: Get-SCVirtualFibreChannelAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFibreChannelAdapter.md
+            - name: Get-SCVirtualFibreChannelAdapterConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFibreChannelAdapterConfiguration.md
+            - name: Get-SCVirtualFloppyDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDisk.md
+            - name: Get-SCVirtualFloppyDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualFloppyDrive.md
+            - name: Get-SCVirtualHardDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDisk.md
+            - name: Get-SCVirtualHardDiskConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualHardDiskConfiguration.md
+            - name: Get-SCVirtualizationManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualizationManager.md
+            - name: Get-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualMachine.md
+            - name: Get-SCVirtualNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetwork.md
+            - name: Get-SCVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapter.md
+            - name: Get-SCVirtualNetworkAdapterConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterConfiguration.md
+            - name: Get-SCVirtualNetworkAdapterExtensionPortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterExtensionPortProfile.md
+            - name: Get-SCVirtualNetworkAdapterNativePortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterNativePortProfile.md
+            - name: Get-SCVirtualNetworkAdapterPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualNetworkAdapterPortProfileSet.md
+            - name: Get-SCVirtualScsiAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualScsiAdapter.md
+            - name: Get-SCVirtualSwitchExtension
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualSwitchExtension.md
+            - name: Get-SCVirtualSwitchExtensionManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVirtualSwitchExtensionManager.md
+            - name: Get-SCVMCheckpoint
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMCheckpoint.md
+            - name: Get-SCVMConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMConfiguration.md
+            - name: Get-SCVMConsoleInformation
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMConsoleInformation.md
+            - name: Get-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHost.md
+            - name: Get-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostCluster.md
+            - name: Get-SCVMHostFibreChannelHba
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelHba.md
+            - name: Get-SCVMHostFibreChannelVirtualSAN
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFibreChannelVirtualSAN.md
+            - name: Get-SCVMHostFromNetworkController
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostFromNetworkController.md
+            - name: Get-SCVMHostGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostGroup.md
+            - name: Get-SCVMHostNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostNetworkAdapter.md
+            - name: Get-SCVMHostNetworkAdapterProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostNetworkAdapterProfile.md
+            - name: Get-SCVMHostProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostProfile.md
+            - name: Get-SCVMHostRating
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMHostRating.md
+            - name: Get-SCVMMAccessLicense
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMAccessLicense.md
+            - name: Get-SCVMMDRServiceRegistration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMDRServiceRegistration.md
+            - name: Get-SCVMMManagedComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMManagedComputer.md
+            - name: Get-SCVMMServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMMServer.md
+            - name: Get-SCVMNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMNetwork.md
+            - name: Get-SCVMNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMNetworkGateway.md
+            - name: Get-SCVMShieldingData
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMShieldingData.md
+            - name: Get-SCVMSubnet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMSubnet.md
+            - name: Get-SCVMTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMTemplate.md
+            - name: Get-SCVMwareResourcePool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMwareResourcePool.md
+            - name: Get-SCVMXComputerConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVMXComputerConfiguration.md
+            - name: Get-SCVolumeSignatureCatalog
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVolumeSignatureCatalog.md
+            - name: Get-SCVPNConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Get-SCVPNConnection.md
+            - name: Grant-SCIPAddress
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCIPAddress.md
+            - name: Grant-SCMACAddress
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCMACAddress.md
+            - name: Grant-SCResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Grant-SCResource.md
+            - name: Import-CloudResourceExtension
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Import-CloudResourceExtension.md
+            - name: Import-SCLibraryPhysicalResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Import-SCLibraryPhysicalResource.md
+            - name: Import-SCStorageProvider
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Import-SCStorageProvider.md
+            - name: Import-SCTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Import-SCTemplate.md
+            - name: Install-SCStorageFileServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Install-SCStorageFileServer.md
+            - name: Install-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Install-SCVMHostCluster.md
+            - name: Invoke-SCPROTip
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Invoke-SCPROTip.md
+            - name: Invoke-SCScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Invoke-SCScriptCommand.md
+            - name: Join-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Join-SCVirtualMachine.md
+            - name: Mount-SCStorageDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Mount-SCStorageDisk.md
+            - name: Move-SCVirtualHardDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVirtualHardDisk.md
+            - name: Move-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVirtualMachine.md
+            - name: Move-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHost.md
+            - name: Move-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHostCluster.md
+            - name: Move-SCVMHostGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Move-SCVMHostGroup.md
+            - name: New-CloudService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-CloudService.md
+            - name: New-CloudVMRoleSizeProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-CloudVMRoleSizeProfile.md
+            - name: New-SCApplicationProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCApplicationProfile.md
+            - name: New-SCBaseline
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCBaseline.md
+            - name: New-SCCapabilityProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCCapabilityProfile.md
+            - name: New-SCCloud
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCCloud.md
+            - name: New-SCCodeIntegrityPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCCodeIntegrityPolicy.md
+            - name: New-SCCustomProperty
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCCustomProperty.md
+            - name: New-SCDefaultGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCDefaultGateway.md
+            - name: New-SCExternalJob
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCExternalJob.md
+            - name: New-SCGatewayRoleConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCGatewayRoleConfiguration.md
+            - name: New-SCGuestOSProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCGuestOSProfile.md
+            - name: New-SCHardwareProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCHardwareProfile.md
+            - name: New-SCLoadBalancerConnectionPersistence
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerConnectionPersistence.md
+            - name: New-SCLoadBalancerHealthMonitor
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerHealthMonitor.md
+            - name: New-SCLoadBalancerProtocol
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerProtocol.md
+            - name: New-SCLoadBalancerRoleConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerRoleConfiguration.md
+            - name: New-SCLoadBalancerTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerTemplate.md
+            - name: New-SCLoadBalancerVIP
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerVIP.md
+            - name: New-SCLoadBalancerVIPMember
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerVIPMember.md
+            - name: New-SCLoadBalancerVIPTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancerVIPTemplate.md
+            - name: New-SCLoadBalancingMethod
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLoadBalancingMethod.md
+            - name: New-SCLogicalNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLogicalNetwork.md
+            - name: New-SCLogicalNetworkDefinition
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLogicalNetworkDefinition.md
+            - name: New-SCLogicalSwitch
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLogicalSwitch.md
+            - name: New-SCLogicalSwitchVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCLogicalSwitchVirtualNetworkAdapter.md
+            - name: New-SCMACAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCMACAddressPool.md
+            - name: New-SCNativeUplinkPortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCNativeUplinkPortProfile.md
+            - name: New-SCNCBGPPeer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPPeer.md
+            - name: New-SCNCBGPRouter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCNCBGPRouter.md
+            - name: New-SCNetworkRoute
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCNetworkRoute.md
+            - name: New-SCOpsMgrConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCOpsMgrConnection.md
+            - name: New-SCPackageMapping
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPackageMapping.md
+            - name: New-SCPhysicalComputerConfig
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerConfig.md
+            - name: New-SCPhysicalComputerNetworkAdapterConfig
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerNetworkAdapterConfig.md
+            - name: New-SCPhysicalComputerNetworkAdapterProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerNetworkAdapterProfile.md
+            - name: New-SCPhysicalComputerProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPhysicalComputerProfile.md
+            - name: New-SCPortACL
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPortACL.md
+            - name: New-SCPortACLRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPortACLRule.md
+            - name: New-SCPortClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCPortClassification.md
+            - name: New-SCReplicationGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCReplicationGroup.md
+            - name: New-SCRunAsAccount
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCRunAsAccount.md
+            - name: New-SCScriptCommandSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCScriptCommandSetting.md
+            - name: New-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCService.md
+            - name: New-SCServiceConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCServiceConfiguration.md
+            - name: New-SCServiceTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCServiceTemplate.md
+            - name: New-SCServicingWindow
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCServicingWindow.md
+            - name: New-SCSQLProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCSQLProfile.md
+            - name: New-SCSSASConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCSSASConnection.md
+            - name: New-SCStaticIPAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStaticIPAddressPool.md
+            - name: New-SCStorageClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageClassification.md
+            - name: New-SCStorageFabricClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageFabricClassification.md
+            - name: New-SCStorageFileShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageFileShare.md
+            - name: New-SCStorageLogicalUnit
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageLogicalUnit.md
+            - name: New-SCStoragePool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStoragePool.md
+            - name: New-SCStorageQoSPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageQoSPolicy.md
+            - name: New-SCStorageTier
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageTier.md
+            - name: New-SCStorageVolume
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageVolume.md
+            - name: New-SCStorageZone
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageZone.md
+            - name: New-SCStorageZoneAlias
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCStorageZoneAlias.md
+            - name: New-SCSubnetVLan
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCSubnetVLan.md
+            - name: New-SCUplinkPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCUplinkPortProfileSet.md
+            - name: New-SCUserRole
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCUserRole.md
+            - name: New-SCV2V
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCV2V.md
+            - name: New-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDiskDrive.md
+            - name: New-SCVirtualDVDDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualDVDDrive.md
+            - name: New-SCVirtualFibreChannelAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualFibreChannelAdapter.md
+            - name: New-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualMachine.md
+            - name: New-SCVirtualNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetwork.md
+            - name: New-SCVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapter.md
+            - name: New-SCVirtualNetworkAdapterNativePortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterNativePortProfile.md
+            - name: New-SCVirtualNetworkAdapterPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualNetworkAdapterPortProfileSet.md
+            - name: New-SCVirtualScsiAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVirtualScsiAdapter.md
+            - name: New-SCVMCheckpoint
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMCheckpoint.md
+            - name: New-SCVMConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMConfiguration.md
+            - name: New-SCVMConnectFedAuth
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMConnectFedAuth.md
+            - name: New-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHost.md
+            - name: New-SCVMHostConfig
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostConfig.md
+            - name: New-SCVMHostFibreChannelVirtualSAN
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostFibreChannelVirtualSAN.md
+            - name: New-SCVMHostGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostGroup.md
+            - name: New-SCVMHostNetworkAdapterConfig
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterConfig.md
+            - name: New-SCVMHostNetworkAdapterProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostNetworkAdapterProfile.md
+            - name: New-SCVMHostProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMHostProfile.md
+            - name: New-SCVMNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMNetwork.md
+            - name: New-SCVMShieldingData
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMShieldingData.md
+            - name: New-SCVMSubnet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMSubnet.md
+            - name: New-SCVMTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMTemplate.md
+            - name: New-SCVMXComputerConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/New-SCVMXComputerConfiguration.md
+            - name: Publish-SCWindowsPE
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Publish-SCWindowsPE.md
+            - name: Read-SCFabricRoleResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCFabricRoleResource.md
+            - name: Read-SCGuestInfo
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCGuestInfo.md
+            - name: Read-SCLibraryShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCLibraryShare.md
+            - name: Read-SCLoadBalancer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCLoadBalancer.md
+            - name: Read-SCLoadBalancerVIP
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCLoadBalancerVIP.md
+            - name: Read-SCNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCNetworkGateway.md
+            - name: Read-SCNetworkService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCNetworkService.md
+            - name: Read-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCService.md
+            - name: Read-SCServiceTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCServiceTemplate.md
+            - name: Read-SCStorageProvider
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCStorageProvider.md
+            - name: Read-SCVirtualizationManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVirtualizationManager.md
+            - name: Read-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVirtualMachine.md
+            - name: Read-SCVirtualSwitchExtensionManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVirtualSwitchExtensionManager.md
+            - name: Read-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMHost.md
+            - name: Read-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMHostCluster.md
+            - name: Read-SCVMMManagedComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMMManagedComputer.md
+            - name: Read-SCVMNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVMNetworkGateway.md
+            - name: Read-SCVPNConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Read-SCVPNConnection.md
+            - name: Register-SCStorageFileShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Register-SCStorageFileShare.md
+            - name: Register-SCStorageLogicalUnit
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Register-SCStorageLogicalUnit.md
+            - name: Register-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVirtualMachine.md
+            - name: Register-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVMHost.md
+            - name: Register-SCVMMAccessLicense
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVMMAccessLicense.md
+            - name: Register-SCVMMManagedComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Register-SCVMMManagedComputer.md
+            - name: Remove-CloudResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-CloudResource.md
+            - name: Remove-CloudResourceExtension
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-CloudResourceExtension.md
+            - name: Remove-CloudService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-CloudService.md
+            - name: Remove-CloudVMRoleSizeProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-CloudVMRoleSizeProfile.md
+            - name: Remove-SCApplicationDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationDeployment.md
+            - name: Remove-SCApplicationHostTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationHostTemplate.md
+            - name: Remove-SCApplicationPackage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationPackage.md
+            - name: Remove-SCApplicationProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCApplicationProfile.md
+            - name: Remove-SCBaseline
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCBaseline.md
+            - name: Remove-SCBGPPeer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCBGPPeer.md
+            - name: Remove-SCCapabilityProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCapabilityProfile.md
+            - name: Remove-SCCloud
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCloud.md
+            - name: Remove-SCCodeIntegrityPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCodeIntegrityPolicy.md
+            - name: Remove-SCComputerTierTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCComputerTierTemplate.md
+            - name: Remove-SCCustomPlacementRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomPlacementRule.md
+            - name: Remove-SCCustomProperty
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomProperty.md
+            - name: Remove-SCCustomPropertyValue
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomPropertyValue.md
+            - name: Remove-SCCustomResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCCustomResource.md
+            - name: Remove-SCDriverPackage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCDriverPackage.md
+            - name: Remove-SCFabricRoleResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCFabricRoleResource.md
+            - name: Remove-SCGuestOSProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCGuestOSProfile.md
+            - name: Remove-SCHardwareProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCHardwareProfile.md
+            - name: Remove-SCISO
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCISO.md
+            - name: Remove-SCLibraryServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryServer.md
+            - name: Remove-SCLibraryShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLibraryShare.md
+            - name: Remove-SCLoadBalancer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLoadBalancer.md
+            - name: Remove-SCLoadBalancerTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLoadBalancerTemplate.md
+            - name: Remove-SCLoadBalancerVIP
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLoadBalancerVIP.md
+            - name: Remove-SCLoadBalancerVIPMember
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLoadBalancerVIPMember.md
+            - name: Remove-SCLoadBalancerVIPTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLoadBalancerVIPTemplate.md
+            - name: Remove-SCLogicalNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalNetwork.md
+            - name: Remove-SCLogicalNetworkDefinition
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalNetworkDefinition.md
+            - name: Remove-SCLogicalSwitch
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalSwitch.md
+            - name: Remove-SCLogicalSwitchVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCLogicalSwitchVirtualNetworkAdapter.md
+            - name: Remove-SCMACAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCMACAddressPool.md
+            - name: Remove-SCNATConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCNATConnection.md
+            - name: Remove-SCNativeUplinkPortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCNativeUplinkPortProfile.md
+            - name: Remove-SCNATRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCNATRule.md
+            - name: Remove-SCNetworkConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCNetworkConnection.md
+            - name: Remove-SCNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCNetworkGateway.md
+            - name: Remove-SCNetworkRoute
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCNetworkRoute.md
+            - name: Remove-SCNetworkService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCNetworkService.md
+            - name: Remove-SCOperatingSystem
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOperatingSystem.md
+            - name: Remove-SCOpsMgrConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCOpsMgrConnection.md
+            - name: Remove-SCPhysicalComputerNetworkAdapterProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPhysicalComputerNetworkAdapterProfile.md
+            - name: Remove-SCPhysicalComputerProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPhysicalComputerProfile.md
+            - name: Remove-SCPortACL
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPortACL.md
+            - name: Remove-SCPortACLRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPortACLRule.md
+            - name: Remove-SCPortClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPortClassification.md
+            - name: Remove-SCPXEServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCPXEServer.md
+            - name: Remove-SCReplicationGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCReplicationGroup.md
+            - name: Remove-SCRunAsAccount
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCRunAsAccount.md
+            - name: Remove-SCScript
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCScript.md
+            - name: Remove-SCScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCScriptCommand.md
+            - name: Remove-SCServerFeature
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCServerFeature.md
+            - name: Remove-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCService.md
+            - name: Remove-SCServiceConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCServiceConfiguration.md
+            - name: Remove-SCServiceTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCServiceTemplate.md
+            - name: Remove-SCServicingWindow
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCServicingWindow.md
+            - name: Remove-SCServicingWindowSubscription
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCServicingWindowSubscription.md
+            - name: Remove-SCSQLDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCSQLDeployment.md
+            - name: Remove-SCSQLProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCSQLProfile.md
+            - name: Remove-SCSQLScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCSQLScriptCommand.md
+            - name: Remove-SCSSASConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCSSASConnection.md
+            - name: Remove-SCSSHKey
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCSSHKey.md
+            - name: Remove-SCStaticIPAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStaticIPAddressPool.md
+            - name: Remove-SCStorageClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageClassification.md
+            - name: Remove-SCStorageFabricClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageFabricClassification.md
+            - name: Remove-SCStorageFileShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageFileShare.md
+            - name: Remove-SCStorageLogicalUnit
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageLogicalUnit.md
+            - name: Remove-SCStoragePool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStoragePool.md
+            - name: Remove-SCStorageProvider
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageProvider.md
+            - name: Remove-SCStorageQoSPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageQoSPolicy.md
+            - name: Remove-SCStorageVolume
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageVolume.md
+            - name: Remove-SCStorageZone
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageZone.md
+            - name: Remove-SCStorageZoneAlias
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCStorageZoneAlias.md
+            - name: Remove-SCUpdateServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUpdateServer.md
+            - name: Remove-SCUplinkPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUplinkPortProfileSet.md
+            - name: Remove-SCUserRole
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUserRole.md
+            - name: Remove-SCUserRolePermission
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCUserRolePermission.md
+            - name: Remove-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualDiskDrive.md
+            - name: Remove-SCVirtualDVDDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualDVDDrive.md
+            - name: Remove-SCVirtualFibreChannelAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualFibreChannelAdapter.md
+            - name: Remove-SCVirtualFloppyDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualFloppyDisk.md
+            - name: Remove-SCVirtualHardDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualHardDisk.md
+            - name: Remove-SCVirtualizationManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualizationManager.md
+            - name: Remove-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualMachine.md
+            - name: Remove-SCVirtualNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetwork.md
+            - name: Remove-SCVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapter.md
+            - name: Remove-SCVirtualNetworkAdapterNativePortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapterNativePortProfile.md
+            - name: Remove-SCVirtualNetworkAdapterPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualNetworkAdapterPortProfileSet.md
+            - name: Remove-SCVirtualScsiAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualScsiAdapter.md
+            - name: Remove-SCVirtualSwitchExtensionManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVirtualSwitchExtensionManager.md
+            - name: Remove-SCVMCheckpoint
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMCheckpoint.md
+            - name: Remove-SCVMConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMConfiguration.md
+            - name: Remove-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHost.md
+            - name: Remove-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostCluster.md
+            - name: Remove-SCVMHostFibreChannelVirtualSAN
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostFibreChannelVirtualSAN.md
+            - name: Remove-SCVMHostFromNetworkController
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostFromNetworkController.md
+            - name: Remove-SCVMHostGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostGroup.md
+            - name: Remove-SCVMHostNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostNetworkAdapter.md
+            - name: Remove-SCVMHostNetworkAdapterProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostNetworkAdapterProfile.md
+            - name: Remove-SCVMHostProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMHostProfile.md
+            - name: Remove-SCVMMManagedComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMMManagedComputer.md
+            - name: Remove-SCVMNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMNetwork.md
+            - name: Remove-SCVMNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMNetworkGateway.md
+            - name: Remove-SCVMShieldingData
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMShieldingData.md
+            - name: Remove-SCVMSubnet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMSubnet.md
+            - name: Remove-SCVMTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMTemplate.md
+            - name: Remove-SCVMXComputerConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVMXComputerConfiguration.md
+            - name: Remove-SCVPNConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Remove-SCVPNConnection.md
+            - name: Repair-CloudVmRole
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Repair-CloudVmRole.md
+            - name: Repair-SCStorageFileShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Repair-SCStorageFileShare.md
+            - name: Repair-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Repair-SCVirtualMachine.md
+            - name: Repair-SCVirtualNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Repair-SCVirtualNetwork.md
+            - name: Repair-SCVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Repair-SCVirtualNetworkAdapter.md
+            - name: Repair-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Repair-SCVMHost.md
+            - name: Repair-SCVMMDRServiceRegistration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Repair-SCVMMDRServiceRegistration.md
+            - name: Reset-SCPROMonitorState
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Reset-SCPROMonitorState.md
+            - name: Reset-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Reset-SCVirtualMachine.md
+            - name: Resolve-SCServiceTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Resolve-SCServiceTemplate.md
+            - name: Restart-SCJob
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCJob.md
+            - name: Restart-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Restart-SCVMHost.md
+            - name: Restore-SCVMCheckpoint
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Restore-SCVMCheckpoint.md
+            - name: Resume-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Resume-SCService.md
+            - name: Resume-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Resume-SCVirtualMachine.md
+            - name: Revoke-SCIPAddress
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Revoke-SCIPAddress.md
+            - name: Revoke-SCMACAddress
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Revoke-SCMACAddress.md
+            - name: Revoke-SCResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Revoke-SCResource.md
+            - name: Save-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Save-SCVirtualMachine.md
+            - name: Set-CloudResourceExtension
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-CloudResourceExtension.md
+            - name: Set-CloudService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-CloudService.md
+            - name: Set-CloudVmRoleScale
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-CloudVmRoleScale.md
+            - name: Set-CloudVMRoleSizeProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-CloudVMRoleSizeProfile.md
+            - name: Set-SCApplicationDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationDeployment.md
+            - name: Set-SCApplicationHostTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationHostTemplate.md
+            - name: Set-SCApplicationPackage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationPackage.md
+            - name: Set-SCApplicationProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationProfile.md
+            - name: Set-SCApplicationSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCApplicationSetting.md
+            - name: Set-SCBaseline
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCBaseline.md
+            - name: Set-SCCapabilityProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCapabilityProfile.md
+            - name: Set-SCCloud
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloud.md
+            - name: Set-SCCloudCapacity
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloudCapacity.md
+            - name: Set-SCCodeIntegrityPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCodeIntegrityPolicy.md
+            - name: Set-SCComplianceStatus
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComplianceStatus.md
+            - name: Set-SCComputerTier
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComputerTier.md
+            - name: Set-SCComputerTierConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComputerTierConfiguration.md
+            - name: Set-SCComputerTierTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCComputerTierTemplate.md
+            - name: Set-SCCustomPlacementRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomPlacementRule.md
+            - name: Set-SCCustomProperty
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomProperty.md
+            - name: Set-SCCustomPropertyValue
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomPropertyValue.md
+            - name: Set-SCCustomResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCustomResource.md
+            - name: Set-SCDriverPackage
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCDriverPackage.md
+            - name: Set-SCDynamicOptimizationConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCDynamicOptimizationConfiguration.md
+            - name: Set-SCExternalJob
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCExternalJob.md
+            - name: Set-SCFabricRole
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCFabricRole.md
+            - name: Set-SCFabricRoleResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCFabricRoleResource.md
+            - name: Set-SCGuestInfo
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCGuestInfo.md
+            - name: Set-SCGuestOSProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCGuestOSProfile.md
+            - name: Set-SCHardwareProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHardwareProfile.md
+            - name: Set-SCHostReserve
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCHostReserve.md
+            - name: Set-SCInternetSCSIHba
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCInternetSCSIHba.md
+            - name: Set-SCIPAddress
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCIPAddress.md
+            - name: Set-SCISO
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCISO.md
+            - name: Set-SCISOConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCISOConfiguration.md
+            - name: Set-SCKMSNetworkSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCKMSNetworkSetting.md
+            - name: Set-SCLibraryServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLibraryServer.md
+            - name: Set-SCLibraryShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLibraryShare.md
+            - name: Set-SCLoadBalancer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancer.md
+            - name: Set-SCLoadBalancerConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancerConfiguration.md
+            - name: Set-SCLoadBalancerTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancerTemplate.md
+            - name: Set-SCLoadBalancerVIPTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLoadBalancerVIPTemplate.md
+            - name: Set-SCLogicalNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalNetwork.md
+            - name: Set-SCLogicalNetworkDefinition
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalNetworkDefinition.md
+            - name: Set-SCLogicalSwitch
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalSwitch.md
+            - name: Set-SCLogicalSwitchVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCLogicalSwitchVirtualNetworkAdapter.md
+            - name: Set-SCMACAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCMACAddressPool.md
+            - name: Set-SCNATConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNATConnection.md
+            - name: Set-SCNativeUplinkPortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNativeUplinkPortProfile.md
+            - name: Set-SCNetworkConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkConnection.md
+            - name: Set-SCNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkGateway.md
+            - name: Set-SCNetworkService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNetworkService.md
+            - name: Set-SCNotification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCNotification.md
+            - name: Set-SCOpsMgrConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCOpsMgrConnection.md
+            - name: Set-SCPackageMapping
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPackageMapping.md
+            - name: Set-SCPhysicalComputerProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPhysicalComputerProfile.md
+            - name: Set-SCPlacementConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPlacementConfiguration.md
+            - name: Set-SCPortACL
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPortACL.md
+            - name: Set-SCPortACLRule
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPortACLRule.md
+            - name: Set-SCPortClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPortClassification.md
+            - name: Set-SCPROMonitorConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPROMonitorConfiguration.md
+            - name: Set-SCPROTip
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCPROTip.md
+            - name: Set-SCReplicationGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCReplicationGroup.md
+            - name: Set-SCRunAsAccount
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCRunAsAccount.md
+            - name: Set-SCScript
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCScript.md
+            - name: Set-SCScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCScriptCommand.md
+            - name: Set-SCScriptCommandSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCScriptCommandSetting.md
+            - name: Set-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCService.md
+            - name: Set-SCServiceConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceConfiguration.md
+            - name: Set-SCServiceSetting
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceSetting.md
+            - name: Set-SCServiceTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServiceTemplate.md
+            - name: Set-SCServicingWindow
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCServicingWindow.md
+            - name: Set-SCSQLDeployment
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSQLDeployment.md
+            - name: Set-SCSQLProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSQLProfile.md
+            - name: Set-SCSQLScriptCommand
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSQLScriptCommand.md
+            - name: Set-SCSSHKey
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCSSHKey.md
+            - name: Set-SCStaticIPAddressPool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStaticIPAddressPool.md
+            - name: Set-SCStorageArray
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageArray.md
+            - name: Set-SCStorageClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageClassification.md
+            - name: Set-SCStorageDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageDisk.md
+            - name: Set-SCStorageFabric
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFabric.md
+            - name: Set-SCStorageFabricClassification
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFabricClassification.md
+            - name: Set-SCStorageFileServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileServer.md
+            - name: Set-SCStorageFileServerNode
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileServerNode.md
+            - name: Set-SCStorageFileShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageFileShare.md
+            - name: Set-SCStorageLogicalUnit
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageLogicalUnit.md
+            - name: Set-SCStoragePool
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStoragePool.md
+            - name: Set-SCStorageProvider
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageProvider.md
+            - name: Set-SCStorageQoSPolicy
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageQoSPolicy.md
+            - name: Set-SCStorageVolume
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageVolume.md
+            - name: Set-SCStorageZone
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZone.md
+            - name: Set-SCStorageZoneAlias
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZoneAlias.md
+            - name: Set-SCStorageZoneSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCStorageZoneSet.md
+            - name: Set-SCUpdate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUpdate.md
+            - name: Set-SCUpdateServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUpdateServer.md
+            - name: Set-SCUplinkPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUplinkPortProfileSet.md
+            - name: Set-SCUserRole
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRole.md
+            - name: Set-SCUserRoleQuota
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCUserRoleQuota.md
+            - name: Set-SCVirtualCOMPort
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualCOMPort.md
+            - name: Set-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDiskDrive.md
+            - name: Set-SCVirtualDVDDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualDVDDrive.md
+            - name: Set-SCVirtualFibreChannelAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFibreChannelAdapter.md
+            - name: Set-SCVirtualFibreChannelAdapterConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFibreChannelAdapterConfiguration.md
+            - name: Set-SCVirtualFloppyDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDisk.md
+            - name: Set-SCVirtualFloppyDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualFloppyDrive.md
+            - name: Set-SCVirtualHardDisk
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualHardDisk.md
+            - name: Set-SCVirtualHardDiskConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualHardDiskConfiguration.md
+            - name: Set-SCVirtualizationManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualizationManager.md
+            - name: Set-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualMachine.md
+            - name: Set-SCVirtualNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetwork.md
+            - name: Set-SCVirtualNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapter.md
+            - name: Set-SCVirtualNetworkAdapterConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapterConfiguration.md
+            - name: Set-SCVirtualNetworkAdapterNativePortProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapterNativePortProfile.md
+            - name: Set-SCVirtualNetworkAdapterPortProfileSet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualNetworkAdapterPortProfileSet.md
+            - name: Set-SCVirtualScsiAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualScsiAdapter.md
+            - name: Set-SCVirtualSwitchExtension
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualSwitchExtension.md
+            - name: Set-SCVirtualSwitchExtensionManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVirtualSwitchExtensionManager.md
+            - name: Set-SCVMCheckpoint
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMCheckpoint.md
+            - name: Set-SCVMConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMConfiguration.md
+            - name: Set-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHost.md
+            - name: Set-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostCluster.md
+            - name: Set-SCVMHostFibreChannelVirtualSAN
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostFibreChannelVirtualSAN.md
+            - name: Set-SCVMHostGroup
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostGroup.md
+            - name: Set-SCVMHostNetworkAdapter
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostNetworkAdapter.md
+            - name: Set-SCVMHostProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMHostProfile.md
+            - name: Set-SCVMMManagedComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMManagedComputer.md
+            - name: Set-SCVMMServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMMServer.md
+            - name: Set-SCVMNetwork
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMNetwork.md
+            - name: Set-SCVMNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMNetworkGateway.md
+            - name: Set-SCVMShieldingData
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMShieldingData.md
+            - name: Set-SCVMSubnet
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMSubnet.md
+            - name: Set-SCVMTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVMTemplate.md
+            - name: Set-SCVPNConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Set-SCVPNConnection.md
+            - name: Start-SCClusterUpgrade
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCClusterUpgrade.md
+            - name: Start-SCComplianceScan
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCComplianceScan.md
+            - name: Start-SCDynamicOptimization
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCDynamicOptimization.md
+            - name: Start-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCService.md
+            - name: Start-SCUpdateRemediation
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCUpdateRemediation.md
+            - name: Start-SCUpdateServerSynchronization
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCUpdateServerSynchronization.md
+            - name: Start-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCVirtualMachine.md
+            - name: Start-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Start-SCVMHost.md
+            - name: Stop-SCJob
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCJob.md
+            - name: Stop-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCService.md
+            - name: Stop-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCVirtualMachine.md
+            - name: Stop-SCVMHost
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Stop-SCVMHost.md
+            - name: Suspend-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Suspend-SCService.md
+            - name: Suspend-SCVirtualMachine
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Suspend-SCVirtualMachine.md
+            - name: Test-ExceptionHandling
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-ExceptionHandling.md
+            - name: Test-SCCapabilityProfile
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCCapabilityProfile.md
+            - name: Test-SCDomainCredential
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCDomainCredential.md
+            - name: Test-SCLoadBalancer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCLoadBalancer.md
+            - name: Test-SCNetworkGateway
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCNetworkGateway.md
+            - name: Test-SCNetworkService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCNetworkService.md
+            - name: Test-SCPROTip
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCPROTip.md
+            - name: Test-SCServiceTemplate
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCServiceTemplate.md
+            - name: Test-SCVirtualDiskDrive
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVirtualDiskDrive.md
+            - name: Test-SCVirtualSwitchExtensionManager
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVirtualSwitchExtensionManager.md
+            - name: Test-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Test-SCVMHostCluster.md
+            - name: Uninstall-SCStorageFileServer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Uninstall-SCStorageFileServer.md
+            - name: Uninstall-SCVMHostCluster
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Uninstall-SCVMHostCluster.md
+            - name: Unregister-SCStorageFileShare
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Unregister-SCStorageFileShare.md
+            - name: Unregister-SCStorageLogicalUnit
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Unregister-SCStorageLogicalUnit.md
+            - name: Update-CloudResource
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Update-CloudResource.md
+            - name: Update-SCClusterFunctionalLevel
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Update-SCClusterFunctionalLevel.md
+            - name: Update-SCService
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Update-SCService.md
+            - name: Update-SCServiceConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Update-SCServiceConfiguration.md
+            - name: Update-SCVMConfiguration
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Update-SCVMConfiguration.md
+            - name: Update-SCVMMManagedComputer
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Update-SCVMMManagedComputer.md
+            - name: Update-SCVMVersion
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Update-SCVMVersion.md
+            - name: Use-SCDiscardSavedStateVM
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Use-SCDiscardSavedStateVM.md
+            - name: Use-SCSaveStateVM
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Use-SCSaveStateVM.md
+            - name: Use-SCShutdownVM
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Use-SCShutdownVM.md
+            - name: Use-SCStopVM
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Use-SCStopVM.md
+            - name: Write-SCOpsMgrConnection
+              href: ../SystemCenter2016/VirtualMachineManager/vlatest/Write-SCOpsMgrConnection.md

@@ -3,17 +3,17 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 6D71476B-C88C-4C65-B004-0423102F1C9D
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 2/28/2017 10:37 AM
+ms.date: 2/28/2017
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMCloudSubscriptionSetting.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/master/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMCloudSubscriptionSetting.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMCloudSubscriptionSetting.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/c25d8a48f4a3ec91a928988bdcfc4a813011aa4c/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMCloudSubscriptionSetting.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
 keywords: powershell, cmdlet
 manager: carmonm
-open_to_public_contributors: true
+open_to_public_contributors: True
 ms.service: system-center
 ---
 
@@ -25,9 +25,10 @@ Updates subscription settings in Azure Online Backup for a DPM server.
 ## SYNTAX
 
 ### Commit
+
 ```
 Set-DPMCloudSubscriptionSetting [[-DPMServerName] <String>] [-SubscriptionSetting] <CloudSubscriptionSetting>
- [-Commit] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SecurityPin] <SecurityPinValue> [-Commit] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StagingArea
@@ -263,6 +264,21 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
+### -SecurityPin
+Specifies the Security PIN value for the recovery services vault to which this DPM server is added. This is mandatory if [Security Features are enabled](https://docs.microsoft.com/azure/backup/backup-azure-security-feature#enabling-security-features) for the related Recovery Services vault and encryption passphrase is being changed. To access Security PIN, go to Azure portal and navigate to your Recovery Services vault > Settings > Properties > Generate Security PIN.
+
+```yaml
+Type: String
+Parameter Sets: Commit
+Aliases: 
+
+Required: False
+Position: 
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -StagingAreaPath
 Specifies the path to which you download backups before you recover them to their final location.
 Ensure that the location you specify has sufficient space to hold the backups.
@@ -294,6 +310,7 @@ Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
+
 
 ### -SubscriptionSetting
 Specifies a **Subscription** object that contains the subscription settings.

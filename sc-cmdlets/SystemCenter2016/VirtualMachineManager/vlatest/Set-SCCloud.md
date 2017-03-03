@@ -3,17 +3,17 @@ external help file: Microsoft.SystemCenter.VirtualMachineManager.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: 205839B4-739E-42AB-A4D7-3D2D1B769564
-updated_at: 12/22/2016 3:56 PM
-ms.date: 12/22/2016
+updated_at: 3/3/2017 9:12 AM
+ms.date: 3/3/2017
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/live/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloud.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/live/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloud.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/96e5647587661652225fbdd2c797cd4d59d542bc/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloud.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/b176f5d64486e0eca0acdf08582c3a24566df3b7/systemcenter-cmdlets/SystemCenter2016/VirtualMachineManager/vlatest/Set-SCCloud.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
 keywords: powershell, cmdlet
 manager: carmonm
-open_to_public_contributors: true
+open_to_public_contributors: True
 ms.service: system-center
 ---
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -AddCloudResource
 Specifies one or more cloud resources that this cmdlet adds to a private cloud.
-Resources that you can add to a private cloud include: Load Balancer, Logical Network, Static IP Address Pool, Storage Pool, and VIP Template.
+Resources that you can add to a private cloud include: Load Balancer, Logical Network, Storage Pool, and VIP Template.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.SystemCenter.VirtualMachineManager.ClientObject]

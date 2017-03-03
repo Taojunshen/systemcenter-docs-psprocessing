@@ -15,7 +15,7 @@ author: tarameyer
 ms.author: cfreeman
 keywords: powershell, cmdlet
 manager: carmonm
-open_to_public_contributors: true
+open_to_public_contributors: True
 ms.service: system-center
 ---
 

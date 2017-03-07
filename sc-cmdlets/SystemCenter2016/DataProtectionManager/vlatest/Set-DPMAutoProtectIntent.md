@@ -3,11 +3,11 @@ external help file: ObjectModelCmdlet.dll-Help.xml
 online version: 
 schema: 2.0.0
 ms.assetid: AF639F32-8201-4FA8-87F6-3AC38E2D8C59
-updated_at: 12/22/2016 5:54 PM
-ms.date: 12/22/2016
+updated_at: 2/27/2017 7:24 AM
+ms.date: 2/27/2017
 content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/live/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMAutoProtectIntent.md
 original_content_git_url: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/live/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMAutoProtectIntent.md
-gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/17c3a51bd892aad46c731d9f381f0704b4815004/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMAutoProtectIntent.md
+gitcommit: https://github.com/MicrosoftDocs/systemcenter-docs-powershell/blob/4465f85bca03c4f3400251a97d584488556ff109/systemcenter-cmdlets/SystemCenter2016/DataProtectionManager/vlatest/Set-DPMAutoProtectIntent.md
 ms.topic: reference
 author: tarameyer
 ms.author: cfreeman
@@ -25,8 +25,7 @@ Turns DPM auto-protection on or off for a SQL Server instance.
 ## SYNTAX
 
 ```
-Set-DPMAutoProtectIntent [-ProtectionGroup] <ProtectionGroup> [-SQLInstanceName] <String[]>
- [-AutoProtectIntent] <AutoProtectionIntent> [-ProductionServer] <ProductionServer> [-WhatIf] [-Confirm]
+Set-DPMAutoProtectIntent [-ProtectionGroup] <ProtectionGroup> [-SQLInstanceName] <String[]> [-AutoProtectIntent] <AutoProtectionIntent> [-AutoProtectCloudIntent] <Enable/Disable> [-ProductionServer] <ProductionServer> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -64,6 +63,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AutoProtectCloudIntent
+Specifies whether the commandlet turns Cloud auto-protection on or off. If set to Enable, all the datasources set to auto-protection to disk in the Protection Group will be auto-protected to cloud. If set to Disable, auto-protection to cloud will cease.  
+
+The acceptable values for this parameter are: Enable and Disable.
+
+```yaml
+Type: AutoProtectCloudIntent
+Parameter Sets: Enable, Disable
+Required: True
+Position: 4
+Default value: Disable
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProductionServer
 Specifies a computer on which a DPM protection agent is installed.
 
@@ -73,7 +87,7 @@ Parameter Sets: (All)
 Aliases: 
 
 Required: True
-Position: 4
+Position: 5
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
